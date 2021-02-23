@@ -1,0 +1,19 @@
+<svg id="Closemap.svg" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #222;
+      }
+    </style>
+  </defs>
+  <path id="Rounded_Rectangle_608_copy_14" data-name="Rounded Rectangle 608 copy 14" class="cls-1" d="M1132.69,756.715l-3.28,3.269,3.28,3.269a1,1,0,1,1-1.41,1.408l-3.28-3.268-3.31,3.3a1,1,0,0,1-1.41-1.408l3.31-3.3-3.31-3.3a1,1,0,0,1,1.41-1.409l3.31,3.3,3.28-3.268A1,1,0,1,1,1132.69,756.715Z" transform="translate(-1111 -755)"/>
+  <path id="Rounded_Rectangle_608_copy_14-2" data-name="Rounded Rectangle 608 copy 14" class="cls-2" d="M1120.69,756.715l-3.28,3.269,3.28,3.269a1,1,0,1,1-1.41,1.408l-3.28-3.268-3.31,3.3a1,1,0,0,1-1.41-1.408l3.31-3.3-3.31-3.3a1,1,0,0,1,1.41-1.409l3.31,3.3,3.28-3.268A1,1,0,1,1,1120.69,756.715Z" transform="translate(-1111 -755)"/>
+</svg>

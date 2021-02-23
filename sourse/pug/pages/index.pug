@@ -1,0 +1,730 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sProject/_sProject.pug
+include ../blocks/sStat/_sStat.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Cайт производства - Главная'
+	title= title
+block pagecontent
+
+	//- +mob-mnu()
+	//- +header()
+	//- +top-nav()
+	//- +soc()
+	//- +in-c("checkbox", "text")
+
+	//- +topLine() 
+	//- +headerBlock()
+	//- +sForm()
+	//- +sContact()
+	//- +footer()
+
+	.drag-block.container.BIG_BANNER_INDEX(data-class='BIG_BANNER_INDEX_drag' data-order='1')
+		.row.margin0
+			.maxwidth-theme
+				.mixed_banners.padding-banner-block
+					.row
+						.big_banners_block
+							.banners-big.short-banner.small.front.view_1
+								.maxwidth-banner
+									.flexslider.unstyled(data-plugin-options='{"directionNav": true, "customDirection": ".nav-carousel a", "controlNav": true, "nav" : "normal", "slideshow": true, "animation": "fade",  "slideshowSpeed": 5000, "animationSpeed": 600, "animationLoop": true }')
+										ul.slides.items
+											li#bx_3218110189_37.box.item(style="background-size: cover;background-image:url('upload/iblock/670/6707154d1f5b72c58014179982109f60.jpg') !important;" data-slide_index='0')
+												.maxwidth-theme
+													.row
+														.col-md-6.col-sm-6.text
+															.inner
+																.title Комплексная автоматизация бизнеса
+																.text-block
+																	| Настраиваем и оптимизируем все бизнес-процессы компании – от работы отдела
+																	| продаж до логистики. Бесплатное обучение сотрудников и техническая поддержка.
+																a.btn.btn-default(href='services/avtomatizatsiya/kompleksnaya-avtomatizatsiya/index.html')
+																	| Направления
+																a.btn.btn-default.white2(href='#' data-event='jqm' data-param-id='26' data-name='order_from_banner')
+																	| Задать вопрос
+														.col-md-6.col-sm-6.img
+															.inner
+											li#bx_3218110189_34202.box.item(style="background-size: cover;background-image:url('upload/iblock/137/137ff07a8d4a0d5e806452ac426f74ea.jpg') !important;" data-slide_index='1')
+												.maxwidth-theme
+													.row
+														.col-md-6.col-sm-6.text
+															.inner
+																.title Нержавеющий и цветной металлопрокат
+																.text-block
+																	| Постоянное наличие нержавеющего, алюминиевого, медного, латунного, бронзового
+																	| проката.
+																a.btn.btn-default(href='product/index.html')
+																	| Перейти в каталог
+														.col-md-6.col-sm-6.img
+															.inner
+											li#bx_3218110189_34203.box.item(style="background-size: cover;background-image:url('upload/iblock/ad4/ad46adafe70c8052e09571acc6e812e3.jpg') !important;" data-slide_index='2')
+												.maxwidth-theme
+													.row
+														.col-md-6.col-sm-6.text
+															.inner
+																.title Специальные стали
+																.text-block
+																	| Штамповая, Электротехническая, Интсрументальная, Конструкционная,
+																	| Рессорно-пружинная , Подшипнмковая, Жаропрочная, Быстрорежущая сталь.
+																a.btn.btn-default(href='product/index.html')
+																	| Перейти в каталог
+														.col-md-6.col-sm-6.img
+															.inner
+											li#bx_3218110189_34204.box.item(style="background-size: cover;background-image:url('upload/iblock/74f/74f48289d4c566207997446c14a6c45c.jpg') !important;" data-slide_index='3')
+												.maxwidth-theme
+													.row
+														.col-md-6.col-sm-6.text
+															.inner
+																.title Производство сетки
+																.text-block
+																	| Материал: нержавеющий, цветной, стальной прокат.
+																	br
+																	| 																					Тип: фильтровая, тканная, кладочная, дорожная, сварная, штукатурная,
+																	| 																					просечно-вытяжная, мельничная, рабица, габионы.
+														.col-md-6.col-sm-6.img
+															.inner
+										.maxwidth-theme
+											.col-md-12
+												.nav-carousel
+													ul.flex-direction-nav
+														li.flex-nav-prev
+															a.flex-prev(href='javascript:void(0)')
+																span Prev
+														li.flex-nav-next
+															a.flex-next(href='javascript:void(0)')
+																span Next
+						.small_banners_block
+							#bx_3218110189_51.item
+								.item_inner
+									a.opacity_block1.dark_block_animate(href='product/programmnye-produkty/index.html' title='Программные продукты')
+									.wrap_tizer
+										.wrapper_inner_tizer
+											.wr_block
+												span.wrap_outer.title
+													a.outer_text(href='product/programmnye-produkty/index.html')
+														span.inner_text
+															| Программные продукты
+											.preview
+												| ИТ-аутсорсинг
+												br
+												|  и автоматизация
+									.scale_block_animate.img_block(style="background-image:url('upload/iblock/fb4/fb42e08bc2120895096ecb916b86883c.jpg')")
+							#bx_3218110189_50.item
+								.item_inner
+									a.opacity_block1.dark_block_animate(href='projects/stroitelstvo/stroitelnye-raboty-dlya-zhk-afrina/index.html' title='Строительство зданий')
+									.wrap_tizer
+										.wrapper_inner_tizer
+											.wr_block
+												span.wrap_outer.title
+													a.outer_text(href='projects/stroitelstvo/stroitelnye-raboty-dlya-zhk-afrina/index.html')
+														span.inner_text
+															| Строительство зданий
+											.preview
+												| Строительные работы для 
+												br
+												| 																ЖК «Африна»
+									.scale_block_animate.img_block(style="background-image:url('upload/iblock/525/525ccead00914439041d731f3748f6a9.jpg')")
+	.drag-block.container.CATALOG_INDEX(data-class='CATALOG_INDEX_drag' data-order='8')
+		.maxwidth-theme
+			.row.margin0.block-with-bg
+				.item-views.catalog.blocks
+					.title_block.row
+						.col-md-3.col-sm-12
+							h3 Спецпредложения
+						//- .col-md-6.col-sm-9.text-center
+							.items.head-block
+								.row.margin0
+									.maxwidth-theme
+										.col-md-12.items-link
+											.item-link.active.clicked
+												.title
+													span Акция
+											.item-link
+												.title
+													span Рекомендуем
+											.item-link
+												.title
+													span Новинка
+											.item-link
+												.title
+													span Хит
+										.items-link-mobile-wrap
+											select.items-link-mobile
+												option(disabled='') Акция
+												option.ordering.SALE(value='SALE') Акция
+												option.ordering.RECOMMEND(value='RECOMMEND') Рекомендуем
+												option.ordering.NEW(value='NEW') Новинка
+												option.ordering.HIT(value='HIT') Хит
+						.col-md-3.col-sm-3
+							.nav-direction
+								ul.flex-direction-nav
+									li.flex-nav-prev
+										a.flex-prev(href='javascript:void(0)')
+											span Prev
+									li.flex-nav-next
+										a.flex-next(href='javascript:void(0)')
+											span Next
+					span.request-data(data-value='a%3A61%3A%7Bs%3A12%3A%22CACHE_FILTER%22%3Bs%3A1%3A%22Y%22%3Bs%3A12%3A%22CACHE_GROUPS%22%3Bs%3A1%3A%22N%22%3Bs%3A10%3A%22CACHE_TIME%22%3Bs%3A8%3A%2236000000%22%3Bs%3A10%3A%22CACHE_TYPE%22%3Bs%3A1%3A%22A%22%3Bs%3A20%3A%22COMPOSITE_FRAME_MODE%22%3Bs%3A1%3A%22A%22%3Bs%3A20%3A%22COMPOSITE_FRAME_TYPE%22%3Bs%3A4%3A%22AUTO%22%3Bs%3A10%3A%22DETAIL_URL%22%3Bs%3A0%3A%22%22%3Bs%3A11%3A%22FILTER_NAME%22%3Bs%3A15%3A%22arFilterCatalog%22%3Bs%3A8%3A%22HIT_PROP%22%3Bs%3A3%3A%22HIT%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A11%3A%22IBLOCK_TYPE%22%3Bs%3A22%3A%22aspro_allcorp2_catalog%22%3Bs%3A10%3A%22NEWS_COUNT%22%3Bs%3A2%3A%2220%22%3Bs%3A14%3A%22PARENT_SECTION%22%3Bs%3A0%3A%22%22%3Bs%3A13%3A%22PROPERTY_CODE%22%3Ba%3A44%3A%7Bi%3A0%3Bs%3A10%3A%22FORM_ORDER%22%3Bi%3A1%3Bs%3A18%3A%22SHOW_ON_INDEX_PAGE%22%3Bi%3A2%3Bs%3A5%3A%22PRICE%22%3Bi%3A3%3Bs%3A8%3A%22PRICEOLD%22%3Bi%3A4%3Bs%3A6%3A%22STATUS%22%3Bi%3A5%3Bs%3A7%3A%22ARTICLE%22%3Bi%3A6%3Bs%3A3%3A%22AGE%22%3Bi%3A7%3Bs%3A7%3A%22KARTOPR%22%3Bi%3A8%3Bs%3A6%3A%22HEIGHT%22%3Bi%3A9%3Bs%3A5%3A%22DEPTH%22%3Bi%3A10%3Bs%3A4%3A%22DEEP%22%3Bi%3A11%3Bs%3A4%3A%22GRUZ%22%3Bi%3A12%3Bs%3A11%3A%22GRUZ_STRELI%22%3Bi%3A13%3Bs%3A12%3A%22DLINA_STRELI%22%3Bi%3A14%3Bs%3A5%3A%22DLINA%22%3Bi%3A15%3Bs%3A8%3A%22CATEGORY%22%3Bi%3A16%3Bs%3A5%3A%22CLASS%22%3Bi%3A17%3Bs%3A11%3A%22KOL_FORMULA%22%3Bi%3A18%3Bs%3A5%3A%22USERS%22%3Bi%3A19%3Bs%3A9%3A%22EXTENSION%22%3Bi%3A20%3Bs%3A10%3A%22MARK_STEEL%22%3Bi%3A21%3Bs%3A4%3A%22MASS%22%3Bi%3A22%3Bs%3A5%3A%22MODEL%22%3Bi%3A23%3Bs%3A5%3A%22POWER%22%3Bi%3A24%3Bs%3A7%3A%22UPDATES%22%3Bi%3A25%3Bs%3A6%3A%22VOLUME%22%3Bi%3A26%3Bs%3A12%3A%22PROIZVODSTVO%22%3Bi%3A27%3Bs%3A4%3A%22SIZE%22%3Bi%3A28%3Bs%3A5%3A%22PLACE%22%3Bi%3A29%3Bs%3A9%3A%22RECOMMEND%22%3Bi%3A30%3Bs%3A6%3A%22SERIES%22%3Bi%3A31%3Bs%3A5%3A%22SPEED%22%3Bi%3A32%3Bs%3A8%3A%22DURATION%22%3Bi%3A33%3Bs%3A8%3A%22TYPE_TUR%22%3Bi%3A34%3Bs%3A9%3A%22THICKNESS%22%3Bi%3A35%3Bs%3A4%3A%22MARK%22%3Bi%3A36%3Bs%3A3%3A%22HIT%22%3Bi%3A37%3Bs%3A9%3A%22FREQUENCY%22%3Bi%3A38%3Bs%3A12%3A%22WIDTH_PROHOD%22%3Bi%3A39%3Bs%3A12%3A%22WIDTH_PROEZD%22%3Bi%3A40%3Bs%3A5%3A%22WIDTH%22%3Bi%3A41%3Bs%3A9%3A%22LANGUAGES%22%3Bi%3A42%3Bs%3A5%3A%22BRAND%22%3Bi%3A43%3Bs%3A0%3A%22%22%3B%7Ds%3A8%3A%22SORT_BY1%22%3Bs%3A4%3A%22SORT%22%3Bs%3A8%3A%22SORT_BY2%22%3Bs%3A2%3A%22ID%22%3Bs%3A11%3A%22SORT_ORDER1%22%3Bs%3A3%3A%22ASC%22%3Bs%3A11%3A%22SORT_ORDER2%22%3Bs%3A3%3A%22ASC%22%3Bs%3A5%3A%22TITLE%22%3Bs%3A25%3A%22%D0%9D%D0%B0%D1%88%D0%B8+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%22%3Bs%3A18%3A%22COMPONENT_TEMPLATE%22%3Bs%3A6%3A%22slider%22%3Bs%3A10%3A%22SECTION_ID%22%3Bs%3A0%3A%22%22%3Bs%3A12%3A%22SECTION_CODE%22%3Bs%3A0%3A%22%22%3Bs%3A10%3A%22FIELD_CODE%22%3Ba%3A4%3A%7Bi%3A0%3Bs%3A4%3A%22NAME%22%3Bi%3A1%3Bs%3A15%3A%22PREVIEW_PICTURE%22%3Bi%3A2%3Bs%3A14%3A%22DETAIL_PICTURE%22%3Bi%3A3%3Bs%3A0%3A%22%22%3B%7Ds%3A15%3A%22S_ORDER_PRODUCT%22%3Bs%3A16%3A%22%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%22%3Bs%3A14%3A%22S_MORE_PRODUCT%22%3Bs%3A18%3A%22%D0%9F%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%22%3Bs%3A24%3A%22ELEMENTS_TABLE_TYPE_VIEW%22%3Bs%3A11%3A%22FROM_MODULE%22%3Bs%3A12%3A%22SHOW_SECTION%22%3Bs%3A1%3A%22Y%22%3Bs%3A13%3A%22COUNT_IN_LINE%22%3Bs%3A1%3A%224%22%3Bs%3A13%3A%22%7ECACHE_FILTER%22%3Bs%3A1%3A%22Y%22%3Bs%3A13%3A%22%7ECACHE_GROUPS%22%3Bs%3A1%3A%22N%22%3Bs%3A11%3A%22%7ECACHE_TIME%22%3Bs%3A8%3A%2236000000%22%3Bs%3A11%3A%22%7ECACHE_TYPE%22%3Bs%3A1%3A%22A%22%3Bs%3A21%3A%22%7ECOMPOSITE_FRAME_MODE%22%3Bs%3A1%3A%22A%22%3Bs%3A21%3A%22%7ECOMPOSITE_FRAME_TYPE%22%3Bs%3A4%3A%22AUTO%22%3Bs%3A11%3A%22%7EDETAIL_URL%22%3Bs%3A0%3A%22%22%3Bs%3A12%3A%22%7EFILTER_NAME%22%3Bs%3A15%3A%22arFilterCatalog%22%3Bs%3A9%3A%22%7EHIT_PROP%22%3Bs%3A3%3A%22HIT%22%3Bs%3A10%3A%22%7EIBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A12%3A%22%7EIBLOCK_TYPE%22%3Bs%3A22%3A%22aspro_allcorp2_catalog%22%3Bs%3A11%3A%22%7ENEWS_COUNT%22%3Bs%3A2%3A%2220%22%3Bs%3A15%3A%22%7EPARENT_SECTION%22%3Bs%3A0%3A%22%22%3Bs%3A14%3A%22%7EPROPERTY_CODE%22%3Ba%3A44%3A%7Bi%3A0%3Bs%3A10%3A%22FORM_ORDER%22%3Bi%3A1%3Bs%3A18%3A%22SHOW_ON_INDEX_PAGE%22%3Bi%3A2%3Bs%3A5%3A%22PRICE%22%3Bi%3A3%3Bs%3A8%3A%22PRICEOLD%22%3Bi%3A4%3Bs%3A6%3A%22STATUS%22%3Bi%3A5%3Bs%3A7%3A%22ARTICLE%22%3Bi%3A6%3Bs%3A3%3A%22AGE%22%3Bi%3A7%3Bs%3A7%3A%22KARTOPR%22%3Bi%3A8%3Bs%3A6%3A%22HEIGHT%22%3Bi%3A9%3Bs%3A5%3A%22DEPTH%22%3Bi%3A10%3Bs%3A4%3A%22DEEP%22%3Bi%3A11%3Bs%3A4%3A%22GRUZ%22%3Bi%3A12%3Bs%3A11%3A%22GRUZ_STRELI%22%3Bi%3A13%3Bs%3A12%3A%22DLINA_STRELI%22%3Bi%3A14%3Bs%3A5%3A%22DLINA%22%3Bi%3A15%3Bs%3A8%3A%22CATEGORY%22%3Bi%3A16%3Bs%3A5%3A%22CLASS%22%3Bi%3A17%3Bs%3A11%3A%22KOL_FORMULA%22%3Bi%3A18%3Bs%3A5%3A%22USERS%22%3Bi%3A19%3Bs%3A9%3A%22EXTENSION%22%3Bi%3A20%3Bs%3A10%3A%22MARK_STEEL%22%3Bi%3A21%3Bs%3A4%3A%22MASS%22%3Bi%3A22%3Bs%3A5%3A%22MODEL%22%3Bi%3A23%3Bs%3A5%3A%22POWER%22%3Bi%3A24%3Bs%3A7%3A%22UPDATES%22%3Bi%3A25%3Bs%3A6%3A%22VOLUME%22%3Bi%3A26%3Bs%3A12%3A%22PROIZVODSTVO%22%3Bi%3A27%3Bs%3A4%3A%22SIZE%22%3Bi%3A28%3Bs%3A5%3A%22PLACE%22%3Bi%3A29%3Bs%3A9%3A%22RECOMMEND%22%3Bi%3A30%3Bs%3A6%3A%22SERIES%22%3Bi%3A31%3Bs%3A5%3A%22SPEED%22%3Bi%3A32%3Bs%3A8%3A%22DURATION%22%3Bi%3A33%3Bs%3A8%3A%22TYPE_TUR%22%3Bi%3A34%3Bs%3A9%3A%22THICKNESS%22%3Bi%3A35%3Bs%3A4%3A%22MARK%22%3Bi%3A36%3Bs%3A3%3A%22HIT%22%3Bi%3A37%3Bs%3A9%3A%22FREQUENCY%22%3Bi%3A38%3Bs%3A12%3A%22WIDTH_PROHOD%22%3Bi%3A39%3Bs%3A12%3A%22WIDTH_PROEZD%22%3Bi%3A40%3Bs%3A5%3A%22WIDTH%22%3Bi%3A41%3Bs%3A9%3A%22LANGUAGES%22%3Bi%3A42%3Bs%3A5%3A%22BRAND%22%3Bi%3A43%3Bs%3A0%3A%22%22%3B%7Ds%3A9%3A%22%7ESORT_BY1%22%3Bs%3A4%3A%22SORT%22%3Bs%3A9%3A%22%7ESORT_BY2%22%3Bs%3A2%3A%22ID%22%3Bs%3A12%3A%22%7ESORT_ORDER1%22%3Bs%3A3%3A%22ASC%22%3Bs%3A12%3A%22%7ESORT_ORDER2%22%3Bs%3A3%3A%22ASC%22%3Bs%3A6%3A%22%7ETITLE%22%3Bs%3A25%3A%22%D0%9D%D0%B0%D1%88%D0%B8+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%22%3Bs%3A19%3A%22%7ECOMPONENT_TEMPLATE%22%3Bs%3A6%3A%22slider%22%3Bs%3A11%3A%22%7ESECTION_ID%22%3Bs%3A0%3A%22%22%3Bs%3A13%3A%22%7ESECTION_CODE%22%3Bs%3A0%3A%22%22%3Bs%3A11%3A%22%7EFIELD_CODE%22%3Ba%3A4%3A%7Bi%3A0%3Bs%3A4%3A%22NAME%22%3Bi%3A1%3Bs%3A15%3A%22PREVIEW_PICTURE%22%3Bi%3A2%3Bs%3A14%3A%22DETAIL_PICTURE%22%3Bi%3A3%3Bs%3A0%3A%22%22%3B%7Ds%3A16%3A%22%7ES_ORDER_PRODUCT%22%3Bs%3A16%3A%22%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%22%3Bs%3A15%3A%22%7ES_MORE_PRODUCT%22%3Bs%3A18%3A%22%D0%9F%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%22%3Bs%3A25%3A%22%7EELEMENTS_TABLE_TYPE_VIEW%22%3Bs%3A11%3A%22FROM_MODULE%22%3Bs%3A13%3A%22%7ESHOW_SECTION%22%3Bs%3A1%3A%22Y%22%3Bs%3A14%3A%22%7ECOUNT_IN_LINE%22%3Bs%3A1%3A%224%22%3Bs%3A10%3A%22ORDER_VIEW%22%3Bb%3A1%3Bs%3A20%3A%22DISPLAY_BOTTOM_PAGER%22%3Bs%3A1%3A%22N%22%3Bs%3A17%3A%22DISPLAY_TOP_PAGER%22%3Bs%3A1%3A%22N%22%3Bs%3A9%3A%22PROP_CODE%22%3Bs%3A3%3A%22HIT%22%3Bs%3A9%3A%22SET_TITLE%22%3Bs%3A1%3A%22N%22%3B%7D')
+					.tabs_ajax
+						.body-block
+							.row.margin0
+								.item-block.active.opacity1(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A10%3A%22%D0%90%D0%BA%D1%86%D0%B8%D1%8F%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+									// 'start_frame_cache_iJBuqa'
+									.row.margin0
+										.catalog.item-views.table.front
+											.flexslider.unstyled.row.dark-nav2(data-plugin-options='{"animation": "slide", "directionNav": true, "customDirection": ".catalog .nav-direction a", "controlNav" :true, "animationLoop": true, "slideshow": false, "itemMargin": 0, "counts": [4, 2, 2, 2]}')
+												ul.slides(itemscope='' itemtype='http://schema.org/ItemList')
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_214.item(data-item='{"IBLOCK_ID":"41","ID":"214","NAME":"\u0410\u0432\u0442\u043e\u043a\u0440\u0430\u043d XCMG QAY 500","DETAIL_PAGE_URL":"\/product\/arenda-tekhniki\/krany\/avtokran-xcmg-qay-500\/","PREVIEW_PICTURE":null,"DETAIL_PICTURE":null,"PROPERTY_FILTER_PRICE_VALUE":"8000","PROPERTY_PRICE_VALUE":"\u043e\u0442 8 000 \u0440.\/\u0441\u043c\u0435\u043d\u0430","PROPERTY_PRICEOLD_VALUE":"\u043e\u0442 10 000 \u0440.\/\u0441\u043c\u0435\u043d\u0430","PROPERTY_ARTICLE_VALUE":"123123123","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='0')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/arenda-tekhniki/krany/avtokran-xcmg-qay-500/index.html')
+																		img.img-responsive(src='bitrix/templates/aspro-allcorp2/images/noimage_product.png' alt='Автокран XCMG QAY 500' title='Автокран XCMG QAY 500' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/arenda-tekhniki/krany/avtokran-xcmg-qay-500/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Автокран XCMG
+																					| QAY 500
+																		.section_name Автокраны
+																		span.status-icon.instock(itemprop='description') В наличии
+																		span.article(itemprop='description')
+																			| Арт. 
+																			span 123123123
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						| от 8 000 
+																						span.currency р.
+																						| /смена
+																				.price_old
+																					span.price_val от 10 000 р./смена
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_238.item(data-item='{"IBLOCK_ID":"41","ID":"238","NAME":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043f\u0435\u0447\u044c Nyman 2000","DETAIL_PAGE_URL":"\/product\/stroymaterialy\/pechi-kaminy-dymokhody\/elektricheskaya-pech-nyman-2000\/","PREVIEW_PICTURE":null,"DETAIL_PICTURE":null,"PROPERTY_FILTER_PRICE_VALUE":"19600","PROPERTY_PRICE_VALUE":"19 600 \u0440.","PROPERTY_PRICEOLD_VALUE":"22 000 \u0440.","PROPERTY_ARTICLE_VALUE":"5467908","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='1')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/stroymaterialy/pechi-kaminy-dymokhody/elektricheskaya-pech-nyman-2000/index.html')
+																		img.img-responsive(src='bitrix/templates/aspro-allcorp2/images/noimage_product.png' alt='Электрическая печь Nyman 2000' title='Электрическая печь Nyman 2000' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/stroymaterialy/pechi-kaminy-dymokhody/elektricheskaya-pech-nyman-2000/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Электрическая
+																					| печь Nyman 2000
+																		.section_name Печи, камины, дымоходы
+																		span.status-icon.instock(itemprop='description') В наличии
+																		span.article(itemprop='description')
+																			| Арт. 
+																			span 5467908
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						span 19 600 
+																						span.currency р.
+																				.price_old
+																					span.price_val 22 000 р.
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_245.item(data-item='{"IBLOCK_ID":"41","ID":"245","NAME":"\u041f\u043e\u043c\u043f\u0430 \u0434\u0440\u0435\u043d\u0430\u0436\u043d\u0430\u044f SAUERMANN","DETAIL_PAGE_URL":"\/product\/sistemy-ventilyatsii1\/komplektuyushchie\/pompa-drenazhnaya-sauermann\/","PREVIEW_PICTURE":"485","DETAIL_PICTURE":"486","PROPERTY_FILTER_PRICE_VALUE":"2750","PROPERTY_PRICE_VALUE":"2 750 \u0440.","PROPERTY_PRICEOLD_VALUE":"3 000 \u0440.","PROPERTY_ARTICLE_VALUE":"234151","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='2')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/sistemy-ventilyatsii1/komplektuyushchie/pompa-drenazhnaya-sauermann/index.html')
+																		img.img-responsive(src='upload/resize_cache/iblock/e03/400_200_0/e035258fe23c0214c4322698d1f74eb8.jpg' alt='Помпа дренажная SAUERMANN' title='Помпа дренажная SAUERMANN' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/sistemy-ventilyatsii1/komplektuyushchie/pompa-drenazhnaya-sauermann/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Помпа
+																					| дренажная SAUERMANN
+																		.section_name Комплектующие
+																		span.status-icon.instock(itemprop='description') В наличии
+																		span.article(itemprop='description')
+																			| Арт. 
+																			span 234151
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						span 2 750 
+																						span.currency р.
+																				.price_old
+																					span.price_val 3 000 р.
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_274.item(data-item='{"IBLOCK_ID":"41","ID":"274","NAME":"\u0410\u043f\u043f\u0430\u0440\u0430\u0442 \u0434\u043b\u044f \u043b\u0430\u0437\u0435\u0440\u043d\u043e\u0439 \u044d\u043f\u0438\u043b\u044f\u0446\u0438\u0438 Cynosure Apogee+","DETAIL_PAGE_URL":"\/product\/meditsinskoe-oborudovanie\/kosmetologiya\/apparat-dlya-lazernoy-epilyatsii-cynosure-apogee\/","PREVIEW_PICTURE":"528","DETAIL_PICTURE":"529","PROPERTY_FILTER_PRICE_VALUE":"1260000","PROPERTY_PRICE_VALUE":"1 260 000 \u0440.","PROPERTY_PRICEOLD_VALUE":"1 390 900 \u0440.","PROPERTY_ARTICLE_VALUE":"","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='3')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/meditsinskoe-oborudovanie/kosmetologiya/apparat-dlya-lazernoy-epilyatsii-cynosure-apogee/index.html')
+																		img.img-responsive(src='upload/resize_cache/iblock/fd0/400_200_0/fd0647b0f31ca45e1e52d3626f533be1.png' alt='Аппарат для лазерной эпиляции Cynosure Apogee+' title='Аппарат для лазерной эпиляции Cynosure Apogee+' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/meditsinskoe-oborudovanie/kosmetologiya/apparat-dlya-lazernoy-epilyatsii-cynosure-apogee/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Аппарат для
+																					| лазерной эпиляции Cynosure Apogee+
+																		.section_name Косметология
+																		span.status-icon.instock(itemprop='description') В наличии
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						span 1 260 000 
+																						span.currency р.
+																				.price_old
+																					span.price_val 1 390 900 р.
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+									// 'end_frame_cache_iJBuqa'
+								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A22%3A%22%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D0%BC%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A14%3A%22%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22%D0%A5%D0%B8%D1%82%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+	+sProject
+	+sStat
+	.drag-block.container.COMPANY_INDEX(data-class='COMPANY_INDEX_drag' data-order='11')
+		.maxwidth-theme.company-front.flexbox
+			// 'start_frame_cache_company-front-block1'
+			.row
+				.col-md-8.col-sm-12.col-xs-12
+					br
+					br
+					h3 О компании в Челябинске
+					p
+						| ООО "Компания" — учрежденное одним или несколькими юридическими или физическими лицами хозяйственное
+						| общество. Участники общества не отвечают по его обязательствам и несут риск убытков, в пределах
+						| стоимости принадлежащих им долей в уставном капитале общества.
+					p
+						| Общество с ограниченной ответственностью наряду с иными видами хозяйственных обществ.
+				.col-md-4.hidden-xs.hidden-sm
+					img(alt='person' src='img/@2x/about-img.png' title='person')
+				br
+				// 'end_frame_cache_company-front-block1'
+	.drag-block.container.NEWS_INDEX(data-class='NEWS_INDEX_drag' data-order='5')
+		.maxwidth-theme
+			.news_block.item-views.table-elements.blocks
+				.title_block
+					a.right_link_block(href='info/news/index.html') Все новости
+					h3 Новости
+				.items.row.flexbox
+					.col-md-3.col-sm-6.col-xs-6
+						#bx_651765591_34195.item
+							.img.image.shine
+								a(href='info/news/ostorozhno-covid-19/index.html')
+									img(src='upload/iblock/97e/97e4a8d6bfe3811df9cd087c190f1635.jpg' alt='Осторожно COVID-19')
+							.date 16 марта 2020
+							.info
+								a.name.dark_link(href='info/news/ostorozhno-covid-19/index.html')
+									| Осторожно
+									| COVID-19
+					.col-md-3.col-sm-6.col-xs-6
+						#bx_651765591_34194.item
+							.img.image.shine
+								a(href='info/news/s-nastupayushchim-novym-godom-i-rozhdestvom/index.html')
+									img(src='upload/iblock/4ed/4ed62490b3397a8558b099aedfed6c99.jpg' alt='С наступающим Новым Годом и Рождеством!')
+							.date 27 декабря 2019
+							.info
+								a.name.dark_link(href='info/news/s-nastupayushchim-novym-godom-i-rozhdestvom/index.html')
+									| С наступающим Новым
+									| Годом и Рождеством!
+					.col-md-3.col-sm-6.col-xs-6
+						#bx_651765591_34193.item
+							.img.image.shine
+								a(href='info/news/s-dnem-narodnogo-edinstva-2019/index.html')
+									img(src='upload/iblock/8a8/8a86ebab606393e09a6881a405b9780a.jpg' alt='С Днем народного единства!')
+							.date 1 ноября 2019
+							.info
+								a.name.dark_link(href='info/news/s-dnem-narodnogo-edinstva-2019/index.html')
+									| С Днем
+									| народного единства!
+					.col-md-3.col-sm-6.col-xs-6
+						#bx_651765591_34192.item
+							.img.image.shine
+								a(href='info/news/s-dnem-mashinostroitelya/index.html')
+									img(src='upload/iblock/f4f/f4f2b91cd2a5e2478d78026b6578b7f4.jpg' alt='С Днем Машиностроителя!')
+							.date 27 сентября 2019
+							.info
+								a.name.dark_link(href='info/news/s-dnem-mashinostroitelya/index.html')
+									| С Днем
+									| Машиностроителя!
+	.drag-block.container.MAP_INDEX(data-class='MAP_INDEX_drag' data-order='13')
+		// 'start_frame_cache_front-contacts-map'
+		script.
+			var geo_result;
+			var clusterer;
+			var markerSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="46" height="57" viewBox="0 0 46 57">'
+			+ '<defs><style>.cls-marker, .cls-marker3 {fill: #fff;}.cls-marker, .cls-marker2 {fill-rule: evenodd;}.cls-marker {opacity: 0.5;}.cls-marker2 {fill: #247ee3;}</style></defs>'
+			+ '<path data-name="Ellipse 275 copy" class="cls-marker" d="M142.976,200.433L143,200.469s-7.05,5.826-10,10.375c-2.263,3.489-2.974,6.153-5,6.156s-2.737-2.667-5-6.156c-2.95-4.549-10-10.375-10-10.375l0.024-.036A23,23,0,1,1,142.976,200.433Z" transform="translate(-105 -160)"/>'
+			+ '<path data-name="Ellipse 253 copy 4" class="cls-marker2" d="M140,198.971L140,199s-6.362,5.91-8.092,8.456C128.351,212.69,128,215,128,215s-0.307-2.084-3.826-7.448C121.8,203.935,116,199,116,199l0-.029A20,20,0,1,1,140,198.971Z" transform="translate(-105 -160)"/>'
+			+ '<circle data-name="Ellipse 254 copy 5" class="cls-marker3" cx="23" cy="23" r="12"/>'
+			+ '</svg>';
+			var clusterSVG = '<div class="cluster_custom"><span>$[properties.geoObjects.length]</span>'
+			+ '<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">'
+			+ '<defs><style>.cls-cluster, .cls-cluster3 {fill: #fff;}.cls-cluster {opacity: 0.5;}.cls-cluster2 {fill: #247ee3;}</style></defs>'
+			+ '<circle class="cls-cluster" cx="28" cy="28" r="28"/>'
+			+ '<circle data-name="Ellipse 275 copy 2" class="cls-cluster2" cx="28" cy="28" r="25"/>'
+			+ '<circle data-name="Ellipse 276 copy" class="cls-cluster3" cx="28" cy="28" r="18"/>'
+			+ '</svg>'
+			+ '</div>';
+			// var closeSVG = '<svg class="svg-close" width="14" height="14" viewBox="0 0 14 14">'
+			// 					+'<path data-name="Rounded Rectangle 568 copy 16" class="cls-1" d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z" transform="translate(-1001 -946)"></path>'
+			// 				+'</svg>';
+			function BX_SetPlacemarks_MAP_mF8Ev4(map) {
+			if (typeof window["BX_YMapAddPlacemark"] != 'function') {
+			/* If component's result was cached as html,
+			* script.js will not been loaded next time.
+			* let's do it manualy.
+			*/
+			(function (d, s, id) {
+			var js, bx_ym = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "bitrix/templates/aspro-allcorp2/components/bitrix/map.yandex.view/front_map/script.js";
+			bx_ym.parentNode.insertBefore(js, bx_ym);
+			}(document, 'script', 'bx-ya-map-js'));
+			var ymWaitIntervalId = setInterval(function () {
+			if (typeof window["BX_YMapAddPlacemark"] == 'function') {
+			BX_SetPlacemarks_MAP_mF8Ev4(map);
+			clearInterval(ymWaitIntervalId);
+			}
+			}, 300
+			);
+			return;
+			}
+			var arObjects = { PLACEMARKS: [], POLYLINES: [] };
+			clusterer = new ymaps.Clusterer();
+			arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, { 'LON': '37.612693337019', 'LAT': '55.727562544985', 'TEXT': 'Company' });
+			/* set dynamic zoom for ballons */
+			// map.setBounds(map.geoObjects.getBounds(), {checkZoomRange: true});
+			// map.geoObjects.events.add('click', function (e) {
+			// 	setTimeout(function(){
+			// 		$('.ymaps-b-balloon .ymaps-b-balloon__close').addClass('close_custom').html(closeSVG);
+			// 	}, 100);
+			// });
+			$('.block_container .items .item').addClass('initied');
+			}
+			$(document).ready(function () {
+			$('.contacts-stores .item .top-wrap .show_on_map>span[data-coordinates]').on('click', function () {
+			var arCoordinates = $(this).data('coordinates').split(','),
+			mapOffsetTop = $('.contacts-page-map').offset().top;
+			$('html, body').animate({ scrollTop: mapOffsetTop - (isMobile ? 20 : 180) }, 300);
+			map.setCenter([arCoordinates[0], arCoordinates[1]], '14');
+			});
+			$('.stores-list1 .item .top-wrap .show_on_map>span[data-coordinates]').on('click', function () {
+			var arCoordinates = $(this).data('coordinates').split(','),
+			mapOffsetTop = $('.contacts_map').offset().top;
+			$('html, body').animate({ scrollTop: mapOffsetTop - (isMobile ? 20 : 180) }, 300);
+			map.setCenter([arCoordinates[0], arCoordinates[1]], '17');
+			});
+			});
+		// карта
+		//
+			<div class="bx-yandex-view-layout front_map swipeignore">
+			<div class="maxwidth-theme">
+			<div class="pane_info_wrapper">
+			<div class="pane_info">
+			<div class="title_block">
+			<div class="title">Наши контакты</div>
+			</div>
+			<div class="info_block">
+			<div class="value-block address">
+			<div>
+			<i class="svg inline  svg-inline-address colored" aria-hidden="true"><svg
+			xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16">
+			<defs>
+			<style>
+			.cls-1 {
+			fill-rule: evenodd;
+			}
+			</style>
+			</defs>
+			<path data-name="Ellipse 74 copy" class="cls-1"
+			d="M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z"
+			transform="translate(-752 -33)" />
+			</svg>
+			</i> Москва, ул. Пушкина 21, 3 этаж, офис 41
+			</div>
+			</div>
+			<div class="phones">
+			<div class="phone big">
+			<i class="svg inline  svg-inline-phone colored" aria-hidden="true"><svg
+			xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+			<defs>
+			<style>
+			.pcls-1 {
+			fill: #222;
+			fill-rule: evenodd;
+			}
+			</style>
+			</defs>
+			<path class="pcls-1"
+			d="M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z" />
+			</svg>
+			</i>
+			<a href="tel:+73510000000">+7 (351) 000-00-00</a>
+			</div>
+			<div class="schedule">
+			Пн. – Пт.: с 9:00 до 18:00 </div>
+			</div>
+			<div class="value-block email">
+			<div>
+			<i class="svg inline  svg-inline-address colored" aria-hidden="true"><svg
+			xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+			<defs>
+			<style>
+			.ecls-1 {
+			fill: #222;
+			fill-rule: evenodd;
+			}
+			</style>
+			</defs>
+			<path class="ecls-1"
+			d="M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z" />
+			</svg>
+			</i>
+			<div>
+			<a href="mailto:info@promspecstal.ru">info@promspecstal.ru</a> </div>
+			</div>
+			</div>
+			<div class="btn-block">
+			<span class="ask-block animate-load colored  btn-transparent-bg btn-default btn"
+			data-event="jqm" data-param-id="26" data-name="ask">Задать вопрос</span>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="bx-yandex-view-map">
+			<script>
+			var script = document.createElement('script');
+			script.src = 'http://api-maps.yandex.ru/2.0/?load=package.full&amp;mode=release&amp;lang=ru-RU&amp;wizard=bitrix';
+			(document.head || document.documentElement).appendChild(script);
+			script.onload = function () {
+			this.parentNode.removeChild(script);
+			};
+			</script>
+			<script>
+			if (!window.GLOBAL_arMapObjects)
+			window.GLOBAL_arMapObjects = {};
+			var map;
+			var animateFunctionexists = false;
+			var markerSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="44" height="55" viewBox="0 0 44 55">'
+			+ '<defs><style>.mcls-1,.mcls-3{fill:#fff;}.mcls-1,.mcls-2{fill-rule:evenodd;}.mcls-2{opacity: 0.75;fill:#fff;}.mcls-1{fill: #ff6307;}</style></defs>'
+			+ '<path class="mcls-2" d="M44,23.051c0,15.949-22,31.938-22,31.938S0.009,39,.009,23.051c0-.147.019-0.29,0.022-0.436C0.025,22.409,0,22.208,0,22A22,22,0,0,1,19.627.132,19.174,19.174,0,0,1,24.5.152,22,22,0,0,1,44,22c0,0.172-.022.338-0.026,0.509S44,22.869,44,23.051Z"/><path id="Shape-2" data-name="Shape" class="mcls-1" d="M42,23.393c0,13.424-20,29.6-20,29.6s-20-16.174-20-29.6c0-.209.024-0.414,0.03-0.623C2.029,22.513,2,22.26,2,22a20,20,0,0,1,40,0c0,0.227-.026.448-0.034,0.673C41.974,22.914,42,23.151,42,23.393Z"/><circle id="Shape-3" data-name="Shape" class="mcls-3" cx="22" cy="22" r="11"/>'
+			+ '</svg>';
+			function init_MAP_mF8Ev4() {
+			if (!window.ymaps)
+			return;
+			/*if(typeof window.GLOBAL_arMapObjects['MAP_mF8Ev4'] !== "undefined")
+			return;*/
+			var node = BX("BX_YMAP_MAP_mF8Ev4");
+			node.innerHTML = '';
+			map = window.GLOBAL_arMapObjects['MAP_mF8Ev4'] = new ymaps.Map(node, {
+			center: [55.728942975401, 37.61089089256],
+			zoom: 14,
+			type: 'yandex#map',
+			// adjustZoomOnTypeChange: true
+			});
+			/*map.geoObjects.events.add('balloonclose', function (e){
+			setTimeout(function(){
+			$('.ymaps-image-with-content').each(function(){
+			if(!$(this).find('.marker').length){
+			$(this).prepend('<div class="marker">'+markerSVG+'</div>');
+			}
+			});
+			}, 20);
+			});
+			map.events.add('boundschange', function (e) {
+			//$('.ymaps-image-with-content .marker').remove();
+			setTimeout(function(){
+			$('.ymaps-image-with-content').each(function(){
+			if(!$(this).find('.marker').length){
+			$(this).prepend('<div class="marker">'+markerSVG+'</div>');
+			}
+			});
+			}, 300);
+			});*/
+			if (map.behaviors.isEnabled("scrollZoom"))
+			map.behaviors.disable("scrollZoom");
+			map.behaviors.enable("dblClickZoom");
+			map.behaviors.enable("drag");
+			if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
+			map.behaviors.disable("rightMouseButtonMagnifier");
+			if (window.BX_SetPlacemarks_MAP_mF8Ev4) {
+			window.BX_SetPlacemarks_MAP_mF8Ev4(map);
+			}
+			}
+			(function bx_ymaps_waiter() {
+			setTimeout(function () {
+			/*if(!('.ymaps-default-cluster').length)
+			{*/
+			/*$('.ymaps-image-with-content').each(function(){
+			if(!$(this).find('.marker').length){
+			$(this).prepend('<div class="marker">'+markerSVG+'</div>');
+			}
+			});*/
+			//}
+			}, 1500);
+			if (typeof ymaps !== 'undefined')
+			ymaps.ready(init_MAP_mF8Ev4);
+			else
+			setTimeout(bx_ymaps_waiter, 100);
+			})();
+			/* if map inits in hidden block (display:none)
+			*  after the block showed
+			*  for properly showing map this function must be called
+			*/
+			function BXMapYandexAfterShow(mapId) {
+			if (window.GLOBAL_arMapObjects[mapId] !== undefined)
+			window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
+			}
+			</script>
+			<div id="BX_YMAP_MAP_mF8Ev4" class="bx-yandex-map" style="height: 500px; width: 100%;">загрузка карты...
+			</div>
+			</div>
+			</div>
+		// 'end_frame_cache_front-contacts-map'
+
+

@@ -1,0 +1,49 @@
+mixin sProject(data)
+	// start sProject
+	+b.sProject.drag-block.container
+		.maxwidth-theme
+			+e.inner.bg-light
+				+e.row.row.justify-content-between
+					.col-lg-10
+						.section-title
+							h2 Реализованые проекты
+					.col-lg-2
+						+e.allProject(href="#") Все услуги
+				.row
+					.col-lg-3
+						p
+							strong Специализируемся на услугах для малого и среднего бизнеса. Работаем с физическими и юридическими лицами.
+						p 10 лет на рынке проектирования, консалтинга и крупных поставок промышленного оборудования.
+						+e.btn.btn.btn-default.btn-lg.btn-transparent-bg.animate-load(href='#') Подробнее
+					.col-lg-9
+						mixin item(i,t)
+							+e.item(href="#")
+								+pic(`project-${i}.jpg`,'bg')(class="picture-bg")
+								+e.text= t
+						+e.itemRow.row
+							.col-md-6
+								+item('1','Английский язык для бизнеса')
+							.col-md-6
+								+e.itemRow.row
+									.col-sm-6
+										+item('1','Монтаж сайдинга')
+									.col-sm-6
+										+item('1','Охранные системы')
+							.col-md-6
+								+e.itemRow.row
+									.col-sm-6
+										+item('1','Сварочные работы')
+									.col-sm-6
+										+item('1','POS-системы')
+							.col-md-6
+								+item('1','Дизайн интерьеров')
+
+
+
+
+
+
+
+
+
+	// end sProject

@@ -1,0 +1,12 @@
+.detail.staff .bottom-props{padding:6px 11px;font-size:0px;}
+.detail.staff .bottom-props > a{width:28px;height:28px;border-radius:100%;margin:0px 5px 10px;background:#dedede;line-height:35px;font-size:15px;display:inline-block;vertical-align:top;transition:background ease 0.3s;color:#fff;font-size: 0px;overflow: hidden;}
+.detail.staff .bottom-props > a:before{content:"";display:block;background:url(../../../../images/svg/social/icons_contacts.svg) 0px 0px no-repeat;width:100%;height:38px;}
+.detail.staff .bottom-props > a.social_vk:before{background-position:-32px -5px;}
+.detail.staff .bottom-props > a.social_odn:before{background-position:-61px -34px;}
+.detail.staff .bottom-props > a.social_fb:before{background-position:-61px -5px;}
+.detail.staff .bottom-props > a.social_mail:before{background-position:-172px -33px;}
+.detail.staff .bottom-props > a.social_tw:before{background-position:-88px -5px;}
+.detail.staff .bottom-props > a.social_skype:before{background-position:-173px -5px;}
+.detail.staff .bottom-props > a.social_inst:before{background-position:-117px -5px;}
+.detail.staff .bottom-props > a.social_google:before{background-position:-34px -34px;}
+.detail.staff .bottom-props > a.social_bitrix:before{background-position:-4px -32px;}

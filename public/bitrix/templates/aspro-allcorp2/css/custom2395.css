@@ -1,0 +1,235 @@
+body.header_nopacity header .logo_and_menu-row {
+    z-index: 1;
+}
+.mixed_banners>.row>div.big_banners_block {
+    width: 100%;
+}
+.small_banners_block {
+    display: none!important;
+}
+.new_callback-link {
+    margin: 0!important;
+}
+
+div.phone.big.alt-phone > i {
+    float: none!important;
+}
+.new_callback-link{
+    padding-left: 22px;
+}
+.new_callback-phone {
+    padding-left: 35px;
+}
+.logo_and_menu-row .inner-table-block i+div {
+    padding-left: 5px;
+}
+div.phone.big.alt-phone > i > svg {
+    margin-top: 2px;
+}
+.inner-table-block_email{
+    color: #222;
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 1.5em;
+    display: inline-block;
+}
+.block-phone-alt .schedule {
+    font-size: 13px;
+}
+.main-head-block {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.block-search {
+    flex-basis: 40%;
+}
+.contacts-on-main {
+    display: flex;
+    margin-left: auto;
+}
+.block-email-alt, .block-phone-alt{
+    padding-right: 60px;
+}
+.block-cabinet {
+    flex-basis: 10%;
+}
+.block-phone-region-main {
+    display: flex;
+    align-items: center;
+}
+.alt-region {
+    margin-left: 25px;
+}
+.phone-region-alt {
+    padding-left: 25px;
+}
+.padding-banner-block {
+    padding-top: 0px;
+}
+#app {
+    width: 900px!important;
+}
+header > div.line-row:before{
+    display: none;
+}
+.alt-phone, .inner-table-block_email{
+    text-align: right;
+}
+.alt-phone a, #bx_incl_area_7 > a{
+    color: #303030!important;
+    border-bottom: 2px solid #007ab8!important;
+    padding-bottom: 1px!important;
+}
+.inner-table-block_email{
+    color: #303030!important;
+    border-bottom: 2px solid #007ab8!important;
+    padding-bottom: 1px!important;
+}
+.inner-table-block_email a {
+    color: #222;
+}
+.search-wrapper {
+    width: 486px;
+}
+bx_incl_area_12 {
+    min-height: unset;
+}
+.inner-table-block {
+    vertical-align: unset;
+}
+.logo_and_menu-row .search-wrapper {
+    vertical-align: unset;
+    height: 40px;
+}
+.logo_and_menu-row .search-block {
+    height: 0px;
+}
+.logo_and_menu-row .inner-table-block {
+    height: 0px;
+    text-align: right;
+}
+.right-menu-block{
+    vertical-align: middle;
+}
+.right-main-menu-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu-row.with-color .wrap_icon .personal-link {
+    padding: 0px;
+}
+.sidebar-fixed {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.drag-block.container {
+    border-top: none;
+}
+header.with_regions .address {
+    max-width: 220px;
+    font-size: 13px;
+}
+header.with_regions .address .name {
+    margin-bottom: 15px;
+    display: block;
+}
+.address .address-block .svg {
+    display: none;
+}
+.address .schedule {
+    margin: 15px 0 5px;
+}
+.address .email {
+    display: block;
+    margin-top: 15px;
+}
+.address .email.blocks {
+    margin-top: 5px;
+}
+.address .svg-inline-email+div {
+    display: inline-block;
+}
+header.with_regions .address .phone.big a, .address .email.blocks a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+}
+header.with_regions .address .phone.big .svg.colored svg path {
+    fill: #222;
+}
+.block-email-alt .svg, .block-phone-alt .svg {
+    display: none;
+}
+.mega-menu table td .wrap > a {
+    padding: 0px 7px 0px;
+    font-size: 0.9em;
+}
+@media screen and (max-width: 1340px)
+{
+    .block-search {
+        flex-basis: 40%;
+    }
+    .block-email-alt, .block-phone-alt, .block-phone-region {
+        flex-basis: unset;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+
+    .block-search {
+        flex-basis: 40%;
+        padding-right: 10px;
+    }
+
+    .block-email-alt, .block-phone-alt, .block-phone-region {
+        flex-basis: unset;
+    }
+
+}
+@media screen and (max-width: 1200px)
+{
+    .block-search {
+        flex-basis: 50%;
+    }
+
+    .block-email-alt, .block-phone-alt, .block-phone-region{
+        flex-basis: unset;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 1149px){
+    .block-search {
+        flex-basis: 43%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .main-head-block{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .block-search {
+        flex-basis: 100%;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .logo_and_menu-row .search-wrapper {
+        display: block;
+    }
+    .search-wrapper{
+        width: 100%;
+    }
+    .with_regions .logo_and_menu-row .search-block {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .contacts-on-main {
+        margin-bottom: 10px;
+    }
+
+}

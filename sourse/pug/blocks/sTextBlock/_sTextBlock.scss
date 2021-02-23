@@ -1,0 +1,17 @@
+// start .sTextBlock
+.sTextBlock {
+	--sPT: 15px;
+	--sPB: 15px;
+	// --sTPB: ;
+
+	&__inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sTextBlock

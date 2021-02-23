@@ -1,0 +1,48 @@
+mixin sStat(data)
+	// start sStat
+	+b.SECTION.sStat.drag-block.container.section#sStat&attributes(attributes)
+		.maxwidth-theme
+			+e.inne
+				h2 Статистика компании
+					
+				.row
+					mixin item(title)
+						.col-xs-12.col-sm-6.col-md-4
+							+e.item
+								h3= title
+								block
+					+item('Государственные закупки')
+						+e.type 44-ФЗ
+						ul
+							li 230 закупок
+							li 54 контракта
+					+item('Закупки госкорпораций')
+						+e.type 223-ФЗ
+						ul
+							li 430 закупок
+							li 116 контрактов
+					+item('Арбитражные дела')
+						+e.line 
+							div Истец: #[span 40] дел (23 млн руб.)
+						+e.line 
+							div Ответчик: #[span 10] дел (4,3 млн руб.)
+					+item('Контракты')
+						+e.groupHead Исполнение
+						+e.groupFoot Исполнение — 87 (70,99 млн руб.)
+						+e.groupHead Исполнение прекращено
+						+e.groupFoot Исполнение прекращено — 3 (6,02 млн руб.)
+						+e.groupHead Исполнение завершено
+						+e.groupFoot Исполнение завершено — 80 (59,42 млн руб.)
+					+item('Закупки')
+						+e.groupHead Отмененная закупка
+						+e.groupFoot Отменённая закупка — 6 (2,63 млн руб.)
+						+e.groupHead Завершенная закупка
+						+e.groupFoot Завершенная закупка — 654 (892,02 млн руб.)
+					+item('Госконтракты')
+						+e.line 
+							dib Нет размещенных контрактов
+						+e.line
+							+e.line-head 172
+							div
+								span 174 выигранных (138 млн руб.)
+	// end sStat

@@ -1,0 +1,26 @@
+body .maxwidth-theme, body.fill_bg_y.visible_banner .contacts-page-map, body.fill_bg_y.visible_banner .banners-big .maxwidth-banner, body.fill_bg_y.visible_banner > .body > .main,
+body.fill_bg_y.visible_banner footer, .banners-big.short-banner.small .maxwidth-banner, .fill_bg_y.visible_banner header .line-row{ max-width: 1516px; }
+body.fill_bg_y.visible_banner .banner.TOP_HEADER, body.fill_bg_y.visible_banner .banner.TOP_UNDERHEADER{max-width: 1516px;}
+.body .main > .container.with_error > .row > .content-md > .page404{max-width: 1436px;margin:auto;}
+.contacts-page-map + .contacts.contacts-page-map-overlay{max-width: 1468px;}
+body .logo-row .logo{max-width:182px;}
+
+@media (min-width: 1300px){
+	/*tizers front*/
+	body .banners-small .item.wide-block .image{max-height:479px;}
+
+	.detail .gallery-block .bigs.flexslider .slides .item{height:728px;line-height:725px;}
+	
+	/*tarifs*/
+	.tarifs .items_view td{width:225px;min-width:225px;}
+	.tarifs .data_table_props.items_view td:first-child{width:195px;min-width:195px;max-width:195px;}
+}
+@media all and (max-width: 1600px){
+	body .banners-big .flexslider .nav-carousel .flex-direction-nav{overflow:hidden;}
+	body .banners-big .flexslider:hover .nav-carousel .flex-direction-nav li.flex-nav-prev{left:0px;}
+	body .banners-big .flexslider:hover .nav-carousel .flex-direction-nav li.flex-nav-next{right:0px;}
+}
+
+@media (min-width: 768px) and (max-width: 1500px){
+	.contacts-page-map + .contacts.contacts-page-map-overlay{padding-left:0px;padding-right:0px;margin-left:53px;margin-right:53px;}
+}

@@ -1,0 +1,74 @@
+mixin sCatalog(data)
+	// start sCatalog
+	+b.sCatalog.drag-block.container.section&attributes(attributes)
+		.maxwidth-theme
+			+e.inner
+				.section-title
+					a.h3(href="#")= data.title
+				if data.sm
+					.row
+						mixin item(i,t)
+							.col-xs-6.col-md-3
+								+e.item(href="#")
+									+e.link
+										+pic(`catalog-${i}.jpg`,'','')
+									+e.info
+										+e.title= t
+						+item('1','Абразивная резка')
+						+item('2','Газовая резка')
+						+item('3','Гибка метала')
+						+item('4','Гидроабразивная резка')
+				else
+					.row
+						mixin item(i,t)
+							.col-xs-6.col-md-3
+								+e.item
+									+e.link(href="#")
+										+pic(`catalog-${i}.jpg`,'','')
+									+e.info.accardion-head-js
+										+e.title= t
+										+e.iconWrap
+											+icon('chevron-down')
+										+e.list.accardion-content-js(style="display: none")
+											ul
+												li: a(href="#") Лист нержавеющий рифленый
+												li: a(href="#") Нержавеющая дробь
+												li: a(href="#") Нержавеющая капиллярная трубка
+												li: a(href="#") Нержавеющая лента
+												li: a(href="#") Нержавеющая плита
+												li: a(href="#") Нержавеющая поковка
+												li: a(href="#") Нержавеющая полоса
+												li: a(href="#") Нержавеющая проволока
+												li: a(href="#") Нержавеющая просечно-вытяжная сетка
+												li: a(href="#") Нержавеющая сварочная лента
+												li: a(href="#") Нержавеющая сварочная проволока
+												li: a(href="#") Нержавеющая сетка
+												li: a(href="#") Нержавеющая трубопроводная арматура
+												li: a(href="#") Нержавеющие трапы
+												li: a(href="#") Нержавеющие трубы
+												li: a(href="#") Нержавеющий квадрат
+												li: a(href="#") Нержавеющий лист
+												li: a(href="#") Нержавеющий перфорированный лист
+												li: a(href="#") Нержавеющий пруток
+												li: a(href="#") Нержавеющий рулон
+												li: a(href="#") Нержавеющий трос
+												li: a(href="#") Нержавеющий уголок
+												li: a(href="#") Нержавеющий швеллер
+												li: a(href="#") Нержавеющий шестигранник
+												li: a(href="#") Рифленая нержавеющая сетка
+												li: a(href="#") Сварочный нержавеющий пруток
+												li: a(href="#") Трубы теплодеформированные из коррозионностойкой стали
+
+						+item('1','Рениевый прокат')
+						+item('2','Никелевый прокат')
+						+item('3','Свинцовый прокат')
+						+item('4','Дюралевый прокат')
+						+item('1','Рениевый прокат')
+						+item('2','Никелевый прокат')
+						+item('3','Свинцовый прокат')
+						+item('4','Дюралевый прокат')
+						+item('1','Рениевый прокат')
+						+item('2','Никелевый прокат')
+						+item('3','Свинцовый прокат')
+						+item('4','Дюралевый прокат')
+	// end sCatalog

@@ -1,0 +1,2440 @@
+include ../../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include ../../blocks/mixin-wrap/mixin-wrap.pug
+include ../../blocks/form-wrap/form-wrap.pug
+include ../../blocks/footer/_footer.pug 
+include ../../blocks/modal/_modal.pug
+include js-css.pug
+
+include ../../blocks/header/_header.pug
+include ../../blocks/topLine/_topLine.pug
+include ../../blocks/top-nav/_top-nav.pug 
+include ../../blocks/headerBlock/_headerBlock.pug
+include ../../blocks/sForm/_sForm.pug
+
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
+	head
+		block title
+			title title
+		meta(http-equiv='content-type' content='text/html;charset=UTF-8')
+		// /Added by HTTrack
+		title Cайт производства - Главная
+		meta(name='viewport' content='initial-scale=1.0, width=device-width')
+		meta(name='HandheldFriendly' content='true')
+		meta(name='yes' content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style' content='black')
+		meta(name='SKYPE_TOOLBAR' content='SKYPE_TOOLBAR_PARSER_COMPATIBLE')
+		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+		meta(name='keywords' content='услуги москва, готовые решения, allcorp2 агентство, IT компания, разработка сайтов, продвижение сайтов, сайты на битрикс')
+		meta(name='description' content='Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.')
+		link(href='bitrix/js/main/core/css/corea891.css?16109698193963' rel='stylesheet')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500italic,700italic,400,300,500,700subset=latin,cyrillic-ext' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/components/bitrix/map.yandex.system/map/style48b8.css?1610970037600' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/bootstrapcd65.css?1610970037114216' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/fonts/font-awesome/css/font-awesome.minee15.css?161097003731000' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/vendor/flexslider/flexslider8965.css?16109700376839' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/jquery.fancybox7332.css?16109700374108' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/theme-elementsb432.css?16109700374368' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/theme-responsive9d41.css?1610970037998' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/jquery.mCustomScrollbar.mindec3.css?161097003742839' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/print9c56.css?161097003712382' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/animation/animate.minefe5.css?161097003752789' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/animation/animation_ext0e66.css?16109700374934' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/h1-normal1b88.css?1610970037213' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/.default/ajax/ajax47e4.css?1610969819448' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/width-2cf1f.css?16109700371545' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/font-101334.css?16109700372689' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/panel/main/popup59d8.css?161096982123084' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/styles2da7.css?161177063316418' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/template_stylesc3cf.css?1610970037371562' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/responsive3952.css?161224023589913' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/themes/CUSTOM_s1/colors7e43.css?161337103123144' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/bg_color/light/bgcolors4637.css?161097003762' data-template-style='true' rel='stylesheet')
+		link(href='bitrix/templates/aspro-allcorp2/css/custom2395.css?16122748354474' data-template-style='true' rel='stylesheet')
+		script.
+			if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess === 'object') { for (let i in mess) { BX.message[i] = mess[i]; } return true; } };
+		script.
+			(window.BX || top.BX).message({ 'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_WINDOW_CONTINUE': 'Продолжить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер' });
+		script(src='bitrix/js/main/core/coreabc3.js?1610969895549359')
+		script.
+			BX.setJSList(['/bitrix/js/main/core/core_ajax.js', 'bitrix/js/main/core/core_promise.js', 'bitrix/js/main/polyfill/promise/js/promise.js', 'bitrix/js/main/loadext/loadext.js', 'bitrix/js/main/loadext/extension.js', 'bitrix/js/main/polyfill/promise/js/promise.js', 'bitrix/js/main/polyfill/find/js/find.js', 'bitrix/js/main/polyfill/includes/js/includes.js', 'bitrix/js/main/polyfill/matches/js/matches.js', 'bitrix/js/ui/polyfill/closest/js/closest.html', 'bitrix/js/main/polyfill/fill/main.polyfill.fill.js', 'bitrix/js/main/polyfill/find/js/find.js', 'bitrix/js/main/polyfill/matches/js/matches.js', 'bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', 'bitrix/js/main/core/core.js', 'bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js', 'bitrix/js/main/lazyload/dist/lazyload.bundle.js', 'bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+			BX.setCSSList(['/bitrix/js/main/core/css/core.css', 'bitrix/js/main/lazyload/dist/lazyload.bundle.html', '/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+		script.
+			(window.BX || top.BX).message({ 'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '10800', 'SITE_ID': 's1', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1613494817', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': 'd3fb98eebf380f1e51f5d763f48fe93b' });
+		script(src='bitrix/cache/js/s1/aspro-allcorp2/kernel_main/kernel_main_v1a405.js?1612327873221591')
+		script(src='bitrix/js/main/jquery/jquery-2.1.3.min4d8a.js?161096982084320')
+		script(src='bitrix/js/main/ajax774e.js?161096982035509')
+		script.
+			BX.setJSList(['/bitrix/js/main/session.js', 'bitrix/js/main/pageobject/pageobject.js', 'bitrix/js/main/core/core_window.js', 'bitrix/js/main/date/main.date.js', 'bitrix/js/main/core/core_date.js', 'bitrix/js/main/utils.js', 'bitrix/js/main/core/core_fx.js', 'bitrix/templates/aspro-allcorp2/js/jquery.actual.min.js', 'bitrix/templates/aspro-allcorp2/js/jquery.fancybox.js', 'bitrix/templates/aspro-allcorp2/vendor/jquery.easing.js', 'bitrix/templates/aspro-allcorp2/vendor/jquery.appear.js', 'bitrix/templates/aspro-allcorp2/vendor/jquery.cookie.js', 'bitrix/templates/aspro-allcorp2/vendor/bootstrap.js', 'bitrix/templates/aspro-allcorp2/vendor/flexslider/jquery.flexslider.js', 'bitrix/templates/aspro-allcorp2/vendor/jquery.validate.min.js', 'bitrix/templates/aspro-allcorp2/js/jquery.uniform.min.js', 'bitrix/templates/aspro-allcorp2/js/jquery-ui.min.js', 'bitrix/templates/aspro-allcorp2/js/jqModal.js', 'bitrix/templates/aspro-allcorp2/js/detectmobilebrowser.js', 'bitrix/templates/aspro-allcorp2/js/matchMedia.js', 'bitrix/templates/aspro-allcorp2/js/jquery.waypoints.min.js', 'bitrix/templates/aspro-allcorp2/js/jquery.counterup.js', 'bitrix/templates/aspro-allcorp2/js/jquery.alphanumeric.js', 'bitrix/templates/aspro-allcorp2/js/jquery.autocomplete.js', 'bitrix/templates/aspro-allcorp2/js/jquery.mousewheel.min.js', 'bitrix/templates/aspro-allcorp2/js/jquery.mCustomScrollbar.js', 'bitrix/templates/aspro-allcorp2/js/jquery.mobile.custom.touch.min.js', 'bitrix/templates/aspro-allcorp2/js/general.js', 'bitrix/templates/aspro-allcorp2/js/scrollTabs.js', 'bitrix/templates/aspro-allcorp2/js/custom.js', 'bitrix/components/bitrix/search.title/script.js', 'bitrix/templates/aspro-allcorp2/components/bitrix/search.title/corp/script.js', 'bitrix/templates/aspro-allcorp2/components/bitrix/news.list/front-news/script.js', 'bitrix/templates/aspro-allcorp2/components/bitrix/news.list/front-catalog-slider/script.js', 'bitrix/templates/aspro-allcorp2/components/bitrix/search.title/fixed/script.js', 'bitrix/templates/aspro-allcorp2/js/jquery.inputmask.bundle.min.js', 'bitrix/templates/aspro-allcorp2/components/aspro/regionality.list.allcorp2/popup_regions/script.js', '/bitrix/templates/aspro-allcorp2/components/bitrix/map.yandex.view/front_map/script.js']);
+		script.
+			BX.message({ 'JS_REQUIRED': 'Заполните это поле!', 'JS_FORMAT': 'Неверный формат!', 'JS_FILE_EXT': 'Недопустимое расширение файла!', 'JS_PASSWORD_COPY': 'Пароли не совпадают!', 'JS_PASSWORD_LENGTH': 'Минимум 6 символов!', 'JS_ERROR': 'Неверно заполнено поле!', 'JS_FILE_SIZE': 'Максимальный размер 5мб!', 'JS_FILE_BUTTON_NAME': 'Выберите файл', 'JS_FILE_DEFAULT': 'Файл не найден', 'JS_DATE': 'Некорректная дата!', 'JS_DATETIME': 'Некорректная дата/время!', 'JS_REQUIRED_LICENSES': 'Согласитесь с условиями', 'S_CALLBACK': 'Заказать звонок', 'S_QUESTION': 'Задать вопрос', 'S_ASK_QUESTION': 'Задать вопрос', 'ERROR_INCLUDE_MODULE_DIGITAL_TITLE': 'Ошибка подключения модуля &laquo;Аспро: Digital-компания&raquo;', 'ERROR_INCLUDE_MODULE_DIGITAL_TEXT': 'Ошибка подключения модуля &laquo;Аспро: Digital-компания&raquo;.<br />Пожалуйста установите модуль и повторите попытку', 'S_SERVICES': 'Наши услуги', 'S_SERVICES_SHORT': 'Услуги', 'S_TO_ALL_SERVICES': 'Все услуги', 'S_CATALOG': 'Каталог товаров', 'S_CATALOG_SHORT': 'Каталог', 'S_TO_ALL_CATALOG': 'Весь каталог', 'S_CATALOG_FAVORITES': 'Наши товары', 'S_CATALOG_FAVORITES_SHORT': 'Товары', 'S_NEWS': 'Новости', 'S_TO_ALL_NEWS': 'Все новости', 'S_COMPANY': 'О компании', 'S_OTHER': 'Прочее', 'S_CONTENT': 'Контент', 'T_JS_ARTICLE': 'Артикул: ', 'T_JS_NAME': 'Наименование: ', 'T_JS_PRICE': 'Цена: ', 'T_JS_QUANTITY': 'Количество: ', 'T_JS_SUMM': 'Сумма: ', 'FANCY_CLOSE': 'Закрыть', 'FANCY_NEXT': 'Вперед', 'FANCY_PREV': 'Назад', 'CUSTOM_COLOR_CHOOSE': 'Выбрать', 'CUSTOM_COLOR_CANCEL': 'Отмена', 'S_MOBILE_MENU': 'Меню', 'DIGITAL_T_MENU_BACK': 'Назад', 'DIGITAL_T_MENU_CALLBACK': 'Обратная связь', 'DIGITAL_T_MENU_CONTACTS_TITLE': 'Будьте на связи', 'TITLE_BASKET': 'В корзине товаров на #SUMM#', 'BASKET_SUMM': '#SUMM#', 'EMPTY_BASKET': 'Корзина пуста', 'TITLE_BASKET_EMPTY': 'Корзина пуста', 'BASKET': 'Корзина', 'SEARCH_TITLE': 'Поиск', 'SOCIAL_TITLE': 'Оставайтесь на связи', 'LOGIN': 'Войти', 'MY_CABINET': 'Мой кабинет', 'SUBSCRIBE_TITLE': 'Будьте всегда в курсе', 'HEADER_SCHEDULE': 'Время работы', 'SEO_TEXT': 'SEO описание', 'COMPANY_IMG': 'Картинка компании', 'COMPANY_TEXT': 'Описание компании', 'JS_RECAPTCHA_ERROR': 'Пройдите проверку', 'JS_PROCESSING_ERROR': 'Согласитесь с условиями!', 'CONFIG_SAVE_SUCCESS': 'Настройки сохранены', 'CONFIG_SAVE_FAIL': 'Ошибка сохранения настроек', 'RELOAD_PAGE': 'Обновить страницу', 'REFRESH': 'Поменять картинку', 'RECAPTCHA_TEXT': 'Подтвердите, что вы не робот' })
+		link(rel='shortcut icon' href='img/favicon5b40.ico?1613371030' type='image/x-icon')
+		link(rel='apple-touch-icon' sizes='180x180' href='include/apple-touch-icon.png')
+		meta(property='og:title' content='Cайт производства - Главная')
+		meta(property='og:type' content='website')
+		meta(property='og:image' content='http://promspecstal.ru/logo.png')
+		link(rel='image_src' href='logo.png')
+		meta(property='og:url' content='http://promspecstal.ru/')
+		meta(property='og:description' content='Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.')
+		script(src='bitrix/cache/js/s1/aspro-allcorp2/template_f5ae74c9704c7a258e2b391e842116c6/template_f5ae74c9704c7a258e2b391e842116c6_v123cf.js?1612423429652206')
+		script(src='bitrix/cache/js/s1/aspro-allcorp2/default_4b081e38cecff5e5889462525a861c09/default_4b081e38cecff5e5889462525a861c09_v10445.js?16122755301924')
+		script(src='bitrix/cache/js/s1/aspro-allcorp2/default_ce0199297ac203be55079d0d7cc6e169/default_ce0199297ac203be55079d0d7cc6e169_v10988.js?16122759103485')
+		script.
+			var _ba = _ba || []; _ba.push(["aid", "78f3da67b42f8efd9424d825c2eda247"]); _ba.push(["host", "promspecstal.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();
+		+allcss()
+		block variables
+	//- style.
+	//- 	.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
+	//- body.loaded_hiding(class= mainPage) 
+	//- body(class= mainPage) 
+	//- 	.main-wrapper
+	//- 		block pagecontent
+	//- 			h3 content
+	body.front-banners-big-short_mix.header_nopacity.banner_offset.tizersPadding0.hide_menu_page.header_fill_light.side_left.all_title_2.mfixed_Y.mfixed_view_always.mheader-v1.footer-v1.fill_bg_n.header-vcustom.title-v1.with_order.with_cabinet.with_phones
+		#panel
+		script.
+			var arBasketItems = {};
+			var arAllcorp2Options = ({
+			'SITE_DIR': '/',
+			'SITE_ID': 's1',
+			'SITE_TEMPLATE_PATH': '/bitrix/templates/aspro-allcorp2',
+			'SITE_ADDRESS': "",
+			'THEME': ({
+			'THEME_SWITCHER': 'N',
+			'BASE_COLOR': 'CUSTOM',
+			'BASE_COLOR_CUSTOM': '007ab8',
+			'LOGO_IMAGE': 'upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png',
+			'LOGO_IMAGE_LIGHT': 'upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png',
+			'TOP_MENU': '',
+			'TOP_MENU_FIXED': 'N',
+			'COLORED_LOGO': 'N',
+			'SIDE_MENU': 'LEFT',
+			'SCROLLTOTOP_TYPE': 'RECT_COLOR',
+			'SCROLLTOTOP_POSITION': 'PADDING',
+			'SCROLLTOTOP_POSITION_RIGHT': '',
+			'SCROLLTOTOP_POSITION_BOTTOM': '',
+			'CAPTCHA_FORM_TYPE': 'Y',
+			'PHONE_MASK': '+7 (999) 999-99-99',
+			'VALIDATE_PHONE_MASK': '^[+][0-9] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$',
+			'DATE_MASK': 'dd.mm.yyyy',
+			'DATE_PLACEHOLDER': 'дд.мм.гггг',
+			'VALIDATE_DATE_MASK': '^[0-9]{1,2}\\.[0-9]{1,2}\.[0-9]{4}$',
+			'DATETIME_MASK': 'dd.mm.yyyy h:s',
+			'DATETIME_PLACEHOLDER': 'дд.мм.гггг чч:мм',
+			'VALIDATE_DATETIME_MASK': '^[0-9]{1,2}\\.[0-9]{1,2}\.[0-9]{4} [0-9]{1,2}\:[0-9]{1,2}$',
+			'VALIDATE_FILE_EXT': 'png|jpg|jpeg|gif|doc|docx|xls|xlsx|txt|pdf|odt|rtf',
+			'SOCIAL_VK': '',
+			'SOCIAL_FACEBOOK': '',
+			'SOCIAL_TWITTER': '',
+			'SOCIAL_YOUTUBE': '',
+			'SOCIAL_ODNOKLASSNIKI': '',
+			'SOCIAL_GOOGLEPLUS': '',
+			'BANNER_WIDTH': '',
+			'TEASERS_INDEX': 'N',
+			'CATALOG_INDEX': 'Y',
+			'PORTFOLIO_INDEX': 'N',
+			'INSTAGRAMM_INDEX': 'N',
+			'BIGBANNER_ANIMATIONTYPE': 'FADE',
+			'BIGBANNER_SLIDESSHOWSPEED': '5000',
+			'BIGBANNER_ANIMATIONSPEED': '600',
+			'PARTNERSBANNER_SLIDESSHOWSPEED': '5000',
+			'PARTNERSBANNER_ANIMATIONSPEED': '600',
+			'ORDER_VIEW': 'Y',
+			'ORDER_BASKET_VIEW': 'HEADER',
+			'URL_BASKET_SECTION': '/cart/',
+			'URL_ORDER_SECTION': '/cart/order/',
+			'PAGE_WIDTH': '2',
+			'PAGE_CONTACTS': '4',
+			'CATALOG_BLOCK_TYPE': 'catalog_table',
+			'HEADER_TYPE': 'custom',
+			'HEADER_TOP_LINE': '',
+			'HEADER_FIXED': '2',
+			'HEADER_MOBILE': '1',
+			'HEADER_MOBILE_MENU': '1',
+			'HEADER_MOBILE_MENU_SHOW_TYPE': '',
+			'TYPE_SEARCH': 'fixed',
+			'PAGE_TITLE': '1',
+			'INDEX_TYPE': 'index1',
+			'FOOTER_TYPE': '1',
+			'REGIONALITY_SEARCH_ROW': 'N',
+			'FOOTER_TYPE': '1',
+			'PRINT_BUTTON': 'N',
+			'SHOW_SMARTFILTER': 'Y',
+			'LICENCE_CHECKED': 'N',
+			'FILTER_VIEW': 'VERTICAL',
+			'YA_GOLAS': 'N',
+			'YA_COUNTER_ID': '',
+			'USE_FORMS_GOALS': 'COMMON',
+			'USE_SALE_GOALS': 'Y',
+			'USE_DEBUG_GOALS': 'N',
+			'DEFAULT_MAP_MARKET': 'N',
+			'IS_BASKET_PAGE': '',
+			'IS_ORDER_PAGE': '',
+			'COMPACT_FOOTER_MOBILE': 'Y',
+			}),
+			"PRESETS": [{ 'ID': '968', 'TITLE': 'Тип 1', 'DESCRIPTION': '', 'IMG': '/bitrix/images/aspro.allcorp2/themes/preset968_1573817463.png', 'OPTIONS': { 'THEME_SWITCHER': 'Y', 'BASE_COLOR': '10', 'BASE_COLOR_CUSTOM': '0088cc', 'SHOW_BG_BLOCK': 'N', 'COLORED_LOGO': 'Y', 'PAGE_WIDTH': '3', 'FONT_STYLE': '10', 'MENU_COLOR': 'NONE', 'LEFT_BLOCK': '1', 'SIDE_MENU': 'LEFT', 'H1_STYLE': '2', 'TYPE_SEARCH': 'fixed', 'PAGE_TITLE': '5', 'HOVER_TYPE_IMG': 'blink', 'SHOW_LICENCE': 'Y', 'MAX_DEPTH_MENU': '3', 'HIDE_SITE_NAME_TITLE': 'Y', 'SHOW_CALLBACK': 'Y', 'PRINT_BUTTON': 'N', 'USE_GOOGLE_RECAPTCHA': 'N', 'GOOGLE_RECAPTCHA_SHOW_LOGO': 'Y', 'HIDDEN_CAPTCHA': 'Y', 'INSTAGRAMM_WIDE_BLOCK': 'N', 'BIGBANNER_HIDEONNARROW': 'N', 'INDEX_TYPE': { 'VALUE': 'index1', 'SUB_PARAMS': { 'BIG_BANNER_INDEX': 'Y', 'FLOAT_BANNERS_INDEX': { 'VALUE': 'Y', 'TEMPLATE': 'front-banners-float' }, 'CATALOG_SECTIONS_INDEX': 'Y', 'TEASERS_INDEX': 'Y', 'NEWS_INDEX': 'Y', 'BLOG_INDEX': 'Y', 'PORTFOLIO_INDEX': { 'VALUE': 'N', 'TEMPLATE': 'front-projects_1' }, 'CATALOG_INDEX': 'Y', 'REVIEWS_INDEX': 'Y', 'INSTAGRAMM_INDEX': 'Y', 'COMPANY_INDEX': 'Y', 'PARTNERS_INDEX': 'Y', 'MAP_INDEX': 'N' }, 'ORDER': 'BIG_BANNER_INDEX,FLOAT_BANNERS_INDEX,CATALOG_SECTIONS_INDEX,CATALOG_INDEX,TEASERS_INDEX,NEWS_INDEX,BLOG_INDEX,PORTFOLIO_INDEX,REVIEWS_INDEX,INSTAGRAMM_INDEX,COMPANY_INDEX,PARTNERS_INDEX,MAP_INDEX' }, 'FRONT_PAGE_BRANDS': 'brands_slider', 'FRONT_PAGE_SECTIONS': 'front_sections_only', 'TOP_MENU_FIXED': 'Y', 'HEADER_TYPE': '1', 'USE_REGIONALITY': 'Y', 'FILTER_VIEW': 'COMPACT', 'SEARCH_VIEW_TYPE': 'with_filter', 'USE_FAST_VIEW_PAGE_DETAIL': 'fast_view_1', 'SHOW_TOTAL_SUMM': 'Y', 'CHANGE_TITLE_ITEM': 'N', 'VIEW_TYPE_HIGHLOAD_PROP': 'N', 'SHOW_HEADER_GOODS': 'Y', 'SEARCH_HIDE_NOT_AVAILABLE': 'N', 'LEFT_BLOCK_CATALOG_ICONS': 'N', 'SHOW_CATALOG_SECTIONS_ICONS': 'Y', 'LEFT_BLOCK_CATALOG_DETAIL': 'Y', 'CATALOG_COMPARE': 'Y', 'CATALOG_PAGE_DETAIL': 'element_1', 'SHOW_BREADCRUMBS_CATALOG_SUBSECTIONS': 'Y', 'SHOW_BREADCRUMBS_CATALOG_CHAIN': 'H1', 'TYPE_SKU': 'TYPE_1', 'DETAIL_PICTURE_MODE': 'POPUP', 'MENU_POSITION': 'LINE', 'MENU_TYPE_VIEW': 'HOVER', 'VIEWED_TYPE': 'LOCAL', 'VIEWED_TEMPLATE': 'HORIZONTAL', 'USE_WORD_EXPRESSION': 'Y', 'ORDER_BASKET_VIEW': 'FLY', 'ORDER_BASKET_COLOR': 'DARK', 'SHOW_BASKET_ONADDTOCART': 'Y', 'SHOW_BASKET_PRINT': 'Y', 'SHOW_BASKET_ON_PAGES': 'N', 'USE_PRODUCT_QUANTITY_LIST': 'Y', 'USE_PRODUCT_QUANTITY_DETAIL': 'Y', 'ONE_CLICK_BUY_CAPTCHA': 'N', 'SHOW_ONECLICKBUY_ON_BASKET_PAGE': 'Y', 'ONECLICKBUY_SHOW_DELIVERY_NOTE': 'N', 'PAGE_CONTACTS': '3', 'CONTACTS_USE_FEEDBACK': 'Y', 'CONTACTS_USE_MAP': 'Y', 'BLOG_PAGE': 'list_elements_2', 'PROJECTS_PAGE': 'list_elements_2', 'NEWS_PAGE': 'list_elements_2', 'STAFF_PAGE': 'list_elements_1', 'PARTNERS_PAGE': 'list_elements_1', 'PARTNERS_PAGE_DETAIL': 'element_4', 'VACANCY_PAGE': 'list_elements_1', 'LICENSES_PAGE': 'list_elements_1', 'FOOTER_TYPE': '1', 'ADV_TOP_HEADER': 'N', 'ADV_TOP_UNDERHEADER': 'N', 'ADV_SIDE': 'Y', 'ADV_CONTENT_TOP': 'N', 'ADV_CONTENT_BOTTOM': 'N', 'ADV_FOOTER': 'N', 'HEADER_MOBILE_FIXED': 'Y', 'HEADER_MOBILE': '1', 'HEADER_MOBILE_MENU': '2', 'HEADER_MOBILE_MENU_OPEN': '1', 'PERSONAL_ONEFIO': 'Y', 'LOGIN_EQUAL_EMAIL': 'N', 'YA_GOALS': 'N', 'YANDEX_ECOMERCE': 'N', 'GOOGLE_ECOMERCE': 'N', 'CALLBACK_BUTTON': 'Y', 'RIGHT_FORM_BLOCK': 'Y', 'USE_BITRIX_FORM': 'Y', 'USE_LAZY_LOAD': 'Y', 'VIEW_TYPE_LEFT_BLOCK': 'with_tizers', 'COUNT_ITEMS_IN_LINE_MENU': '4', 'ORDER_VIEW': 'Y', 'SHOW_SMARTFILTER': 'Y', 'SHOW_LEFT_BLOCK': 'Y', 'SECTIONS_TYPE_VIEW_CATALOG': 'sections_2', 'SECTION_TYPE_VIEW_CATALOG': 'section_2', 'ELEMENTS_TABLE_TYPE_VIEW': 'catalog_table_2', 'SECTIONS_TYPE_VIEW': 'sections_1', 'SECTION_TYPE_VIEW': 'section_2', 'ELEMENTS_PAGE': 'list_elements_1', 'ELEMENT_PAGE_DETAIL': 'element_1', 'ELEMENTS_PROJECT_PAGE': 'list_elements_2', 'SHOW_PROJECTS_MAP': 'Y', 'SHOW_PROJECTS_MAP_DETAIL': 'Y', 'COMPACT_MOBILE_MENU': 'Y', 'FIXED_MOBILE_MENU': 'Y', 'BIGBANNER_MOBILE': '3', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE': 'N', 'COMPACT_FOOTER_MOBILE': 'Y', 'CABINET': 'Y', 'YA_GOLAS': 'N', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_MAINPAGE': 'N', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_PRODUCT': 'N' } }, { 'ID': '983', 'TITLE': 'Тип 2', 'DESCRIPTION': '', 'IMG': '/bitrix/images/aspro.allcorp2/themes/preset983_1573819403.png', 'OPTIONS': { 'BASE_COLOR': '4', 'BASE_COLOR_CUSTOM': 'de002b', 'SHOW_BG_BLOCK': 'N', 'FONT_STYLE': '10', 'PAGE_WIDTH': '3', 'H1_STYLE': '2', 'PAGE_TITLE': '1', 'HOVER_TYPE_IMG': 'blink', 'SHOW_LICENCE': 'Y', 'PRINT_BUTTON': 'N', 'CALLBACK_BUTTON': 'Y', 'RIGHT_FORM_BLOCK': 'Y', 'USE_BITRIX_FORM': 'Y', 'USE_LAZY_LOAD': 'Y', 'INDEX_TYPE': { 'VALUE': 'index2', 'SUB_PARAMS': { 'BIG_BANNER_INDEX': 'Y', 'PORTFOLIO_INDEX': { 'VALUE': 'Y', 'TEMPLATE': 'front-projects_2' }, 'CATALOG_SECTIONS_INDEX': 'N', 'TEASERS_INDEX': 'Y', 'NEWS_INDEX': 'N', 'BLOG_INDEX': 'N', 'CATALOG_INDEX': 'Y', 'FLOAT_BANNERS_INDEX': { 'VALUE': 'N', 'TEMPLATE': 'front-services_3' }, 'REVIEWS_INDEX': 'Y', 'INSTAGRAMM_INDEX': 'Y', 'COMPANY_INDEX': 'N', 'PARTNERS_INDEX': 'N', 'MAP_INDEX': 'N' }, 'ORDER': 'BIG_BANNER_INDEX,PORTFOLIO_INDEX,CATALOG_SECTIONS_INDEX,NEWS_INDEX,BLOG_INDEX,CATALOG_INDEX,TEASERS_INDEX,FLOAT_BANNERS_INDEX,REVIEWS_INDEX,INSTAGRAMM_INDEX,COMPANY_INDEX,PARTNERS_INDEX,MAP_INDEX' }, 'TOP_MENU_FIXED': 'Y', 'MENU_COLOR': 'LIGHT', 'HEADER_TYPE': '2', 'SIDE_MENU': 'LEFT', 'VIEW_TYPE_LEFT_BLOCK': 'with_tizers', 'SHOW_CATALOG_SECTIONS_ICONS': 'Y', 'COUNT_ITEMS_IN_LINE_MENU': '4', 'USE_REGIONALITY': 'Y', 'ORDER_VIEW': 'Y', 'SHOW_SMARTFILTER': 'Y', 'SHOW_LEFT_BLOCK': 'Y', 'SECTIONS_TYPE_VIEW_CATALOG': 'sections_2', 'SECTION_TYPE_VIEW_CATALOG': 'section_2', 'ELEMENTS_TABLE_TYPE_VIEW': 'catalog_table_2', 'CATALOG_PAGE_DETAIL': 'element_1', 'SECTIONS_TYPE_VIEW': 'sections_1', 'SECTION_TYPE_VIEW': 'section_2', 'ELEMENTS_PAGE': 'list_elements_1', 'ELEMENT_PAGE_DETAIL': 'element_1', 'ELEMENTS_PROJECT_PAGE': 'list_elements_2', 'SHOW_PROJECTS_MAP': 'Y', 'SHOW_PROJECTS_MAP_DETAIL': 'Y', 'PAGE_CONTACTS': '3', 'BLOG_PAGE': 'list_elements_2', 'NEWS_PAGE': 'list_elements_2', 'STAFF_PAGE': 'list_elements_1', 'PARTNERS_PAGE': 'list_elements_1', 'VACANCY_PAGE': 'list_elements_1', 'LICENSES_PAGE': 'list_elements_1', 'FOOTER_TYPE': '3', 'ADV_TOP_HEADER': 'N', 'ADV_TOP_UNDERHEADER': 'N', 'ADV_SIDE': 'Y', 'ADV_CONTENT_TOP': 'N', 'ADV_CONTENT_BOTTOM': 'N', 'ADV_FOOTER': 'N', 'HEADER_MOBILE_FIXED': 'Y', 'HEADER_MOBILE': '1', 'HEADER_MOBILE_MENU': '2', 'COMPACT_MOBILE_MENU': 'Y', 'HEADER_MOBILE_MENU_OPEN': '1', 'BIGBANNER_MOBILE': '3', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_MAINPAGE': 'N', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_PRODUCT': 'N', 'COMPACT_FOOTER_MOBILE': 'Y', 'CABINET': 'Y', 'LOGIN_EQUAL_EMAIL': 'N', 'YA_GOLAS': 'N' } }, { 'ID': '521', 'TITLE': 'Тип 3', 'DESCRIPTION': '', 'IMG': '/bitrix/images/aspro.allcorp2/themes/preset521_1573819598.png', 'OPTIONS': { 'BASE_COLOR': '13', 'BASE_COLOR_CUSTOM': '0fa8ae', 'SHOW_BG_BLOCK': 'N', 'FONT_STYLE': '4', 'PAGE_WIDTH': '3', 'H1_STYLE': '2', 'PAGE_TITLE': '1', 'HOVER_TYPE_IMG': 'blink', 'SHOW_LICENCE': 'Y', 'PRINT_BUTTON': 'N', 'CALLBACK_BUTTON': 'Y', 'RIGHT_FORM_BLOCK': 'Y', 'USE_BITRIX_FORM': 'Y', 'USE_LAZY_LOAD': 'Y', 'INDEX_TYPE': { 'VALUE': 'index3', 'SUB_PARAMS': { 'BIG_BANNER_INDEX': 'Y', 'TEASERS_INDEX': 'Y', 'FLOAT_BANNERS_INDEX': { 'VALUE': 'Y', 'TEMPLATE': 'front-services_2' }, 'COMPANY_INDEX': 'N', 'CATALOG_INDEX': 'Y', 'PORTFOLIO_INDEX': { 'VALUE': 'Y', 'TEMPLATE': 'front-projects_2' }, 'MAP_INDEX': 'Y' }, 'ORDER': 'BIG_BANNER_INDEX,PORTFOLIO_INDEX,CATALOG_SECTIONS_INDEX,NEWS_INDEX,BLOG_INDEX,CATALOG_INDEX,TEASERS_INDEX,FLOAT_BANNERS_INDEX,REVIEWS_INDEX,INSTAGRAMM_INDEX,COMPANY_INDEX,PARTNERS_INDEX,MAP_INDEX' }, 'TOP_MENU_FIXED': 'Y', 'MENU_COLOR': 'NONE', 'HEADER_TYPE': '1', 'SIDE_MENU': 'LEFT', 'VIEW_TYPE_LEFT_BLOCK': 'with_tizers', 'SHOW_CATALOG_SECTIONS_ICONS': 'Y', 'COUNT_ITEMS_IN_LINE_MENU': '4', 'USE_REGIONALITY': 'Y', 'ORDER_VIEW': 'Y', 'SHOW_SMARTFILTER': 'Y', 'SHOW_LEFT_BLOCK': 'Y', 'SECTIONS_TYPE_VIEW_CATALOG': 'sections_2', 'SECTION_TYPE_VIEW_CATALOG': 'section_2', 'ELEMENTS_TABLE_TYPE_VIEW': 'catalog_table_2', 'CATALOG_PAGE_DETAIL': 'element_1', 'SECTIONS_TYPE_VIEW': 'sections_1', 'SECTION_TYPE_VIEW': 'section_2', 'ELEMENTS_PAGE': 'list_elements_1', 'ELEMENT_PAGE_DETAIL': 'element_1', 'ELEMENTS_PROJECT_PAGE': 'list_elements_2', 'SHOW_PROJECTS_MAP': 'Y', 'SHOW_PROJECTS_MAP_DETAIL': 'Y', 'PAGE_CONTACTS': '3', 'BLOG_PAGE': 'list_elements_2', 'NEWS_PAGE': 'list_elements_2', 'STAFF_PAGE': 'list_elements_1', 'PARTNERS_PAGE': 'list_elements_1', 'VACANCY_PAGE': 'list_elements_1', 'LICENSES_PAGE': 'list_elements_1', 'FOOTER_TYPE': '5', 'ADV_TOP_HEADER': 'N', 'ADV_TOP_UNDERHEADER': 'N', 'ADV_SIDE': 'Y', 'ADV_CONTENT_TOP': 'N', 'ADV_CONTENT_BOTTOM': 'N', 'ADV_FOOTER': 'N', 'HEADER_MOBILE_FIXED': 'Y', 'HEADER_MOBILE': '1', 'HEADER_MOBILE_MENU': '2', 'COMPACT_MOBILE_MENU': 'Y', 'HEADER_MOBILE_MENU_OPEN': '1', 'BIGBANNER_MOBILE': '3', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_MAINPAGE': 'N', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_PRODUCT': 'N', 'COMPACT_FOOTER_MOBILE': 'Y', 'CABINET': 'Y', 'LOGIN_EQUAL_EMAIL': 'N', 'YA_GOLAS': 'N' } }, { 'ID': '223', 'TITLE': 'Тип 4', 'DESCRIPTION': '', 'IMG': '/bitrix/images/aspro.allcorp2/themes/preset223_1573885220.png', 'OPTIONS': { 'BASE_COLOR': '3', 'BASE_COLOR_CUSTOM': 'e65100', 'SHOW_BG_BLOCK': 'N', 'FONT_STYLE': '10', 'PAGE_WIDTH': '3', 'H1_STYLE': '2', 'PAGE_TITLE': '1', 'HOVER_TYPE_IMG': 'blink', 'SHOW_LICENCE': 'Y', 'PRINT_BUTTON': 'N', 'CALLBACK_BUTTON': 'Y', 'RIGHT_FORM_BLOCK': 'Y', 'USE_BITRIX_FORM': 'Y', 'USE_LAZY_LOAD': 'Y', 'INDEX_TYPE': { 'VALUE': 'index4', 'SUB_PARAMS': { 'BIG_BANNER_INDEX': 'Y', 'TEASERS_INDEX': 'Y', 'PORTFOLIO_INDEX': { 'VALUE': 'Y', 'TEMPLATE': 'front-projects_1' }, 'CATALOG_SECTIONS_INDEX': 'N', 'FLOAT_BANNERS_INDEX': { 'VALUE': 'Y', 'TEMPLATE': 'front-services_1' }, 'CATALOG_INDEX': 'Y', 'PARTNERS_INDEX': 'Y', 'INSTAGRAMM_INDEX': 'Y', 'NEWS_INDEX': 'Y', 'REVIEWS_INDEX': 'Y', 'BLOG_INDEX': 'N', 'COMPANY_INDEX': 'Y', 'MAP_INDEX': 'Y' }, 'ORDER': 'BIG_BANNER_INDEX,PORTFOLIO_INDEX,CATALOG_SECTIONS_INDEX,NEWS_INDEX,BLOG_INDEX,CATALOG_INDEX,TEASERS_INDEX,FLOAT_BANNERS_INDEX,REVIEWS_INDEX,INSTAGRAMM_INDEX,COMPANY_INDEX,PARTNERS_INDEX,MAP_INDEX' }, 'TOP_MENU_FIXED': 'Y', 'MENU_COLOR': 'COLORED', 'HEADER_TYPE': '3', 'SIDE_MENU': 'LEFT', 'VIEW_TYPE_LEFT_BLOCK': 'with_tizers', 'SHOW_CATALOG_SECTIONS_ICONS': 'Y', 'COUNT_ITEMS_IN_LINE_MENU': '4', 'USE_REGIONALITY': 'Y', 'ORDER_VIEW': 'Y', 'SHOW_SMARTFILTER': 'Y', 'SHOW_LEFT_BLOCK': 'Y', 'SECTIONS_TYPE_VIEW_CATALOG': 'sections_2', 'SECTION_TYPE_VIEW_CATALOG': 'section_2', 'ELEMENTS_TABLE_TYPE_VIEW': 'catalog_table_2', 'CATALOG_PAGE_DETAIL': 'element_1', 'SECTIONS_TYPE_VIEW': 'sections_1', 'SECTION_TYPE_VIEW': 'section_2', 'ELEMENTS_PAGE': 'list_elements_1', 'ELEMENT_PAGE_DETAIL': 'element_1', 'ELEMENTS_PROJECT_PAGE': 'list_elements_2', 'SHOW_PROJECTS_MAP': 'Y', 'SHOW_PROJECTS_MAP_DETAIL': 'Y', 'PAGE_CONTACTS': '3', 'BLOG_PAGE': 'list_elements_2', 'NEWS_PAGE': 'list_elements_2', 'STAFF_PAGE': 'list_elements_1', 'PARTNERS_PAGE': 'list_elements_1', 'VACANCY_PAGE': 'list_elements_1', 'LICENSES_PAGE': 'list_elements_1', 'FOOTER_TYPE': '4', 'ADV_TOP_HEADER': 'N', 'ADV_TOP_UNDERHEADER': 'N', 'ADV_SIDE': 'Y', 'ADV_CONTENT_TOP': 'N', 'ADV_CONTENT_BOTTOM': 'N', 'ADV_FOOTER': 'N', 'HEADER_MOBILE_FIXED': 'Y', 'HEADER_MOBILE': '1', 'HEADER_MOBILE_MENU': '2', 'COMPACT_MOBILE_MENU': 'Y', 'HEADER_MOBILE_MENU_OPEN': '1', 'BIGBANNER_MOBILE': '3', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_MAINPAGE': 'N', 'CATALOG_SECTIONS_COMPACT_VIEW_MOBILE_PRODUCT': 'N', 'COMPACT_FOOTER_MOBILE': 'Y', 'CABINET': 'Y', 'LOGIN_EQUAL_EMAIL': 'N', 'YA_GOLAS': 'N' } }],
+			});
+			if (arAllcorp2Options.SITE_ADDRESS)
+			arAllcorp2Options.SITE_ADDRESS = arAllcorp2Options.SITE_ADDRESS.replace(/'/g, "");
+		// 'start_frame_cache_options-block'
+		script.
+			var arBasketItems = [];
+		// 'end_frame_cache_options-block'
+		.visible-lg.visible-md.title-v1.index
+			header.header_custom.with_regions
+				.menu-row.with-color.bglight.colored_dark.sliced
+					.maxwidth-theme
+						.sidebar-fixed
+							.content-left
+								.logo-row.top-fill
+									.logo-block.paddings
+										.logo
+											a(href='index.html')
+												img(src='upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png' alt='Cайт производства' title='Cайт производства')
+										span.callback.get-order
+								.menu-sidebar
+									aside.sidebar
+										ul.nav.nav-list.side-menu
+											li.f-item.product
+												a(href='#') Продукция
+											li.f-item.services
+												a(href='#') Услуги
+											li.f-item.proizvodstvo
+												a(href='#') Производство
+									.product-submenu
+										#bx_incl_area_3_1
+										aside.sidebar
+											ul.nav.nav-list.side-menu
+												li.f-item.child
+													a(href='#') Цветной прокат
+													.submenu-wrapper.hide
+														ul.submenu
+															li.child
+																a(href='product/alyuminievyy-prokat/index.html') Алюминиевый прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/alyuminievaya-profilnaya-truba/index.html')
+																				| Алюминиевая профильная
+																				| труба
+																		li
+																			a(href='product/kvadrat-alyuminievyy/index.html') Квадрат алюминиевый
+																		li
+																			a(href='product/alyuminievyy-list/index.html') Алюминиевый лист
+																		li
+																			a(href='product/list-alyuminievyy-pvl/index.html') Лист алюминиевый ПВЛ
+																		li.child
+																			a(href='product/riflenyy-alyuminievyy-list/index.html')
+																				| Рифленый алюминиевый
+																				| лист
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/riflenyy-alyuminievyy-list-diamant/index.html')
+																							| Рифленый
+																							| алюминиевый лист Диамант
+																					li
+																						a(href='product/riflenyy-alyuminievyy-list-duet/index.html')
+																							| Рифленый
+																							| алюминиевый лист Дуэт
+																					li
+																						a(href='product/riflenyy-alyuminievyy-list-kvintet/index.html')
+																							| Рифленый
+																							| алюминиевый лист Квинтет
+																					li
+																						a(href='product/riflenyy-alyuminievyy-list-chechevitsa/index.html')
+																							| Рифленый
+																							| алюминиевый лист Чечевица
+																		li.child
+																			a(href='product/alyuminievyy-perforirovannyy-list/index.html')
+																				| Алюминиевый
+																				| перфорированный лист
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/perforirovannyy-alyuminievyy-list-qg/index.html')
+																							| Перфорированный
+																							| алюминиевый лист Qg
+																					li
+																						a(href='product/perforirovannyy-alyuminievyy-list-rv/index.html')
+																							| Перфорированный
+																							| алюминиевый лист Rv
+																		li
+																			a(href='product/alyuminievaya-lenta/index.html') Алюминиевая лента
+																		li
+																			a(href='product/alyuminievaya-plita/index.html') Алюминиевая плита
+																		li
+																			a(href='product/alyuminievaya-truba/index.html') Алюминиевая труба
+																		li
+																			a(href='product/alyuminievaya-kvadratnaya-truba/index.html')
+																				| Алюминиевая квадратная
+																				| труба
+																		li
+																			a(href='product/prutok-alyuminievyy/index.html') Пруток алюминиевый
+																		li
+																			a(href='product/truba-alyuminievaya-kholodnodeformiruemaya/index.html')
+																				| Труба
+																				| алюминиевая холоднодеформируемая
+																		li
+																			a(href='product/truba-alyuminievaya-elektrosvarnaya/index.html')
+																				| Труба алюминиевая
+																				| электросварная
+																		li
+																			a(href='product/alyuminievaya-polosa/index.html') Алюминиевая полоса
+																		li
+																			a(href='product/alyuminievaya-provoloka/index.html') Алюминиевая проволока
+																		li
+																			a(href='product/alyuminievaya-svarochnaya-provoloka/index.html')
+																				| Алюминиевая
+																				| сварочная проволока
+																		li
+																			a(href='product/alyuminievaya-shina/index.html') Алюминиевая шина
+																		li
+																			a(href='product/alyuminievyy-krug/index.html') Алюминиевый круг
+																		li
+																			a(href='product/rulon-alyuminievyy/index.html') Рулон алюминиевый
+																		li
+																			a(href='product/alyuminievaya-katanka/index.html') Алюминиевая катанка
+																		li
+																			a(href='product/alyuminievyy-shveller/index.html') Алюминиевый швеллер
+																		li
+																			a(href='product/dvutavr-alyuminievyy/index.html') Двутавр алюминиевый
+																		li
+																			a(href='product/setka-alyuminievaya/index.html') Сетка алюминиевая
+																		li
+																			a(href='product/ugolok-alyuminievyy/index.html') Уголок алюминиевый
+																		li
+																			a(href='product/tavr-alyuminievyy/index.html') Тавр алюминиевый
+																		li
+																			a(href='product/folga-alyuminievaya-tekhnicheskaya/index.html')
+																				| Фольга алюминиевая
+																				| техническая
+																		li
+																			a(href='product/shestigrannik-alyuminievyy/index.html') Шестигранник алюминиевый
+																		li
+																			a(href='product/polosobulb-alyuminievyy/index.html') Полособульб алюминиевый
+																		li
+																			a(href='product/alyuminievyy-boks/index.html') Алюминиевый бокс
+																		li
+																			a(href='product/profil-alyuminievyy-sh-obraznyy/index.html')
+																				| Профиль алюминиевый
+																				| ш-образный
+																		li
+																			a(href='product/alyuminievaya-pressovannaya-truba/index.html')
+																				| Алюминиевая
+																				| прессованная труба
+																		li
+																			a(href='product/aviatsionnyy-alyuminiy/index.html') Авиационный алюминий
+																		li
+																			a(href='product/alyuminievyy-pressovannyy-profil/index.html')
+																				| Алюминиевый
+																				| прессованный профиль
+																		li
+																			a(href='product/svarochnaya-poroshkovaya-alyuminievaya-provoloka/index.html')
+																				| Сварочная
+																				| порошковая алюминиевая проволока
+																		li
+																			a(href='product/zaklepochnaya-alyuminievaya-provoloka/index.html')
+																				| Заклепочная
+																				| алюминиевая проволока
+																		li
+																			a(href='product/alyuminievaya-dekorativnaya-setka/index.html')
+																				| Алюминиевая
+																				| декоративная сетка
+																		li
+																			a(href='product/alyuminievaya-chushka/index.html') Алюминиевая чушка
+																		li
+																			a(href='product/alyuminievaya-truba-pryamougolnaya/index.html')
+																				| Алюминиевая труба
+																				| прямоугольная
+																		li
+																			a(href='product/alyuminievyy-shveller-p-obraznyy/index.html')
+																				| Алюминиевый швеллер
+																				| П-образный
+																		li
+																			a(href='product/truba-alyuminievaya-gofrirovannaya/index.html')
+																				| Труба алюминиевая
+																				| гофрированная
+															li.child
+																a(href='product/bronzovyy-prokat/index.html') Бронзовый прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/bronzovyy-list/index.html') Бронзовый лист
+																		li
+																			a(href='product/bronzovyy-krug-kruglyak-bronzovyy/index.html')
+																				| Бронзовый круг
+																				| (кругляк бронзовый)
+																		li
+																			a(href='product/bronzovaya-pudra/index.html') Бронзовая пудра
+																		li
+																			a(href='product/bronzovyy-prutok/index.html') Бронзовый пруток
+																		li
+																			a(href='product/bronzovyy-kvadrat/index.html') Бронзовый квадрат
+																		li
+																			a(href='product/bronzovaya-truba/index.html') Бронзовая труба
+																		li
+																			a(href='product/bronzovaya-shina/index.html') Бронзовая шина
+																		li
+																			a(href='product/bronzovyy-shestigrannik/index.html') Бронзовый шестигранник
+																		li
+																			a(href='product/bronzovaya-plita/index.html') Бронзовая плита
+																		li
+																			a(href='product/bronzovaya-polosa/index.html') Бронзовая полоса
+																		li
+																			a(href='product/bronzovaya-provoloka/index.html') Бронзовая проволока
+																		li
+																			a(href='product/provoloka-kvadratnaya-bronzovaya/index.html')
+																				| Проволока квадратная
+																				| бронзовая
+																		li
+																			a(href='product/bronzovaya-svarochnaya-provoloka/index.html')
+																				| Бронзовая сварочная
+																				| проволока
+																		li
+																			a(href='product/bronzovaya-lenta/index.html') Бронзовая лента
+																		li
+																			a(href='product/bronzovaya-setka/index.html') Бронзовая сетка
+																		li
+																			a(href='product/bronzovye-vtulki/index.html') Бронзовые втулки
+																		li
+																			a(href='product/bronzovaya-folga/index.html') Бронзовая фольга
+																		li
+																			a(href='product/bronzovaya-profilnaya-truba/index.html')
+																				| Бронзовая профильная
+																				| труба
+																		li
+																			a(href='product/bronzovaya-chushka/index.html') Бронзовая чушка
+																		li
+																			a(href='product/bronzovyy-slitok/index.html') Бронзовый слиток
+																		li
+																			a(href='product/bronzovaya-otlivka/index.html') Бронзовая отливка
+															li.child
+																a(href='product/dyuralyuminievyy-prokat/index.html') Дюралюминиевый прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/dyuralevyy-list/index.html') Дюралевый лист
+																		li
+																			a(href='product/dyuralevaya-truba/index.html') Дюралевая труба
+																		li
+																			a(href='product/dyuralevyy-ugolok/index.html') Дюралевый уголок
+																		li
+																			a(href='product/dyuralevyy-krug-kruglyak/index.html') Дюралевый круг, кругляк
+																		li
+																			a(href='product/dyuralevaya-provoloka/index.html') Дюралевая проволока
+																		li
+																			a(href='product/dyuralevaya-plita/index.html') Дюралевая плита
+																		li
+																			a(href='product/dyuralevaya-lenta/index.html') Дюралевая лента
+																		li
+																			a(href='product/dyuralevyy-shestigrannik/index.html') Дюралевый шестигранник
+																		li
+																			a(href='product/dyuralevaya-polosa/index.html') Дюралевая полоса
+																		li
+																			a(href='product/dyuralevyy-kvadrat/index.html') Дюралевый квадрат
+																		li
+																			a(href='product/shveller-dyuralevyy/index.html') Швеллер дюралевый
+																		li
+																			a(href='product/dyuralevyy-prutok/index.html') Дюралевый пруток
+																		li.child
+																			a(href='product/dyuralevaya-truba-profilnaya/index.html')
+																				| Дюралевая труба
+																				| профильная
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/kvadratnaya-dyuralevaya-truba/index.html')
+																							| Квадратная
+																							| дюралевая труба
+																					li
+																						a(href='product/pryamougolnaya-dyuralevaya-truba/index.html')
+																							| Прямоугольная
+																							| дюралевая труба
+																		li
+																			a(href='product/dyuralevyy-riflenyy-list/index.html') Дюралевый рифленый лист
+																		li
+																			a(href='product/dyuralevaya-bolvanka/index.html') Дюралевая болванка
+															li.child
+																a(href='product/latunnyy-prokat/index.html') Латунный прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/latunnyy-krug-latun-kruglyak/index.html')
+																				| Латунный круг (латунь
+																				| кругляк)
+																		li
+																			a(href='product/latunnaya-truba/index.html') Латунная труба
+																		li
+																			a(href='product/latunnaya-provoloka/index.html') Латунная проволока
+																		li
+																			a(href='product/latunnaya-setka/index.html') Латунная сетка
+																		li
+																			a(href='product/latunnyy-kvadrat/index.html') Латунный квадрат
+																		li
+																			a(href='product/latunnaya-vtulka/index.html') Латунная втулка
+																		li
+																			a(href='product/latunnaya-lenta/index.html') Латунная лента
+																		li
+																			a(href='product/latunnyy-shestigrannik/index.html') Латунный шестигранник
+																		li
+																			a(href='product/latunnaya-polosa/index.html') Латунная полоса
+																		li
+																			a(href='product/truba-latunnaya-profilnaya/index.html')
+																				| Труба латунная
+																				| профильная
+																		li
+																			a(href='product/folga-latunnaya/index.html') Фольга латунная
+																		li
+																			a(href='product/latunnaya-katanka/index.html') Латунная катанка
+																		li
+																			a(href='product/setka-polutompakovaya/index.html') Сетка полутомпаковая
+																		li
+																			a(href='product/latunnaya-chushka/index.html') Латунная чушка
+																		li
+																			a(href='product/latunnyy-prutok/index.html') Латунный пруток
+																		li
+																			a(href='product/ugolok-latunnyy/index.html') Уголок латунный
+																		li
+																			a(href='product/latunnaya-plastina/index.html') Латунная пластина
+																		li
+																			a(href='product/latunnye-listy/index.html') Латунные листы
+																		li
+																			a(href='product/volnovodnaya-latunnaya-truba/index.html')
+																				| Волноводная латунная
+																				| труба
+																		li
+																			a(href='product/latunnaya-shina/index.html') Латунная шина
+																		li
+																			a(href='product/latunnaya-trubka/index.html') Латунная трубка
+																		li.child
+																			a(href='product/latunnyy-profil/index.html') Латунный профиль
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/latunnyy-g-obraznyy-profil/index.html')
+																							| Латунный Г-образный
+																							| профиль
+																					li
+																						a(href='product/latunnyy-p-obraznyy-profil/index.html')
+																							| Латунный П-образный
+																							| профиль
+																					li
+																						a(href='product/latunnyy-t-obraznyy-profil-latunnyy-tavr/index.html')
+																							| Латунный
+																							| Т-образный профиль (латунный тавр)
+																		li
+																			a(href='product/svarochnaya-latunnaya-provoloka/index.html')
+																				| Сварочная латунная
+																				| проволока
+																		li
+																			a(href='product/tkanaya-latunnaya-setka/index.html') Тканая латунная сетка
+																		li
+																			a(href='product/latunnaya-plita/index.html') Латунная плита
+															li.child
+																a(href='product/mednyy-prokat/index.html') Медный прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/mednyy-list/index.html') Медный лист
+																		li
+																			a(href='product/mednyy-krug/index.html') Медный круг
+																		li
+																			a(href='product/mednaya-folga/index.html') Медная фольга
+																		li
+																			a(href='product/mednyy-prutok/index.html') Медный пруток
+																		li
+																			a(href='product/kvadrat-mednyy/index.html') Квадрат медный
+																		li
+																			a(href='product/mednaya-shina/index.html') Медная шина
+																		li
+																			a(href='product/truba-mednaya/index.html') Труба медная
+																		li
+																			a(href='product/mednaya-plita/index.html') Медная плита
+																		li
+																			a(href='product/mednaya-polosa/index.html') Медная полоса
+																		li
+																			a(href='product/shestigrannik-mednyy/index.html') Шестигранник медный
+																		li
+																			a(href='product/katanka-mednaya/index.html') Катанка медная
+																		li
+																			a(href='product/mednaya-chushka/index.html') Медная чушка
+																		li
+																			a(href='product/mednaya-provoloka/index.html') Медная проволока
+																		li
+																			a(href='product/mednaya-lenta/index.html') Медная лента
+																		li
+																			a(href='product/provoloka-mednaya-elektrotekhnicheskaya/index.html')
+																				| Проволока
+																				| медная электротехническая
+																		li
+																			a(href='product/mednaya-vtulka/index.html') Медная втулка
+																		li
+																			a(href='product/provoloka-mednaya-svarochnaya/index.html')
+																				| Проволока медная
+																				| сварочная
+																		li
+																			a(href='product/provoloka-mednaya-pryamougolnaya/index.html')
+																				| Проволока медная
+																				| прямоугольная
+																		li
+																			a(href='product/mednyy-rulon/index.html') Медный рулон
+																		li
+																			a(href='product/mednaya-plastina/index.html') Медная пластина
+																		li
+																			a(href='product/shayba-mednaya/index.html') Шайба медная
+																		li
+																			a(href='product/katod-mednyy/index.html') Медь катодная (медные катоды)
+																		li
+																			a(href='product/mednaya-setka/index.html') Медная сетка
+																		li
+																			a(href='product/mednyy-anod/index.html') Медный анод
+															li.child
+																a(href='product/titanovyy-prokat/index.html') Титановый прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/titanovyy-kvadrat/index.html') Титановый квадрат
+																		li
+																			a(href='product/titanovyy-krug/index.html') Титановый круг
+																		li
+																			a(href='product/titanovaya-truba/index.html') Титановая труба
+																		li
+																			a(href='product/titanovyy-profil/index.html') Титановый профиль
+																		li
+																			a(href='product/titanovyy-prutok/index.html') Титановый пруток
+																		li
+																			a(href='product/titanovaya-provoloka/index.html') Титановая проволока
+																		li
+																			a(href='product/titanovaya-svarochnaya-provoloka/index.html')
+																				| Титановая сварочная
+																				| проволока
+																		li
+																			a(href='product/titanovaya-plita/index.html') Титановая плита
+																		li
+																			a(href='product/titanovyy-list-titan-listovoy/index.html')
+																				| Титановый лист (титан
+																				| листовой)
+																		li
+																			a(href='product/titanovaya-lenta/index.html') Титановая лента
+																		li
+																			a(href='product/titanovyy-shestigrannik/index.html') Титановый шестигранник
+																		li
+																			a(href='product/titanovaya-polosa/index.html') Титановая полоса
+																		li
+																			a(href='product/shina-titanovaya/index.html') Шина титановая
+																		li
+																			a(href='product/titanovaya-pokovka-pryamougolnaya/index.html')
+																				| Титановая поковка
+																				| прямоугольная
+																		li
+																			a(href='product/folga-titanovaya/index.html') Фольга титановая
+																		li
+																			a(href='product/zagotovka-iz-titana/index.html') Заготовка из титана
+												li.f-item.child
+													a(href='#') Нержавеющая сталь
+													.submenu-wrapper.hide
+														ul.submenu
+															li
+																a(href='product/list-nerzhaveyushchiy-riflenyy/index.html') Лист нержавеющий рифленый
+															li
+																a(href='product/nerzhaveyushchaya-drob/index.html') Нержавеющая дробь
+															li
+																a(href='product/nerzhaveyushchaya-kapillyarnaya-trubka/index.html')
+																	| Нержавеющая
+																	| капиллярная трубка
+															li
+																a(href='product/nerzhaveyushchaya-lenta/index.html') Нержавеющая лента
+															li
+																a(href='product/nerzhaveyushchaya-plita/index.html') Нержавеющая плита
+															li
+																a(href='product/nerzhaveyushchaya-pokovka/index.html') Нержавеющая поковка
+															li
+																a(href='product/nerzhaveyushchaya-polosa/index.html') Нержавеющая полоса
+															li
+																a(href='product/nerzhaveyushchaya-provoloka/index.html') Нержавеющая проволока
+															li
+																a(href='product/nerzhaveyushchaya-prosechno-vytyazhnaya-setka/index.html')
+																	| Нержавеющая
+																	| просечно-вытяжная сетка
+															li
+																a(href='product/nerzhaveyushchaya-svarochnaya-lenta/index.html')
+																	| Нержавеющая сварочная
+																	| лента
+															li
+																a(href='product/nerzhaveyushchaya-svarochnaya-provoloka/index.html')
+																	| Нержавеющая сварочная
+																	| проволока
+															li
+																a(href='product/nerzhaveyushchaya-setka/index.html') Нержавеющая сетка
+															li
+																a(href='product/nerzhaveyushchaya-truboprovodnaya-armatura/index.html')
+																	| Нержавеющая
+																	| трубопроводная арматура
+															li
+																a(href='product/nerzhaveyushchie-trapy/index.html') Нержавеющие трапы
+															li
+																a(href='product/nerzhaveyushchie-truby/index.html') Нержавеющие трубы
+															li
+																a(href='product/nerzhaveyushchiy-kvadrat/index.html') Нержавеющий квадрат
+															li
+																a(href='product/nerzhaveyushchiy-krug/index.html') Нержавеющий круг
+															li
+																a(href='product/nerzhaveyushchiy-list/index.html') Нержавеющий лист
+															li
+																a(href='product/nerzhaveyushchiy-perforirovannyy-list/index.html')
+																	| Нержавеющий
+																	| перфорированный лист
+															li
+																a(href='product/nerzhaveyushchiy-prutok/index.html') Нержавеющий пруток
+															li
+																a(href='product/nerzhaveyushchiy-rulon/index.html') Нержавеющий рулон
+															li
+																a(href='product/nerzhaveyushchiy-tros/index.html') Нержавеющий трос
+															li
+																a(href='product/nerzhaveyushchiy-ugolok/index.html') Нержавеющий уголок
+															li
+																a(href='product/nerzhaveyushchiy-shveller/index.html') Нержавеющий швеллер
+															li
+																a(href='product/nerzhaveyushchiy-shestigrannik/index.html') Нержавеющий шестигранник
+															li
+																a(href='product/riflenaya-nerzhaveyushchaya-setka/index.html')
+																	| Рифленая нержавеющая
+																	| сетка
+															li
+																a(href='product/svarochnyy-nerzhaveyushchiy-prutok/index.html')
+																	| Сварочный нержавеющий
+																	| пруток
+															li
+																a(href='product/truby-teplodeformirovannye-iz-korrozionnostoykoy-stali/index.html')
+																	| Трубы
+																	| теплодеформированные из коррозионностойкой стали
+												li.f-item.child
+													a(href='#') Специальные стали и сплавы
+													.submenu-wrapper.hide
+														ul.submenu
+															li.child
+																a(href='product/nikelevye-splavy/index.html') Никелевые сплавы
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li.child
+																			a(href='product/alyumel/index.html') Алюмель
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/alyumel-lenta/index.html') Алюмель лента
+																					li
+																						a(href='product/alyumel-list/index.html') Алюмель лист
+																					li
+																						a(href='product/alyumel-polosa/index.html') Алюмель полоса
+																					li
+																						a(href='product/alyumel-provoloka/index.html') Алюмель проволока
+																					li
+																						a(href='product/alyumel-prutok/index.html') Алюмель пруток
+																					li
+																						a(href='product/alyumel-truba/index.html') Алюмель труба
+																		li.child
+																			a(href='product/inkonel/index.html') Инконель
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/list-inkonel/index.html') Лист инконель
+																					li
+																						a(href='product/provoloka-inkonel/index.html') Проволока инконель
+																					li
+																						a(href='product/prutok-inkonel/index.html') Пруток инконель
+																					li
+																						a(href='product/truba-inkonel/index.html') Труба инконель
+																		li.child
+																			a(href='product/konstantan-splav/index.html') Константан сплав
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/konstantan-list/index.html') Константан лист
+																					li
+																						a(href='product/konstantan-polosa/index.html') Константан полоса
+																					li
+																						a(href='product/konstantan-prutok/index.html') Константан пруток
+																					li
+																						a(href='product/konstantan-truba/index.html') Константан труба
+																					li
+																						a(href='product/lenta-konstantanovaya/index.html') Лента константановая
+																					li
+																						a(href='product/provoloka-konstantanovaya/index.html')
+																							| Проволока
+																							| константановая
+																		li.child
+																			a(href='product/kopel/index.html') Копель
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/kopel-lenta/index.html') Копель лента
+																					li
+																						a(href='product/kopel-list/index.html') Копель лист
+																					li
+																						a(href='product/kopel-polosa/index.html') Копель полоса
+																					li
+																						a(href='product/kopel-provoloka/index.html') Копель проволока
+																					li
+																						a(href='product/kopel-prutok/index.html') Копель пруток
+																					li
+																						a(href='product/kopel-truba/index.html') Копель труба
+																		li.child
+																			a(href='product/kunial/index.html') Куниаль
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/kunial-lenta/index.html') Куниаль лента
+																					li
+																						a(href='product/kunial-list/index.html') Куниаль лист
+																					li
+																						a(href='product/kunial-polosy/index.html') Куниаль полосы
+																					li
+																						a(href='product/kunial-prutki/index.html') Куниаль прутки
+																		li
+																			a(href='product/manganin/index.html') Манганин
+																		li.child
+																			a(href='product/medno-nikelevye-splavy/index.html') Медно-никелевые сплавы
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/medno-nikelevaya-lenta/index.html') Медно-никелевая лента
+																					li
+																						a(href='product/medno-nikelevaya-polosa/index.html')
+																							| Медно-никелевая
+																							| полоса
+																					li
+																						a(href='product/medno-nikelevaya-provoloka/index.html')
+																							| Медно-никелевая
+																							| проволока
+																					li
+																						a(href='product/medno-nikelevaya-truba/index.html') Медно-никелевая труба
+																					li
+																						a(href='product/medno-nikelevyy-list/index.html') Медно-никелевый лист
+																					li
+																						a(href='product/medno-nikelevyy-list-perforirovannyy/index.html')
+																							| Медно-никелевый
+																							| лист перфорированный
+																					li
+																						a(href='product/medno-nikelevyy-prutok/index.html') Медно-никелевый пруток
+																		li.child
+																			a(href='product/melkhior/index.html') Мельхиор
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-melkhior/index.html') Лента мельхиор
+																					li
+																						a(href='product/melkhior-list/index.html') Мельхиор лист
+																					li
+																						a(href='product/melkhior-polosy/index.html') Мельхиор полосы
+																					li
+																						a(href='product/melkhior-prutok/index.html') Мельхиор пруток
+																					li
+																						a(href='product/melkhiorovaya-provoloka/index.html')
+																							| Мельхиоровая
+																							| проволока
+																					li
+																						a(href='product/melkhiorovaya-truba/index.html') Мельхиоровая труба
+																		li.child
+																			a(href='product/monel/index.html') Монель
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-monel/index.html') Лента Монель
+																					li
+																						a(href='product/list-monel/index.html') Лист монель
+																					li
+																						a(href='product/monelevaya-truba/index.html') Монелевая труба
+																					li
+																						a(href='product/monelevyy-krug/index.html') Монелевый круг (пруток)
+																					li
+																						a(href='product/polosa-monel/index.html') Полоса монель
+																					li
+																						a(href='product/provoloka-monel/index.html') Проволока монель
+																		li
+																			a(href='product/neyzilber/index.html') Нейзильбер
+																		li
+																			a(href='product/nitinolovaya-provoloka/index.html') Нитиноловая проволока
+																		li.child
+																			a(href='product/nikhrom/index.html') Нихром
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-nikhromovaya/index.html') Лента нихромовая
+																					li
+																						a(href='product/nikhromovaya-provoloka/index.html') Нихромовая проволока
+																					li
+																						a(href='product/nikhromovye-truby/index.html') Нихромовые трубы
+																					li
+																						a(href='product/nikhromovyy-krug/index.html') Нихромовый круг
+																					li
+																						a(href='product/nikhromovyy-prutok/index.html') Нихромовый пруток
+																					li
+																						a(href='product/setka-nikhromovaya/index.html') Сетка нихромовая
+																		li.child
+																			a(href='product/khastelloy/index.html') Хастеллой
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/list-khastelloy/index.html') Лист хастеллой
+																					li
+																						a(href='product/provoloka-khastelloy/index.html') Проволока хастеллой
+																					li
+																						a(href='product/prutok-khastelloy/index.html') Пруток хастеллой
+																					li
+																						a(href='product/truba-khastelloy/index.html') Труба хастеллой
+																		li.child
+																			a(href='product/khromel/index.html') Хромель
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/khromel-lenta/index.html') Хромель лента
+																					li
+																						a(href='product/khromel-list/index.html') Хромель лист
+																					li
+																						a(href='product/khromel-polosa/index.html') Хромель полоса
+																					li
+																						a(href='product/khromel-provoloka/index.html') Хромель проволока
+																					li
+																						a(href='product/khromel-prutok/index.html') Хромель пруток
+																					li
+																						a(href='product/khromel-truba/index.html') Хромель труба
+															li.child
+																a(href='product/pretsizionnye-splavy/index.html') Прецизионные сплавы
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li.child
+																			a(href='product/magnitno-myagkie-splavy/index.html') Магнитно-мягкие сплавы
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/pretsizionnaya-magnitno-myagkaya-lenta/index.html')
+																							| Прецизионная
+																							| магнитно-мягкая лента
+																					li
+																						a(href='product/pretsizionnaya-magnitno-myagkaya-polosa/index.html')
+																							| Прецизионная
+																							| магнитно-мягкая полоса
+																					li
+																						a(href='product/pretsizionnaya-magnitno-myagkaya-provoloka/index.html')
+																							| Прецизионная
+																							| магнитно-мягкая проволока
+																					li
+																						a(href='product/pretsizionnyy-magnitno-myagkiy-list/index.html')
+																							| Прецизионный
+																							| магнитно-мягкий лист
+																					li
+																						a(href='product/pretsizionnyy-magnitno-myagkiy-prutok/index.html')
+																							| Прецизионный
+																							| магнитно-мягкий пруток
+																					li
+																						a(href='product/pretsizionnyy-magnitno-myagkiy-slitok/index.html')
+																							| Прецизионный
+																							| магнитно-мягкий слиток
+																		li.child
+																			a(href='product/magnitno-tverdye-splavy/index.html') Магнитно-твердые сплавы
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-dlya-postoyannykh-magnitov/index.html')
+																							| Лента для
+																							| постоянных магнитов
+																					li
+																						a(href='product/magnitno-tverdaya-lenta/index.html')
+																							| Магнитно-твердая
+																							| лента
+																					li
+																						a(href='product/magnitno-tverdaya-polosa/index.html')
+																							| Магнитно-твердая
+																							| полоса
+																					li
+																						a(href='product/magnitno-tverdaya-provoloka/index.html')
+																							| Магнитно-твердая
+																							| проволока
+																					li
+																						a(href='product/magnitno-tverdyy-list/index.html') Магнитно-твердый лист
+																					li
+																						a(href='product/magnitno-tverdyy-prutok/index.html')
+																							| Магнитно-твердый
+																							| пруток
+																					li
+																						a(href='product/magnitno-tverdyy-slitok/index.html')
+																							| Магнитно-твердый
+																							| слиток
+																		li
+																			a(href='product/nemagnitnye-splavy/index.html') Немагнитные сплавы
+																		li.child
+																			a(href='product/splav-s-vysokim-elektricheskim-soprotivleniem/index.html')
+																				| Сплав с
+																				| высоким электрическим сопротивлением
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-dlya-kataliticheskikh-neytralizatorov/index.html')
+																							| Лента
+																							| для каталитических нейтрализаторов
+																					li
+																						a(href='product/lenta-dlya-nagrevateley/index.html')
+																							| Лента для
+																							| нагревателей
+																					li
+																						a(href='product/lenta-dlya-rezistorov-i-detaley-poluprovodnikovykh-izdeliy/index.html')
+																							| Лента
+																							| для резисторов и деталей полупроводниковых изделий
+																					li
+																						a(href='product/lenta-s-vysokim-elektricheskim-soprotivleniem/index.html')
+																							| Лента
+																							| с высоким электрическим сопротивлением
+																					li
+																						a(href='product/provoloka-s-vysokim-elektricheskim-soprotivleniem/index.html')
+																							| Проволока
+																							| с высоким электрическим сопротивлением
+																					li
+																						a(href='product/prutok-s-vysokim-elektricheskim-soprotivleniem/index.html')
+																							| Пруток
+																							| с высоким электрическим сопротивлением
+																					li
+																						a(href='product/slitok-s-vysokim-elektricheskim-soprotivleniem/index.html')
+																							| Слиток
+																							| с высоким электрическим сопротивлением
+																		li.child
+																			a(href='product/splav-s-zadannym-tklr/index.html') Сплав с заданным ТКЛР
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-s-zadannym-tklr/index.html') Лента с заданным ТКЛР
+																					li
+																						a(href='product/polosa-s-zadannym-tklr/index.html') Полоса с заданным ТКЛР
+																					li
+																						a(href='product/pretsizionnyy-list-s-zadannym-tklr/index.html')
+																							| Прецизионный
+																							| лист с заданным ТКЛР
+																					li
+																						a(href='product/provoloka-s-zadannym-tklr/index.html')
+																							| Проволока с заданным
+																							| ТКЛР
+																					li
+																						a(href='product/prutok-s-zadannym-tklr/index.html') Пруток с заданным ТКЛР
+																					li
+																						a(href='product/slitok-s-zadannym-tklr/index.html') Слиток с заданным ТКЛР
+																					li
+																						a(href='product/truba-s-zadannym-tklr/index.html') Труба с заданным ТКЛР
+																		li.child
+																			a(href='product/splav-s-zadannymi-svoystvami-uprugosti/index.html')
+																				| Сплав с
+																				| заданными свойствами упругости
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/lenta-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Лента с
+																							| заданными свойствами упругости
+																					li
+																						a(href='product/polosa-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Полоса с
+																							| заданными свойствами упругости
+																					li
+																						a(href='product/provoloka-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Проволока
+																							| с заданными свойствами упругости
+																					li
+																						a(href='product/prutok-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Пруток с
+																							| заданными свойствами упругости
+																					li
+																						a(href='product/slitok-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Слиток с
+																							| заданными свойствами упругости
+																					li
+																						a(href='product/truba-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Труба с
+																							| заданными свойствами упругости
+																					li
+																						a(href='product/uprugiy-list-list-s-zadannymi-svoystvami-uprugosti/index.html')
+																							| Упругий
+																							| лист (лист с заданными свойствами упругости)
+																		li.child
+																			a(href='product/fekhral/index.html') Фехраль
+																			.submenu-wrapper.hide
+																				ul.submenu
+																					li
+																						a(href='product/provoloka-fekhral/index.html') Проволока фехраль
+																					li
+																						a(href='product/fekhralevaya-spiral/index.html') Фехралевая спираль
+																					li
+																						a(href='product/fekhral-lenta/index.html') Фехраль лента
+															li.child
+																a(href='product/bystrorezhushchaya-stal/index.html') Быстрорежущая сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/brusok-iz-bystrorezhushchey-stali/index.html')
+																				| Брусок из
+																				| быстрорежущей стали
+																		li
+																			a(href='product/truba-iz-bystrorezhushchey/index.html') Труба из быстрорежущей
+																		li
+																			a(href='product/bystrorezhushchiy-krug/index.html') Быстрорежущий круг
+																		li
+																			a(href='product/kvadrat-bystrorez/index.html') Квадрат быстрорез
+																		li
+																			a(href='product/list-bystrorez/index.html') Лист быстрорез
+																		li
+																			a(href='product/polosa-bystrorez/index.html') Полоса быстрорез
+																		li
+																			a(href='product/provoloka-bystrorez/index.html') Проволока быстрорез
+															li.child
+																a(href='product/instrumentalnaya-stal/index.html') Инструментальная сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/list-iz-instrumentalnoy-stali/index.html') Лист
+																		li
+																			a(href='product/plita-iz-instrumentalnoy-stali/index.html') Плита
+																		li
+																			a(href='product/krug-iz-instrumentalnoy-stali/index.html') Круг
+																		li
+																			a(href='product/kvadrat-iz-instumentalnoy-stali/index.html') Квадрат
+																		li
+																			a(href='product/polosa-iz-instrumentalnoy-stali/index.html') Полоса
+																		li
+																			a(href='product/pokovka-iz-instrumentalnoy-stali/index.html') Поковка
+																		li
+																			a(href='product/lenta-iz-instrumentalnoy-stali/index.html') Лента
+																		li
+																			a(href='product/truba-iz-instrumentalnoy-stali/index.html') Труба
+															li.child
+																a(href='product/zharoprochnye-stali/index.html') Жаропрочные стали
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/zharoprochnyy-krug/index.html') Жаропрочный круг
+																		li
+																			a(href='product/zharoprochnaya-lenta/index.html') Жаропрочная лента
+																		li
+																			a(href='product/zharoprochnaya-truba/index.html') Жаропрочная труба
+																		li
+																			a(href='product/zharoprochnaya-provoloka/index.html') Жаропрочная проволока
+																		li
+																			a(href='product/zharoprochnyy-kvadrat/index.html') Жаропрочный квадрат
+																		li
+																			a(href='product/zharoprochnyy-shestigrannik/index.html')
+																				| Жаропрочный
+																				| шестигранник
+																		li
+																			a(href='product/zharoprochnaya-polosa/index.html') Жаропрочная полоса
+																		li
+																			a(href='product/zharoprochnaya-pokovka/index.html') Жаропрочная поковка
+																		li
+																			a(href='product/zharoprochnyy-list/index.html') Жаропрочный лист
+															li.child
+																a(href='product/elektrotekhnicheskaya-stal/index.html') Электротехническая сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/elektrotekhnicheskiy-krug/index.html')
+																				| Электротехнический круг
+																				| (трансформаторный круг)
+																		li
+																			a(href='product/elektrotekhnicheskaya-polosa/index.html')
+																				| Электротехническая полоса
+																				| (трансформаторная полоса)
+																		li
+																			a(href='product/elektrotekhnicheskiy-kvadrat/index.html')
+																				| Электротехнический квадрат
+																				| (трансформаторный квадрат)
+																		li
+																			a(href='product/elektrotekhnicheskaya-lenta/index.html')
+																				| Электротехническая лента
+																				| (трансформаторная лента)
+																		li
+																			a(href='product/elektrotekhnicheskiy-list/index.html')
+																				| Электротехнический лист
+																				| (трансформаторный лист)
+															li.child
+																a(href='product/pishchevaya-stal/index.html') Пищевая сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/pishchevaya-plita/index.html') Пищевая плита
+																		li
+																			a(href='product/pishchevaya-polosa/index.html') Пищевая полоса
+																		li
+																			a(href='product/pishchevaya-truba/index.html') Пищевая труба
+																		li
+																			a(href='product/pishchevoy-kvadrat/index.html') Пищевой квадрат
+																		li
+																			a(href='product/pishchevoy-krug/index.html') Пищевой круг
+																		li
+																			a(href='product/pishchevoy-list/index.html') Пищевой лист
+															li.child
+																a(href='product/podshipnikovaya-stal/index.html') Подшипниковая сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/podshipnikovyy-shestigrannik/index.html')
+																				| Подшипниковый
+																				| шестигранник
+																		li
+																			a(href='product/podshipnikovyy-krug/index.html') Подшипниковый круг
+																		li
+																			a(href='product/podshipnikovyy-kvadrat/index.html') Подшипниковый квадрат
+																		li
+																			a(href='product/podshipnikovye-truby/index.html') Подшипниковые трубы
+																		li
+																			a(href='product/podshipnikovaya-polosa/index.html') Подшипниковая полоса
+															li.child
+																a(href='product/ressorno-pruzhinnye-stali/index.html') Рессорно-пружинные стали
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/ressorno-pruzhinnaya-plita/index.html') Рессорно-пружинная плита
+																		li
+																			a(href='product/ressorno-pruzhinnaya-polosa/index.html')
+																				| Рессорно-пружинная
+																				| полоса
+																		li
+																			a(href='product/ressorno-pruzhinnyy-kvadrat/index.html')
+																				| Рессорно-пружинный
+																				| квадрат
+																		li
+																			a(href='product/ressorno-pruzhinnyy-krug/index.html') Рессорно-пружинный круг
+																		li
+																			a(href='product/ressorno-pruzhinnyy-list/index.html') Рессорно-пружинный лист
+																		li
+																			a(href='product/ressorno-pruzhinnyy-shestigrannik/index.html')
+																				| Рессорно-пружинный
+																				| шестигранник
+																		li
+																			a(href='product/truby-iz-ressorno-pruzhinnoy-stali/index.html')
+																				| Трубы из
+																				| рессорно-пружинной стали
+															li.child
+																a(href='product/konstruktsionnaya-stal/index.html') Конструкционная сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/plita-iz-konstruktsionnoy-stali/index.html') Плита
+																		li
+																			a(href='product/krug-iz-konstruktsionnoy-stali/index.html') Круг
+																		li
+																			a(href='product/kvadrat-stalnoy-iz-konstruktsionnoy-stali/index.html')
+																				| Квадрат
+																				| стальной
+																		li
+																			a(href='product/truba-iz-konstruktsionnoy-stali/index.html')
+																				| Труба из
+																				| конструкционной стали
+																		li
+																			a(href='product/metallicheskaya-polosa-iz-konstruktsionnoy-stali/index.html')
+																				| Металлическая
+																				| полоса
+																		li
+																			a(href='product/provoloka-stalnaya-iz-konstruktsionnoy-stali/index.html')
+																				| Проволока
+																				| стальная
+																		li
+																			a(href='product/shestigrannik-iz-konstruktsionnoy-stali/index.html') Шестигранник
+																		li
+																			a(href='product/pokovka-stalnaya-iz-konstruktsionnoy-stali/index.html')
+																				| Поковка
+																				| стальная
+																		li
+																			a(href='product/ugolok-stalnoy-iz-konstruktsionnoy-stali/index.html')
+																				| Уголок
+																				| стальной
+																		li
+																			a(href='product/stalnoy-list-iz-konstruktsionnoy-stali/index.html')
+																				| Стальной
+																				| лист
+															li.child
+																a(href='product/shtampovaya-stal/index.html') Штамповая сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/shtampovaya-polosa/index.html') Штамповая полоса
+																		li
+																			a(href='product/shtampovoy-kvadrat/index.html') Штамповой квадрат
+																		li
+																			a(href='product/shtampovoy-krug/index.html') Штамповой круг
+																		li
+																			a(href='product/shtampovye-truby/index.html') Штамповые трубы
+															li.child
+																a(href='product/avtomatnaya-stal/index.html') Автоматная сталь
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/avtomatnaya-plita/index.html') Автоматная плита
+																		li
+																			a(href='product/avtomatnyy-kvadrat/index.html') Автоматный квадрат
+																		li
+																			a(href='product/avtomatnyy-krug/index.html') Автоматный круг
+																		li
+																			a(href='product/avtomatnyy-list/index.html') Автоматный лист
+																		li
+																			a(href='product/avtomatnyy-shestigrannik/index.html') Автоматный шестигранник
+												li.f-item.child
+													a(href='#') Черный металлопрокат
+													.submenu-wrapper.hide
+														ul.submenu
+															li.child
+																a(href='product/trubnyy-prokat/index.html') Трубный прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/truby-besshovnye/index.html') Трубы бесшовные
+																		li
+																			a(href='product/truby-elektrosvarnye/index.html') Трубы электросварные
+																		li
+																			a(href='product/truby-vgp/index.html') Трубы ВГП
+																		li
+																			a(href='product/truby-otsinkovannye/index.html') Трубы оцинкованные
+																		li
+																			a(href='product/truby-tolstostennye/index.html') Трубы толстостенные
+																		li
+																			a(href='product/truby-kotelnye/index.html') Трубы котельные
+																		li
+																			a(href='product/truby-krekingovye/index.html') Трубы крекинговые
+																		li
+																			a(href='product/truby-profilnye/index.html') Трубы профильные
+																		li
+																			a(href='product/truby-nerzhaveyushchie/index.html') Трубы нержавеющие
+																		li
+																			a(href='product/truby-dlya-zabora/index.html') Трубы для забора
+																		li
+																			a(href='product/truby-lezhalye/index.html') Трубы лежалые
+															li.child
+																a(href='product/fasonnyy-prokat/index.html') Фасонный прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/balka-dvutavrovaya/index.html') Балка двутавровая
+																		li
+																			a(href='product/rels/index.html') Рельс
+																		li
+																			a(href='product/ugolok/index.html') Уголок
+																		li
+																			a(href='product/shveller/index.html') Швеллер
+															li.child
+																a(href='product/sortovoy-prokat/index.html') Сортовой прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/armatura/index.html') Арматура
+																		li
+																			a(href='product/katanka/index.html') Катанка
+																		li
+																			a(href='product/kvadrat/index.html') Квадрат
+																		li
+																			a(href='product/krug/index.html') Круг
+																		li
+																			a(href='product/shestigrannik/index.html') Шестигранник
+																		li
+																			a(href='product/polosa/index.html') Полоса
+																		li
+																			a(href='product/drob/index.html') Дробь
+																		li
+																			a(href='product/shary-pomolnye/index.html') Шары помольные
+															li.child
+																a(href='product/listovoy-prokat/index.html') Листовой прокат
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/list-goryachekatanyy/index.html') Лист горячекатаный
+																		li
+																			a(href='product/list-kholodnokatanyy/index.html') Лист холоднокатаный
+																		li
+																			a(href='product/list-otsinkovannyy/index.html') Лист оцинкованный
+																		li
+																			a(href='product/list-riflenyy/index.html') Лист рифленый
+																		li
+																			a(href='product/list-pvl/index.html') Лист ПВЛ
+																		li
+																			a(href='product/list-nerzhaveyushchiy/index.html') Лист нержавеющий
+															li.child
+																a(href='product/setka-metallicheskaya/index.html') Сетка металлическая
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/prosechno-vytyazhnaya-setka/index.html')
+																				| Просечно-вытяжная сетка
+																				| (сетка ПВЛ)
+																		li
+																			a(href='product/setka-rabitsa/index.html') Сетка рабица
+																		li
+																			a(href='product/setka-kladochnaya/index.html') Сетка кладочная
+																		li
+																			a(href='product/setka-tkanaya-s-kvadratnymi-yacheykami/index.html')
+																				| Сетка тканая с
+																				| квадратными ячейками
+																		li
+																			a(href='product/setka-armaturnaya/index.html') Сетка арматурная
+																		li
+																			a(href='product/setka-shtukaturnaya/index.html') Сетка штукатурная
+																		li
+																			a(href='product/setka-svarnaya/index.html') Сетка сварная
+																		li
+																			a(href='product/sharnirnaya-uzlovaya-setka/index.html') Шарнирная узловая сетка
+																		li
+																			a(href='product/setka-dorozhnaya/index.html') Сетка дорожная
+																		li
+																			a(href='product/setka-mane/index.html') Сетка Манье
+																		li
+																			a(href='product/sarzhevaya-setka/index.html') Саржевая сетка
+																		li
+																			a(href='product/setka-rabitsa-s-pvkh-pokrytiem/index.html')
+																				| Сетка рабица с ПВХ
+																				| покрытием
+																		li
+																			a(href='product/setka-shchelevaya/index.html') Сетка щелевая
+																		li
+																			a(href='product/setka-filtrovaya-galunnaya/index.html')
+																				| Сетка фильтровая
+																				| галунная
+																		li
+																			a(href='product/sbornaya-odinarnaya-transporternaya-setka-tip-3/index.html')
+																				| Сборная
+																				| одинарная транспортерная сетка Тип-3
+																		li
+																			a(href='product/dvoynaya-sbornaya-transporternaya-setka-tip-4/index.html')
+																				| Двойная
+																				| сборная транспортерная сетка Тип-4
+																		li
+																			a(href='product/dvoynaya-sbornaya-transporternaya-setka-tip-6/index.html')
+																				| Двойная
+																				| сборная транспортерная сетка тип-6
+																		li
+																			a(href='product/odinarnaya-transporternaya-setka-tip-5/index.html')
+																				| Одинарная
+																				| транспортерная сетка Тип-5
+																		li
+																			a(href='product/transporternaya-setka-tip-7/index.html')
+																				| Транспортерная сетка
+																				| тип-7
+																		li
+																			a(href='product/transporternaya-setka-tip-8/index.html')
+																				| Транспортерная сетка
+																				| тип-8
+																		li
+																			a(href='product/setka-kanilirovannaya-riflenaya/index.html')
+																				| Сетка канилированная
+																				| (рифленая)
+																		li
+																			a(href='product/rukavnaya-setka/index.html') Рукавная сетка
+															li.child
+																a(href='product/provoloka/index.html') Проволока
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/provoloka-vr-1/index.html') Проволока ВР 1
+																		li
+																			a(href='product/provoloka-ok-tns-tno/index.html') Проволока ОК ТНС (ТНО)
+																		li
+																			a(href='product/provoloka-ok-toch/index.html') Проволока ОК ТОЧ
+																		li
+																			a(href='product/provoloka-ok-ots/index.html') Проволока ОК ОЦ
+															li.child
+																a(href='product/stalnoy-kanat-tros/index.html') Стальной канат, трос
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/liftovyy-kanat/index.html') Лифтовый канат
+																		li
+																			a(href='product/Kanat_stalnoj/index.html') Трос стальной (металлический канат)
+																		li
+																			a(href='product/kanat-aviatsionnyy/index.html') Канат авиационный
+																		li
+																			a(href='product/kanat-dvoynoy-svivki/index.html') Трос - канат двойной свивки
+																		li
+																			a(href='product/kanat-dlya-burovykh-ustanovok/index.html')
+																				| Канат для буровых
+																				| установок
+																		li
+																			a(href='product/kanat-dlya-skipovykh-podemnikov-domennykh-pechey/index.html')
+																				| Канат
+																				| для скиповых подъемников доменных печей
+																		li
+																			a(href='product/kanat-troynoy-svivki/index.html') Канат тройной свивки
+																		li
+																			a(href='product/kanat-tyagovyy-dlya-podvesnykh-dorog/index.html')
+																				| Канат тяговый для
+																				| подвесных дорог
+																		li
+																			a(href='product/kanaty-grozozashchitnye/index.html') Грозотрос
+																		li
+																			a(href='product/trosy-dlya-dorozhnykh-mashin/index.html')
+																				| Тросы для дорожных
+																				| машин
+																		li
+																			a(href='product/kanaty-dlya-taley/index.html') Трос для тали (канат для талей)
+																		li
+																			a(href='product/tros-dlya-ekskavatorov/index.html') Трос для экскаваторов
+																		li
+																			a(href='product/kanaty-odinarnoy-svivki-spiralnye/index.html')
+																				| Канаты одинарной
+																				| свивки спиральные
+																		li
+																			a(href='product/sudovoy-kanat/index.html') Судовой канат
+															li.child
+																a(href='product/tsepi-metallicheskie/index.html') Цепи металлические
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/tsepi-gruzovye/index.html') Цепи грузовые
+																		li
+																			a(href='product/tsepi-kruglozvennye/index.html') Цепи круглозвенные
+																		li
+																			a(href='product/tsep-svarnaya/index.html') Цепь сварная
+																		li
+																			a(href='product/tsep-dlinnozvennaya/index.html') Цепь длиннозвенная
+																		li
+																			a(href='product/tsep-korotkozvennaya/index.html') Цепь короткозвенная
+																		li
+																			a(href='product/yakornaya-sudovaya-tsep/index.html') Якорная судовая цепь
+																		li
+																			a(href='product/tyagovye-razbornye-tsepi/index.html') Тяговые разборные цепи
+																		li
+																			a(href='product/tsepi-s-rasporkoy/index.html') Цепи с распоркой
+																		li
+																			a(href='product/tsep-kalibrovannaya/index.html') Цепь калиброванная
+																		li
+																			a(href='product/tsep-nekalibrovannaya/index.html') Цепь некалиброванная
+																		li
+																			a(href='product/tsepi-dlya-offshornykh-platform/index.html')
+																				| Цепи для оффшорных
+																				| платформ
+																		li
+																			a(href='product/tsepi-kruglozvennye-nekalibrovannye/index.html')
+																				| Цепи круглозвенные
+																				| некалиброванные
+																		li
+																			a(href='product/tsep-kruglozvennaya-ultraspec-2000/index.html')
+																				| Цепь круглозвенная
+																				| ULTRASPEC 2000
+																		li
+																			a(href='product/tsep-kruglozvennaya-klass-prochnosti-2/index.html')
+																				| Цепь
+																				| круглозвенная класс прочности 2
+																		li
+																			a(href='product/tsep-kruglozvennaya-klass-prochnosti-d/index.html')
+																				| Цепь
+																				| круглозвенная класс прочности D
+												li.f-item.child
+													a(href='#') Метизная продукция
+													.submenu-wrapper.hide
+														ul.submenu
+															li.child
+																a(href='product/krepezh-vysokoprochnyy/index.html') Крепеж высокопрочный
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/vysokoprochnaya-gayka/index.html') Высокопрочная гайка
+																		li
+																			a(href='product/vysokoprochnaya-shayba/index.html') Высокопрочная шайба
+																		li
+																			a(href='product/vysokoprochnyy-bolt/index.html') Высокопрочный болт
+															li.child
+																a(href='product/stalnye-gayki/index.html') Стальные гайки
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/gayki-glukhie/index.html') Гайки глухие
+																		li
+																			a(href='product/gayki-shlitsevye/index.html') Гайки шлицевые
+																		li
+																			a(href='product/glukhaya-gayka-v-sbore/index.html') Глухая гайка в сборе
+															li
+																a(href='product/stalnye-otsinkovannye-shpilki/index.html')
+																	| Стальные оцинкованные
+																	| шпильки
+															li.child
+																a(href='product/fundamentnye-bolty/index.html') Фундаментные болты
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/bolt-fundamentnyy-pryamoy/index.html') Болт фундаментный прямой
+																		li
+																			a(href='product/bolt-fundamentnyy-s-konicheskim-kontsom/index.html')
+																				| Болт
+																				| фундаментный с коническим концом
+																		li
+																			a(href='product/bolty-fundamentnye-izognutye/index.html')
+																				| Болты фундаментные
+																				| изогнутые
+																		li
+																			a(href='product/bolty-fundamentnye-s-ankernoy-plitoy/index.html')
+																				| Болты фундаментные
+																				| с анкерной плитой
+																		li
+																			a(href='product/bolty-fundamentnye-sostavnye/index.html')
+																				| Болты фундаментные
+																				| составные
+															li.child
+																a(href='product/ankernye-plity/index.html') Анкерные плиты
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/litaya-ankernaya-plita/index.html') Литая анкерная плита
+																		li
+																			a(href='product/svarnye-ankernye-plity/index.html') Сварные анкерные плиты
+																		li
+																			a(href='product/sostavnye-ankernye-plity/index.html') Составные анкерные плиты
+																		li
+																			a(href='product/stalnye-ankernye-plity/index.html') Стальные анкерные плиты
+															li.child
+																a(href='product/ankernye-tyagi/index.html') Анкерные тяги
+																.submenu-wrapper.hide
+																	ul.submenu
+																		li
+																			a(href='product/ankernaya-tyaga-s-nakladkami/index.html')
+																				| Анкерная тяга с
+																				| накладками
+																		li
+																			a(href='product/ankernaya-tyaga-s-proushinoy/index.html')
+																				| Анкерная тяга с
+																				| проушиной
+																		li
+																			a(href='product/ankernye-tyagi-ploskie/index.html') Анкерные тяги плоские
+															li
+																a(href='product/ankernyy-fundamentnyy-blok/index.html') Анкерный фундаментный блок
+															li
+																a(href='product/futerovochnye-bolty-bronebolty/index.html')
+																	| Футеровочные болты
+																	| (бронеболты)
+															li
+																a(href='product/vodootvodnaya-reshetka/index.html') Водоотводная решетка
+												li.f-item.child
+													a(href='#') Трубопроводная арматура
+													.submenu-wrapper.hide
+														ul.submenu
+															li
+																a(href='product/otvody/index.html') Отводы
+															li
+																a(href='product/troyniki/index.html') Тройники
+															li
+																a(href='product/perekhody/index.html') Переходы
+															li
+																a(href='product/obechayka/index.html') Обечайка
+															li
+																a(href='product/zadvizhki/index.html') Задвижки
+															li
+																a(href='product/flantsy/index.html') Фланцы
+															li
+																a(href='product/zatvory/index.html') Затворы
+															li
+																a(href='product/klapany/index.html') Клапаны
+															li
+																a(href='product/ventili/index.html') Вентили
+															li
+																a(href='product/krany/index.html') Краны
+															li
+																a(href='product/zaglushki/index.html') Заглушки
+															li
+																a(href='product/kompensatory/index.html') Компенсаторы
+									.services-submenu.hide
+										#bx_incl_area_4_1
+										aside.sidebar
+											ul.nav.nav-list.side-menu
+												li.f-item.servicesrezka-gazom
+													a(href='#') Резка газом
+												li.f-item.servicesrezka-mayatnikovoy-piloy
+													a(href='#') Резка маятниковой пилой
+												li.f-item.servicesrezka-gilotinoy
+													a(href='#') Резка гильотиной
+												li.f-item.servicesdostavka
+													a(href='#') Доставка
+												li.f-item.servicesotsinkovanie
+													a(href='#') Оцинкование
+												li.f-item.servicesmetallobrabotka
+													a(href='#') Металлобработка
+									.proizv-submenu.hide
+										#bx_incl_area_5_1
+										aside.sidebar
+											ul.nav.nav-list.side-menu
+												li.f-item.proizvodstvoproizvodstvo-tkanoy-setki
+													a(href='#') Производство тканой сетки
+												li.f-item.proizvodstvoproizvodstvo-setki
+													a(href='#') Производство сетки
+												li.f-item.proizvodstvoproizvodstvo-krepezhnykh-izdeliy
+													a(href='#') Производство крепежных изделий
+												li.f-item.proizvodstvoproizvodstvo-tsepey
+													a(href='#') Производство цепей
+												li.f-item.proizvodstvoproizvodstvo-perforirovannykh-listov
+													a(href='#') Производство перфорированных листов
+												li.f-item.proizvodstvoizgotovlenie-pruzhin
+													a(href='#') Изготовление пружин
+												li.f-item.proizvodstvoizgotovlenie-otlivok
+													a(href='#') Изготовление отливок
+									.contacts-block
+										.inner-table-block.address
+											span.name Промышленная механизация 
+											// 'start_frame_cache_address-block1'
+											.address-block
+												i.svg.inline.svg-inline-address.colored(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
+														defs
+															style.
+																.cls-1 {
+																fill-rule: evenodd;
+																}
+														path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
+												div
+													| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
+											// 'end_frame_cache_address-block1'
+											// 'start_frame_cache_header-allhsch-block1'
+											.schedule
+												| Ежедневно с 09:00 до 18:00
+											// 'end_frame_cache_header-allhsch-block1'
+											// 'start_frame_cache_header-allphones-block1'
+											.phone.big
+												i.svg.inline.svg-inline-phone.colored(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
+														defs
+															style.
+																.pcls-1 {
+																fill: #222;
+																fill-rule: evenodd;
+																}
+														path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
+												a(href='tel:+73510000000') +7 (351) 000-00-00
+											// 'end_frame_cache_header-allphones-block1'
+											span.email По всем вопросам
+											// 'start_frame_cache_email-block1'
+											.email.blocks
+												i.svg.inline.svg-inline-email(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
+														defs
+															style.
+																.ecls-1 {
+																fill: #222;
+																fill-rule: evenodd;
+																}
+														path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
+												div
+													a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
+											// 'end_frame_cache_email-block1'
+						.col-md-9
+							.menu-only
+								nav.mega-menu.sliced
+									.table-menu.catalog_icons_Y
+										.marker-nav
+										table
+											tbody
+												tr
+													td.menu-item.unvisible.dropdown
+														.wrap
+															a.dropdown-toggle(href='company/index.html')
+																| О Компании 
+																i.fa.fa-angle-down
+																.line-wrapper
+																	span.line
+															span.tail
+															ul.dropdown-menu
+																li.count_4
+																	a(href='company/index-2.html' title='О компании') О компании
+																li.count_4
+																	a(href='company/value/index.html' title='Ценности компании') Ценности компании
+																li.count_4
+																	a(href='company/geo/index.html' title='География присутствия') География присутствия
+																li.count_4
+																	a(href='company/licenses/index.html' title='Сертификаты') Сертификаты
+																li.count_4
+																	a(href='company/partners/index.html' title='Сотрудничество') Сотрудничество
+																li.count_4
+																	a(href='company/requisites/index.html' title='Реквизиты') Реквизиты
+													td.menu-item.unvisible.dropdown
+														.wrap
+															a.dropdown-toggle(href='info/index.html')
+																| Информация 
+																i.fa.fa-angle-down
+																.line-wrapper
+																	span.line
+															span.tail
+															ul.dropdown-menu
+																li.count_4
+																	a(href='info/sales/index.html' title='Акции') Акции
+																li.count_4
+																	a(href='info/news/index.html' title='Новости') Новости
+													td.menu-item.unvisible
+														.wrap
+															a(href='#')
+																| Благонадежность 
+																i.fa.fa-angle-down
+																.line-wrapper
+																	span.line
+													td.menu-item.unvisible
+														.wrap
+															a(href='company/licenses/index.html')
+																| Сертификаты 
+																i.fa.fa-angle-down
+																.line-wrapper
+																	span.line
+													td.menu-item.unvisible
+														.wrap
+															a(href='#')
+																| Доставка 
+																i.fa.fa-angle-down
+																.line-wrapper
+																	span.line
+													td.menu-item.unvisible
+														.wrap
+															a(href='contacts/index.html')
+																| Контакты 
+																i.fa.fa-angle-down
+																.line-wrapper
+																	span.line
+													td.menu-item.dropdown.js-dropdown.nosave.unvisible
+														.wrap
+															a.dropdown-toggle.more-items(href='#')
+																span
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='3' viewBox='0 0 17 3')
+																		defs
+																			style.
+																				.cls-1 {
+																				fill-rule: evenodd;
+																				}
+																		path.cls-1(d='M923.5,178a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,923.5,178Zm7,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,930.5,178Zm7,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,937.5,178Z' transform='translate(-922 -178)')
+															span.tail
+															ul.dropdown-menu
+						.col-md-3.right-main-menu-block
+							.inner-table-block.right-menu-block
+								// 'start_frame_cache_header-regionality-block1'
+								.region_wrapper
+									.io_wrapper
+										div
+											.js_city_chooser.popup_link.dark-color.with_dropdown(data-event='jqm' data-name='city_chooser' data-param-url='%2F' data-param-form_id='city_chooser')
+												span Челябинск
+												span.arrow
+													svg(xmlns='http://www.w3.org/2000/svg' width='5' height='2.844' viewBox='0 0 5 2.844')
+														defs
+															style.
+																.cls-1 {
+																fill: #222;
+																fill-rule: evenodd;
+																}
+														path.cls-1(d='M5,0.332l-2.5,2.5L0,0.332V0H5V0.332Z')
+								// 'end_frame_cache_header-regionality-block1'
+							.wrap_icon.inner-table-block
+								// 'start_frame_cache_basket-link1'
+								// noindex
+								a.basket-link.HEADER.big(rel='nofollow' title='Корзина пуста' href='cart/index.html')
+									span.js-basket-block
+										i.svg.inline.big.svg-inline-basket(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21')
+												defs
+													style.
+														.cls-1 {
+														fill: #222;
+														fill-rule: evenodd;
+														}
+												path.cls-1(data-name='Ellipse 2 copy 6' d='M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z' transform='translate(-1486 -111)')
+										span.count 0
+								// /noindex
+								// 'end_frame_cache_basket-link1'
+							.wrap_icon.inner-table-block
+								// 'start_frame_cache_cabinet-link1'
+								// noindex
+								a.personal-link.dark-color.animate-load(data-event='jqm' title='Мой кабинет' data-param-type='auth' data-param-backurl='/' data-name='auth' href='cabinet/index.html')
+									i.svg.inline.big.svg-inline-cabinet(aria-hidden='true' title='Мой кабинет')
+										svg(xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21')
+											defs
+												style.
+													.cls-1 {
+													fill: #222;
+													fill-rule: evenodd;
+													}
+											path.cls-1(d='M18.263,21A9.678,9.678,0,0,0,10.5,17a9.678,9.678,0,0,0-7.763,4H0.451A11.64,11.64,0,0,1,10.5,15a11.64,11.64,0,0,1,10.049,6H18.263ZM10.5,13A6.5,6.5,0,1,1,17,6.5,6.5,6.5,0,0,1,10.5,13Zm0-11A4.5,4.5,0,1,1,6,6.5,4.5,4.5,0,0,1,10.5,2Z')
+								// /noindex
+								// 'end_frame_cache_cabinet-link1'
+						.lines
+				.line-row
+				.logo_and_menu-row
+					.logo-row.top-fill
+						.maxwidth-theme
+							.col-md-12
+								.main-head-block
+									.block-search
+										.search-block.inner-table-block
+											.search-wrapper
+												#title-search_fixed
+													form.search(action='http://promspecstal.ru/search/')
+														.search-input-div
+															input#title-search-input_fixed.search-input(type='text' name='q' value='' placeholder='Найти' size='40' maxlength='50' autocomplete='off')
+														.search-button-div
+															button.btn.btn-search(type='submit' name='s' value='Найти')
+																i.svg.inline.svg-inline-search(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+																		defs
+																			style.
+																				.stcls-1 {
+																				fill: #222;
+																				fill-rule: evenodd;
+																				}
+																		path.stcls-1(d='M15.644,15.644a1.164,1.164,0,0,1-1.646,0l-2.95-2.95a7.036,7.036,0,1,1,1.645-1.645L15.644,14A1.164,1.164,0,0,1,15.644,15.644ZM7,2a5,5,0,1,0,5,5A5,5,0,0,0,7,2Z')
+															span.close-block.inline-search-hide
+																span.svg.svg-close.close-icons
+											script.
+												var jsControl = new JCTitleSearch2({
+												//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+												'AJAX_PAGE': '/',
+												'CONTAINER_ID': 'title-search_fixed',
+												'INPUT_ID': 'title-search-input_fixed',
+												'INPUT_ID_TMP': 'title-search-input_fixed',
+												'MIN_QUERY_LEN': 2
+												});
+									.contacts-on-main
+										.block-email-alt
+											.inner-table-block
+												.callback-wrapper
+													span.callback-block.animate-load.callback-link.new_callback-link.new_callback-phone
+														| По
+														| всем вопросам
+												.inner-table-block_email
+													// 'start_frame_cache_email-block2'
+													.email.blocks
+														i.svg.inline.svg-inline-email(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
+																defs
+																	style.
+																		.ecls-1 {
+																		fill: #222;
+																		fill-rule: evenodd;
+																		}
+																path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
+														div
+															a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
+													// 'end_frame_cache_email-block2'
+										.block-phone-alt
+											.inner-table-block
+												.callback-wrapper.new_callback-wrapper
+													.schedule
+														| Ежедневно с 09:00 до 18:00
+												.phone.big.alt-phone
+													span(style='display: none;')
+													a(href='tel:')
+										.block-phone-region
+											.inner-table-block
+												.callback-wrapper.new_callback-wrapper
+													span.callback-block.animate-load.callback-link.new_callback-link
+														| Звонок бесплатный по
+														| РФ
+												.phone.big.alt-phone
+													a(href='tel:+73510000000') +7 (351) 000-00-00
+		#mobileheader.visible-xs.visible-sm
+			.mobileheader-v1
+				.burger.pull-left
+					i.svg.inline.svg-inline-burger.dark(aria-hidden='true')
+						svg(xmlns='http://www.w3.org/2000/svg' width='18' height='16' viewBox='0 0 18 16')
+							defs
+								style.
+									.cls-1 {
+									fill: #fff;
+									fill-rule: evenodd;
+									}
+							path.cls-1(data-name='Rounded Rectangle 81 copy 2' d='M330,114h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,114Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,121Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,128Z' transform='translate(-329 -114)')
+					i.svg.inline.svg-inline-close.dark(aria-hidden='true')
+						svg(id='Close.svg' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+							defs
+								style.
+									.cls-1 {
+									fill: #222;
+									fill-rule: evenodd;
+									}
+							path#Rounded_Rectangle_114_copy_3.cls-1(data-name='Rounded Rectangle 114 copy 3' d='M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z' transform='translate(-325 -130)')
+				.logo-block.pull-left
+					.logo
+						a(href='index.html')
+							img(src='upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png' alt='Cайт производства' title='Cайт производства')
+				.right-icons.pull-right
+					.pull-right
+						.wrap_icon.wrap_basket
+							// 'start_frame_cache_basket-link2'
+							// noindex
+							a.basket-link.HEADER.big(rel='nofollow' title='Корзина пуста' href='cart/index.html')
+								span.js-basket-block
+									i.svg.inline.big.svg-inline-basket(aria-hidden='true')
+										svg(xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21')
+											defs
+												style.
+													.cls-1 {
+													fill: #222;
+													fill-rule: evenodd;
+													}
+											path.cls-1(data-name='Ellipse 2 copy 6' d='M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z' transform='translate(-1486 -111)')
+									span.count 0
+							// /noindex
+							// 'end_frame_cache_basket-link2'
+					.pull-right
+						.wrap_icon
+							button.inline-search-show.twosmallfont(title='Поиск')
+								i.svg.inline.svg-inline-search(aria-hidden='true')
+									svg(xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21')
+										defs
+											style.
+												.cls-1 {
+												fill: #222;
+												fill-rule: evenodd;
+												}
+										path.cls-1(data-name='Rounded Rectangle 106' d='M1590.71,131.709a1,1,0,0,1-1.42,0l-4.68-4.677a9.069,9.069,0,1,1,1.42-1.427l4.68,4.678A1,1,0,0,1,1590.71,131.709ZM1579,113a7,7,0,1,0,7,7A7,7,0,0,0,1579,113Z' transform='translate(-1570 -111)')
+					.pull-right
+						.wrap_icon.wrap_phones
+							a(href='tel:+73510000000')
+								i.svg.inline.svg-inline-phone(aria-hidden='true')
+									svg(width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg')
+										path(fill-rule='evenodd' clip-rule='evenodd' d='M18.9562 15.97L18.9893 16.3282C19.0225 16.688 18.9784 17.0504 18.8603 17.3911C18.6223 18.086 18.2725 18.7374 17.8248 19.3198L17.7228 19.4524L17.6003 19.5662C16.8841 20.2314 15.9875 20.6686 15.0247 20.8243C14.0374 21.0619 13.0068 21.0586 12.0201 20.814L11.9327 20.7924L11.8476 20.763C10.712 20.3703 9.65189 19.7871 8.71296 19.0385C8.03805 18.582 7.41051 18.0593 6.83973 17.4779L6.81497 17.4527L6.79112 17.4267C4.93379 15.3963 3.51439 13.0063 2.62127 10.4052L2.6087 10.3686L2.59756 10.3315C2.36555 9.5598 2.21268 8.76667 2.14121 7.9643C1.94289 6.79241 1.95348 5.59444 2.17289 4.42568L2.19092 4.32964L2.21822 4.23581C2.50215 3.26018 3.0258 2.37193 3.7404 1.65124C4.37452 0.908181 5.21642 0.370416 6.15867 0.107283L6.31009 0.0649959L6.46626 0.0468886C7.19658 -0.0377903 7.93564 -0.00763772 8.65659 0.136237C9.00082 0.203673 9.32799 0.34095 9.61768 0.540011L9.90227 0.735566L10.1048 1.01522C10.4774 1.52971 10.7173 2.12711 10.8045 2.75455C10.8555 2.95106 10.9033 3.13929 10.9499 3.32228C11.0504 3.71718 11.1446 4.08764 11.2499 4.46408C11.5034 5.03517 11.6255 5.65688 11.6059 6.28327L11.5984 6.52137L11.5353 6.75107C11.3812 7.31112 11.0546 7.68722 10.8349 7.8966C10.6059 8.11479 10.3642 8.2737 10.18 8.38262C9.89673 8.55014 9.57964 8.69619 9.32537 8.8079C9.74253 10.2012 10.5059 11.4681 11.5455 12.4901C11.7801 12.3252 12.0949 12.1097 12.412 11.941C12.6018 11.8401 12.8614 11.7177 13.1641 11.6357C13.4565 11.5565 13.9301 11.4761 14.4706 11.6169L14.6882 11.6736L14.8878 11.7772C15.4419 12.0649 15.9251 12.4708 16.3035 12.9654C16.5807 13.236 16.856 13.4937 17.1476 13.7666C17.2974 13.9068 17.4515 14.0511 17.6124 14.2032C18.118 14.5805 18.5261 15.0751 18.8003 15.6458L18.9562 15.97ZM16.3372 15.7502C16.6216 15.9408 16.8496 16.2039 16.9977 16.5121C17.0048 16.5888 16.9952 16.6661 16.9697 16.7388C16.8021 17.2295 16.5553 17.6895 16.2391 18.1009C15.795 18.5134 15.234 18.7788 14.6329 18.8608C13.9345 19.0423 13.2016 19.0464 12.5012 18.8728C11.5558 18.5459 10.675 18.0561 9.8991 17.4258C9.30961 17.0338 8.76259 16.5817 8.26682 16.0767C6.59456 14.2487 5.31682 12.0971 4.51287 9.75567C4.31227 9.08842 4.18279 8.40192 4.12658 7.70756C3.95389 6.74387 3.95792 5.75691 4.13855 4.79468C4.33628 4.11526 4.70731 3.49868 5.21539 3.00521C5.59617 2.53588 6.11383 2.19633 6.69661 2.03358C7.22119 1.97276 7.75206 1.99466 8.26981 2.09849C8.34699 2.11328 8.42029 2.14388 8.48501 2.18836C8.68416 2.46334 8.80487 2.78705 8.83429 3.12504C8.89113 3.34235 8.94665 3.56048 9.00218 3.77864C9.12067 4.24418 9.2392 4.70987 9.37072 5.16815C9.5371 5.49352 9.61831 5.85557 9.60687 6.22066C9.51714 6.54689 8.89276 6.81665 8.28746 7.07816C7.71809 7.32415 7.16561 7.56284 7.0909 7.83438C7.07157 8.17578 7.12971 8.51712 7.26102 8.83297C7.76313 10.9079 8.87896 12.7843 10.4636 14.2184C10.6814 14.4902 10.9569 14.7105 11.2702 14.8634C11.5497 14.9366 12.0388 14.5907 12.5428 14.2342C13.0783 13.8555 13.6307 13.4648 13.9663 13.5523C14.295 13.7229 14.5762 13.9719 14.785 14.2773C15.1184 14.6066 15.4631 14.9294 15.808 15.2523C15.9849 15.418 16.1618 15.5836 16.3372 15.7502Z' fill='#222222')
+			#mobilemenu.leftside
+				.mobilemenu-v1.scroller.compact_menu
+					.wrap
+						// 'start_frame_cache_mobile-region-block1'
+						// noindex
+						.menu.middle.mobile_regions
+							ul
+								li
+									a.dark-color.parent(rel='nofollow' href='#')
+										i.svg.inline.svg-inline-region
+											i.svg.inline.svg-inline-(aria-hidden='true')
+												svg(xmlns='http://www.w3.org/2000/svg' width='10' height='12.031' viewBox='0 0 10 12.031')
+													defs
+														style.
+															.regcls-1 {
+															fill: #333;
+															fill-rule: evenodd;
+															}
+													path.regcls-1(d='M547,200h-0.976l-0.61.61L544,202.024l-1.414-1.414-0.61-.61H541a2,2,0,0,1-2-2v-8h10v8A2,2,0,0,1,547,200Zm0-3v-5h-6v6h1.8L544,199.2,545.2,198H547v-1Z' transform='translate(-539 -190)')
+										span Челябинск
+										span.arrow
+											i.svg.svg_triangle_right
+									ul.dropdown
+										li.menu_back
+											a.dark-color(href='#' rel='nofollow')
+												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+														defs
+															style.
+																.rcls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+																}
+														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+												|  Назад
+										li.menu_title
+											span.title Города
+										li
+											a.dark-color.city_item(rel='nofollow' href='index.html' data-id='34') Челябинск
+										li
+											a.dark-color.city_item(rel='nofollow' href='index.html' data-id='35') Екатеринбург
+						// /noindex
+						// 'end_frame_cache_mobile-region-block1'
+						.menu.middle
+							ul
+								li
+									a.dark-color(href='cabinet/index.html')
+										i.svg.inline.svg-inline-cabinet(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+												defs
+													style.
+														.cls-1 {
+														fill: #222;
+														fill-rule: evenodd;
+														}
+												path.cls-1(d='M13.88,16A5.616,5.616,0,0,0,3.128,16h-2.1a7.66,7.66,0,0,1,14.954,0h-2.1ZM8.5,0A4.5,4.5,0,1,1,4,4.5,4.5,4.5,0,0,1,8.5,0Zm0,2A2.5,2.5,0,1,1,6,4.5,2.5,2.5,0,0,1,8.5,2Z')
+										span Мой кабинет
+						.menu.top.expanded-menu
+							ul.top
+								li.menu_title
+									a.dark-color.expanded-title(href='#')
+										| Благонадежность
+								li.menu_title
+									a.dark-color.expanded-title(href='#')
+										| Доставка
+						.menu.top
+							ul.top
+								li
+									a.dark-color.parent(href='company/index.html' title='О Компании')
+										span О Компании
+										span.arrow
+											i.svg.svg_triangle_right
+									ul.dropdown
+										li.menu_back
+											a.dark-color(href='#' rel='nofollow')
+												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+														defs
+															style.
+																.rcls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+																}
+														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+												| Назад
+										li.menu_title
+											a(href='company/index.html') О Компании
+										li
+											a.dark-color(href='company/index-2.html' title='О компании')
+												span О компании
+										li
+											a.dark-color(href='company/value/index.html' title='Ценности компании')
+												span Ценности компании
+										li
+											a.dark-color(href='company/geo/index.html' title='География присутствия')
+												span География присутствия
+										li
+											a.dark-color(href='company/licenses/index.html' title='Сертификаты')
+												span Сертификаты
+										li
+											a.dark-color(href='company/partners/index.html' title='Сотрудничество')
+												span Сотрудничество
+										li
+											a.dark-color(href='company/requisites/index.html' title='Реквизиты')
+												span Реквизиты
+								li
+									a.dark-color.parent(href='info/index.html' title='Информация')
+										span Информация
+										span.arrow
+											i.svg.svg_triangle_right
+									ul.dropdown
+										li.menu_back
+											a.dark-color(href='#' rel='nofollow')
+												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+														defs
+															style.
+																.rcls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+																}
+														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+												| Назад
+										li.menu_title
+											a(href='info/index.html') Информация
+										li
+											a.dark-color(href='info/sales/index.html' title='Акции')
+												span Акции
+										li
+											a.dark-color(href='info/news/index.html' title='Новости')
+												span Новости
+								li
+									a.dark-color(href='company/licenses/index.html' title='Сертификаты')
+										span Сертификаты
+								li
+									a.dark-color(href='contacts/index.html' title='Контакты')
+										span Контакты
+						.menu.middle
+							ul
+								li.counters
+									a.dark-color.ready(href='cart/index.html')
+										i.svg.inline.svg-inline-basket(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16')
+												defs
+													style.
+														.cls-1 {
+														fill: #222;
+														fill-rule: evenodd;
+														}
+												path.cls-1(data-name='Ellipse 2 copy' d='M1500,66.344l-0.63.656h-10.62l-0.75-.781L1486.85,59H1485a1,1,0,1,1,0-2h2c0.26,0,.52.006,0.52,0.006a1.048,1.048,0,0,1,1.15.763L1489.16,60h11.34l0.5,0.5V62ZM1489.37,62l0.41,3h8.5l0.72-3h-9.63Zm1.13,6a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,1490.5,68Zm-0.5,3h1V70h-1v1Zm7.5-3a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,1497.5,68Zm-0.5,3h1V70h-1v1Z' transform='translate(-1484 -57)')
+										span
+											| Корзина
+											span.count.empted 0
+						// 'start_frame_cache_mobil-contacts-allphones-block1'
+						.menu.middle.phones
+							ul
+								li
+									a.dark-color(href='tel:+73510000000')
+										i.svg.inline.svg-inline-phone(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
+												defs
+													style.
+														.pcls-1 {
+														fill: #222;
+														fill-rule: evenodd;
+														}
+												path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
+										span +7 (351) 000-00-00
+						// 'end_frame_cache_mobil-contacts-allphones-block1'
+						.contacts
+							.title
+							// 'start_frame_cache_address-block2'
+							.address
+								i.svg.inline.svg-inline-address(aria-hidden='true')
+									svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
+										defs
+											style.
+												.cls-1 {
+												fill-rule: evenodd;
+												}
+										path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
+								div
+									| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
+							// 'end_frame_cache_address-block2'
+							// 'start_frame_cache_email-block3'
+							.email
+								i.svg.inline.svg-inline-email(aria-hidden='true')
+									svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
+										defs
+											style.
+												.ecls-1 {
+												fill: #222;
+												fill-rule: evenodd;
+												}
+										path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
+								div
+									a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
+							// 'end_frame_cache_email-block3'
+						.social-icons
+							// noindex
+							ul
+							// /noindex
+		.body.index.hover_blink
+			.body_media
+			.main.banner-auto(role='main')
+				.container
+					div
+						block pagecontent
+						
+		footer#footer
+			// 'start_frame_cache_footer-subscribe'
+			// 'end_frame_cache_footer-subscribe'
+			.container
+				.row.bottom-middle
+					.maxwidth-theme
+						.col-md-8
+							.row
+								.col-md-3.col-sm-3
+									.bottom-menu
+										.items
+											.item-link.accordion-close.item-link(data-parent='#bottom1' data-target='#bottom1')
+												.item
+													.title
+														a(href='company/index.html') Компания
+												span
+													i.fa.fa-angle-down
+											#bottom1.wrap.panel-collapse.wrap_compact_mobile
+												.item-link.item-link
+													.item
+														.title
+															a(href='company/index-2.html') О компании
+												.item-link.item-link
+													.item
+														.title
+															a(href='company/value/index.html') Ценности компании
+												.item-link.item-link
+													.item
+														.title
+															a(href='company/geo/index.html') География присутствия
+												.item-link.item-link
+													.item
+														.title
+															a(href='company/licenses/index.html') Сертификаты
+												.item-link.item-link
+													.item
+														.title
+															a(href='company/partners/index.html') Сотрудничество
+												.item-link.item-link
+													.item
+														.title
+															a(href='company/requisites/index.html') Реквизиты
+											#bottom1.wrap.panel-collapse.wrap_compact_mobile
+												.item-link.accordion-close.item-link(data-parent='#bottom1' data-target='#bottom1')
+													.item
+														.title
+															a(href='calculator/index.html') Калькулятор металла
+								.col-md-3.col-sm-3
+									.bottom-menu
+										.items
+											.item-link.accordion-close.item-link(data-parent='#bottom2' data-target='#bottom2')
+												.item
+													.title
+														a(href='product/index.html') Каталог
+												span
+													i.fa.fa-angle-down
+											#bottom2.wrap.panel-collapse.wrap_compact_mobile
+												.item-link.item-link
+													.item
+														.title
+															a(href='product/tsvetnoy-prokat/index.html') Цветной прокат
+												.item-link.item-link
+													.item
+														.title
+															a(href='product/nerzhaveyushchaya-stal/index.html') Нержавеющая сталь
+												.item-link.item-link
+													.item
+														.title
+															a(href='product/spetsialnye-stali-i-splavy/index.html') Специальные стали и сплавы
+												.item-link.item-link
+													.item
+														.title
+															a(href='product/chernyy-metalloprokat/index.html') Черный металлопрокат
+												.item-link.item-link
+													.item
+														.title
+															a(href='product/metiznaya-produktsiya/index.html') Метизная продукция
+												.item-link.item-link
+													.item
+														.title
+															a(href='product/truboprovodnaya-armatura/index.html') Трубопроводная арматура
+								.col-md-3.col-sm-3
+									.bottom-menu
+										.items
+											.item-link.accordion-close.item-link(data-parent='#bottom3' data-target='#bottom3')
+												.item
+													.title
+														a(href='services/index.html') Услуги
+												span
+													i.fa.fa-angle-down
+											#bottom3.wrap.panel-collapse.wrap_compact_mobile
+												.item-link.item-link
+													.item
+														.title
+															a(href='services/rezka-gazom/index.html') Резка газом
+												.item-link.item-link
+													.item
+														.title
+															a(href='services/rezka-mayatnikovoy-piloy/index.html') Резка маятниковой пилой
+												.item-link.item-link
+													.item
+														.title
+															a(href='services/rezka-gilotinoy/index.html') Резка гильотиной
+												.item-link.item-link
+													.item
+														.title
+															a(href='services/dostavka/index.html') Доставка
+												.item-link.item-link
+													.item
+														.title
+															a(href='services/otsinkovanie/index.html') Оцинкование
+												.item-link.item-link
+													.item
+														.title
+															a(href='services/metallobrabotka/index.html') Металлобработка
+								.col-md-3.col-sm-3
+						.col-md-4.contact-block
+							.row
+								.col-md-9.col-md-offset-2
+									span.white_middle_text
+										| Наши контакты
+										br
+										br
+									.info
+										.row
+											.col-md-12.col-sm-4
+												.blocks.phones
+													.phone
+														i.svg.inline.svg-inline-phone.colored(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
+																defs
+																	style.
+																		.pcls-1 {
+																		fill: #222;
+																		fill-rule: evenodd;
+																		}
+																path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
+														a(href='tel:+73510000000') +7 (351) 000-00-00
+													.schedule
+														| Ежедневно с 09:00 до 18:00
+											.col-md-12.col-sm-4
+												// 'start_frame_cache_address-block3'
+												.address.blocks
+													i.svg.inline.svg-inline-address(aria-hidden='true')
+														svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
+															defs
+																style.
+																	.cls-1 {
+																	fill-rule: evenodd;
+																	}
+															path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
+													div
+														| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
+												// 'end_frame_cache_address-block3'
+											.col-md-12.col-sm-4
+												// 'start_frame_cache_email-block4'
+												.email.blocks
+													i.svg.inline.svg-inline-email(aria-hidden='true')
+														svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
+															defs
+																style.
+																	.ecls-1 {
+																	fill: #222;
+																	fill-rule: evenodd;
+																	}
+															path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
+													div
+														a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
+												// 'end_frame_cache_email-block4'
+				.row.bottom-under
+					.maxwidth-theme
+						.col-md-12.outer-wrapper
+							.inner-wrapper
+								.copy-block
+									.copy
+										| © 2021 Все права защищены.
+									.print-block
+									#bx-composite-banner
+								.social-block
+									.social-icons
+										// noindex
+										ul
+										// /noindex
+								.clearfix
+							.clearfix
+		.bx_areas
+		.inline-search-block.fixed.with-close.big
+			.maxwidth-theme
+				.col-md-12
+					.search-wrapper
+						#title-search
+							form.search(action='http://promspecstal.ru/search/')
+								.search-input-div
+									input#title-search-input.search-input(type='text' name='q' value='' placeholder='Найти' size='40' maxlength='50' autocomplete='off')
+								.search-button-div
+									button.btn.btn-search.btn-default.bold.btn-lg(type='submit' name='s' value='Найти') Найти
+									span.close-block.inline-search-hide
+										span.svg.svg-close.close-icons
+		script.
+			var jsControl = new JCTitleSearch2({
+			//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+			'AJAX_PAGE': '/',
+			'CONTAINER_ID': 'title-search',
+			'INPUT_ID': 'title-search-input',
+			'INPUT_ID_TMP': 'title-search-input',
+			'MIN_QUERY_LEN': 2
+			});
+		// noindex
+		.ajax_basket
+			// 'start_frame_cache_PpQW5T'
+			.basket_top.sep.empted_cart
+				.b_wrap
+					a.icon(href='cart/index.html' title='Корзина пуста' data-summ='')
+						span.count.empted 0
+			// 'end_frame_cache_PpQW5T'
+			//- .fixed_wrapper
+				.right_dok
+					span.link(title='Заказать звонок')
+						span.animate-load(data-event='jqm' data-param-id='27' data-name='callback')
+							i.svg.inline.svg-inline-call(aria-hidden='true')
+								svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+									defs
+										style.
+											.bccls-1 {
+											fill: #969ba4;
+											fill-rule: evenodd;
+											}
+									path.bccls-1(d='M14,9A7,7,0,0,0,7,2V0a9,9,0,0,1,9,9H14ZM12,9H10A3,3,0,0,0,7,6V4A5,5,0,0,1,12,9Zm2,4.053a0.507,0.507,0,0,0-.03-0.209,1.761,1.761,0,0,0-.756-0.526c-0.567-.318-1.145-0.626-1.7-0.954a2.049,2.049,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.139,2.139,0,0,1-.856-0.388A9.9,9.9,0,0,1,3.672,8.254,2.134,2.134,0,0,1,3.284,7.4c0-.537,1.8-1.421,1.8-2.026a2.045,2.045,0,0,0-.458-0.885C4.3,3.932,3.99,3.356,3.672,2.789a1.753,1.753,0,0,0-.528-0.755A0.5,0.5,0,0,0,2.935,2a4.427,4.427,0,0,0-1.384.308A2.617,2.617,0,0,0,.5,3.525,3.789,3.789,0,0,0-.011,5.373a7.646,7.646,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,9.714,16.788,16.788,0,0,0,6.28,14.483a9.3,9.3,0,0,0,1.742.825,7.672,7.672,0,0,0,2.608.685,3.8,3.8,0,0,0,1.851-.507A2.618,2.618,0,0,0,13.7,14.434,4.416,4.416,0,0,0,14,13.053Z')
+					span.link(title='Задать вопрос')
+						span.animate-load(data-event='jqm' data-param-id='26' data-name='question')
+							i.svg.inline.svg-inline-ask(aria-hidden='true')
+								svg(xmlns='http://www.w3.org/2000/svg' width='18' height='14' viewBox='0 0 18 14')
+									defs
+										style.
+											.cls-1 {
+											fill: #222;
+											fill-rule: evenodd;
+											}
+									path.cls-1(data-name='ask' d='M1898,414h-14a2,2,0,0,1-2-2V402a2,2,0,0,1,1.95-2,1.025,1.025,0,0,1,.22,0h13.69a1,1,0,0,1,.25.011A2,2,0,0,1,1900,402v10A2,2,0,0,1,1898,414Zm-11.47-12,4.49,4.482L1895.5,402h-8.97Zm11.47,0.5-6.17,6.173a1.26,1.26,0,0,1-1.63,0l-6.2-6.2V412h14v-9.5Z' transform='translate(-1882 -400)')
+		// /noindex
+
+		+modal()
+		+allcjs()
+		
+		

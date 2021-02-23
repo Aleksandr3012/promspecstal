@@ -1,0 +1,57 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sTextBlock/_sTextBlock.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sDescr/_sDescr.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Cайт производства - Главная'
+	title= title
+block pagecontent
+
+	section.page-top.maxwidth-theme
+		.row
+			.col-md-12.page-title-wrapper-v1
+				ul#navigation.breadcrumb(itemscope='' itemtype='http://schema.org/BreadcrumbList')
+					li#bx_breadcrumb_0(itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+						a(href='/' title='Главная' itemprop='item')
+							span(itemprop='name') Главная
+						meta(itemprop='position' content='1')
+					li#bx_breadcrumb_1.active(itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+						link(href='/product/' itemprop='item')
+						span
+							span(itemprop='name') Продукты
+						meta(itemprop='position' content='2')
+				.page-top-main
+					h1#pagetitle Каталог товаров
+	+sTextBlock(class="pt-0")
+		p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ad ratione, magni recusandae odio labore. Tenetur voluptates commodi illo nisi eligendi error earum vero, dicta, rerum obcaecati aliquid ipsa quod! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ad ratione, magni recusandae odio labore. Tenetur voluptates commodi illo nisi eligendi error earum vero, dicta, rerum obcaecati aliquid ipsa quod!
+		p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ad ratione, magni recusandae odio labore. Tenetur voluptates commodi illo nisi eligendi error earum vero, dicta, rerum obcaecati aliquid ipsa quod!
+	.catalogWrap
+		+sCatalog({
+			title: 'Цветной металлопрокат'
+		})
+		+sCatalog({
+			title: 'Нержавеющая сталь'
+		})
+		+sCatalog({
+			title: 'Спецсталь'
+		})
+		+sCatalog({
+			title: 'Черный металлопрокат'
+		})
+		+sCatalog({
+			title: 'Трубопроводная арматура'
+		})
+	+sDescr
+	+sCatalog({
+		title: 'Услуги',
+		sm: 'sm'
+	})
+
+

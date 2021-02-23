@@ -1,0 +1,14 @@
+.navMenu{
+	display: flex;
+	list-style: none;
+	@include roww(20px);
+	position: relative;
+	margin-bottom: 0;
+	max-width: 100%;
+	flex-wrap: wrap;
+	&__link{
+		display: block;
+		text-align: center;
+		padding: rem(20) rem(10);
+	}
+}

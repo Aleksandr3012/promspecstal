@@ -1,0 +1,321 @@
+
+mixin modal() 
+	//  start modals
+	//- .callback_frame.jqmWindow.jqm-init.show(style='width: 500px; z-index: 3000; margin-left: -250px; top: 141px; opacity: 1; display: none;' data-trigger='%7B%22class%22%3A%22animate-load%22%2C%22data-event%22%3A%22jqm%22%2C%22data-param-id%22%3A%2227%22%2C%22data-name%22%3A%22callback%22%7D')
+		span.jqmClose.top-close.fa.fa-close
+		#comp_0d8a59c71a0e1cf69c9319cf971db89f
+			.form.popup
+				form(name='aspro_allcorp2_callback' action='/ajax/form.php?id=27&data-trigger=%7B%22class%22%3A%22animate-load%22%2C%22data-event%22%3A%22jqm%22%2C%22data-param-id%22%3A%2227%22%2C%22data-name%22%3A%22callback%22%7D' method='POST' enctype='multipart/form-data' novalidate='novalidate')
+					input#bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi(type='hidden' name='bxajaxid' value='0d8a59c71a0e1cf69c9319cf971db89f')
+					input(type='hidden' name='AJAX_CALL' value='Y')
+					script.
+						function _processform_8BACKi(){
+						if (BX('bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi'))
+						{
+						var obForm = BX('bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi').form;
+						BX.bind(obForm, 'submit', function() {BX.ajax.submitComponentForm(this, 'comp_0d8a59c71a0e1cf69c9319cf971db89f', true)});
+						}
+						BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
+						}
+						if (BX('bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi'))
+						_processform_8BACKi();
+						else
+						BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
+					input#sessid(type='hidden' name='sessid' value='c2ea2cb575441d8ed19e49e7b005a986')
+					.form-header
+						.text
+							.title Обратный звонок
+							| 																	Представьтесь, мы вам перезвоним.
+					.form-body
+						.row(data-sid='FIO')
+							.col-md-12
+								.form-group
+									label(for='POPUP_FIO')
+										| Ваше имя: 
+										span.required-star *
+									.input
+										input#POPUP_FIO.form-control.required(type='text' name='FIO' value='' aria-required='true')
+										i.fa.fa-user
+						.row(data-sid='PHONE')
+							.col-md-12
+								.form-group
+									label(for='POPUP_PHONE')
+										| Телефон: 
+										span.required-star *
+									.input
+										input#POPUP_PHONE.form-control.required.phone(type='tel' name='PHONE' value='' aria-required='true')
+										i.fa.fa-phone
+						.row.captcha-row
+							.col-md-12
+								label(for='captcha_word')
+									| Введите код:
+									span.required-star *
+								.captcha_image
+									img.captcha_img(src='/bitrix/tools/captcha.php?captcha_sid=0a396a27738ce15ca266b2aa7499b804' border='0')
+									input.captcha_sid(type='hidden' name='captcha_sid' value='0a396a27738ce15ca266b2aa7499b804')
+									.captcha_reload
+									span.refresh
+										a(href='javascript:;' rel='nofollow') Поменять картинку
+								.captcha_input
+									input.inputtext.form-control.captcha(type='text' name='captcha_word' size='30' maxlength='50' value='' required='' aria-required='true')
+					.form-footer.clearfix
+						.licence_block.bx_filter
+							input#licenses_popup(type='checkbox' name='licenses_popup' required='' value='Y' aria-required='true')
+							label(for='licenses_popup')
+								| Я согласен на 
+								a(href='/include/licenses_detail.php' target='_blank') обработку персональных данных
+						div
+							button.btn-lg.btn.btn-default(type='submit') Отправить
+							br
+							input(type='hidden' name='form_submit' value='Отправить')
+			script.
+				$(document).ready(function(){
+				$('.popup form[name="aspro_allcorp2_callback"]').validate({
+				ignore: ".ignore",
+				highlight: function( element ){
+				$(element).parent().addClass('error');
+				},
+				unhighlight: function( element ){
+				$(element).parent().removeClass('error');
+				},
+				submitHandler: function( form ){
+				if( $('.popup form[name="aspro_allcorp2_callback"]').valid() ){
+				$(form).find('button[type="submit"]').attr('disabled', 'disabled');
+				var eventdata = {type: 'form_submit', form: form, form_name: 'aspro_allcorp2_callback'};
+				BX.onCustomEvent('onSubmitForm', [eventdata]);
+				}
+				},
+				errorPlacement: function( error, element ){
+				error.insertBefore(element);
+				},
+				messages:{
+				licenses_popup: {
+				required : BX.message('JS_REQUIRED_LICENSES')
+				}
+				}
+				});
+				if(arAllcorp2Options['THEME']['PHONE_MASK'].length){
+				var base_mask = arAllcorp2Options['THEME']['PHONE_MASK'].replace( /(\\d)/g, '_' );
+				$('.popup form[name="aspro_allcorp2_callback"] input.phone').inputmask('mask', {'mask': arAllcorp2Options['THEME']['PHONE_MASK'], 'showMaskOnHover': false });
+				$('.popup form[name="aspro_allcorp2_callback"] input.phone').blur(function(){
+				if( $(this).val() == base_mask || $(this).val() == '' ){
+				if( $(this).hasClass('required') ){
+				$(this).parent().find('div.error').html(BX.message('JS_REQUIRED'));
+				}
+				}
+				});
+				}
+				if(arAllcorp2Options['THEME']['DATE_MASK'].length)
+				{
+				$('.popup form[name="aspro_allcorp2_callback"] input.date').inputmask('datetime', {
+				'inputFormat':  arAllcorp2Options['THEME']['DATE_MASK'],
+				'placeholder': arAllcorp2Options['THEME']['DATE_PLACEHOLDER'],
+				'showMaskOnHover': false
+				});
+				}
+				if(arAllcorp2Options['THEME']['DATETIME_MASK'].length)
+				{
+				$('.popup form[name="aspro_allcorp2_callback"] input.datetime').inputmask('datetime', {
+				'inputFormat':  arAllcorp2Options['THEME']['DATETIME_MASK'],
+				'placeholder': arAllcorp2Options['THEME']['DATETIME_PLACEHOLDER'],
+				'showMaskOnHover': false
+				});
+				}
+				$('.jqmClose').closest('.jqmWindow').jqmAddClose('.jqmClose');
+				$('input[type=file]').uniform({fileButtonHtml: BX.message('JS_FILE_BUTTON_NAME'), fileDefaultHtml: BX.message('JS_FILE_DEFAULT')});
+				$(document).on('change', 'input[type=file]', function(){
+				if($(this).val())
+				{
+				$(this).closest('.uploader').addClass('files_add');
+				}
+				else
+				{
+				$(this).closest('.uploader').removeClass('files_add');
+				}
+				})
+				$('.form .add_file').on('click', function(){
+				var container = $(this).closest('.input'),
+				index = container.find('input[type=file]').length+1,
+				name = container.find('input[type=file]:first').attr('name');
+				$('<input type="file" id="POPUP_FILE" name="'+name.replace('n0', 'n'+index)+'"   class="inputfile" value="" />').insertBefore($(this));
+				$('input[type=file]').uniform({fileButtonHtml: BX.message('JS_FILE_BUTTON_NAME'), fileDefaultHtml: BX.message('JS_FILE_DEFAULT')});
+				})
+				});
+	
+	
+	//- .question_frame.jqmWindow.jqm-init.show(style='width: 500px; z-index: 3000; margin-left: -250px; top: 0px; opacity: 1; display: none;' data-trigger='%7B%22class%22%3A%22animate-load%22%2C%22data-event%22%3A%22jqm%22%2C%22data-param-id%22%3A%2226%22%2C%22data-name%22%3A%22question%22%7D')
+		span.jqmClose.top-close.fa.fa-close
+		#comp_0d8a59c71a0e1cf69c9319cf971db89f
+			.form.popup
+				form(name='aspro_allcorp2_question' action='/ajax/form.php?id=26&data-trigger=%7B%22class%22%3A%22animate-load%22%2C%22data-event%22%3A%22jqm%22%2C%22data-param-id%22%3A%2226%22%2C%22data-name%22%3A%22question%22%7D' method='POST' enctype='multipart/form-data' novalidate='novalidate')
+					input#bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi(type='hidden' name='bxajaxid' value='0d8a59c71a0e1cf69c9319cf971db89f')
+					input(type='hidden' name='AJAX_CALL' value='Y')
+					script.
+						function _processform_8BACKi(){
+						if (BX('bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi'))
+						{
+						var obForm = BX('bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi').form;
+						BX.bind(obForm, 'submit', function() {BX.ajax.submitComponentForm(this, 'comp_0d8a59c71a0e1cf69c9319cf971db89f', true)});
+						}
+						BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
+						}
+						if (BX('bxajaxid_0d8a59c71a0e1cf69c9319cf971db89f_8BACKi'))
+						_processform_8BACKi();
+						else
+						BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
+					input#sessid(type='hidden' name='sessid' value='c2ea2cb575441d8ed19e49e7b005a986')
+					.form-header
+						.text
+							.title Задать вопрос
+							| 																	Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.
+					.form-body
+						.row(data-sid='NAME')
+							.col-md-12
+								.form-group
+									label(for='POPUP_NAME')
+										| Ваше имя: 
+										span.required-star *
+									.input
+										input#POPUP_NAME.form-control.required(type='text' name='NAME' value='' aria-required='true')
+										i.fa.fa-user
+						.row(data-sid='PHONE')
+							.col-md-12
+								.form-group
+									label(for='POPUP_PHONE')
+										| Телефон: 
+										span.required-star *
+									.input
+										input#POPUP_PHONE.form-control.required.phone(type='tel' name='PHONE' value='' aria-required='true')
+										i.fa.fa-phone
+						.row(data-sid='EMAIL')
+							.col-md-12
+								.form-group
+									label(for='POPUP_EMAIL') E-mail: 
+									.input
+										input#POPUP_EMAIL.form-control(type='email' name='EMAIL' value='')
+										i.fa.fa-envelope
+						.row(data-sid='NEED_PRODUCT')
+							.col-md-12
+								.form-group
+									label(for='POPUP_NEED_PRODUCT') Интересующий товар/услуга: 
+									.input
+										input#POPUP_NEED_PRODUCT.form-control(type='text' name='NEED_PRODUCT' value='')
+						.row(data-sid='MESSAGE')
+							.col-md-12
+								.form-group
+									label(for='POPUP_MESSAGE')
+										| Сообщение: 
+										span.required-star *
+									.input
+										textarea#POPUP_MESSAGE.form-control.required(rows='3' name='MESSAGE' aria-required='true')
+										i.fa.fa-pencil
+						.row.captcha-row
+							.col-md-12
+								label(for='captcha_word')
+									| Введите код:
+									span.required-star *
+								.captcha_image
+									img.captcha_img(src='/bitrix/tools/captcha.php?captcha_sid=00b348a8d47b2ce4aa4c05e83b9db5a7' border='0')
+									input.captcha_sid(type='hidden' name='captcha_sid' value='00b348a8d47b2ce4aa4c05e83b9db5a7')
+									.captcha_reload
+									span.refresh
+										a(href='javascript:;' rel='nofollow') Поменять картинку
+								.captcha_input
+									input.inputtext.form-control.captcha(type='text' name='captcha_word' size='30' maxlength='50' value='' required='' aria-required='true')
+					.form-footer.clearfix
+						.licence_block.bx_filter
+							input#licenses_popup(type='checkbox' name='licenses_popup' required='' value='Y' aria-required='true')
+							label(for='licenses_popup')
+								| Я согласен на 
+								a(href='/include/licenses_detail.php' target='_blank') обработку персональных данных
+						div
+							button.btn-lg.btn.btn-default(type='submit') Отправить
+							br
+							input(type='hidden' name='form_submit' value='Отправить')
+			script.
+				$(document).ready(function(){
+				$('.popup form[name="aspro_allcorp2_question"]').validate({
+				ignore: ".ignore",
+				highlight: function( element ){
+				$(element).parent().addClass('error');
+				},
+				unhighlight: function( element ){
+				$(element).parent().removeClass('error');
+				},
+				submitHandler: function( form ){
+				if( $('.popup form[name="aspro_allcorp2_question"]').valid() ){
+				$(form).find('button[type="submit"]').attr('disabled', 'disabled');
+				var eventdata = {type: 'form_submit', form: form, form_name: 'aspro_allcorp2_question'};
+				BX.onCustomEvent('onSubmitForm', [eventdata]);
+				}
+				},
+				errorPlacement: function( error, element ){
+				error.insertBefore(element);
+				},
+				messages:{
+				licenses_popup: {
+				required : BX.message('JS_REQUIRED_LICENSES')
+				}
+				}
+				});
+				if(arAllcorp2Options['THEME']['PHONE_MASK'].length){
+				var base_mask = arAllcorp2Options['THEME']['PHONE_MASK'].replace( /(\\d)/g, '_' );
+				$('.popup form[name="aspro_allcorp2_question"] input.phone').inputmask('mask', {'mask': arAllcorp2Options['THEME']['PHONE_MASK'], 'showMaskOnHover': false });
+				$('.popup form[name="aspro_allcorp2_question"] input.phone').blur(function(){
+				if( $(this).val() == base_mask || $(this).val() == '' ){
+				if( $(this).hasClass('required') ){
+				$(this).parent().find('div.error').html(BX.message('JS_REQUIRED'));
+				}
+				}
+				});
+				}
+				if(arAllcorp2Options['THEME']['DATE_MASK'].length)
+				{
+				$('.popup form[name="aspro_allcorp2_question"] input.date').inputmask('datetime', {
+				'inputFormat':  arAllcorp2Options['THEME']['DATE_MASK'],
+				'placeholder': arAllcorp2Options['THEME']['DATE_PLACEHOLDER'],
+				'showMaskOnHover': false
+				});
+				}
+				if(arAllcorp2Options['THEME']['DATETIME_MASK'].length)
+				{
+				$('.popup form[name="aspro_allcorp2_question"] input.datetime').inputmask('datetime', {
+				'inputFormat':  arAllcorp2Options['THEME']['DATETIME_MASK'],
+				'placeholder': arAllcorp2Options['THEME']['DATETIME_PLACEHOLDER'],
+				'showMaskOnHover': false
+				});
+				}
+				$('.jqmClose').closest('.jqmWindow').jqmAddClose('.jqmClose');
+				$('input[type=file]').uniform({fileButtonHtml: BX.message('JS_FILE_BUTTON_NAME'), fileDefaultHtml: BX.message('JS_FILE_DEFAULT')});
+				$(document).on('change', 'input[type=file]', function(){
+				if($(this).val())
+				{
+				$(this).closest('.uploader').addClass('files_add');
+				}
+				else
+				{
+				$(this).closest('.uploader').removeClass('files_add');
+				}
+				})
+				$('.form .add_file').on('click', function(){
+				var container = $(this).closest('.input'),
+				index = container.find('input[type=file]').length+1,
+				name = container.find('input[type=file]:first').attr('name');
+				$('<input type="file" id="POPUP_FILE" name="'+name.replace('n0', 'n'+index)+'"   class="inputfile" value="" />').insertBefore($(this));
+				$('input[type=file]').uniform({fileButtonHtml: BX.message('JS_FILE_BUTTON_NAME'), fileDefaultHtml: BX.message('JS_FILE_DEFAULT')});
+				})
+				});
+
+
+	+b.modal-win(id="modal-call" class=" " style="display: none" )
+		+form-wrap
+			.text-center
+				+e.title.form-data.h3.ttu Обратный звонок
+				p.after-headline Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут
+				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta at blanditiis error quis incidunt ratione. Expedita ullam repellendus possimus eos ex quidem quisquam quam voluptatum ipsa doloremque molestias accusamus rem deserunt tenetur incidunt exercitationem laboriosam consequuntur, repudiandae dolore odit earum voluptatibus autem amet! Eligendi omnis necessitatibus at accusamus excepturi, debitis magnam alias. Dolore voluptatum hic assumenda quo non facilis sed sint fugit ex quam. Natus eligendi sequi repellat earum doloremque vero consequatur repudiandae ipsam libero odit alias quia expedita magni fugit perspiciatis aperiam maxime illo, voluptatem omnis tenetur suscipit molestias beatae distinctio totam? Excepturi quaerat dolorum natus reprehenderit voluptas officiis totam recusandae harum autem ipsum laboriosam dolorem, tempore, maxime nam dignissimos aperiam cupiditate accusantium deleniti. Iusto harum facere blanditiis minima dolor assumenda error nisi soluta perferendis animi? Distinctio maxime, perspiciatis neque dignissimos reprehenderit obcaecati quo provident, dolores labore laborum adipisci at veniam reiciendis aliquam nemo minus cumque sequi quasi architecto aliquid magnam tempore expedita? Repellendus veniam est dicta nihil, aspernatur molestiae ducimus quibusdam voluptatibus saepe. Repudiandae itaque rem animi voluptas voluptate? Expedita numquam architecto totam quo quod quibusdam ut, rem earum, similique dolorum excepturi nobis quis, tempore et exercitationem repellendus! Ipsa, consequuntur praesentium quaerat excepturi voluptas, delectus maiores necessitatibus explicabo consequatur neque optio doloremque temporibus similique doloribus pariatur velit aliquam magni cum! Repellat mollitia quam saepe porro, culpa unde! Molestias laboriosam vitae nihil facere corporis cupiditate eos ea saepe dolorem, eaque laudantium quam distinctio, fugit placeat maxime enim dicta rem eligendi accusamus, eum id. Incidunt, illum quaerat ab modi iste quasi non laboriosam unde, atque fugit delectus cumque eligendi sapiente dolore autem omnis alias, adipisci dicta illo corrupti optio? Esse error numquam fugit itaque ipsam fugiat nostrum repudiandae recusandae, nobis repellat aperiam officiis labore possimus neque velit, a obcaecati illum quasi suscipit veritatis! Ea earum obcaecati impedit possimus adipisci vitae animi commodi consequatur omnis amet? Quod sed doloremque id nesciunt iure recusandae iste voluptatibus unde eligendi porro nulla architecto voluptates quasi temporibus, fugit asperiores quis! Facere non, illo quisquam cumque voluptate earum voluptatem corporis eum cum commodi omnis autem sequi nisi sit iure aperiam iusto dolor harum? Ex eligendi vero reiciendis culpa ipsa suscipit debitis, quam earum maxime. Nemo officia quasi consequuntur velit rem culpa ipsa quas earum excepturi amet fuga eum consequatur, repellendus commodi facere maxime. Magni voluptas consequatur facere dolores ut culpa, expedita fugit? Quae placeat asperiores est, fuga eligendi eius similique necessitatibus explicabo? Eveniet corporis tempora reiciendis, dolore ipsam quos aut ea alias amet nihil? Excepturi maiores mollitia inventore voluptate est ullam reprehenderit itaque iure quasi non molestias, vel veniam alias! Obcaecati laudantium ex incidunt autem ipsam a suscipit, in dolorem error deserunt minima laborum nulla facere officia sunt. Aliquid repellat rem sunt reprehenderit. Fugit perferendis officiis labore nesciunt pariatur optio minima aperiam et similique maxime odio laudantium eligendi deleniti culpa exercitationem impedit, fugiat magni vero temporibus eos obcaecati esse possimus asperiores dolores! Quod iure eius minus adipisci? Architecto sapiente corrupti error! Magni ea tempore laboriosam minus totam facilis iure voluptates nostrum officiis dignissimos nihil necessitatibus quam in, commodi molestiae expedita facere asperiores ad! Corporis delectus magnam, vel aspernatur rem laboriosam autem soluta aliquam iure impedit? Deserunt ad nam excepturi, quibusdam qui nisi necessitatibus, voluptatibus deleniti quo cumque ipsam cum repudiandae impedit in a laborum dignissimos ratione labore vitae officia quaerat magnam. Saepe ullam omnis harum reprehenderit beatae pariatur est? Animi dolores necessitatibus corrupti velit architecto obcaecati doloremque vero sapiente quaerat praesentium? Veniam illum iusto ea sunt deserunt, omnis consequatur est adipisci aliquid magnam quibusdam animi debitis magni excepturi accusamus vel facilis ipsa blanditiis expedita cumque fugiat! Aspernatur voluptatum quos corrupti blanditiis? Sapiente pariatur sunt culpa nesciunt consequatur eaque veritatis laborum possimus, saepe at nam amet exercitationem assumenda temporibus illo aliquid asperiores quae impedit beatae voluptatem? Vitae, totam quos odio nobis perferendis unde! Voluptates voluptatum, sint iure aliquid quis quod voluptatem saepe et similique, repellendus dolorum. Sed vel illo quisquam cum aut, ullam impedit quaerat a odit alias fugit repudiandae. Consequuntur voluptas explicabo eligendi, beatae esse nihil laborum illo rerum ab dolorum nemo iste est doloremque magnam. Repellendus in voluptates cumque ullam, cum odio quam deserunt optio doloremque modi nobis itaque cupiditate ea, neque exercitationem laborum, obcaecati mollitia earum debitis accusamus nisi dolorem autem libero dicta! Atque ad doloribus distinctio cumque nobis labore placeat? Necessitatibus, accusamus deleniti numquam asperiores distinctio tempora consectetur minus veritatis cum repellat architecto voluptatibus minima omnis aliquam fugit maiores eos veniam consequatur, rerum ex illo facere? Suscipit distinctio qui quae asperiores voluptates nobis unde, nisi soluta natus aspernatur tempore libero, nam iure? Modi, explicabo iusto tenetur placeat praesentium, sunt voluptatum soluta reiciendis quam atque hic dolorum in, esse consequuntur voluptate animi doloremque saepe expedita voluptates? Consectetur sint assumenda quaerat deleniti. Exercitationem, quas beatae. Ut ipsam eum nisi fugiat numquam saepe tempore dolorem necessitatibus consequatur, voluptatem eligendi magni laborum nostrum sed accusamus ducimus laudantium minus animi. Totam expedita vero voluptas libero ipsa! Facilis ullam vel libero aliquam sit itaque quasi delectus a rerum laborum, possimus, eos inventore nulla, excepturi exercitationem aliquid unde porro. Odio nulla labore repellat exercitationem cupiditate voluptates, obcaecati asperiores eligendi delectus commodi deserunt provident sit nam praesentium culpa cum amet explicabo, nisi dolores? Recusandae provident veritatis porro corporis voluptatem assumenda necessitatibus at. Sint quam in facere nihil hic cupiditate porro sapiente nisi, et ratione placeat commodi unde excepturi error repellat earum perspiciatis quisquam amet tempora. Expedita, ipsum? Molestias mollitia voluptatum sapiente inventore, perspiciatis ab laudantium, voluptatibus amet aliquid laborum autem? Adipisci aliquid voluptatum numquam quas quia ullam error sed illo, sit minima, consectetur temporibus unde? Rerum minima necessitatibus est expedita assumenda nesciunt, modi ea fugiat consectetur ad corporis velit ducimus quia aut cumque iusto voluptatibus et perferendis ipsum! Excepturi perferendis veritatis cumque quo, quod facere facilis impedit magnam numquam repellat ad tempora! Pariatur distinctio laborum, quaerat dolorem nostrum totam animi. Ipsa distinctio consectetur explicabo culpa, esse reprehenderit eveniet obcaecati, repudiandae dolorum vero expedita modi exercitationem iure aut provident sit cum adipisci consequatur id delectus voluptatum fuga ducimus natus. Cum, aperiam impedit error illo hic similique quo iure omnis ullam sapiente modi.
+			+input("Ваше Имя")(required)  
+			+e.BUTTON.btn.btn(type="submit"  ) 
+			+polite()
+	// #modal-call
+	
+	// end modals

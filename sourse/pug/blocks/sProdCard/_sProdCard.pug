@@ -1,0 +1,74 @@
+mixin sProdCard(data)
+	// start sProdCard
+	+b.SECTION.sProdCard.drag-block.container.section#sProdCard&attributes(attributes)
+		.maxwidth-theme
+			+e.inner
+				.head
+					.row
+						.col-md-4.col-sm-4
+							.row.galery
+								.inner.zomm_wrapper-block
+									#slider.flexslider.s_1.color-controls.dark-nav2.top-bigs.flexslider-init.flexslider-control-nav.flexslider-direction-nav(data-slice='Y' data-plugin-options='{"controlNav": true, "animationLoop": true, "slideshow": false, "counts": [1, 1, 1]}')
+										.flex-viewport(style='overflow: hidden; position: relative;')
+											ul.slides.items(style='width: 200%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);')
+												li.item.flex-active-slide.current(data-slice-block='Y' data-slide_key='0' data-slice-params='{"lineheight": -3}' style='width: 360px; margin-right: 0px; float: left; display: block; opacity: 1; height: 400px; line-height: 397px;')
+													a.fancybox(href='/upload/iblock/543/543d73b6f64904a648a7573c9ef5ae1c.jpg' target='_blank' title='Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006' data-fancybox-group='gallery')
+														img.img-responsive.inline(src='/upload/iblock/543/543d73b6f64904a648a7573c9ef5ae1c.jpg' title='Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006' alt='Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006' itemprop='image')
+														span.zoom
+										ol.flex-control-nav.flex-control-paging(style='z-index: 2;')
+										ul.flex-direction-nav.opacity0
+											li.flex-nav-prev
+												a.flex-prev.flex-disabled(href='#' tabindex='-1') Назад
+											li.flex-nav-next
+												a.flex-next.flex-disabled(href='#' tabindex='-1') Вперед
+						.col-md-8.col-sm-8
+							meta(itemprop='name' content='Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006')
+							.info(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+								link(itemprop='url' href='/product/tsvetnoy-prokat/mednyy-prokat/mednyy-list/mednyy-list-m1e-0-40-500-500-gost-1173-2006/')
+								// 'start_frame_cache_info'
+								.row
+									.col-md-6
+										.previewtext(itemprop='description')
+											p
+												| Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 - металлургическая продукция из качественных сортов стали, производимая строго в соответствии с требованиями ГОСТ. Изделия имеют разнообразный спектр функциональности в области промышленности, строительства, сельского хозяйства. Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 обладает высокоэффективными характеристиками, которые способствуют долгосрочной, продуктивной службе различных систем и конструкций. Широкий сортамент обеспечивает максимально точной подбор продукции по всем размерным, функциональным и видовым показателям.
+										.link-block-more
+											span.btn-inline.sm.desc Подробнее
+										.char-block
+											.titles_block Характеристики
+											.chars
+												.char-wrapp
+													table.props_table
+														tbody
+															tr.char
+																td.char_name
+																	span Марка
+																td.char_value
+																	span
+																		| М1Е
+															tr.char
+																td.char_name
+																	span Ширина
+																td.char_value
+																	span
+																		| 500
+									.col-md-6
+										.bottom-wrapper
+											.bottom-wrapper-inner
+														
+												.footer-button
+													.buy_block.lg.clearfix
+														.counter.pull-left
+															.wrap
+																span.minus.ctrl.bgtransition
+																.input
+																	input.count(type='text' value='1')
+																span.plus.ctrl.bgtransition
+														.buttons.pull-right
+															span.btn.btn-default.pull-right.to_cart.animate-load(data-quantity='1')
+																span В корзину
+															a.btn.btn-default.pull-right.in_cart(href='/cart/')
+																span В корзине
+													.wrapper-block-btn.order.basketTrue
+
+
+	// end sProdCard
