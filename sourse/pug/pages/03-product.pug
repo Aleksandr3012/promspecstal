@@ -4,6 +4,7 @@ extends layout/main.pug
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sDescr/_sDescr.pug
+include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/sProdCard/_sProdCard.pug
 
 block variables
@@ -86,4 +87,301 @@ block pagecontent
 												span.ya-share2__title Мой Мир
 					h1#pagetitle.shares Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006
 	+sProdCard
+	+sDescr
+	+sCatalog({
+		title: 'Наши услуги',
+		sm: 'sm'
+	})
+	.drag-block.container.CATALOG_INDEX(data-class='CATALOG_INDEX_drag' data-order='8')
+		.maxwidth-theme
+			.row.margin0.block-with-bg
+				.item-views.catalog.blocks
+					.title_block.row
+						.col-md-3.col-sm-12
+							h3 Наши товары
+						//- .col-md-6.col-sm-9.text-center
+							.items.head-block
+								.row.margin0
+									.maxwidth-theme
+										.col-md-12.items-link
+											.item-link.active.clicked
+												.title
+													span Акция
+											.item-link
+												.title
+													span Рекомендуем
+											.item-link
+												.title
+													span Новинка
+											.item-link
+												.title
+													span Хит
+										.items-link-mobile-wrap
+											select.items-link-mobile
+												option(disabled='') Акция
+												option.ordering.SALE(value='SALE') Акция
+												option.ordering.RECOMMEND(value='RECOMMEND') Рекомендуем
+												option.ordering.NEW(value='NEW') Новинка
+												option.ordering.HIT(value='HIT') Хит
+						.col-md-3.col-sm-3
+							.nav-direction
+								ul.flex-direction-nav
+									li.flex-nav-prev
+										a.flex-prev(href='javascript:void(0)')
+											span Prev
+									li.flex-nav-next
+										a.flex-next(href='javascript:void(0)')
+											span Next
+					span.request-data(data-value='a%3A61%3A%7Bs%3A12%3A%22CACHE_FILTER%22%3Bs%3A1%3A%22Y%22%3Bs%3A12%3A%22CACHE_GROUPS%22%3Bs%3A1%3A%22N%22%3Bs%3A10%3A%22CACHE_TIME%22%3Bs%3A8%3A%2236000000%22%3Bs%3A10%3A%22CACHE_TYPE%22%3Bs%3A1%3A%22A%22%3Bs%3A20%3A%22COMPOSITE_FRAME_MODE%22%3Bs%3A1%3A%22A%22%3Bs%3A20%3A%22COMPOSITE_FRAME_TYPE%22%3Bs%3A4%3A%22AUTO%22%3Bs%3A10%3A%22DETAIL_URL%22%3Bs%3A0%3A%22%22%3Bs%3A11%3A%22FILTER_NAME%22%3Bs%3A15%3A%22arFilterCatalog%22%3Bs%3A8%3A%22HIT_PROP%22%3Bs%3A3%3A%22HIT%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A11%3A%22IBLOCK_TYPE%22%3Bs%3A22%3A%22aspro_allcorp2_catalog%22%3Bs%3A10%3A%22NEWS_COUNT%22%3Bs%3A2%3A%2220%22%3Bs%3A14%3A%22PARENT_SECTION%22%3Bs%3A0%3A%22%22%3Bs%3A13%3A%22PROPERTY_CODE%22%3Ba%3A44%3A%7Bi%3A0%3Bs%3A10%3A%22FORM_ORDER%22%3Bi%3A1%3Bs%3A18%3A%22SHOW_ON_INDEX_PAGE%22%3Bi%3A2%3Bs%3A5%3A%22PRICE%22%3Bi%3A3%3Bs%3A8%3A%22PRICEOLD%22%3Bi%3A4%3Bs%3A6%3A%22STATUS%22%3Bi%3A5%3Bs%3A7%3A%22ARTICLE%22%3Bi%3A6%3Bs%3A3%3A%22AGE%22%3Bi%3A7%3Bs%3A7%3A%22KARTOPR%22%3Bi%3A8%3Bs%3A6%3A%22HEIGHT%22%3Bi%3A9%3Bs%3A5%3A%22DEPTH%22%3Bi%3A10%3Bs%3A4%3A%22DEEP%22%3Bi%3A11%3Bs%3A4%3A%22GRUZ%22%3Bi%3A12%3Bs%3A11%3A%22GRUZ_STRELI%22%3Bi%3A13%3Bs%3A12%3A%22DLINA_STRELI%22%3Bi%3A14%3Bs%3A5%3A%22DLINA%22%3Bi%3A15%3Bs%3A8%3A%22CATEGORY%22%3Bi%3A16%3Bs%3A5%3A%22CLASS%22%3Bi%3A17%3Bs%3A11%3A%22KOL_FORMULA%22%3Bi%3A18%3Bs%3A5%3A%22USERS%22%3Bi%3A19%3Bs%3A9%3A%22EXTENSION%22%3Bi%3A20%3Bs%3A10%3A%22MARK_STEEL%22%3Bi%3A21%3Bs%3A4%3A%22MASS%22%3Bi%3A22%3Bs%3A5%3A%22MODEL%22%3Bi%3A23%3Bs%3A5%3A%22POWER%22%3Bi%3A24%3Bs%3A7%3A%22UPDATES%22%3Bi%3A25%3Bs%3A6%3A%22VOLUME%22%3Bi%3A26%3Bs%3A12%3A%22PROIZVODSTVO%22%3Bi%3A27%3Bs%3A4%3A%22SIZE%22%3Bi%3A28%3Bs%3A5%3A%22PLACE%22%3Bi%3A29%3Bs%3A9%3A%22RECOMMEND%22%3Bi%3A30%3Bs%3A6%3A%22SERIES%22%3Bi%3A31%3Bs%3A5%3A%22SPEED%22%3Bi%3A32%3Bs%3A8%3A%22DURATION%22%3Bi%3A33%3Bs%3A8%3A%22TYPE_TUR%22%3Bi%3A34%3Bs%3A9%3A%22THICKNESS%22%3Bi%3A35%3Bs%3A4%3A%22MARK%22%3Bi%3A36%3Bs%3A3%3A%22HIT%22%3Bi%3A37%3Bs%3A9%3A%22FREQUENCY%22%3Bi%3A38%3Bs%3A12%3A%22WIDTH_PROHOD%22%3Bi%3A39%3Bs%3A12%3A%22WIDTH_PROEZD%22%3Bi%3A40%3Bs%3A5%3A%22WIDTH%22%3Bi%3A41%3Bs%3A9%3A%22LANGUAGES%22%3Bi%3A42%3Bs%3A5%3A%22BRAND%22%3Bi%3A43%3Bs%3A0%3A%22%22%3B%7Ds%3A8%3A%22SORT_BY1%22%3Bs%3A4%3A%22SORT%22%3Bs%3A8%3A%22SORT_BY2%22%3Bs%3A2%3A%22ID%22%3Bs%3A11%3A%22SORT_ORDER1%22%3Bs%3A3%3A%22ASC%22%3Bs%3A11%3A%22SORT_ORDER2%22%3Bs%3A3%3A%22ASC%22%3Bs%3A5%3A%22TITLE%22%3Bs%3A25%3A%22%D0%9D%D0%B0%D1%88%D0%B8+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%22%3Bs%3A18%3A%22COMPONENT_TEMPLATE%22%3Bs%3A6%3A%22slider%22%3Bs%3A10%3A%22SECTION_ID%22%3Bs%3A0%3A%22%22%3Bs%3A12%3A%22SECTION_CODE%22%3Bs%3A0%3A%22%22%3Bs%3A10%3A%22FIELD_CODE%22%3Ba%3A4%3A%7Bi%3A0%3Bs%3A4%3A%22NAME%22%3Bi%3A1%3Bs%3A15%3A%22PREVIEW_PICTURE%22%3Bi%3A2%3Bs%3A14%3A%22DETAIL_PICTURE%22%3Bi%3A3%3Bs%3A0%3A%22%22%3B%7Ds%3A15%3A%22S_ORDER_PRODUCT%22%3Bs%3A16%3A%22%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%22%3Bs%3A14%3A%22S_MORE_PRODUCT%22%3Bs%3A18%3A%22%D0%9F%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%22%3Bs%3A24%3A%22ELEMENTS_TABLE_TYPE_VIEW%22%3Bs%3A11%3A%22FROM_MODULE%22%3Bs%3A12%3A%22SHOW_SECTION%22%3Bs%3A1%3A%22Y%22%3Bs%3A13%3A%22COUNT_IN_LINE%22%3Bs%3A1%3A%224%22%3Bs%3A13%3A%22%7ECACHE_FILTER%22%3Bs%3A1%3A%22Y%22%3Bs%3A13%3A%22%7ECACHE_GROUPS%22%3Bs%3A1%3A%22N%22%3Bs%3A11%3A%22%7ECACHE_TIME%22%3Bs%3A8%3A%2236000000%22%3Bs%3A11%3A%22%7ECACHE_TYPE%22%3Bs%3A1%3A%22A%22%3Bs%3A21%3A%22%7ECOMPOSITE_FRAME_MODE%22%3Bs%3A1%3A%22A%22%3Bs%3A21%3A%22%7ECOMPOSITE_FRAME_TYPE%22%3Bs%3A4%3A%22AUTO%22%3Bs%3A11%3A%22%7EDETAIL_URL%22%3Bs%3A0%3A%22%22%3Bs%3A12%3A%22%7EFILTER_NAME%22%3Bs%3A15%3A%22arFilterCatalog%22%3Bs%3A9%3A%22%7EHIT_PROP%22%3Bs%3A3%3A%22HIT%22%3Bs%3A10%3A%22%7EIBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A12%3A%22%7EIBLOCK_TYPE%22%3Bs%3A22%3A%22aspro_allcorp2_catalog%22%3Bs%3A11%3A%22%7ENEWS_COUNT%22%3Bs%3A2%3A%2220%22%3Bs%3A15%3A%22%7EPARENT_SECTION%22%3Bs%3A0%3A%22%22%3Bs%3A14%3A%22%7EPROPERTY_CODE%22%3Ba%3A44%3A%7Bi%3A0%3Bs%3A10%3A%22FORM_ORDER%22%3Bi%3A1%3Bs%3A18%3A%22SHOW_ON_INDEX_PAGE%22%3Bi%3A2%3Bs%3A5%3A%22PRICE%22%3Bi%3A3%3Bs%3A8%3A%22PRICEOLD%22%3Bi%3A4%3Bs%3A6%3A%22STATUS%22%3Bi%3A5%3Bs%3A7%3A%22ARTICLE%22%3Bi%3A6%3Bs%3A3%3A%22AGE%22%3Bi%3A7%3Bs%3A7%3A%22KARTOPR%22%3Bi%3A8%3Bs%3A6%3A%22HEIGHT%22%3Bi%3A9%3Bs%3A5%3A%22DEPTH%22%3Bi%3A10%3Bs%3A4%3A%22DEEP%22%3Bi%3A11%3Bs%3A4%3A%22GRUZ%22%3Bi%3A12%3Bs%3A11%3A%22GRUZ_STRELI%22%3Bi%3A13%3Bs%3A12%3A%22DLINA_STRELI%22%3Bi%3A14%3Bs%3A5%3A%22DLINA%22%3Bi%3A15%3Bs%3A8%3A%22CATEGORY%22%3Bi%3A16%3Bs%3A5%3A%22CLASS%22%3Bi%3A17%3Bs%3A11%3A%22KOL_FORMULA%22%3Bi%3A18%3Bs%3A5%3A%22USERS%22%3Bi%3A19%3Bs%3A9%3A%22EXTENSION%22%3Bi%3A20%3Bs%3A10%3A%22MARK_STEEL%22%3Bi%3A21%3Bs%3A4%3A%22MASS%22%3Bi%3A22%3Bs%3A5%3A%22MODEL%22%3Bi%3A23%3Bs%3A5%3A%22POWER%22%3Bi%3A24%3Bs%3A7%3A%22UPDATES%22%3Bi%3A25%3Bs%3A6%3A%22VOLUME%22%3Bi%3A26%3Bs%3A12%3A%22PROIZVODSTVO%22%3Bi%3A27%3Bs%3A4%3A%22SIZE%22%3Bi%3A28%3Bs%3A5%3A%22PLACE%22%3Bi%3A29%3Bs%3A9%3A%22RECOMMEND%22%3Bi%3A30%3Bs%3A6%3A%22SERIES%22%3Bi%3A31%3Bs%3A5%3A%22SPEED%22%3Bi%3A32%3Bs%3A8%3A%22DURATION%22%3Bi%3A33%3Bs%3A8%3A%22TYPE_TUR%22%3Bi%3A34%3Bs%3A9%3A%22THICKNESS%22%3Bi%3A35%3Bs%3A4%3A%22MARK%22%3Bi%3A36%3Bs%3A3%3A%22HIT%22%3Bi%3A37%3Bs%3A9%3A%22FREQUENCY%22%3Bi%3A38%3Bs%3A12%3A%22WIDTH_PROHOD%22%3Bi%3A39%3Bs%3A12%3A%22WIDTH_PROEZD%22%3Bi%3A40%3Bs%3A5%3A%22WIDTH%22%3Bi%3A41%3Bs%3A9%3A%22LANGUAGES%22%3Bi%3A42%3Bs%3A5%3A%22BRAND%22%3Bi%3A43%3Bs%3A0%3A%22%22%3B%7Ds%3A9%3A%22%7ESORT_BY1%22%3Bs%3A4%3A%22SORT%22%3Bs%3A9%3A%22%7ESORT_BY2%22%3Bs%3A2%3A%22ID%22%3Bs%3A12%3A%22%7ESORT_ORDER1%22%3Bs%3A3%3A%22ASC%22%3Bs%3A12%3A%22%7ESORT_ORDER2%22%3Bs%3A3%3A%22ASC%22%3Bs%3A6%3A%22%7ETITLE%22%3Bs%3A25%3A%22%D0%9D%D0%B0%D1%88%D0%B8+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%22%3Bs%3A19%3A%22%7ECOMPONENT_TEMPLATE%22%3Bs%3A6%3A%22slider%22%3Bs%3A11%3A%22%7ESECTION_ID%22%3Bs%3A0%3A%22%22%3Bs%3A13%3A%22%7ESECTION_CODE%22%3Bs%3A0%3A%22%22%3Bs%3A11%3A%22%7EFIELD_CODE%22%3Ba%3A4%3A%7Bi%3A0%3Bs%3A4%3A%22NAME%22%3Bi%3A1%3Bs%3A15%3A%22PREVIEW_PICTURE%22%3Bi%3A2%3Bs%3A14%3A%22DETAIL_PICTURE%22%3Bi%3A3%3Bs%3A0%3A%22%22%3B%7Ds%3A16%3A%22%7ES_ORDER_PRODUCT%22%3Bs%3A16%3A%22%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%22%3Bs%3A15%3A%22%7ES_MORE_PRODUCT%22%3Bs%3A18%3A%22%D0%9F%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%22%3Bs%3A25%3A%22%7EELEMENTS_TABLE_TYPE_VIEW%22%3Bs%3A11%3A%22FROM_MODULE%22%3Bs%3A13%3A%22%7ESHOW_SECTION%22%3Bs%3A1%3A%22Y%22%3Bs%3A14%3A%22%7ECOUNT_IN_LINE%22%3Bs%3A1%3A%224%22%3Bs%3A10%3A%22ORDER_VIEW%22%3Bb%3A1%3Bs%3A20%3A%22DISPLAY_BOTTOM_PAGER%22%3Bs%3A1%3A%22N%22%3Bs%3A17%3A%22DISPLAY_TOP_PAGER%22%3Bs%3A1%3A%22N%22%3Bs%3A9%3A%22PROP_CODE%22%3Bs%3A3%3A%22HIT%22%3Bs%3A9%3A%22SET_TITLE%22%3Bs%3A1%3A%22N%22%3B%7D')
+					.tabs_ajax
+						.body-block
+							.row.margin0
+								.item-block.active.opacity1(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A10%3A%22%D0%90%D0%BA%D1%86%D0%B8%D1%8F%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+									// 'start_frame_cache_iJBuqa'
+									.row.margin0
+										.catalog.item-views.table.front
+											.flexslider.unstyled.row.dark-nav2(data-plugin-options='{"animation": "slide", "directionNav": true, "customDirection": ".catalog .nav-direction a", "controlNav" :true, "animationLoop": true, "slideshow": false, "itemMargin": 0, "counts": [4, 2, 2, 2]}')
+												ul.slides(itemscope='' itemtype='http://schema.org/ItemList')
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_214.item(data-item='{"IBLOCK_ID":"41","ID":"214","NAME":"\u0410\u0432\u0442\u043e\u043a\u0440\u0430\u043d XCMG QAY 500","DETAIL_PAGE_URL":"\/product\/arenda-tekhniki\/krany\/avtokran-xcmg-qay-500\/","PREVIEW_PICTURE":null,"DETAIL_PICTURE":null,"PROPERTY_FILTER_PRICE_VALUE":"8000","PROPERTY_PRICE_VALUE":"\u043e\u0442 8 000 \u0440.\/\u0441\u043c\u0435\u043d\u0430","PROPERTY_PRICEOLD_VALUE":"\u043e\u0442 10 000 \u0440.\/\u0441\u043c\u0435\u043d\u0430","PROPERTY_ARTICLE_VALUE":"123123123","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='0')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/arenda-tekhniki/krany/avtokran-xcmg-qay-500/index.html')
+																		img.img-responsive(src='bitrix/templates/aspro-allcorp2/images/noimage_product.png' alt='Автокран XCMG QAY 500' title='Автокран XCMG QAY 500' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/arenda-tekhniki/krany/avtokran-xcmg-qay-500/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Автокран XCMG
+																					| QAY 500
+																		.section_name Автокраны
+																		span.status-icon.instock(itemprop='description') В наличии
+																		span.article(itemprop='description')
+																			| Арт. 
+																			span 123123123
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						| от 8 000 
+																						span.currency р.
+																						| /смена
+																				.price_old
+																					span.price_val от 10 000 р./смена
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_238.item(data-item='{"IBLOCK_ID":"41","ID":"238","NAME":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043f\u0435\u0447\u044c Nyman 2000","DETAIL_PAGE_URL":"\/product\/stroymaterialy\/pechi-kaminy-dymokhody\/elektricheskaya-pech-nyman-2000\/","PREVIEW_PICTURE":null,"DETAIL_PICTURE":null,"PROPERTY_FILTER_PRICE_VALUE":"19600","PROPERTY_PRICE_VALUE":"19 600 \u0440.","PROPERTY_PRICEOLD_VALUE":"22 000 \u0440.","PROPERTY_ARTICLE_VALUE":"5467908","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='1')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/stroymaterialy/pechi-kaminy-dymokhody/elektricheskaya-pech-nyman-2000/index.html')
+																		img.img-responsive(src='bitrix/templates/aspro-allcorp2/images/noimage_product.png' alt='Электрическая печь Nyman 2000' title='Электрическая печь Nyman 2000' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/stroymaterialy/pechi-kaminy-dymokhody/elektricheskaya-pech-nyman-2000/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Электрическая
+																					| печь Nyman 2000
+																		.section_name Печи, камины, дымоходы
+																		span.status-icon.instock(itemprop='description') В наличии
+																		span.article(itemprop='description')
+																			| Арт. 
+																			span 5467908
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						span 19 600 
+																						span.currency р.
+																				.price_old
+																					span.price_val 22 000 р.
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_245.item(data-item='{"IBLOCK_ID":"41","ID":"245","NAME":"\u041f\u043e\u043c\u043f\u0430 \u0434\u0440\u0435\u043d\u0430\u0436\u043d\u0430\u044f SAUERMANN","DETAIL_PAGE_URL":"\/product\/sistemy-ventilyatsii1\/komplektuyushchie\/pompa-drenazhnaya-sauermann\/","PREVIEW_PICTURE":"485","DETAIL_PICTURE":"486","PROPERTY_FILTER_PRICE_VALUE":"2750","PROPERTY_PRICE_VALUE":"2 750 \u0440.","PROPERTY_PRICEOLD_VALUE":"3 000 \u0440.","PROPERTY_ARTICLE_VALUE":"234151","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='2')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/sistemy-ventilyatsii1/komplektuyushchie/pompa-drenazhnaya-sauermann/index.html')
+																		img.img-responsive(src='upload/resize_cache/iblock/e03/400_200_0/e035258fe23c0214c4322698d1f74eb8.jpg' alt='Помпа дренажная SAUERMANN' title='Помпа дренажная SAUERMANN' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/sistemy-ventilyatsii1/komplektuyushchie/pompa-drenazhnaya-sauermann/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Помпа
+																					| дренажная SAUERMANN
+																		.section_name Комплектующие
+																		span.status-icon.instock(itemprop='description') В наличии
+																		span.article(itemprop='description')
+																			| Арт. 
+																			span 234151
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						span 2 750 
+																						span.currency р.
+																				.price_old
+																					span.price_val 3 000 р.
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+													li.col-md-3.col-sm-4.col-xs-6
+														#bx_1373509569_274.item(data-item='{"IBLOCK_ID":"41","ID":"274","NAME":"\u0410\u043f\u043f\u0430\u0440\u0430\u0442 \u0434\u043b\u044f \u043b\u0430\u0437\u0435\u0440\u043d\u043e\u0439 \u044d\u043f\u0438\u043b\u044f\u0446\u0438\u0438 Cynosure Apogee+","DETAIL_PAGE_URL":"\/product\/meditsinskoe-oborudovanie\/kosmetologiya\/apparat-dlya-lazernoy-epilyatsii-cynosure-apogee\/","PREVIEW_PICTURE":"528","DETAIL_PICTURE":"529","PROPERTY_FILTER_PRICE_VALUE":"1260000","PROPERTY_PRICE_VALUE":"1 260 000 \u0440.","PROPERTY_PRICEOLD_VALUE":"1 390 900 \u0440.","PROPERTY_ARTICLE_VALUE":"","PROPERTY_STATUS_VALUE":"110"}' itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem')
+															meta(itemprop='position' content='3')
+															.inner-wrap
+																.stickers
+																	.stickers-wrapper
+																		.sticker_sale Акция
+																.image.shine
+																	a.blink-block(href='product/meditsinskoe-oborudovanie/kosmetologiya/apparat-dlya-lazernoy-epilyatsii-cynosure-apogee/index.html')
+																		img.img-responsive(src='upload/resize_cache/iblock/fd0/400_200_0/fd0647b0f31ca45e1e52d3626f533be1.png' alt='Аппарат для лазерной эпиляции Cynosure Apogee+' title='Аппарат для лазерной эпиляции Cynosure Apogee+' itemprop='image')
+																.text
+																	.cont
+																		.title
+																			a.dark-color(href='product/meditsinskoe-oborudovanie/kosmetologiya/apparat-dlya-lazernoy-epilyatsii-cynosure-apogee/index.html' itemprop='url')
+																				span(itemprop='name')
+																					| Аппарат для
+																					| лазерной эпиляции Cynosure Apogee+
+																		.section_name Косметология
+																		span.status-icon.instock(itemprop='description') В наличии
+																	.row.foot
+																		.col-md-12.col-sm-12.col-xs-12.clearfix.slice_price
+																			.price.inline
+																				.price_new
+																					span.price_val
+																						span 1 260 000 
+																						span.currency р.
+																				.price_old
+																					span.price_val 1 390 900 р.
+																		.col-md-12.col-sm-12.col-xs-12
+																			.desktop-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+																			.mobile-wrapper
+																				.footer-button
+																					.buy_block.clearfix
+																						.counter
+																							.wrap
+																								span.minus.ctrl.bgtransition
+																								.input
+																									input.count(type='text' value='1' maxlength='20')
+																								span.plus.ctrl.bgtransition
+																						.buttons
+																							span.btn.btn-default.to_cart.animate-load(data-quantity='1')
+																								span В корзину
+																							a.btn.btn-default.in_cart(href='cart/index.html')
+																								span В корзине
+									// 'end_frame_cache_iJBuqa'
+								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A22%3A%22%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D0%BC%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A14%3A%22%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22%D0%A5%D0%B8%D1%82%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
 
