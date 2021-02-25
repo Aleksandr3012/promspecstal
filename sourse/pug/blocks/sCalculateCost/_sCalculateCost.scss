@@ -1,0 +1,161 @@
+// start .sCalculateCost
+.sCalculateCost {
+	--sPT: 10px;
+	--sPB: 20px;
+	// --sTPB: ;
+	
+	&__inner {
+		padding: 30px;
+		border: solid 1px #f4f5f4;
+
+	}
+
+	.maxwidth-theme {
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	&__addWrap {
+		@include media-breakpoint-up(sm) {
+			display: flex;
+		}
+		// align-items: center;
+	}
+
+	&__formats {
+		opacity: .6;
+		font-size: 14px;
+	}
+
+	&__col {
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.polite {
+		margin-right: 30px;
+	}
+
+	&__btn {
+		max-width: 280px;
+		width: 100%;
+		font-size: 18px !important;
+		margin-left: auto;
+	}
+
+	&__input {
+		background-color: transparent;
+		border-color: transparent;
+		border-bottom-color: $primary;
+		border-bottom-width: 3px;
+		padding-left: 2px;
+	}
+
+	&__input-wrap {
+		label {
+			display: block;
+		}
+	}
+
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCalculateCost
+
+.btn-red {
+	background-color: #eb6a5d;
+	color: #fff;
+	border-color: #eb6a5d;
+	@include mt(.2);
+}
+
+.polite {
+	.custom-input {
+		display: flex;
+		// align-items: center;
+		&__text {
+			max-width: 200px;
+			display: inline-block;
+			font-size: 15px;
+			span {
+				color: $primary;
+			}
+		}
+
+		&__input {
+			margin-top: 5px;
+		}
+	}
+}
+
+.add-file {
+
+	.icon {
+		font-size: rem(25);
+		color: #000;
+		margin-right: 5px;
+		margin-top: 3px;
+	}
+
+	input{
+		display: none;
+	}
+
+	label{
+		width: 100%;
+		border: 1px solid #F0F0F1;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		height: 40px;
+		line-height: 1.25;
+	}
+
+	&__text {
+		white-space: nowrap;
+	}
+	
+	&__btn{
+		outline: none !important;
+
+		&:hover {
+			border-color: #FFBA72;
+		}
+	}
+
+
+
+	&__filename{
+		// padding: 10px;
+		display: inline-block;
+	}
+}
+
+.flexRow {
+	margin-left: -15px;
+	margin-right: -15px;
+	display: flex;
+	flex-wrap: wrap;
+
+	>* {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+.col-MD-6 {
+	@include media-breakpoint-up(md) {
+		width: 50%;
+		flex: 0 0 auto;
+	}
+}

@@ -1,0 +1,23 @@
+mixin sCalculateCost(data)
+	// start sCalculateCost
+	+b.SECTION.sCalculateCost.drag-block.container.section#sCalculateCost&attributes(attributes)
+		.maxwidth-theme
+			+e.inner
+				.flexRow
+					.col-MD-6
+						.section-title
+							h2 Расчитать стоимость и время доставки
+					.col-MD-6 
+						+e.addWrap
+							+e.formats Используемые форматы: *.pdf,*.doc,^*.xls,*.jpg,*.png. Максимальный объем файла: 1Гб
+							+add-file
+					.col-MD-6 
+						.row 
+							.col-sm-6 
+								+input('Введите e-mail','email','Ваш e-mail')
+							.col-sm-6 
+								+input('Введите город','text','Куда доставить?')
+					+e.col.col-MD-6 
+						+polite
+						+e.btn.btn.btn-red.btn-lg(type="submit") Расчитать
+	// end sCalculateCost

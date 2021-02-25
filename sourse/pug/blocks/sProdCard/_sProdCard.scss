@@ -1,7 +1,7 @@
 // start .sProdCard
 .sProdCard {
-	// --sPT: ;
-	// --sPB: ;
+	--sPT: 20px;
+	--sPB: 20px;
 	// --sTPB: ;
 	
 	&__inner {
@@ -14,14 +14,24 @@
 	}
 
 	.bottom-wrapper {
+		@include media-breakpoint-up(sm) {
+			width: 320px;
+		}
 		@include media-breakpoint-only(lg) {
 			width: auto;
 		}
-		width: 320px;
 		margin-left: auto;
 	}
 
 	.buy_block {
+		@include media-breakpoint-down(sm) {
+			display: flex !important;
+			flex-direction: column;
+
+			&::before, &::after {
+				display: none;
+			}
+		}
 		@include media-breakpoint-only(lg) {
 			display: flex !important;
 			flex-direction: column;
@@ -36,6 +46,12 @@
 				margin-left: auto;
 				margin-bottom: 10px;
 				float: right !important;
+				max-width: 184px;
+			}
+
+			@include media-breakpoint-down(sm) {
+				// margin-left: auto;
+				margin-bottom: 10px;
 				max-width: 184px;
 			}
 		}
