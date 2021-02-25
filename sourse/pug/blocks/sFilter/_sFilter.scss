@@ -1,0 +1,38 @@
+// start .sFilter
+.sFilter {
+	--sPT: 10px;
+	// --sPB: ;
+	// --sTPB: ;
+	
+	&__inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	h4 {
+		margin-top: 10px;
+	}
+
+	&__head {
+		background-color: $light;
+		padding: 15px;
+	}
+
+	&__input {
+		background-color: #fff;
+		width: 100%;
+	}
+
+	&__reset {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		color: $primary;
+		margin-left: 3px;
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sFilter

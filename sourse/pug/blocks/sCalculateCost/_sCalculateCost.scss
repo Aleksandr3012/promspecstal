@@ -17,6 +17,13 @@
 		margin-top: 0;
 	}
 
+	.section-title--h2Sm {
+		h2 {
+			margin-bottom: 5px;
+		}
+		margin-bottom: 20px;
+	}
+
 	&__addWrap {
 		@include media-breakpoint-up(sm) {
 			display: flex;
@@ -27,6 +34,7 @@
 	&__formats {
 		opacity: .6;
 		font-size: 14px;
+		text-align: center;
 	}
 
 	&__col {
@@ -52,7 +60,11 @@
 		border-color: transparent;
 		border-bottom-color: $primary;
 		border-bottom-width: 3px;
-		padding-left: 2px;
+		padding-left: 10px;
+	}
+
+	&__input-title {
+		padding-left: 10px;
 	}
 
 	&__input-wrap {
@@ -154,8 +166,19 @@
 	}
 }
 .col-MD-6 {
+	padding-left: 15px;
+	padding-right: 15px;
 	@include media-breakpoint-up(md) {
 		width: 50%;
+		flex: 0 0 auto;
+	}
+}
+
+.col-MD-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include media-breakpoint-up(md) {
+		width: 25%;
 		flex: 0 0 auto;
 	}
 }

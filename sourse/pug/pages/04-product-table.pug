@@ -7,6 +7,7 @@ include ../blocks/sDescr/_sDescr.pug
 include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/sProdCard/_sProdCard.pug
 include ../blocks/sCalculateCost/_sCalculateCost.pug
+include ../blocks/sFilter/_sFilter.pug
 
 block variables
 	- let  mainPage= null
@@ -50,8 +51,9 @@ block pagecontent
 							script(src='//yastatic.net/share2/share.js' async='async')
 							.ya-share2(data-services='vkontakte,facebook,twitter,viber,whatsapp,odnoklassniki,moimir')
 					h1#pagetitle.shares Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006
-	+sProdCard
-	+sCalculateCost
+	+sProdCard-table
+	+sCalculateCost-reserve
+	+sFilter
 	+sDescr
 	+sCatalog({
 		title: 'Наши услуги',

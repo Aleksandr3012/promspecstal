@@ -84,10 +84,6 @@
 		}
 	}
 
-	.galery {
-
-	}
-
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
@@ -118,6 +114,10 @@
 		padding-left: 15px;
 
 		// width: 340px;
+
+		&--sm {
+			max-width: 250px;
+		}
 	}
 
 	@include media-breakpoint-up(sm) {}

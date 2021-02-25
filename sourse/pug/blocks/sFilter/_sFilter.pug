@@ -1,0 +1,20 @@
+mixin sFilter(data)
+	// start sFilter
+	+b.SECTION.sFilter.drag-block.container.section#sFilter&attributes(attributes)
+		.maxwidth-theme
+			+e.inner
+				+e.head
+					h4 Фильтр продукции
+					
+					.flexRow
+						.col-MD-3 
+							+input('Толщина, мм','select')
+						.col-MD-3 
+							+input('Ширина, мм','select')
+						.col-MD-3 
+							+input('ГОСТ','select')
+						.col-MD-3 
+							+input('Марка','select')
+					+e.reset.btn(type="submit") Сбросить фильтр
+				+pugin
+	// end sFilter
