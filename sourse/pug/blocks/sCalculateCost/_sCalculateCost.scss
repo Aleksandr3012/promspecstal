@@ -5,7 +5,9 @@
 	// --sTPB: ;
 	
 	&__inner {
-		padding: 30px;
+		@include media-breakpoint-up(lg) {
+			padding: 30px;
+		}
 		border: solid 1px #f4f5f4;
 
 	}

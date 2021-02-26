@@ -9,7 +9,9 @@
 	}
 
 	&__inner {
-		padding: 13px 22px;
+		@include media-breakpoint-up(md) {
+			padding: 13px 22px;
+		}
 	}
 
 	&__allProject {

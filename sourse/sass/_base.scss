@@ -491,7 +491,10 @@ iframe {
 }
 
 .banners-big.short-banner .slides > li, .banners-big.short-banner .slides .text {
-	height: 440px;
+	height: 300px;
+	@include media-breakpoint-up(sm) {
+		height: 440px;
+	}
 }
 
 .big_banners_block {

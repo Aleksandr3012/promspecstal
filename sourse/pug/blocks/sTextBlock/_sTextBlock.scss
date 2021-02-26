@@ -5,8 +5,10 @@
 	// --sTPB: ;
 
 	&__inner {
-		padding-left: 15px;
-		padding-right: 15px;
+		@include media-breakpoint-up(lg) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 
 
