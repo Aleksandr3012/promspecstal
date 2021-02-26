@@ -11032,7 +11032,9 @@ $(document).ready(function(){
 		else
 		{
 			container.addClass('active');
+			// Правил ТУТ
 			// scrollToBlock(container);
+			// Правил ТУТ
 			nav.find('li:eq('+container.index()+')').addClass('active');
 			slide_block.slideDown();
 		}
@@ -13232,7 +13234,9 @@ $(document).ready(function(){
 	$('.f-item').click(function(){
 		//$('.product-submenu').addClass('hide');	
 		//$('.submenu-wrapper').addClass('hide');      
+		// Правил ТУТ
 		$(this).children('.submenu-wrapper').toggleClass('hide');	
+		// Правил ТУТ
 		return false;
 	});				
 });
