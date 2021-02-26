@@ -4,6 +4,7 @@ include ../../_assets/bemto/bemto
 include ../../blocks/mixin-wrap/mixin-wrap.pug
 include ../../blocks/form-wrap/form-wrap.pug
 include ../../blocks/footer/_footer.pug 
+include ../../blocks/sitebar/_sitebar.pug 
 include ../../blocks/modal/_modal.pug
 include js-css.pug
 
@@ -186,1535 +187,7 @@ html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
 			header.header_custom.with_regions
 				.menu-row.with-color.bglight.colored_dark.sliced
 					.maxwidth-theme
-						.sidebar-fixed
-							.content-left
-								.logo-row.top-fill
-									.logo-block.paddings
-										.logo
-											a(href='index.html')
-												img(src='upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png' alt='Cайт производства' title='Cайт производства')
-										span.callback.get-order
-								.menu-sidebar
-									aside.sidebar
-										ul.nav.nav-list.side-menu
-											li.f-item.product
-												a(href='#') Продукция
-											li.f-item.services
-												a(href='#') Услуги
-											li.f-item.proizvodstvo
-												a(href='#') Производство
-									.product-submenu
-										#bx_incl_area_3_1
-										aside.sidebar
-											ul.nav.nav-list.side-menu
-												li.f-item.child
-													a(href='#') Цветной прокат
-													.submenu-wrapper.hide
-														ul.submenu
-															li.child
-																a(href='product/alyuminievyy-prokat/index.html') Алюминиевый прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/alyuminievaya-profilnaya-truba/index.html')
-																				| Алюминиевая профильная
-																				| труба
-																		li
-																			a(href='product/kvadrat-alyuminievyy/index.html') Квадрат алюминиевый
-																		li
-																			a(href='product/alyuminievyy-list/index.html') Алюминиевый лист
-																		li
-																			a(href='product/list-alyuminievyy-pvl/index.html') Лист алюминиевый ПВЛ
-																		li.child
-																			a(href='product/riflenyy-alyuminievyy-list/index.html')
-																				| Рифленый алюминиевый
-																				| лист
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/riflenyy-alyuminievyy-list-diamant/index.html')
-																							| Рифленый
-																							| алюминиевый лист Диамант
-																					li
-																						a(href='product/riflenyy-alyuminievyy-list-duet/index.html')
-																							| Рифленый
-																							| алюминиевый лист Дуэт
-																					li
-																						a(href='product/riflenyy-alyuminievyy-list-kvintet/index.html')
-																							| Рифленый
-																							| алюминиевый лист Квинтет
-																					li
-																						a(href='product/riflenyy-alyuminievyy-list-chechevitsa/index.html')
-																							| Рифленый
-																							| алюминиевый лист Чечевица
-																		li.child
-																			a(href='product/alyuminievyy-perforirovannyy-list/index.html')
-																				| Алюминиевый
-																				| перфорированный лист
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/perforirovannyy-alyuminievyy-list-qg/index.html')
-																							| Перфорированный
-																							| алюминиевый лист Qg
-																					li
-																						a(href='product/perforirovannyy-alyuminievyy-list-rv/index.html')
-																							| Перфорированный
-																							| алюминиевый лист Rv
-																		li
-																			a(href='product/alyuminievaya-lenta/index.html') Алюминиевая лента
-																		li
-																			a(href='product/alyuminievaya-plita/index.html') Алюминиевая плита
-																		li
-																			a(href='product/alyuminievaya-truba/index.html') Алюминиевая труба
-																		li
-																			a(href='product/alyuminievaya-kvadratnaya-truba/index.html')
-																				| Алюминиевая квадратная
-																				| труба
-																		li
-																			a(href='product/prutok-alyuminievyy/index.html') Пруток алюминиевый
-																		li
-																			a(href='product/truba-alyuminievaya-kholodnodeformiruemaya/index.html')
-																				| Труба
-																				| алюминиевая холоднодеформируемая
-																		li
-																			a(href='product/truba-alyuminievaya-elektrosvarnaya/index.html')
-																				| Труба алюминиевая
-																				| электросварная
-																		li
-																			a(href='product/alyuminievaya-polosa/index.html') Алюминиевая полоса
-																		li
-																			a(href='product/alyuminievaya-provoloka/index.html') Алюминиевая проволока
-																		li
-																			a(href='product/alyuminievaya-svarochnaya-provoloka/index.html')
-																				| Алюминиевая
-																				| сварочная проволока
-																		li
-																			a(href='product/alyuminievaya-shina/index.html') Алюминиевая шина
-																		li
-																			a(href='product/alyuminievyy-krug/index.html') Алюминиевый круг
-																		li
-																			a(href='product/rulon-alyuminievyy/index.html') Рулон алюминиевый
-																		li
-																			a(href='product/alyuminievaya-katanka/index.html') Алюминиевая катанка
-																		li
-																			a(href='product/alyuminievyy-shveller/index.html') Алюминиевый швеллер
-																		li
-																			a(href='product/dvutavr-alyuminievyy/index.html') Двутавр алюминиевый
-																		li
-																			a(href='product/setka-alyuminievaya/index.html') Сетка алюминиевая
-																		li
-																			a(href='product/ugolok-alyuminievyy/index.html') Уголок алюминиевый
-																		li
-																			a(href='product/tavr-alyuminievyy/index.html') Тавр алюминиевый
-																		li
-																			a(href='product/folga-alyuminievaya-tekhnicheskaya/index.html')
-																				| Фольга алюминиевая
-																				| техническая
-																		li
-																			a(href='product/shestigrannik-alyuminievyy/index.html') Шестигранник алюминиевый
-																		li
-																			a(href='product/polosobulb-alyuminievyy/index.html') Полособульб алюминиевый
-																		li
-																			a(href='product/alyuminievyy-boks/index.html') Алюминиевый бокс
-																		li
-																			a(href='product/profil-alyuminievyy-sh-obraznyy/index.html')
-																				| Профиль алюминиевый
-																				| ш-образный
-																		li
-																			a(href='product/alyuminievaya-pressovannaya-truba/index.html')
-																				| Алюминиевая
-																				| прессованная труба
-																		li
-																			a(href='product/aviatsionnyy-alyuminiy/index.html') Авиационный алюминий
-																		li
-																			a(href='product/alyuminievyy-pressovannyy-profil/index.html')
-																				| Алюминиевый
-																				| прессованный профиль
-																		li
-																			a(href='product/svarochnaya-poroshkovaya-alyuminievaya-provoloka/index.html')
-																				| Сварочная
-																				| порошковая алюминиевая проволока
-																		li
-																			a(href='product/zaklepochnaya-alyuminievaya-provoloka/index.html')
-																				| Заклепочная
-																				| алюминиевая проволока
-																		li
-																			a(href='product/alyuminievaya-dekorativnaya-setka/index.html')
-																				| Алюминиевая
-																				| декоративная сетка
-																		li
-																			a(href='product/alyuminievaya-chushka/index.html') Алюминиевая чушка
-																		li
-																			a(href='product/alyuminievaya-truba-pryamougolnaya/index.html')
-																				| Алюминиевая труба
-																				| прямоугольная
-																		li
-																			a(href='product/alyuminievyy-shveller-p-obraznyy/index.html')
-																				| Алюминиевый швеллер
-																				| П-образный
-																		li
-																			a(href='product/truba-alyuminievaya-gofrirovannaya/index.html')
-																				| Труба алюминиевая
-																				| гофрированная
-															li.child
-																a(href='product/bronzovyy-prokat/index.html') Бронзовый прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/bronzovyy-list/index.html') Бронзовый лист
-																		li
-																			a(href='product/bronzovyy-krug-kruglyak-bronzovyy/index.html')
-																				| Бронзовый круг
-																				| (кругляк бронзовый)
-																		li
-																			a(href='product/bronzovaya-pudra/index.html') Бронзовая пудра
-																		li
-																			a(href='product/bronzovyy-prutok/index.html') Бронзовый пруток
-																		li
-																			a(href='product/bronzovyy-kvadrat/index.html') Бронзовый квадрат
-																		li
-																			a(href='product/bronzovaya-truba/index.html') Бронзовая труба
-																		li
-																			a(href='product/bronzovaya-shina/index.html') Бронзовая шина
-																		li
-																			a(href='product/bronzovyy-shestigrannik/index.html') Бронзовый шестигранник
-																		li
-																			a(href='product/bronzovaya-plita/index.html') Бронзовая плита
-																		li
-																			a(href='product/bronzovaya-polosa/index.html') Бронзовая полоса
-																		li
-																			a(href='product/bronzovaya-provoloka/index.html') Бронзовая проволока
-																		li
-																			a(href='product/provoloka-kvadratnaya-bronzovaya/index.html')
-																				| Проволока квадратная
-																				| бронзовая
-																		li
-																			a(href='product/bronzovaya-svarochnaya-provoloka/index.html')
-																				| Бронзовая сварочная
-																				| проволока
-																		li
-																			a(href='product/bronzovaya-lenta/index.html') Бронзовая лента
-																		li
-																			a(href='product/bronzovaya-setka/index.html') Бронзовая сетка
-																		li
-																			a(href='product/bronzovye-vtulki/index.html') Бронзовые втулки
-																		li
-																			a(href='product/bronzovaya-folga/index.html') Бронзовая фольга
-																		li
-																			a(href='product/bronzovaya-profilnaya-truba/index.html')
-																				| Бронзовая профильная
-																				| труба
-																		li
-																			a(href='product/bronzovaya-chushka/index.html') Бронзовая чушка
-																		li
-																			a(href='product/bronzovyy-slitok/index.html') Бронзовый слиток
-																		li
-																			a(href='product/bronzovaya-otlivka/index.html') Бронзовая отливка
-															li.child
-																a(href='product/dyuralyuminievyy-prokat/index.html') Дюралюминиевый прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/dyuralevyy-list/index.html') Дюралевый лист
-																		li
-																			a(href='product/dyuralevaya-truba/index.html') Дюралевая труба
-																		li
-																			a(href='product/dyuralevyy-ugolok/index.html') Дюралевый уголок
-																		li
-																			a(href='product/dyuralevyy-krug-kruglyak/index.html') Дюралевый круг, кругляк
-																		li
-																			a(href='product/dyuralevaya-provoloka/index.html') Дюралевая проволока
-																		li
-																			a(href='product/dyuralevaya-plita/index.html') Дюралевая плита
-																		li
-																			a(href='product/dyuralevaya-lenta/index.html') Дюралевая лента
-																		li
-																			a(href='product/dyuralevyy-shestigrannik/index.html') Дюралевый шестигранник
-																		li
-																			a(href='product/dyuralevaya-polosa/index.html') Дюралевая полоса
-																		li
-																			a(href='product/dyuralevyy-kvadrat/index.html') Дюралевый квадрат
-																		li
-																			a(href='product/shveller-dyuralevyy/index.html') Швеллер дюралевый
-																		li
-																			a(href='product/dyuralevyy-prutok/index.html') Дюралевый пруток
-																		li.child
-																			a(href='product/dyuralevaya-truba-profilnaya/index.html')
-																				| Дюралевая труба
-																				| профильная
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/kvadratnaya-dyuralevaya-truba/index.html')
-																							| Квадратная
-																							| дюралевая труба
-																					li
-																						a(href='product/pryamougolnaya-dyuralevaya-truba/index.html')
-																							| Прямоугольная
-																							| дюралевая труба
-																		li
-																			a(href='product/dyuralevyy-riflenyy-list/index.html') Дюралевый рифленый лист
-																		li
-																			a(href='product/dyuralevaya-bolvanka/index.html') Дюралевая болванка
-															li.child
-																a(href='product/latunnyy-prokat/index.html') Латунный прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/latunnyy-krug-latun-kruglyak/index.html')
-																				| Латунный круг (латунь
-																				| кругляк)
-																		li
-																			a(href='product/latunnaya-truba/index.html') Латунная труба
-																		li
-																			a(href='product/latunnaya-provoloka/index.html') Латунная проволока
-																		li
-																			a(href='product/latunnaya-setka/index.html') Латунная сетка
-																		li
-																			a(href='product/latunnyy-kvadrat/index.html') Латунный квадрат
-																		li
-																			a(href='product/latunnaya-vtulka/index.html') Латунная втулка
-																		li
-																			a(href='product/latunnaya-lenta/index.html') Латунная лента
-																		li
-																			a(href='product/latunnyy-shestigrannik/index.html') Латунный шестигранник
-																		li
-																			a(href='product/latunnaya-polosa/index.html') Латунная полоса
-																		li
-																			a(href='product/truba-latunnaya-profilnaya/index.html')
-																				| Труба латунная
-																				| профильная
-																		li
-																			a(href='product/folga-latunnaya/index.html') Фольга латунная
-																		li
-																			a(href='product/latunnaya-katanka/index.html') Латунная катанка
-																		li
-																			a(href='product/setka-polutompakovaya/index.html') Сетка полутомпаковая
-																		li
-																			a(href='product/latunnaya-chushka/index.html') Латунная чушка
-																		li
-																			a(href='product/latunnyy-prutok/index.html') Латунный пруток
-																		li
-																			a(href='product/ugolok-latunnyy/index.html') Уголок латунный
-																		li
-																			a(href='product/latunnaya-plastina/index.html') Латунная пластина
-																		li
-																			a(href='product/latunnye-listy/index.html') Латунные листы
-																		li
-																			a(href='product/volnovodnaya-latunnaya-truba/index.html')
-																				| Волноводная латунная
-																				| труба
-																		li
-																			a(href='product/latunnaya-shina/index.html') Латунная шина
-																		li
-																			a(href='product/latunnaya-trubka/index.html') Латунная трубка
-																		li.child
-																			a(href='product/latunnyy-profil/index.html') Латунный профиль
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/latunnyy-g-obraznyy-profil/index.html')
-																							| Латунный Г-образный
-																							| профиль
-																					li
-																						a(href='product/latunnyy-p-obraznyy-profil/index.html')
-																							| Латунный П-образный
-																							| профиль
-																					li
-																						a(href='product/latunnyy-t-obraznyy-profil-latunnyy-tavr/index.html')
-																							| Латунный
-																							| Т-образный профиль (латунный тавр)
-																		li
-																			a(href='product/svarochnaya-latunnaya-provoloka/index.html')
-																				| Сварочная латунная
-																				| проволока
-																		li
-																			a(href='product/tkanaya-latunnaya-setka/index.html') Тканая латунная сетка
-																		li
-																			a(href='product/latunnaya-plita/index.html') Латунная плита
-															li.child
-																a(href='product/mednyy-prokat/index.html') Медный прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/mednyy-list/index.html') Медный лист
-																		li
-																			a(href='product/mednyy-krug/index.html') Медный круг
-																		li
-																			a(href='product/mednaya-folga/index.html') Медная фольга
-																		li
-																			a(href='product/mednyy-prutok/index.html') Медный пруток
-																		li
-																			a(href='product/kvadrat-mednyy/index.html') Квадрат медный
-																		li
-																			a(href='product/mednaya-shina/index.html') Медная шина
-																		li
-																			a(href='product/truba-mednaya/index.html') Труба медная
-																		li
-																			a(href='product/mednaya-plita/index.html') Медная плита
-																		li
-																			a(href='product/mednaya-polosa/index.html') Медная полоса
-																		li
-																			a(href='product/shestigrannik-mednyy/index.html') Шестигранник медный
-																		li
-																			a(href='product/katanka-mednaya/index.html') Катанка медная
-																		li
-																			a(href='product/mednaya-chushka/index.html') Медная чушка
-																		li
-																			a(href='product/mednaya-provoloka/index.html') Медная проволока
-																		li
-																			a(href='product/mednaya-lenta/index.html') Медная лента
-																		li
-																			a(href='product/provoloka-mednaya-elektrotekhnicheskaya/index.html')
-																				| Проволока
-																				| медная электротехническая
-																		li
-																			a(href='product/mednaya-vtulka/index.html') Медная втулка
-																		li
-																			a(href='product/provoloka-mednaya-svarochnaya/index.html')
-																				| Проволока медная
-																				| сварочная
-																		li
-																			a(href='product/provoloka-mednaya-pryamougolnaya/index.html')
-																				| Проволока медная
-																				| прямоугольная
-																		li
-																			a(href='product/mednyy-rulon/index.html') Медный рулон
-																		li
-																			a(href='product/mednaya-plastina/index.html') Медная пластина
-																		li
-																			a(href='product/shayba-mednaya/index.html') Шайба медная
-																		li
-																			a(href='product/katod-mednyy/index.html') Медь катодная (медные катоды)
-																		li
-																			a(href='product/mednaya-setka/index.html') Медная сетка
-																		li
-																			a(href='product/mednyy-anod/index.html') Медный анод
-															li.child
-																a(href='product/titanovyy-prokat/index.html') Титановый прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/titanovyy-kvadrat/index.html') Титановый квадрат
-																		li
-																			a(href='product/titanovyy-krug/index.html') Титановый круг
-																		li
-																			a(href='product/titanovaya-truba/index.html') Титановая труба
-																		li
-																			a(href='product/titanovyy-profil/index.html') Титановый профиль
-																		li
-																			a(href='product/titanovyy-prutok/index.html') Титановый пруток
-																		li
-																			a(href='product/titanovaya-provoloka/index.html') Титановая проволока
-																		li
-																			a(href='product/titanovaya-svarochnaya-provoloka/index.html')
-																				| Титановая сварочная
-																				| проволока
-																		li
-																			a(href='product/titanovaya-plita/index.html') Титановая плита
-																		li
-																			a(href='product/titanovyy-list-titan-listovoy/index.html')
-																				| Титановый лист (титан
-																				| листовой)
-																		li
-																			a(href='product/titanovaya-lenta/index.html') Титановая лента
-																		li
-																			a(href='product/titanovyy-shestigrannik/index.html') Титановый шестигранник
-																		li
-																			a(href='product/titanovaya-polosa/index.html') Титановая полоса
-																		li
-																			a(href='product/shina-titanovaya/index.html') Шина титановая
-																		li
-																			a(href='product/titanovaya-pokovka-pryamougolnaya/index.html')
-																				| Титановая поковка
-																				| прямоугольная
-																		li
-																			a(href='product/folga-titanovaya/index.html') Фольга титановая
-																		li
-																			a(href='product/zagotovka-iz-titana/index.html') Заготовка из титана
-												li.f-item.child
-													a(href='#') Нержавеющая сталь
-													.submenu-wrapper.hide
-														ul.submenu
-															li
-																a(href='product/list-nerzhaveyushchiy-riflenyy/index.html') Лист нержавеющий рифленый
-															li
-																a(href='product/nerzhaveyushchaya-drob/index.html') Нержавеющая дробь
-															li
-																a(href='product/nerzhaveyushchaya-kapillyarnaya-trubka/index.html')
-																	| Нержавеющая
-																	| капиллярная трубка
-															li
-																a(href='product/nerzhaveyushchaya-lenta/index.html') Нержавеющая лента
-															li
-																a(href='product/nerzhaveyushchaya-plita/index.html') Нержавеющая плита
-															li
-																a(href='product/nerzhaveyushchaya-pokovka/index.html') Нержавеющая поковка
-															li
-																a(href='product/nerzhaveyushchaya-polosa/index.html') Нержавеющая полоса
-															li
-																a(href='product/nerzhaveyushchaya-provoloka/index.html') Нержавеющая проволока
-															li
-																a(href='product/nerzhaveyushchaya-prosechno-vytyazhnaya-setka/index.html')
-																	| Нержавеющая
-																	| просечно-вытяжная сетка
-															li
-																a(href='product/nerzhaveyushchaya-svarochnaya-lenta/index.html')
-																	| Нержавеющая сварочная
-																	| лента
-															li
-																a(href='product/nerzhaveyushchaya-svarochnaya-provoloka/index.html')
-																	| Нержавеющая сварочная
-																	| проволока
-															li
-																a(href='product/nerzhaveyushchaya-setka/index.html') Нержавеющая сетка
-															li
-																a(href='product/nerzhaveyushchaya-truboprovodnaya-armatura/index.html')
-																	| Нержавеющая
-																	| трубопроводная арматура
-															li
-																a(href='product/nerzhaveyushchie-trapy/index.html') Нержавеющие трапы
-															li
-																a(href='product/nerzhaveyushchie-truby/index.html') Нержавеющие трубы
-															li
-																a(href='product/nerzhaveyushchiy-kvadrat/index.html') Нержавеющий квадрат
-															li
-																a(href='product/nerzhaveyushchiy-krug/index.html') Нержавеющий круг
-															li
-																a(href='product/nerzhaveyushchiy-list/index.html') Нержавеющий лист
-															li
-																a(href='product/nerzhaveyushchiy-perforirovannyy-list/index.html')
-																	| Нержавеющий
-																	| перфорированный лист
-															li
-																a(href='product/nerzhaveyushchiy-prutok/index.html') Нержавеющий пруток
-															li
-																a(href='product/nerzhaveyushchiy-rulon/index.html') Нержавеющий рулон
-															li
-																a(href='product/nerzhaveyushchiy-tros/index.html') Нержавеющий трос
-															li
-																a(href='product/nerzhaveyushchiy-ugolok/index.html') Нержавеющий уголок
-															li
-																a(href='product/nerzhaveyushchiy-shveller/index.html') Нержавеющий швеллер
-															li
-																a(href='product/nerzhaveyushchiy-shestigrannik/index.html') Нержавеющий шестигранник
-															li
-																a(href='product/riflenaya-nerzhaveyushchaya-setka/index.html')
-																	| Рифленая нержавеющая
-																	| сетка
-															li
-																a(href='product/svarochnyy-nerzhaveyushchiy-prutok/index.html')
-																	| Сварочный нержавеющий
-																	| пруток
-															li
-																a(href='product/truby-teplodeformirovannye-iz-korrozionnostoykoy-stali/index.html')
-																	| Трубы
-																	| теплодеформированные из коррозионностойкой стали
-												li.f-item.child
-													a(href='#') Специальные стали и сплавы
-													.submenu-wrapper.hide
-														ul.submenu
-															li.child
-																a(href='product/nikelevye-splavy/index.html') Никелевые сплавы
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li.child
-																			a(href='product/alyumel/index.html') Алюмель
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/alyumel-lenta/index.html') Алюмель лента
-																					li
-																						a(href='product/alyumel-list/index.html') Алюмель лист
-																					li
-																						a(href='product/alyumel-polosa/index.html') Алюмель полоса
-																					li
-																						a(href='product/alyumel-provoloka/index.html') Алюмель проволока
-																					li
-																						a(href='product/alyumel-prutok/index.html') Алюмель пруток
-																					li
-																						a(href='product/alyumel-truba/index.html') Алюмель труба
-																		li.child
-																			a(href='product/inkonel/index.html') Инконель
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/list-inkonel/index.html') Лист инконель
-																					li
-																						a(href='product/provoloka-inkonel/index.html') Проволока инконель
-																					li
-																						a(href='product/prutok-inkonel/index.html') Пруток инконель
-																					li
-																						a(href='product/truba-inkonel/index.html') Труба инконель
-																		li.child
-																			a(href='product/konstantan-splav/index.html') Константан сплав
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/konstantan-list/index.html') Константан лист
-																					li
-																						a(href='product/konstantan-polosa/index.html') Константан полоса
-																					li
-																						a(href='product/konstantan-prutok/index.html') Константан пруток
-																					li
-																						a(href='product/konstantan-truba/index.html') Константан труба
-																					li
-																						a(href='product/lenta-konstantanovaya/index.html') Лента константановая
-																					li
-																						a(href='product/provoloka-konstantanovaya/index.html')
-																							| Проволока
-																							| константановая
-																		li.child
-																			a(href='product/kopel/index.html') Копель
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/kopel-lenta/index.html') Копель лента
-																					li
-																						a(href='product/kopel-list/index.html') Копель лист
-																					li
-																						a(href='product/kopel-polosa/index.html') Копель полоса
-																					li
-																						a(href='product/kopel-provoloka/index.html') Копель проволока
-																					li
-																						a(href='product/kopel-prutok/index.html') Копель пруток
-																					li
-																						a(href='product/kopel-truba/index.html') Копель труба
-																		li.child
-																			a(href='product/kunial/index.html') Куниаль
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/kunial-lenta/index.html') Куниаль лента
-																					li
-																						a(href='product/kunial-list/index.html') Куниаль лист
-																					li
-																						a(href='product/kunial-polosy/index.html') Куниаль полосы
-																					li
-																						a(href='product/kunial-prutki/index.html') Куниаль прутки
-																		li
-																			a(href='product/manganin/index.html') Манганин
-																		li.child
-																			a(href='product/medno-nikelevye-splavy/index.html') Медно-никелевые сплавы
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/medno-nikelevaya-lenta/index.html') Медно-никелевая лента
-																					li
-																						a(href='product/medno-nikelevaya-polosa/index.html')
-																							| Медно-никелевая
-																							| полоса
-																					li
-																						a(href='product/medno-nikelevaya-provoloka/index.html')
-																							| Медно-никелевая
-																							| проволока
-																					li
-																						a(href='product/medno-nikelevaya-truba/index.html') Медно-никелевая труба
-																					li
-																						a(href='product/medno-nikelevyy-list/index.html') Медно-никелевый лист
-																					li
-																						a(href='product/medno-nikelevyy-list-perforirovannyy/index.html')
-																							| Медно-никелевый
-																							| лист перфорированный
-																					li
-																						a(href='product/medno-nikelevyy-prutok/index.html') Медно-никелевый пруток
-																		li.child
-																			a(href='product/melkhior/index.html') Мельхиор
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-melkhior/index.html') Лента мельхиор
-																					li
-																						a(href='product/melkhior-list/index.html') Мельхиор лист
-																					li
-																						a(href='product/melkhior-polosy/index.html') Мельхиор полосы
-																					li
-																						a(href='product/melkhior-prutok/index.html') Мельхиор пруток
-																					li
-																						a(href='product/melkhiorovaya-provoloka/index.html')
-																							| Мельхиоровая
-																							| проволока
-																					li
-																						a(href='product/melkhiorovaya-truba/index.html') Мельхиоровая труба
-																		li.child
-																			a(href='product/monel/index.html') Монель
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-monel/index.html') Лента Монель
-																					li
-																						a(href='product/list-monel/index.html') Лист монель
-																					li
-																						a(href='product/monelevaya-truba/index.html') Монелевая труба
-																					li
-																						a(href='product/monelevyy-krug/index.html') Монелевый круг (пруток)
-																					li
-																						a(href='product/polosa-monel/index.html') Полоса монель
-																					li
-																						a(href='product/provoloka-monel/index.html') Проволока монель
-																		li
-																			a(href='product/neyzilber/index.html') Нейзильбер
-																		li
-																			a(href='product/nitinolovaya-provoloka/index.html') Нитиноловая проволока
-																		li.child
-																			a(href='product/nikhrom/index.html') Нихром
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-nikhromovaya/index.html') Лента нихромовая
-																					li
-																						a(href='product/nikhromovaya-provoloka/index.html') Нихромовая проволока
-																					li
-																						a(href='product/nikhromovye-truby/index.html') Нихромовые трубы
-																					li
-																						a(href='product/nikhromovyy-krug/index.html') Нихромовый круг
-																					li
-																						a(href='product/nikhromovyy-prutok/index.html') Нихромовый пруток
-																					li
-																						a(href='product/setka-nikhromovaya/index.html') Сетка нихромовая
-																		li.child
-																			a(href='product/khastelloy/index.html') Хастеллой
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/list-khastelloy/index.html') Лист хастеллой
-																					li
-																						a(href='product/provoloka-khastelloy/index.html') Проволока хастеллой
-																					li
-																						a(href='product/prutok-khastelloy/index.html') Пруток хастеллой
-																					li
-																						a(href='product/truba-khastelloy/index.html') Труба хастеллой
-																		li.child
-																			a(href='product/khromel/index.html') Хромель
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/khromel-lenta/index.html') Хромель лента
-																					li
-																						a(href='product/khromel-list/index.html') Хромель лист
-																					li
-																						a(href='product/khromel-polosa/index.html') Хромель полоса
-																					li
-																						a(href='product/khromel-provoloka/index.html') Хромель проволока
-																					li
-																						a(href='product/khromel-prutok/index.html') Хромель пруток
-																					li
-																						a(href='product/khromel-truba/index.html') Хромель труба
-															li.child
-																a(href='product/pretsizionnye-splavy/index.html') Прецизионные сплавы
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li.child
-																			a(href='product/magnitno-myagkie-splavy/index.html') Магнитно-мягкие сплавы
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/pretsizionnaya-magnitno-myagkaya-lenta/index.html')
-																							| Прецизионная
-																							| магнитно-мягкая лента
-																					li
-																						a(href='product/pretsizionnaya-magnitno-myagkaya-polosa/index.html')
-																							| Прецизионная
-																							| магнитно-мягкая полоса
-																					li
-																						a(href='product/pretsizionnaya-magnitno-myagkaya-provoloka/index.html')
-																							| Прецизионная
-																							| магнитно-мягкая проволока
-																					li
-																						a(href='product/pretsizionnyy-magnitno-myagkiy-list/index.html')
-																							| Прецизионный
-																							| магнитно-мягкий лист
-																					li
-																						a(href='product/pretsizionnyy-magnitno-myagkiy-prutok/index.html')
-																							| Прецизионный
-																							| магнитно-мягкий пруток
-																					li
-																						a(href='product/pretsizionnyy-magnitno-myagkiy-slitok/index.html')
-																							| Прецизионный
-																							| магнитно-мягкий слиток
-																		li.child
-																			a(href='product/magnitno-tverdye-splavy/index.html') Магнитно-твердые сплавы
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-dlya-postoyannykh-magnitov/index.html')
-																							| Лента для
-																							| постоянных магнитов
-																					li
-																						a(href='product/magnitno-tverdaya-lenta/index.html')
-																							| Магнитно-твердая
-																							| лента
-																					li
-																						a(href='product/magnitno-tverdaya-polosa/index.html')
-																							| Магнитно-твердая
-																							| полоса
-																					li
-																						a(href='product/magnitno-tverdaya-provoloka/index.html')
-																							| Магнитно-твердая
-																							| проволока
-																					li
-																						a(href='product/magnitno-tverdyy-list/index.html') Магнитно-твердый лист
-																					li
-																						a(href='product/magnitno-tverdyy-prutok/index.html')
-																							| Магнитно-твердый
-																							| пруток
-																					li
-																						a(href='product/magnitno-tverdyy-slitok/index.html')
-																							| Магнитно-твердый
-																							| слиток
-																		li
-																			a(href='product/nemagnitnye-splavy/index.html') Немагнитные сплавы
-																		li.child
-																			a(href='product/splav-s-vysokim-elektricheskim-soprotivleniem/index.html')
-																				| Сплав с
-																				| высоким электрическим сопротивлением
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-dlya-kataliticheskikh-neytralizatorov/index.html')
-																							| Лента
-																							| для каталитических нейтрализаторов
-																					li
-																						a(href='product/lenta-dlya-nagrevateley/index.html')
-																							| Лента для
-																							| нагревателей
-																					li
-																						a(href='product/lenta-dlya-rezistorov-i-detaley-poluprovodnikovykh-izdeliy/index.html')
-																							| Лента
-																							| для резисторов и деталей полупроводниковых изделий
-																					li
-																						a(href='product/lenta-s-vysokim-elektricheskim-soprotivleniem/index.html')
-																							| Лента
-																							| с высоким электрическим сопротивлением
-																					li
-																						a(href='product/provoloka-s-vysokim-elektricheskim-soprotivleniem/index.html')
-																							| Проволока
-																							| с высоким электрическим сопротивлением
-																					li
-																						a(href='product/prutok-s-vysokim-elektricheskim-soprotivleniem/index.html')
-																							| Пруток
-																							| с высоким электрическим сопротивлением
-																					li
-																						a(href='product/slitok-s-vysokim-elektricheskim-soprotivleniem/index.html')
-																							| Слиток
-																							| с высоким электрическим сопротивлением
-																		li.child
-																			a(href='product/splav-s-zadannym-tklr/index.html') Сплав с заданным ТКЛР
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-s-zadannym-tklr/index.html') Лента с заданным ТКЛР
-																					li
-																						a(href='product/polosa-s-zadannym-tklr/index.html') Полоса с заданным ТКЛР
-																					li
-																						a(href='product/pretsizionnyy-list-s-zadannym-tklr/index.html')
-																							| Прецизионный
-																							| лист с заданным ТКЛР
-																					li
-																						a(href='product/provoloka-s-zadannym-tklr/index.html')
-																							| Проволока с заданным
-																							| ТКЛР
-																					li
-																						a(href='product/prutok-s-zadannym-tklr/index.html') Пруток с заданным ТКЛР
-																					li
-																						a(href='product/slitok-s-zadannym-tklr/index.html') Слиток с заданным ТКЛР
-																					li
-																						a(href='product/truba-s-zadannym-tklr/index.html') Труба с заданным ТКЛР
-																		li.child
-																			a(href='product/splav-s-zadannymi-svoystvami-uprugosti/index.html')
-																				| Сплав с
-																				| заданными свойствами упругости
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/lenta-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Лента с
-																							| заданными свойствами упругости
-																					li
-																						a(href='product/polosa-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Полоса с
-																							| заданными свойствами упругости
-																					li
-																						a(href='product/provoloka-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Проволока
-																							| с заданными свойствами упругости
-																					li
-																						a(href='product/prutok-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Пруток с
-																							| заданными свойствами упругости
-																					li
-																						a(href='product/slitok-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Слиток с
-																							| заданными свойствами упругости
-																					li
-																						a(href='product/truba-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Труба с
-																							| заданными свойствами упругости
-																					li
-																						a(href='product/uprugiy-list-list-s-zadannymi-svoystvami-uprugosti/index.html')
-																							| Упругий
-																							| лист (лист с заданными свойствами упругости)
-																		li.child
-																			a(href='product/fekhral/index.html') Фехраль
-																			.submenu-wrapper.hide
-																				ul.submenu
-																					li
-																						a(href='product/provoloka-fekhral/index.html') Проволока фехраль
-																					li
-																						a(href='product/fekhralevaya-spiral/index.html') Фехралевая спираль
-																					li
-																						a(href='product/fekhral-lenta/index.html') Фехраль лента
-															li.child
-																a(href='product/bystrorezhushchaya-stal/index.html') Быстрорежущая сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/brusok-iz-bystrorezhushchey-stali/index.html')
-																				| Брусок из
-																				| быстрорежущей стали
-																		li
-																			a(href='product/truba-iz-bystrorezhushchey/index.html') Труба из быстрорежущей
-																		li
-																			a(href='product/bystrorezhushchiy-krug/index.html') Быстрорежущий круг
-																		li
-																			a(href='product/kvadrat-bystrorez/index.html') Квадрат быстрорез
-																		li
-																			a(href='product/list-bystrorez/index.html') Лист быстрорез
-																		li
-																			a(href='product/polosa-bystrorez/index.html') Полоса быстрорез
-																		li
-																			a(href='product/provoloka-bystrorez/index.html') Проволока быстрорез
-															li.child
-																a(href='product/instrumentalnaya-stal/index.html') Инструментальная сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/list-iz-instrumentalnoy-stali/index.html') Лист
-																		li
-																			a(href='product/plita-iz-instrumentalnoy-stali/index.html') Плита
-																		li
-																			a(href='product/krug-iz-instrumentalnoy-stali/index.html') Круг
-																		li
-																			a(href='product/kvadrat-iz-instumentalnoy-stali/index.html') Квадрат
-																		li
-																			a(href='product/polosa-iz-instrumentalnoy-stali/index.html') Полоса
-																		li
-																			a(href='product/pokovka-iz-instrumentalnoy-stali/index.html') Поковка
-																		li
-																			a(href='product/lenta-iz-instrumentalnoy-stali/index.html') Лента
-																		li
-																			a(href='product/truba-iz-instrumentalnoy-stali/index.html') Труба
-															li.child
-																a(href='product/zharoprochnye-stali/index.html') Жаропрочные стали
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/zharoprochnyy-krug/index.html') Жаропрочный круг
-																		li
-																			a(href='product/zharoprochnaya-lenta/index.html') Жаропрочная лента
-																		li
-																			a(href='product/zharoprochnaya-truba/index.html') Жаропрочная труба
-																		li
-																			a(href='product/zharoprochnaya-provoloka/index.html') Жаропрочная проволока
-																		li
-																			a(href='product/zharoprochnyy-kvadrat/index.html') Жаропрочный квадрат
-																		li
-																			a(href='product/zharoprochnyy-shestigrannik/index.html')
-																				| Жаропрочный
-																				| шестигранник
-																		li
-																			a(href='product/zharoprochnaya-polosa/index.html') Жаропрочная полоса
-																		li
-																			a(href='product/zharoprochnaya-pokovka/index.html') Жаропрочная поковка
-																		li
-																			a(href='product/zharoprochnyy-list/index.html') Жаропрочный лист
-															li.child
-																a(href='product/elektrotekhnicheskaya-stal/index.html') Электротехническая сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/elektrotekhnicheskiy-krug/index.html')
-																				| Электротехнический круг
-																				| (трансформаторный круг)
-																		li
-																			a(href='product/elektrotekhnicheskaya-polosa/index.html')
-																				| Электротехническая полоса
-																				| (трансформаторная полоса)
-																		li
-																			a(href='product/elektrotekhnicheskiy-kvadrat/index.html')
-																				| Электротехнический квадрат
-																				| (трансформаторный квадрат)
-																		li
-																			a(href='product/elektrotekhnicheskaya-lenta/index.html')
-																				| Электротехническая лента
-																				| (трансформаторная лента)
-																		li
-																			a(href='product/elektrotekhnicheskiy-list/index.html')
-																				| Электротехнический лист
-																				| (трансформаторный лист)
-															li.child
-																a(href='product/pishchevaya-stal/index.html') Пищевая сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/pishchevaya-plita/index.html') Пищевая плита
-																		li
-																			a(href='product/pishchevaya-polosa/index.html') Пищевая полоса
-																		li
-																			a(href='product/pishchevaya-truba/index.html') Пищевая труба
-																		li
-																			a(href='product/pishchevoy-kvadrat/index.html') Пищевой квадрат
-																		li
-																			a(href='product/pishchevoy-krug/index.html') Пищевой круг
-																		li
-																			a(href='product/pishchevoy-list/index.html') Пищевой лист
-															li.child
-																a(href='product/podshipnikovaya-stal/index.html') Подшипниковая сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/podshipnikovyy-shestigrannik/index.html')
-																				| Подшипниковый
-																				| шестигранник
-																		li
-																			a(href='product/podshipnikovyy-krug/index.html') Подшипниковый круг
-																		li
-																			a(href='product/podshipnikovyy-kvadrat/index.html') Подшипниковый квадрат
-																		li
-																			a(href='product/podshipnikovye-truby/index.html') Подшипниковые трубы
-																		li
-																			a(href='product/podshipnikovaya-polosa/index.html') Подшипниковая полоса
-															li.child
-																a(href='product/ressorno-pruzhinnye-stali/index.html') Рессорно-пружинные стали
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/ressorno-pruzhinnaya-plita/index.html') Рессорно-пружинная плита
-																		li
-																			a(href='product/ressorno-pruzhinnaya-polosa/index.html')
-																				| Рессорно-пружинная
-																				| полоса
-																		li
-																			a(href='product/ressorno-pruzhinnyy-kvadrat/index.html')
-																				| Рессорно-пружинный
-																				| квадрат
-																		li
-																			a(href='product/ressorno-pruzhinnyy-krug/index.html') Рессорно-пружинный круг
-																		li
-																			a(href='product/ressorno-pruzhinnyy-list/index.html') Рессорно-пружинный лист
-																		li
-																			a(href='product/ressorno-pruzhinnyy-shestigrannik/index.html')
-																				| Рессорно-пружинный
-																				| шестигранник
-																		li
-																			a(href='product/truby-iz-ressorno-pruzhinnoy-stali/index.html')
-																				| Трубы из
-																				| рессорно-пружинной стали
-															li.child
-																a(href='product/konstruktsionnaya-stal/index.html') Конструкционная сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/plita-iz-konstruktsionnoy-stali/index.html') Плита
-																		li
-																			a(href='product/krug-iz-konstruktsionnoy-stali/index.html') Круг
-																		li
-																			a(href='product/kvadrat-stalnoy-iz-konstruktsionnoy-stali/index.html')
-																				| Квадрат
-																				| стальной
-																		li
-																			a(href='product/truba-iz-konstruktsionnoy-stali/index.html')
-																				| Труба из
-																				| конструкционной стали
-																		li
-																			a(href='product/metallicheskaya-polosa-iz-konstruktsionnoy-stali/index.html')
-																				| Металлическая
-																				| полоса
-																		li
-																			a(href='product/provoloka-stalnaya-iz-konstruktsionnoy-stali/index.html')
-																				| Проволока
-																				| стальная
-																		li
-																			a(href='product/shestigrannik-iz-konstruktsionnoy-stali/index.html') Шестигранник
-																		li
-																			a(href='product/pokovka-stalnaya-iz-konstruktsionnoy-stali/index.html')
-																				| Поковка
-																				| стальная
-																		li
-																			a(href='product/ugolok-stalnoy-iz-konstruktsionnoy-stali/index.html')
-																				| Уголок
-																				| стальной
-																		li
-																			a(href='product/stalnoy-list-iz-konstruktsionnoy-stali/index.html')
-																				| Стальной
-																				| лист
-															li.child
-																a(href='product/shtampovaya-stal/index.html') Штамповая сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/shtampovaya-polosa/index.html') Штамповая полоса
-																		li
-																			a(href='product/shtampovoy-kvadrat/index.html') Штамповой квадрат
-																		li
-																			a(href='product/shtampovoy-krug/index.html') Штамповой круг
-																		li
-																			a(href='product/shtampovye-truby/index.html') Штамповые трубы
-															li.child
-																a(href='product/avtomatnaya-stal/index.html') Автоматная сталь
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/avtomatnaya-plita/index.html') Автоматная плита
-																		li
-																			a(href='product/avtomatnyy-kvadrat/index.html') Автоматный квадрат
-																		li
-																			a(href='product/avtomatnyy-krug/index.html') Автоматный круг
-																		li
-																			a(href='product/avtomatnyy-list/index.html') Автоматный лист
-																		li
-																			a(href='product/avtomatnyy-shestigrannik/index.html') Автоматный шестигранник
-												li.f-item.child
-													a(href='#') Черный металлопрокат
-													.submenu-wrapper.hide
-														ul.submenu
-															li.child
-																a(href='product/trubnyy-prokat/index.html') Трубный прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/truby-besshovnye/index.html') Трубы бесшовные
-																		li
-																			a(href='product/truby-elektrosvarnye/index.html') Трубы электросварные
-																		li
-																			a(href='product/truby-vgp/index.html') Трубы ВГП
-																		li
-																			a(href='product/truby-otsinkovannye/index.html') Трубы оцинкованные
-																		li
-																			a(href='product/truby-tolstostennye/index.html') Трубы толстостенные
-																		li
-																			a(href='product/truby-kotelnye/index.html') Трубы котельные
-																		li
-																			a(href='product/truby-krekingovye/index.html') Трубы крекинговые
-																		li
-																			a(href='product/truby-profilnye/index.html') Трубы профильные
-																		li
-																			a(href='product/truby-nerzhaveyushchie/index.html') Трубы нержавеющие
-																		li
-																			a(href='product/truby-dlya-zabora/index.html') Трубы для забора
-																		li
-																			a(href='product/truby-lezhalye/index.html') Трубы лежалые
-															li.child
-																a(href='product/fasonnyy-prokat/index.html') Фасонный прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/balka-dvutavrovaya/index.html') Балка двутавровая
-																		li
-																			a(href='product/rels/index.html') Рельс
-																		li
-																			a(href='product/ugolok/index.html') Уголок
-																		li
-																			a(href='product/shveller/index.html') Швеллер
-															li.child
-																a(href='product/sortovoy-prokat/index.html') Сортовой прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/armatura/index.html') Арматура
-																		li
-																			a(href='product/katanka/index.html') Катанка
-																		li
-																			a(href='product/kvadrat/index.html') Квадрат
-																		li
-																			a(href='product/krug/index.html') Круг
-																		li
-																			a(href='product/shestigrannik/index.html') Шестигранник
-																		li
-																			a(href='product/polosa/index.html') Полоса
-																		li
-																			a(href='product/drob/index.html') Дробь
-																		li
-																			a(href='product/shary-pomolnye/index.html') Шары помольные
-															li.child
-																a(href='product/listovoy-prokat/index.html') Листовой прокат
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/list-goryachekatanyy/index.html') Лист горячекатаный
-																		li
-																			a(href='product/list-kholodnokatanyy/index.html') Лист холоднокатаный
-																		li
-																			a(href='product/list-otsinkovannyy/index.html') Лист оцинкованный
-																		li
-																			a(href='product/list-riflenyy/index.html') Лист рифленый
-																		li
-																			a(href='product/list-pvl/index.html') Лист ПВЛ
-																		li
-																			a(href='product/list-nerzhaveyushchiy/index.html') Лист нержавеющий
-															li.child
-																a(href='product/setka-metallicheskaya/index.html') Сетка металлическая
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/prosechno-vytyazhnaya-setka/index.html')
-																				| Просечно-вытяжная сетка
-																				| (сетка ПВЛ)
-																		li
-																			a(href='product/setka-rabitsa/index.html') Сетка рабица
-																		li
-																			a(href='product/setka-kladochnaya/index.html') Сетка кладочная
-																		li
-																			a(href='product/setka-tkanaya-s-kvadratnymi-yacheykami/index.html')
-																				| Сетка тканая с
-																				| квадратными ячейками
-																		li
-																			a(href='product/setka-armaturnaya/index.html') Сетка арматурная
-																		li
-																			a(href='product/setka-shtukaturnaya/index.html') Сетка штукатурная
-																		li
-																			a(href='product/setka-svarnaya/index.html') Сетка сварная
-																		li
-																			a(href='product/sharnirnaya-uzlovaya-setka/index.html') Шарнирная узловая сетка
-																		li
-																			a(href='product/setka-dorozhnaya/index.html') Сетка дорожная
-																		li
-																			a(href='product/setka-mane/index.html') Сетка Манье
-																		li
-																			a(href='product/sarzhevaya-setka/index.html') Саржевая сетка
-																		li
-																			a(href='product/setka-rabitsa-s-pvkh-pokrytiem/index.html')
-																				| Сетка рабица с ПВХ
-																				| покрытием
-																		li
-																			a(href='product/setka-shchelevaya/index.html') Сетка щелевая
-																		li
-																			a(href='product/setka-filtrovaya-galunnaya/index.html')
-																				| Сетка фильтровая
-																				| галунная
-																		li
-																			a(href='product/sbornaya-odinarnaya-transporternaya-setka-tip-3/index.html')
-																				| Сборная
-																				| одинарная транспортерная сетка Тип-3
-																		li
-																			a(href='product/dvoynaya-sbornaya-transporternaya-setka-tip-4/index.html')
-																				| Двойная
-																				| сборная транспортерная сетка Тип-4
-																		li
-																			a(href='product/dvoynaya-sbornaya-transporternaya-setka-tip-6/index.html')
-																				| Двойная
-																				| сборная транспортерная сетка тип-6
-																		li
-																			a(href='product/odinarnaya-transporternaya-setka-tip-5/index.html')
-																				| Одинарная
-																				| транспортерная сетка Тип-5
-																		li
-																			a(href='product/transporternaya-setka-tip-7/index.html')
-																				| Транспортерная сетка
-																				| тип-7
-																		li
-																			a(href='product/transporternaya-setka-tip-8/index.html')
-																				| Транспортерная сетка
-																				| тип-8
-																		li
-																			a(href='product/setka-kanilirovannaya-riflenaya/index.html')
-																				| Сетка канилированная
-																				| (рифленая)
-																		li
-																			a(href='product/rukavnaya-setka/index.html') Рукавная сетка
-															li.child
-																a(href='product/provoloka/index.html') Проволока
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/provoloka-vr-1/index.html') Проволока ВР 1
-																		li
-																			a(href='product/provoloka-ok-tns-tno/index.html') Проволока ОК ТНС (ТНО)
-																		li
-																			a(href='product/provoloka-ok-toch/index.html') Проволока ОК ТОЧ
-																		li
-																			a(href='product/provoloka-ok-ots/index.html') Проволока ОК ОЦ
-															li.child
-																a(href='product/stalnoy-kanat-tros/index.html') Стальной канат, трос
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/liftovyy-kanat/index.html') Лифтовый канат
-																		li
-																			a(href='product/Kanat_stalnoj/index.html') Трос стальной (металлический канат)
-																		li
-																			a(href='product/kanat-aviatsionnyy/index.html') Канат авиационный
-																		li
-																			a(href='product/kanat-dvoynoy-svivki/index.html') Трос - канат двойной свивки
-																		li
-																			a(href='product/kanat-dlya-burovykh-ustanovok/index.html')
-																				| Канат для буровых
-																				| установок
-																		li
-																			a(href='product/kanat-dlya-skipovykh-podemnikov-domennykh-pechey/index.html')
-																				| Канат
-																				| для скиповых подъемников доменных печей
-																		li
-																			a(href='product/kanat-troynoy-svivki/index.html') Канат тройной свивки
-																		li
-																			a(href='product/kanat-tyagovyy-dlya-podvesnykh-dorog/index.html')
-																				| Канат тяговый для
-																				| подвесных дорог
-																		li
-																			a(href='product/kanaty-grozozashchitnye/index.html') Грозотрос
-																		li
-																			a(href='product/trosy-dlya-dorozhnykh-mashin/index.html')
-																				| Тросы для дорожных
-																				| машин
-																		li
-																			a(href='product/kanaty-dlya-taley/index.html') Трос для тали (канат для талей)
-																		li
-																			a(href='product/tros-dlya-ekskavatorov/index.html') Трос для экскаваторов
-																		li
-																			a(href='product/kanaty-odinarnoy-svivki-spiralnye/index.html')
-																				| Канаты одинарной
-																				| свивки спиральные
-																		li
-																			a(href='product/sudovoy-kanat/index.html') Судовой канат
-															li.child
-																a(href='product/tsepi-metallicheskie/index.html') Цепи металлические
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/tsepi-gruzovye/index.html') Цепи грузовые
-																		li
-																			a(href='product/tsepi-kruglozvennye/index.html') Цепи круглозвенные
-																		li
-																			a(href='product/tsep-svarnaya/index.html') Цепь сварная
-																		li
-																			a(href='product/tsep-dlinnozvennaya/index.html') Цепь длиннозвенная
-																		li
-																			a(href='product/tsep-korotkozvennaya/index.html') Цепь короткозвенная
-																		li
-																			a(href='product/yakornaya-sudovaya-tsep/index.html') Якорная судовая цепь
-																		li
-																			a(href='product/tyagovye-razbornye-tsepi/index.html') Тяговые разборные цепи
-																		li
-																			a(href='product/tsepi-s-rasporkoy/index.html') Цепи с распоркой
-																		li
-																			a(href='product/tsep-kalibrovannaya/index.html') Цепь калиброванная
-																		li
-																			a(href='product/tsep-nekalibrovannaya/index.html') Цепь некалиброванная
-																		li
-																			a(href='product/tsepi-dlya-offshornykh-platform/index.html')
-																				| Цепи для оффшорных
-																				| платформ
-																		li
-																			a(href='product/tsepi-kruglozvennye-nekalibrovannye/index.html')
-																				| Цепи круглозвенные
-																				| некалиброванные
-																		li
-																			a(href='product/tsep-kruglozvennaya-ultraspec-2000/index.html')
-																				| Цепь круглозвенная
-																				| ULTRASPEC 2000
-																		li
-																			a(href='product/tsep-kruglozvennaya-klass-prochnosti-2/index.html')
-																				| Цепь
-																				| круглозвенная класс прочности 2
-																		li
-																			a(href='product/tsep-kruglozvennaya-klass-prochnosti-d/index.html')
-																				| Цепь
-																				| круглозвенная класс прочности D
-												li.f-item.child
-													a(href='#') Метизная продукция
-													.submenu-wrapper.hide
-														ul.submenu
-															li.child
-																a(href='product/krepezh-vysokoprochnyy/index.html') Крепеж высокопрочный
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/vysokoprochnaya-gayka/index.html') Высокопрочная гайка
-																		li
-																			a(href='product/vysokoprochnaya-shayba/index.html') Высокопрочная шайба
-																		li
-																			a(href='product/vysokoprochnyy-bolt/index.html') Высокопрочный болт
-															li.child
-																a(href='product/stalnye-gayki/index.html') Стальные гайки
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/gayki-glukhie/index.html') Гайки глухие
-																		li
-																			a(href='product/gayki-shlitsevye/index.html') Гайки шлицевые
-																		li
-																			a(href='product/glukhaya-gayka-v-sbore/index.html') Глухая гайка в сборе
-															li
-																a(href='product/stalnye-otsinkovannye-shpilki/index.html')
-																	| Стальные оцинкованные
-																	| шпильки
-															li.child
-																a(href='product/fundamentnye-bolty/index.html') Фундаментные болты
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/bolt-fundamentnyy-pryamoy/index.html') Болт фундаментный прямой
-																		li
-																			a(href='product/bolt-fundamentnyy-s-konicheskim-kontsom/index.html')
-																				| Болт
-																				| фундаментный с коническим концом
-																		li
-																			a(href='product/bolty-fundamentnye-izognutye/index.html')
-																				| Болты фундаментные
-																				| изогнутые
-																		li
-																			a(href='product/bolty-fundamentnye-s-ankernoy-plitoy/index.html')
-																				| Болты фундаментные
-																				| с анкерной плитой
-																		li
-																			a(href='product/bolty-fundamentnye-sostavnye/index.html')
-																				| Болты фундаментные
-																				| составные
-															li.child
-																a(href='product/ankernye-plity/index.html') Анкерные плиты
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/litaya-ankernaya-plita/index.html') Литая анкерная плита
-																		li
-																			a(href='product/svarnye-ankernye-plity/index.html') Сварные анкерные плиты
-																		li
-																			a(href='product/sostavnye-ankernye-plity/index.html') Составные анкерные плиты
-																		li
-																			a(href='product/stalnye-ankernye-plity/index.html') Стальные анкерные плиты
-															li.child
-																a(href='product/ankernye-tyagi/index.html') Анкерные тяги
-																.submenu-wrapper.hide
-																	ul.submenu
-																		li
-																			a(href='product/ankernaya-tyaga-s-nakladkami/index.html')
-																				| Анкерная тяга с
-																				| накладками
-																		li
-																			a(href='product/ankernaya-tyaga-s-proushinoy/index.html')
-																				| Анкерная тяга с
-																				| проушиной
-																		li
-																			a(href='product/ankernye-tyagi-ploskie/index.html') Анкерные тяги плоские
-															li
-																a(href='product/ankernyy-fundamentnyy-blok/index.html') Анкерный фундаментный блок
-															li
-																a(href='product/futerovochnye-bolty-bronebolty/index.html')
-																	| Футеровочные болты
-																	| (бронеболты)
-															li
-																a(href='product/vodootvodnaya-reshetka/index.html') Водоотводная решетка
-												li.f-item.child
-													a(href='#') Трубопроводная арматура
-													.submenu-wrapper.hide
-														ul.submenu
-															li
-																a(href='product/otvody/index.html') Отводы
-															li
-																a(href='product/troyniki/index.html') Тройники
-															li
-																a(href='product/perekhody/index.html') Переходы
-															li
-																a(href='product/obechayka/index.html') Обечайка
-															li
-																a(href='product/zadvizhki/index.html') Задвижки
-															li
-																a(href='product/flantsy/index.html') Фланцы
-															li
-																a(href='product/zatvory/index.html') Затворы
-															li
-																a(href='product/klapany/index.html') Клапаны
-															li
-																a(href='product/ventili/index.html') Вентили
-															li
-																a(href='product/krany/index.html') Краны
-															li
-																a(href='product/zaglushki/index.html') Заглушки
-															li
-																a(href='product/kompensatory/index.html') Компенсаторы
-									.services-submenu.hide
-										#bx_incl_area_4_1
-										aside.sidebar
-											ul.nav.nav-list.side-menu
-												li.f-item.servicesrezka-gazom
-													a(href='#') Резка газом
-												li.f-item.servicesrezka-mayatnikovoy-piloy
-													a(href='#') Резка маятниковой пилой
-												li.f-item.servicesrezka-gilotinoy
-													a(href='#') Резка гильотиной
-												li.f-item.servicesdostavka
-													a(href='#') Доставка
-												li.f-item.servicesotsinkovanie
-													a(href='#') Оцинкование
-												li.f-item.servicesmetallobrabotka
-													a(href='#') Металлобработка
-									.proizv-submenu.hide
-										#bx_incl_area_5_1
-										aside.sidebar
-											ul.nav.nav-list.side-menu
-												li.f-item.proizvodstvoproizvodstvo-tkanoy-setki
-													a(href='#') Производство тканой сетки
-												li.f-item.proizvodstvoproizvodstvo-setki
-													a(href='#') Производство сетки
-												li.f-item.proizvodstvoproizvodstvo-krepezhnykh-izdeliy
-													a(href='#') Производство крепежных изделий
-												li.f-item.proizvodstvoproizvodstvo-tsepey
-													a(href='#') Производство цепей
-												li.f-item.proizvodstvoproizvodstvo-perforirovannykh-listov
-													a(href='#') Производство перфорированных листов
-												li.f-item.proizvodstvoizgotovlenie-pruzhin
-													a(href='#') Изготовление пружин
-												li.f-item.proizvodstvoizgotovlenie-otlivok
-													a(href='#') Изготовление отливок
-									.contacts-block
-										.inner-table-block.address
-											span.name Промышленная механизация 
-											// 'start_frame_cache_address-block1'
-											.address-block
-												i.svg.inline.svg-inline-address.colored(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
-														defs
-															style.
-																.cls-1 {
-																fill-rule: evenodd;
-																}
-														path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
-												div
-													| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
-											// 'end_frame_cache_address-block1'
-											// 'start_frame_cache_header-allhsch-block1'
-											.schedule
-												| Ежедневно с 09:00 до 18:00
-											// 'end_frame_cache_header-allhsch-block1'
-											// 'start_frame_cache_header-allphones-block1'
-											.phone.big
-												i.svg.inline.svg-inline-phone.colored(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
-														defs
-															style.
-																.pcls-1 {
-																fill: #222;
-																fill-rule: evenodd;
-																}
-														path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
-												a(href='tel:+73510000000') +7 (351) 000-00-00
-											// 'end_frame_cache_header-allphones-block1'
-											span.email По всем вопросам
-											// 'start_frame_cache_email-block1'
-											.email.blocks
-												i.svg.inline.svg-inline-email(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
-														defs
-															style.
-																.ecls-1 {
-																fill: #222;
-																fill-rule: evenodd;
-																}
-														path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
-												div
-													a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
-											// 'end_frame_cache_email-block1'
+						+sitebar
 						.col-md-9
 							.menu-only
 								nav.mega-menu.sliced
@@ -1849,7 +322,6 @@ html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
 								// /noindex
 								// 'end_frame_cache_cabinet-link1'
 						.lines
-				.line-row
 				.logo_and_menu-row
 					.logo-row.top-fill
 						.maxwidth-theme
@@ -2089,6 +561,455 @@ html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
 										li
 											a.dark-color(href='company/requisites/index.html' title='Реквизиты')
 												span Реквизиты
+								li
+									a.dark-color.parent(href='company/index.html' title='Продукция')
+										span Продукция
+										span.arrow
+											i.svg.svg_triangle_right
+									ul.dropdown
+										li.menu_back
+											a.dark-color(href='#' rel='nofollow')
+												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+														defs
+															style.
+																.rcls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+																}
+														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+												| Назад
+										li
+											a.dark-color.parent(href='company/index.html' title="Цветной прокат") 
+												span Цветной прокат
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.third-level.dark-color(href='company/index.html' title='Алюминиевый прокат') 
+														span Алюминиевый прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Бронзовый прокат')
+														span Бронзовый прокат
+												li
+													a.third-level.dark-color(href='company/index.html' title='Дюралюминиевый прокат') 
+														span Дюралюминиевый прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Латунный прокат')
+														span Латунный прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Медный прокат')
+														span Медный прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Титановый прокат')
+														span Титановый прокат
+
+
+
+
+										li
+											a.dark-color.parent(href='company/index.html' title="Нержавеющая сталь") 
+												span Нержавеющая сталь
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.third-level.dark-color(href='company/index.html' title='Лист нержавеющий рифленый') 
+														span Лист нержавеющий рифленый
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая дробь')
+														span Нержавеющая дробь
+												li
+													a.third-level.dark-color(href='company/index.html' title='Нержавеющая капиллярная трубка') 
+														span  Нержавеющая капиллярная трубка
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая лента')
+														span Нержавеющая лента
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая плита')
+														span Нержавеющая плита
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая поковка')
+														span Нержавеющая поковка
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая полоса')
+														span Нержавеющая полоса
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая проволока')
+														span Нержавеющая проволока
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая просечно-вытяжная сетка')
+														span Нержавеющая просечно-вытяжная сетка
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сварочная лента')
+														span Нержавеющая сварочная лента
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сварочная проволока')
+														span Нержавеющая сварочная проволока
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сетка')
+														span Нержавеющая сетка
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая трубопроводная арматура')
+														span Нержавеющая трубопроводная арматура
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющие трапы')
+														span Нержавеющие трапы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющие трубы')
+														span Нержавеющие трубы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий квадрат')
+														span Нержавеющий квадрат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий круг')
+														span Нержавеющий круг
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий перфорированный лист')
+														span Нержавеющий перфорированный лист
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий пруток')
+														span Нержавеющий пруток
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий рулон')
+														span Нержавеющий рулон
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий трос')
+														span Нержавеющий трос
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий уголок')
+														span Нержавеющий уголок
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий швеллер')
+														span Нержавеющий швеллер
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий шестигранник')
+														span Нержавеющий шестигранник
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Рифленая нержавеющая сетка')
+														span Рифленая нержавеющая сетка
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Сварочный нержавеющий пруток')
+														span Сварочный нержавеющий пруток
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Трубы теплодеформированные из коррозионностойкой стали')
+														span Трубы теплодеформированные из коррозионностойкой стали
+
+
+
+
+
+
+
+
+
+										li
+											a.dark-color.parent(href='company/index.html' title="Специальные стали и сплавы") 
+												span Специальные стали и сплавы
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.third-level.dark-color(href='company/index.html' title='Никелевые сплавы') 
+														span Никелевые сплавы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Прецизионные сплавы')
+														span Прецизионные сплавы
+												li
+													a.third-level.dark-color(href='company/index.html' title='Быстрорежущая сталь') 
+														span Быстрорежущая сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Инструментальная сталь')
+														span Инструментальная сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Жаропрочные стали')
+														span Жаропрочные стали
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Электротехническая сталь')
+														span Электротехническая сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Пищевая сталь')
+														span Пищевая сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Подшипниковая сталь')
+														span Подшипниковая сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Рессорно-пружинные стали')
+														span Рессорно-пружинные стали
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Конструкционная сталь')
+														span Конструкционная сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Штамповая сталь')
+														span Штамповая сталь
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Автоматная сталь')
+														span Автоматная сталь
+										li
+											a.dark-color.parent(href='company/index.html' title="Черный металлопрокат") 
+												span Черный металлопрокат
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.third-level.dark-color(href='company/index.html' title='Трубный прокат') 
+														span Трубный прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Фасонный прокат')
+														span Фасонный прокат
+												li
+													a.third-level.dark-color(href='company/index.html' title='Сортовой прокат') 
+														span Сортовой прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Листовой прокат')
+														span Листовой прокат
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Сетка металлическая')
+														span Сетка металлическая
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Проволока')
+														span Проволока
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Стальной канат, трос')
+														span Стальной канат, трос
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Цепи металлические')
+														span Цепи металлические
+										li
+											a.dark-color.parent(href='company/index.html' title="Метизная продукция") 
+												span Метизная продукция
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.third-level.dark-color(href='company/index.html' title='Крепеж высокопрочный') 
+														span Крепеж высокопрочный
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Стальные гайки')
+														span Стальные гайки
+												li
+													a.third-level.dark-color(href='company/index.html' title='Стальные оцинкованные шпильки') 
+														span Стальные оцинкованные шпильки
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Фундаментные болты')
+														span Фундаментные болты
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Анкерные плиты')
+														span Анкерные плиты
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Анкерные тяги')
+														span Анкерные тяги
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Анкерный фундаментный блок')
+														span Анкерный фундаментный блок
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Футеровочные болты (бронеболты)')
+														span Футеровочные болты (бронеболты)
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Водоотводная решетка')
+														span Водоотводная решетка
+										li
+											a.dark-color.parent(href='company/index.html' title="Трубопроводная арматура") 
+												span Трубопроводная арматура
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.third-level.dark-color(href='company/index.html' title='Отводы') 
+														span Отводы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Тройники')
+														span Тройники
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Переходы')
+														span Переходы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Обечайка')
+														span Обечайка
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Задвижки')
+														span Задвижки
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Фланцы')
+														span Фланцы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Затворы')
+														span Затворы
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Клапаны')
+														span Клапаны
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Вентили')
+														span Вентили
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Краны')
+														span Краны
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Заглушки')
+														span Заглушки
+												li
+													a.third-level.dark-color(href='company/index-2.html' title='Компенсаторы')
+														span Компенсаторы
+
+
+
+
+
+
+
+
+
+								li
+									a.dark-color.parent(href='company/index.html' title='Услуги')
+										span Услуги
+										span.arrow
+											i.svg.svg_triangle_right
+									ul.dropdown
+										li.menu_back
+											a.dark-color(href='#' rel='nofollow')
+												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+														defs
+															style.
+																.rcls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+																}
+														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+												| Назад
+										li.menu_title
+											a(href='company/index.html') Резка газом
+										li
+											a.dark-color(href='company/index-2.html' title='Резка газом')
+												span Резка газом
+										li
+											a.dark-color(href='company/value/index.html' title='Резка маятниковой пилой')
+												span Резка маятниковой пилой
+										li
+											a.dark-color(href='company/geo/index.html' title='Резка гильотиной')
+												span Резка гильотиной
+										li
+											a.dark-color(href='company/geo/index.html' title='Доставка')
+												span Доставка
+										li
+											a.dark-color(href='company/geo/index.html' title='Оцинкование')
+												span Оцинкование
+										li
+											a.dark-color(href='company/geo/index.html' title='Металлобработка')
+												span Металлобработка
+								li
+									a.dark-color.parent(href='company/index.html' title='Производство')
+										span Производство
+										span.arrow
+											i.svg.svg_triangle_right
+									ul.dropdown
+										li.menu_back
+											a.dark-color(href='#' rel='nofollow')
+												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+														defs
+															style.
+																.rcls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+																}
+														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+												| Назад
+										li.menu_title
+											a(href='company/index.html') Производство тканой сетки
+										li
+											a.dark-color(href='company/index-2.html' title='Производство тканой сетки')
+												span Производство тканой сетки
+										li
+											a.dark-color(href='company/value/index.html' title='Производство сетки')
+												span Производство сетки
+										li
+											a.dark-color(href='company/geo/index.html' title='Производство крепежных изделий')
+												span Производство крепежных изделий
+										li
+											a.dark-color(href='company/geo/index.html' title='Производство цепей')
+												span Производство цепей
+										li
+											a.dark-color(href='company/geo/index.html' title='Производство перфорированных листов')
+												span Производство перфорированных листов
+										li
+											a.dark-color(href='company/geo/index.html' title='Изготовление пружин')
+												span Изготовление пружин
+										li
+											a.dark-color(href='company/geo/index.html' title='Изготовление отливок')
+												span Изготовление отливок
 								li
 									a.dark-color.parent(href='info/index.html' title='Информация')
 										span Информация

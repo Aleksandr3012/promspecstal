@@ -30,7 +30,7 @@ $(document).ready(function(){
 	$('.f-item').click(function(){
 		//$('.product-submenu').addClass('hide');	
 		//$('.submenu-wrapper').addClass('hide');      
-		$('.f-item>.submenu-wrapper').removeClass('hide');	
+		$('.f-item>.submenu-wrapper').toggleClass('hide');	
 		return false;
 	});				
 });

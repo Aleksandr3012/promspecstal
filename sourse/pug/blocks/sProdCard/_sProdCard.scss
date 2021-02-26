@@ -22,6 +22,9 @@
 		@include media-breakpoint-only(lg) {
 			width: auto;
 		}
+		@include media-breakpoint-only(md) {
+			width: auto;
+		}
 		margin-left: auto;
 	}
 
@@ -42,9 +45,23 @@
 				display: none;
 			}
 		}
+		@include media-breakpoint-only(md) {
+			display: flex !important;
+			flex-direction: column;
+
+			&::before, &::after {
+				display: none;
+			}
+		}
 		.counter {
 		max-width: 120px;
 			@include media-breakpoint-only(lg) {
+				margin-left: auto;
+				margin-bottom: 10px;
+				float: right !important;
+				max-width: 184px;
+			}
+			@include media-breakpoint-only(md) {
 				margin-left: auto;
 				margin-bottom: 10px;
 				float: right !important;
@@ -64,7 +81,7 @@
 		flex-direction: column;
 
 		.btn {
-			@include media-breakpoint-up(lg) {
+			@include media-breakpoint-up(md) {
 				margin-right: 0;
 			}
 		}
