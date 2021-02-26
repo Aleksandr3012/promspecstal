@@ -2,17 +2,68 @@
 	// display: block;
 	width: 100%;
 	position: relative;
-	max-width: rem(500);
+	max-width: 897px;
 
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
 	}
 
+	h2 {
+		font-weight: bold;
+	}
+
 	.mfp-close {
 		color: $primary;
 		font-size: 40px;
 		font-weight: 100;
+	}
+
+	.form-wrap {
+
+		&__wrap {
+			display: flex;
+			justify-content: flex-end;
+			@include media-breakpoint-down(sm) {
+				flex-direction: column-reverse;
+			}
+		}
+
+		&__btn {
+			@include media-breakpoint-up(md) {
+				width: 219px;
+			}
+		}
+
+		&__text {
+			max-width: 585px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.polite {
+		@include media-breakpoint-up(sm) {
+			margin-right: 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+		 	.custom-input__text {
+				 max-width: none;
+			 }
+		}
+	}
+
+}
+
+.fancybox-inner {
+	overflow: hidden !important;
+}
+
+.fancybox-skin {
+	@include media-breakpoint-up(md) {
+		padding: 34px 56px;
 	}
 }
 

@@ -6,17 +6,69 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+var JSCCommon = {
+	modalCall: function modalCall() {
+		$(".link-modal").fancybox({
+			arrows: false,
+			infobar: false,
+			touch: false,
+			type: 'inline',
+			autoFocus: false,
+			i18n: {
+				en: {
+					CLOSE: "Закрыть",
+					NEXT: "Вперед",
+					PREV: "Назад" // PLAY_START: "Start slideshow",
+					// PLAY_STOP: "Pause slideshow",
+					// FULL_SCREEN: "Full screen",
+					// THUMBS: "Thumbnails",
+					// DOWNLOAD: "Download",
+					// SHARE: "Share",
+					// ZOOM: "Zoom"
+
+				}
+			},
+			beforeLoad: function beforeLoad() {
+				document.querySelector("html").classList.add("fixed");
+			},
+			afterClose: function afterClose() {
+				document.querySelector("html").classList.remove("fixed");
+			}
+		});
+		$(".modal-close-js").click(function () {
+			$.fancybox.close();
+		});
+		$.fancybox.defaults.backFocus = false;
+		var linkModal = document.querySelectorAll('.link-modal');
+
+		function addData() {
+			linkModal.forEach(function (element) {
+				element.addEventListener('click', function () {
+					var modal = document.querySelector(element.getAttribute("href"));
+					var data = element.dataset;
+
+					function setValue(val, elem) {
+						if (elem && val) {
+							var el = modal.querySelector(elem);
+							el.tagName == "INPUT" ? el.value = val : el.innerHTML = val; // console.log(modal.querySelector(elem).tagName)
+						}
+					}
+
+					setValue(data.title, '.ttu');
+					setValue(data.text, '.after-headline');
+					setValue(data.btn, '.btn');
+					setValue(data.order, '.order');
+				});
+			});
+		}
+
+		if (linkModal) addData();
+	}
+};
 var $ = jQuery;
 
 function eventHandler() {
-	// JSCCommon.CustomInputFile(); 
-	var x = window.location.host;
-	var screenName;
-	screenName = 'main.jpg';
-
-	if (screenName && x.includes("localhost:30")) {
-		document.body.insertAdjacentHTML("beforeend", "<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>"));
-	}
+	JSCCommon.modalCall();
 
 	function makeDDGroup(qSelecorts) {
 		var _iterator = _createForOfIteratorHelper(qSelecorts),

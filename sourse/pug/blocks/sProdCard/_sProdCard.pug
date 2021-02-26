@@ -62,11 +62,11 @@ mixin sProdCard(data)
 																	input.count(type='text' value='1')
 																span.plus.ctrl.bgtransition
 														.buttons.pull-right
-															span.btn.btn-default.pull-right.to_cart.animate-load(data-quantity='1')
+															span.btn.btn-default.pull-right.to_cart(data-quantity='1')
 																span Добавить в корзину
 															a.btn.btn-default.pull-right.d-none(href='/cart/')
 																span В корзине
-															.btn.btn.btn-default.btn-lg.btn-transparent-bg.animate-load(href="#") Узнать цену
+															.btn.btn.btn-default.btn-lg.btn-transparent-bg(href="#") Узнать цену
 													.wrapper-block-btn.order.basketTrue
 
 	// end sProdCard
@@ -122,6 +122,5 @@ mixin sProdCard-table(data)
 														| Наши специалисты ответят на любой интересующий вопрос по товару
 												.outer
 													span
-														span.btn.btn-default.btn-lg.btn-transparent-bg.animate-load(data-event='jqm' data-param-id='26' data-autoload-need_product='Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006' data-name='question')
-															span Задать вопрос
+														a.btn.btn-default.btn-lg.btn-transparent-bg.link-modal(href='#modal-question') Задать вопрос
 										

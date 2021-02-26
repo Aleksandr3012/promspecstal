@@ -49,7 +49,8 @@ block pagecontent
 						.shares-block
 							script(src='//yastatic.net/share2/share.js' async='async')
 							.ya-share2(data-services='vkontakte,facebook,twitter,viber,whatsapp,odnoklassniki,moimir')
-					h1#pagetitle.shares Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006
+					h1#pagetitle.shares.d-flex.align-items-center Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006
+						+input('Челябинск','select')
 	+sProdCard
 	+sCalculateCost
 	+sDescr
@@ -63,7 +64,7 @@ block pagecontent
 				.item-views.catalog.blocks
 					.title_block.row
 						.col-md-3.col-sm-12
-							h3 Наши товары
+							h3.pl-15 Наши товары
 						//- .col-md-6.col-sm-9.text-center
 							.items.head-block
 								.row.margin0

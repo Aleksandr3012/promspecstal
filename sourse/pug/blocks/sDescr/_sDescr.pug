@@ -87,58 +87,110 @@ mixin sDescr(data)
 										| 							Наши специалисты ответят на любой интересующий вопрос по товару
 								.outer
 									span
-										span.btn.btn-default.btn-lg.btn-transparent-bg.animate-load(data-event='jqm' data-param-id='26' data-autoload-need_product='Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006' data-name='question')
-											span Задать вопрос
+										a.btn.btn-default.btn-lg.btn-transparent-bg.link-modal(href='#modal-question') Задать вопрос
 				.row
 					.col-md-9
 						hr.bottoms
 						.row
 							.col-md-6.col-sm-6.share
 								.shares-block
-									span.text Поделиться
 									script(src='//yastatic.net/share2/share.js' async='async')
-									.ya-share2.ya-share2_inited(data-services='vkontakte,facebook,twitter,viber,whatsapp,odnoklassniki,moimir')
-										.ya-share2__container.ya-share2__container_size_m.ya-share2__container_color-scheme_normal.ya-share2__container_shape_normal
-											ul.ya-share2__list.ya-share2__list_direction_horizontal
-												li.ya-share2__item.ya-share2__item_service_vkontakte
-													a.ya-share2__link(href='https://vk.com/share.php?url=http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&title=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0&utm_source=share2' rel='nofollow noopener' target='_blank' title='ВКонтакте')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title ВКонтакте
-												li.ya-share2__item.ya-share2__item_service_facebook
-													a.ya-share2__link(href='https://www.facebook.com/sharer.php?src=sp&u=http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&title=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0&utm_source=share2' rel='nofollow noopener' target='_blank' title='Facebook')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title Facebook
-												li.ya-share2__item.ya-share2__item_service_twitter
-													a.ya-share2__link(href='https://twitter.com/intent/tweet?text=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0&url=http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&utm_source=share2' rel='nofollow noopener' target='_blank' title='Twitter')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title Twitter
-												li.ya-share2__item.ya-share2__item_service_viber
-													a.ya-share2__link(href='viber://forward?text=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0%20http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&utm_source=share2' rel='nofollow' target='_blank' title='Viber')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title Viber
-												li.ya-share2__item.ya-share2__item_service_whatsapp
-													a.ya-share2__link(href='https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0%20http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&utm_source=share2' rel='nofollow noopener' target='_blank' title='WhatsApp')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title WhatsApp
-												li.ya-share2__item.ya-share2__item_service_odnoklassniki
-													a.ya-share2__link(href='https://connect.ok.ru/offer?url=http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&title=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0&utm_source=share2' rel='nofollow noopener' target='_blank' title='Одноклассники')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title Одноклассники
-												li.ya-share2__item.ya-share2__item_service_moimir
-													a.ya-share2__link(href='https://connect.mail.ru/share?url=http%3A%2F%2Fpromspecstal.ru%2Fproduct%2Ftsvetnoy-prokat%2Fmednyy-prokat%2Fmednyy-list%2Fmednyy-list-m1e-0-40-500-500-gost-1173-2006%2F&title=%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D1%81%D1%82%20%D0%9C1%D0%95%200%2C40%20500%20500%20%D0%93%D0%9E%D0%A1%D0%A2%201173-2006%20-%20C%D0%B0%D0%B9%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0&utm_source=share2' rel='nofollow noopener' target='_blank' title='Мой Мир')
-														span.ya-share2__badge
-															span.ya-share2__icon
-														span.ya-share2__title Мой Мир
+									.ya-share2(data-services='vkontakte,facebook,twitter,viber,whatsapp,odnoklassniki,moimir')
 							.col-md-6.col-sm-6
 								a.back-url.url-block(href='/product/tsvetnoy-prokat/mednyy-prokat/mednyy-list/')
 									i.fa.fa-angle-left
 									span Назад к списку
+
+					
+	// end sDescr
+
+
+mixin sDescr-noModal(data)
+	// start sDescr
+	+b.sDescr.drag-block.container.section#sDescr&attributes(attributes)
+		.maxwidth-theme
+			+e.inner
+				.row
+					.col-xs-12
+						.drag_block.tab
+							.tabs.grey
+								.tabs-head.arrow_scroll.arrow_scroll_init.swipeignore(style='overflow: hidden; position: relative;')
+									.arrows_wrapper
+										.arrow.arrow_left.colored_theme_hover_text.disabled
+											svg(xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8')
+												rect(width='12' height='8' fill='#333' fill-opacity='0')
+												path(d='M1015.69,507.693a0.986,0.986,0,0,1-1.4,0l-4.31-4.316-4.3,4.316a0.993,0.993,0,0,1-1.4-1.408l4.99-5.009a1.026,1.026,0,0,1,1.43,0l4.99,5.009A0.993,0.993,0,0,1,1015.69,507.693Z' fill='#333' transform='translate(-1004 -501)')
+										.arrow.arrow_right.colored_theme_hover_text.disabled
+											svg(xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8')
+												rect(width='12' height='8' fill='#333' fill-opacity='0')
+												path(d='M1015.69,507.693a0.986,0.986,0,0,1-1.4,0l-4.31-4.316-4.3,4.316a0.993,0.993,0,0,1-1.4-1.408l4.99-5.009a1.026,1.026,0,0,1,1.43,0l4.99,5.009A0.993,0.993,0,0,1,1015.69,507.693Z' fill='#333' transform='translate(-1004 -501)')
+									ul.nav.nav-tabs(style='white-space: nowrap; min-width: auto; overflow: visible; z-index: 1; transform: translateX(1px);')
+										li.active
+											a(href='#desc' data-toggle='tab') Описание
+										li
+											a(href='#props' data-toggle='tab') Оплата и отгрузка
+										li
+											a(href='#delivery' data-toggle='tab') Доставка и гарантия
+										li
+											a(href='#return' data-toggle='tab') Условия возврата
+										li
+											a(href='#reviews' data-toggle='tab') Отзывы
+								.tab-content
+									#desc.tab-pane.chars.active
+										.title-tab-heading.visible-xs Описание
+										.content(itemprop='description')
+											| Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 - металлургическая продукция из качественных сортов стали, производимая строго в соответствии с требованиями ГОСТ. Изделия имеют разнообразный спектр функциональности в области промышленности, строительства, сельского хозяйства. Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 обладает высокоэффективными характеристиками, которые способствуют долгосрочной, продуктивной службе различных систем и конструкций. Широкий сортамент обеспечивает максимально точной подбор продукции по всем размерным, функциональным и видовым показателям.
+									#props.tab-pane
+										.title-tab-heading.visible-xs Характеристики
+										.char-wrapp
+											table.props_table
+												tbody
+													tr.char
+														td.char_name
+															span Марка
+														td.char_value
+															span
+																| М1Е
+													tr.char
+														td.char_name
+															span Ширина
+														td.char_value
+															span
+																| 500
+									#delivery.tab-pane
+										.title-tab-heading.visible-xs Описание
+										.content(itemprop='description')
+											| Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 - металлургическая продукция из качественных сортов стали, производимая строго в соответствии с требованиями ГОСТ. Изделия имеют разнообразный спектр функциональности в области промышленности, строительства, сельского хозяйства. Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 обладает высокоэффективными характеристиками, которые способствуют долгосрочной, продуктивной службе различных систем и конструкций. Широкий сортамент обеспечивает максимально точной подбор продукции по всем размерным, функциональным и видовым показателям.
+									#return.tab-pane
+										.title-tab-heading.visible-xs Описание
+										.content(itemprop='description')
+											| Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 - металлургическая продукция из качественных сортов стали, производимая строго в соответствии с требованиями ГОСТ. Изделия имеют разнообразный спектр функциональности в области промышленности, строительства, сельского хозяйства. Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 обладает высокоэффективными характеристиками, которые способствуют долгосрочной, продуктивной службе различных систем и конструкций. Широкий сортамент обеспечивает максимально точной подбор продукции по всем размерным, функциональным и видовым показателям.
+									#return.tab-pane
+										.title-tab-heading.visible-xs Описание
+										.content(itemprop='description')
+											| Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 - металлургическая продукция из качественных сортов стали, производимая строго в соответствии с требованиями ГОСТ. Изделия имеют разнообразный спектр функциональности в области промышленности, строительства, сельского хозяйства. Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 обладает высокоэффективными характеристиками, которые способствуют долгосрочной, продуктивной службе различных систем и конструкций. Широкий сортамент обеспечивает максимально точной подбор продукции по всем размерным, функциональным и видовым показателям.
+									#reviews.tab-pane
+										.title-tab-heading.visible-xs Описание
+										.content(itemprop='description')
+											| Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 - металлургическая продукция из качественных сортов стали, производимая строго в соответствии с требованиями ГОСТ. Изделия имеют разнообразный спектр функциональности в области промышленности, строительства, сельского хозяйства. Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006 обладает высокоэффективными характеристиками, которые способствуют долгосрочной, продуктивной службе различных систем и конструкций. Широкий сортамент обеспечивает максимально точной подбор продукции по всем размерным, функциональным и видовым показателям.
+						h6 Характеристики
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed iste distinctio hic excepturi aspernatur delectus amet suscipit! Architecto ea laudantium aliquid eos porro fuga inventore maxime vitae enim qui? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos animi quisquam dicta, eaque expedita maxime vel enim quae est voluptate eveniet quis error nihil ipsum nemo aliquid, optio praesentium aspernatur.
+						h6 Способ изготовления 
+						p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, expedita doloribus provident architecto omnis fugit vel at quidem ipsa unde rem ex ullam molestias asperiores quaerat maxime ad accusamus odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae molestias ratione, fuga voluptas minus quod? Architecto maxime inventore asperiores dignissimos eaque fugit maiores exercitationem, eligendi culpa dolorem, nostrum facere accusantium.
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus hic maxime rem quae dicta iure atque blanditiis ratione est nam magnam, a dolore, necessitatibus eaque harum facere in possimus!
+						ul 
+							li радиаторная;
+							li общего назначения;
+							li для кабелей;
+							li электротехнического назначеня;
+
+						.imgMW
+							+pic('cvetnoi_prokat_1.jpg')
+						.drag_block.comments
+							p
+								font.errortext В настройках компонента не выбран ни один тип комментариев
+					
+						
 
 					
 	// end sDescr

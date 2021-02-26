@@ -50,22 +50,19 @@ block pagecontent
 						.shares-block
 							script(src='//yastatic.net/share2/share.js' async='async')
 							.ya-share2(data-services='vkontakte,facebook,twitter,viber,whatsapp,odnoklassniki,moimir')
-					h1#pagetitle.shares Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006
+					h1#pagetitle.shares.d-flex.align-items-center Медный лист М1Е 0,40 500 500 ГОСТ 1173-2006
+						+input('Челябинск','select')
 	+sProdCard-table
 	+sCalculateCost-reserve
 	+sFilter
-	+sDescr
-	+sCatalog({
-		title: 'Наши услуги',
-		sm: 'sm'
-	})
+	+sDescr-noModal
 	.drag-block.container.CATALOG_INDEX(data-class='CATALOG_INDEX_drag' data-order='8')
 		.maxwidth-theme
 			.row.margin0.block-with-bg
 				.item-views.catalog.blocks
 					.title_block.row
 						.col-md-3.col-sm-12
-							h3 Наши товары
+							h3.pl-15 Наши товары
 						//- .col-md-6.col-sm-9.text-center
 							.items.head-block
 								.row.margin0
@@ -351,4 +348,20 @@ block pagecontent
 								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A22%3A%22%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D0%BC%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
 								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A14%3A%22%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
 								.item-block(data-filter='a%3A5%3A%7Bs%3A18%3A%22PROPERTY_HIT_VALUE%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22%D0%A5%D0%B8%D1%82%22%3B%7Ds%3A6%3A%22ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A9%3A%22IBLOCK_ID%22%3Bs%3A2%3A%2241%22%3Bs%3A21%3A%22SECTION_GLOBAL_ACTIVE%22%3Bs%3A1%3A%22Y%22%3Bs%3A28%3A%22%21PROPERTY_SHOW_ON_INDEX_PAGE%22%3Bb%3A0%3B%7D')
+
+	+sCatalog({
+		title: 'Наши услуги',
+		sm: 'sm'
+	})
+	.maxwidth-theme
+		.bottoms.pl-15.pr-15
+			.row
+				.col-md-6.col-sm-6.share
+					.shares-block
+						script(src='//yastatic.net/share2/share.js' async='async')
+						.ya-share2(data-services='vkontakte,facebook,twitter,viber,whatsapp,odnoklassniki,moimir')
+				.col-md-6.col-sm-6
+					a.back-url.url-block(href='/product/tsvetnoy-prokat/mednyy-prokat/mednyy-list/')
+						i.fa.fa-angle-left
+						span Назад к списку
 

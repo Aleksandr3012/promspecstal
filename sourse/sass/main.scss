@@ -52,6 +52,7 @@ $output-bourbon-deprecation-warnings: false;
 .pagination-wrapper ul {
 	@extend .pagination;
   li {
+		padding-left: 0;
     &::before {
       display: none
     }
@@ -67,9 +68,10 @@ $output-bourbon-deprecation-warnings: false;
 
 	.current {
 		z-index: 1;
-		// color: $pagination-active-color;
-		// background-color: $pagination-active-bg;
-		// border-color: $pagination-active-border-color;
+		pointer-events: none;
+		color: $pagination-active-color;
+		background-color: $pagination-active-bg;
+		border-color: $pagination-active-border-color;
 	}
 }
 
