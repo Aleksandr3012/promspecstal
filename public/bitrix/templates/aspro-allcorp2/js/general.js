@@ -3213,7 +3213,7 @@ $(document).ready(function(){
 		}
 	})
 
-	$('a.fancybox').fancybox();
+	// $('a.fancybox').fancybox();
 
 	/* flex pagination */
 	$(document).on('mouseenter', '.flex-viewport .item', function(){
@@ -3704,7 +3704,7 @@ $(document).ready(function(){
 	        selectOption = _this.find('option'),
 	        selectOptionLength = selectOption.length,
 	        selectedOption = selectOption.filter(':selected'),
-	        duration = 200; // длительность анимации
+	        duration = 200; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	    _this.hide();
 	    _this.wrap('<div class="select"></div>');

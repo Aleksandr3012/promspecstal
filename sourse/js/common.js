@@ -1,7 +1,7 @@
 const JSCCommon = {
   modalCall() {
 
-		$(".link-modal").fancybox({
+		$("a.fancybox").fancybox({
 			arrows: false,
 			infobar: false,
 			touch: false,

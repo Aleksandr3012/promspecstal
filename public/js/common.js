@@ -8,7 +8,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var JSCCommon = {
 	modalCall: function modalCall() {
-		$(".link-modal").fancybox({
+		$("a.fancybox").fancybox({
 			arrows: false,
 			infobar: false,
 			touch: false,
