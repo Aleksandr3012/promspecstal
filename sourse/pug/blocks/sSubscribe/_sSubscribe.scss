@@ -1,0 +1,104 @@
+// start .sSubscribe
+.sSubscribe {
+	--sPT: 10px;
+	--sPB: 10px;
+	@include media-breakpoint-up(sm) {
+		--sPT: 20px;
+		--sPB: 20px;
+	}
+	background-color: #41474e;
+	color: #fff;
+	
+	&__inner {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 900px;
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+		@include media-breakpoint-up(md) {
+			margin-right: 35px;
+		}
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 10px;
+			justify-content: center;
+		}
+		.icon {
+			font-size: 40px;
+			margin-right: 15px;
+			@include media-breakpoint-up(md) {
+			font-size: 50px;
+			margin-right: 25px;
+		}
+		}
+
+		span {
+			max-width: 140px;
+		}
+	}
+
+	.form-wrap {
+		flex-grow: 1;
+
+		form {
+			display: flex;
+			align-items: center;
+		}
+
+		&__btn {
+			//btn
+			display: inline-flex;
+			font-weight: 400;
+			line-height: 1.5;
+			text-align: center;
+			text-decoration: none;
+			vertical-align: middle;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+			background-color: transparent;
+			border: 1px solid transparent;
+			padding: .375rem .95rem;
+			font-size: 1rem;
+			transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+			//primary
+			color: #fff;
+			background-color: $primary;
+			
+			//other
+			border-radius: 0;
+			height: 100%;
+			font-size: 16px;
+			height: 43px;
+			align-items: center;
+			justify-content: center;
+
+		}
+
+		&__input-wrap {
+			flex-grow: 1;
+			margin-bottom: 0;
+		}
+
+		&__input {
+			border-radius: 0;
+			height: 43px;
+		}
+
+	}
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSubscribe

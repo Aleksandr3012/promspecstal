@@ -1,0 +1,13 @@
+mixin sSubscribe(data)
+	// start sSubscribe
+	+b.sSubscribe.drag-block.container.section#sSubscribe&attributes(attributes)
+		.maxwidth-theme
+			+e.inner
+					
+				+e.wrap 
+					+icon('send-mail')
+					span Подписывайтесь на&nbsp;новости и&nbsp;ации
+				+form-wrap 
+					+input('E-mail','email')
+					+e.btn(type='submit') Подписаться
+	// end sSubscribe

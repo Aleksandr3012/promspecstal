@@ -13,6 +13,7 @@ include ../../blocks/topLine/_topLine.pug
 include ../../blocks/top-nav/_top-nav.pug 
 include ../../blocks/headerBlock/_headerBlock.pug
 include ../../blocks/sForm/_sForm.pug
+include ../../blocks/sSubscribe/_sSubscribe.pug
 
 doctype html
 html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
@@ -1113,7 +1114,7 @@ html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
 				.container
 					div
 						block pagecontent
-						
+		+sSubscribe
 		footer#footer
 			// 'start_frame_cache_footer-subscribe'
 			// 'end_frame_cache_footer-subscribe'
