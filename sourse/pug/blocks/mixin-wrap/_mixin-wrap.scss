@@ -1,35 +1,45 @@
- 
-	  
-.soc{
-	@include roww(10px, m);
+.soc {
+	@include roww(20px, m);
 	display: flex;
-	&__item{
-		text-decoration: none !important; 
-		vertical-align: middle;
+	align-items: center;
+	&__item {
+		text-decoration: none !important;
 		@include mt;
 		display: block;
-		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+		color: #303030;
+		&:hover {
+			// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			// opacity: .6 ;
+			color: $blue;
 		}
-		
 	}
-	.icon{
+	.icon {
+		font-size: rem(40);
+	}
+
+	.icon-twitter {
 		font-size: rem(30);
 	}
-	 
 
+	.icon-pencil {
+		transform: scale(-1, 1);
+		font-size: rem(30);
+	}
+
+	&.white-icon {
+		.soc__item {
+			color: #fff;
+		}
+	}
 }
- 
 
-.counter{
+.counter {
 	counter-reset: num;
 	&__item {
-		position: relative; 
+		position: relative;
 		&::before {
 			content: counter(num);
 			counter-increment: num;
 		}
 	}
 }
-

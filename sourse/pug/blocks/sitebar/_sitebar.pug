@@ -7,7 +7,7 @@ mixin sitebar(data)
 						a(href='index.html')
 							img(src='upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png' alt='Cайт производства' title='Cайт производства')
 					span.callback.get-order
-			.menu-sidebar
+			+b.menu-sidebar
 				aside.sidebar
 					ul.nav.nav-list.side-menu
 						li.f-item.product
@@ -1516,4 +1516,14 @@ mixin sitebar(data)
 							div
 								a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
 						// 'end_frame_cache_email-block1'
+					+e.wrap
+						+e.logo(href="/")
+							img.res-i(src="upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png" alt="Cайт производства" title="Cайт производства")
+						+soc
+						+e.lang(href='#')
+							img(src="img/@2x/en.png" alt="EN" loading="lazy")
+							span EN
+
+
+
 	// end sitebar

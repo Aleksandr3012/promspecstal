@@ -9,33 +9,35 @@ mixin sProject(data)
 							h2 Реализованые проекты
 					.col-lg-2
 						+e.allProject(href="#") Все услуги
-				.row
-					.col-lg-3
+				.flexRow
+					.col-LG-3
 						p
 							strong Специализируемся на услугах для малого и среднего бизнеса. Работаем с физическими и юридическими лицами.
 						p 10 лет на рынке проектирования, консалтинга и крупных поставок промышленного оборудования.
 						+e.btn.btn.btn-default.btn-lg.btn-transparent-bg(href='#') Подробнее
-					.col-lg-9
+					.col-LG-9
 						mixin item(i,t)
 							+e.item(href="#")
 								+pic(`project-${i}.jpg`,'bg')(class="picture-bg")
-								+e.text= t
-						+e.itemRow.row
-							.col-md-6
+								+e.wrap
+									+e.text= t
+									+e.hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						+e.itemRow.flexRow
+							.col-MD-6
 								+item('1','Английский язык для бизнеса')
-							.col-md-6
-								+e.itemRow.row
-									.col-sm-6
+							.col-MD-6
+								+e.itemRow.flexRow
+									.col-SM-6
 										+item('1','Монтаж сайдинга')
-									.col-sm-6
+									.col-SM-6
 										+item('1','Охранные системы')
-							.col-md-6
-								+e.itemRow.row
-									.col-sm-6
+							.col-MD-6
+								+e.itemRow.flexRow
+									.col-SM-6
 										+item('1','Сварочные работы')
-									.col-sm-6
+									.col-SM-6
 										+item('1','POS-системы')
-							.col-md-6
+							.col-MD-6
 								+item('1','Дизайн интерьеров')
 
 

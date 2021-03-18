@@ -3,10 +3,10 @@
 	--sPT: 10px;
 	// --sPB: ;
 	// --sTPB: ;
-	
+
 	&__inner {
 		@include media-breakpoint-up(lg) {
-			padding-left: 15px;
+			// padding-left: 15px;
 			padding-right: 15px;
 		}
 	}
@@ -17,7 +17,7 @@
 
 	&__head {
 		background-color: $light;
-		padding: 15px;
+		padding: 15px 0;
 		margin-bottom: 30px;
 	}
 
@@ -34,7 +34,7 @@
 		margin-left: 3px;
 	}
 
-	table.table  {
+	table.table {
 		th {
 			background-color: transparent;
 			color: #000;
@@ -85,8 +85,12 @@
 		background-color: $light;
 	}
 
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) { }
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sFilter

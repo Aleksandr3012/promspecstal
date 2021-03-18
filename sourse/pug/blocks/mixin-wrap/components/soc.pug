@@ -6,12 +6,13 @@ mixin item-sos(icon, a='#')
 			+icon(icon)
 //- social buttons
 mixin soc()
-	+b.soc
+	+b.soc&attributes(attributes)
 		if block
 			block
 		else
 			+item-sos('fb')
-			+item-sos('instagram')
-			+item-sos('telegram')
+			+item-sos('twitter')
+			+item-sos('vk')
+			+item-sos('pencil')
 
 //- /social buttons 
