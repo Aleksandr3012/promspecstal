@@ -1,5 +1,14 @@
 // start .sitebar
+.sidebar-fixed {
+	z-index: 20;
+	// max-height: 100%;
+	background-color: #fff;
+		@include media-breakpoint-down(lg) {
+				display: none;
+		}
+}
 .sitebar {
+	
 	// --sPT: ;
 	// --sPB: ;
 	// --sTPB: ;

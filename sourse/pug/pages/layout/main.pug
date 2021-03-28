@@ -183,189 +183,1097 @@ html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
 		// 'start_frame_cache_options-block'
 		script.
 			var arBasketItems = [];
+			
 		// 'end_frame_cache_options-block'
-		.visible-lg.visible-md.title-v1.index
-			header.header_custom.with_regions
-				.menu-row.with-color.bglight.colored_dark.sliced
-					.maxwidth-theme
-						+sitebar
-						.col-md-9
-							.menu-only
-								nav.mega-menu.sliced
-									.table-menu.catalog_icons_Y
-										.marker-nav
-										table
-											tbody
-												tr
-													td.menu-item.unvisible.dropdown
-														.wrap
-															a.dropdown-toggle(href='company/index.html')
-																| О Компании 
-																i.fa.fa-angle-down
-																.line-wrapper
-																	span.line
-															span.tail
-															ul.dropdown-menu
-																li.count_4
-																	a(href='company/index-2.html' title='О компании') О компании
-																li.count_4
-																	a(href='company/value/index.html' title='Ценности компании') Ценности компании
-																li.count_4
-																	a(href='company/geo/index.html' title='География присутствия') География присутствия
-																li.count_4
-																	a(href='company/licenses/index.html' title='Сертификаты') Сертификаты
-																li.count_4
-																	a(href='company/partners/index.html' title='Сотрудничество') Сотрудничество
-																li.count_4
-																	a(href='company/requisites/index.html' title='Реквизиты') Реквизиты
-													td.menu-item.unvisible.dropdown
-														.wrap
-															a.dropdown-toggle(href='info/index.html')
-																| Информация 
-																i.fa.fa-angle-down
-																.line-wrapper
-																	span.line
-															span.tail
-															ul.dropdown-menu
-																li.count_4
-																	a(href='info/sales/index.html' title='Акции') Акции
-																li.count_4
-																	a(href='info/news/index.html' title='Новости') Новости
-													td.menu-item.unvisible
-														.wrap
-															a(href='#')
-																| Благонадежность 
-																i.fa.fa-angle-down
-																.line-wrapper
-																	span.line
-													td.menu-item.unvisible
-														.wrap
-															a(href='company/licenses/index.html')
-																| Сертификаты 
-																i.fa.fa-angle-down
-																.line-wrapper
-																	span.line
-													td.menu-item.unvisible
-														.wrap
-															a(href='#')
-																| Доставка 
-																i.fa.fa-angle-down
-																.line-wrapper
-																	span.line
-													td.menu-item.unvisible
-														.wrap
-															a(href='contacts/index.html')
-																| Контакты 
-																i.fa.fa-angle-down
-																.line-wrapper
-																	span.line
-													td.menu-item.dropdown.js-dropdown.nosave.unvisible
-														.wrap
-															a.dropdown-toggle.more-items(href='#')
-																span
-																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='3' viewBox='0 0 17 3')
-																		defs
-																			style.
-																				.cls-1 {
-																				fill-rule: evenodd;
-																				}
-																		path.cls-1(d='M923.5,178a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,923.5,178Zm7,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,930.5,178Zm7,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,937.5,178Z' transform='translate(-922 -178)')
-															span.tail
-															ul.dropdown-menu
-						.col-md-3.right-main-menu-block
-							.inner-table-block.right-menu-block
-								// 'start_frame_cache_header-regionality-block1'
-								.region_wrapper
-									.io_wrapper
-										div
-											.js_city_chooser.popup_link.dark-color.with_dropdown(data-event='jqm' data-name='city_chooser' data-param-url='%2F' data-param-form_id='city_chooser')
-												span Челябинск
-												span.arrow
-													svg(xmlns='http://www.w3.org/2000/svg' width='5' height='2.844' viewBox='0 0 5 2.844')
+		.main-wrapper
+			main
+				+sitebar
+				.visible-lg.visible-md.title-v1.index
+					header.header_custom.with_regions
+						.menu-row.with-color.bglight.colored_dark.sliced
+							.maxwidth-theme
+								.col-md-9
+									.menu-only
+										nav.mega-menu.sliced
+											.table-menu.catalog_icons_Y
+												.marker-nav
+												table
+													tbody
+														tr
+															td.menu-item.unvisible.dropdown
+																.wrap
+																	a.dropdown-toggle(href='company/index.html')
+																		| О Компании 
+																		i.fa.fa-angle-down
+																		.line-wrapper
+																			span.line
+																	span.tail
+																	ul.dropdown-menu
+																		li.count_4
+																			a(href='company/index-2.html' title='О компании') О компании
+																		li.count_4
+																			a(href='company/value/index.html' title='Ценности компании') Ценности компании
+																		li.count_4
+																			a(href='company/geo/index.html' title='География присутствия') География присутствия
+																		li.count_4
+																			a(href='company/licenses/index.html' title='Сертификаты') Сертификаты
+																		li.count_4
+																			a(href='company/partners/index.html' title='Сотрудничество') Сотрудничество
+																		li.count_4
+																			a(href='company/requisites/index.html' title='Реквизиты') Реквизиты
+															td.menu-item.unvisible.dropdown
+																.wrap
+																	a.dropdown-toggle(href='info/index.html')
+																		| Информация 
+																		i.fa.fa-angle-down
+																		.line-wrapper
+																			span.line
+																	span.tail
+																	ul.dropdown-menu
+																		li.count_4
+																			a(href='info/sales/index.html' title='Акции') Акции
+																		li.count_4
+																			a(href='info/news/index.html' title='Новости') Новости
+															td.menu-item.unvisible
+																.wrap
+																	a(href='#')
+																		| Благонадежность 
+																		i.fa.fa-angle-down
+																		.line-wrapper
+																			span.line
+															td.menu-item.unvisible
+																.wrap
+																	a(href='company/licenses/index.html')
+																		| Сертификаты 
+																		i.fa.fa-angle-down
+																		.line-wrapper
+																			span.line
+															td.menu-item.unvisible
+																.wrap
+																	a(href='#')
+																		| Доставка 
+																		i.fa.fa-angle-down
+																		.line-wrapper
+																			span.line
+															td.menu-item.unvisible
+																.wrap
+																	a(href='contacts/index.html')
+																		| Контакты 
+																		i.fa.fa-angle-down
+																		.line-wrapper
+																			span.line
+															td.menu-item.dropdown.js-dropdown.nosave.unvisible
+																.wrap
+																	a.dropdown-toggle.more-items(href='#')
+																		span
+																			svg(xmlns='http://www.w3.org/2000/svg' width='17' height='3' viewBox='0 0 17 3')
+																				defs
+																					style.
+																						.cls-1 {
+																						fill-rule: evenodd;
+																						}
+																				path.cls-1(d='M923.5,178a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,923.5,178Zm7,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,930.5,178Zm7,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,937.5,178Z' transform='translate(-922 -178)')
+																	span.tail
+																	ul.dropdown-menu
+								.col-md-3.right-main-menu-block
+									.inner-table-block.right-menu-block
+										// 'start_frame_cache_header-regionality-block1'
+										.region_wrapper
+											.io_wrapper
+												div
+													.js_city_chooser.popup_link.dark-color.with_dropdown(data-event='jqm' data-name='city_chooser' data-param-url='%2F' data-param-form_id='city_chooser')
+														span Челябинск
+														span.arrow
+															svg(xmlns='http://www.w3.org/2000/svg' width='5' height='2.844' viewBox='0 0 5 2.844')
+																defs
+																	style.
+																		.cls-1 {
+																		fill: #222;
+																		fill-rule: evenodd;
+																		}
+																path.cls-1(d='M5,0.332l-2.5,2.5L0,0.332V0H5V0.332Z')
+										// 'end_frame_cache_header-regionality-block1'
+									.wrap_icon.inner-table-block
+										// 'start_frame_cache_basket-link1'
+										// noindex
+										a.basket-link.HEADER.big(rel='nofollow' title='Корзина пуста' href='cart/index.html')
+											span.js-basket-block
+												i.svg.inline.big.svg-inline-basket(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21')
 														defs
 															style.
 																.cls-1 {
 																fill: #222;
 																fill-rule: evenodd;
 																}
-														path.cls-1(d='M5,0.332l-2.5,2.5L0,0.332V0H5V0.332Z')
-								// 'end_frame_cache_header-regionality-block1'
-							.wrap_icon.inner-table-block
-								// 'start_frame_cache_basket-link1'
-								// noindex
-								a.basket-link.HEADER.big(rel='nofollow' title='Корзина пуста' href='cart/index.html')
-									span.js-basket-block
-										i.svg.inline.big.svg-inline-basket(aria-hidden='true')
-											svg(xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21')
+														path.cls-1(data-name='Ellipse 2 copy 6' d='M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z' transform='translate(-1486 -111)')
+												span.count 0
+										// /noindex
+										// 'end_frame_cache_basket-link1'
+									.wrap_icon.inner-table-block
+										// 'start_frame_cache_cabinet-link1'
+										// noindex
+										a.personal-link.dark-color.animate-load(data-event='jqm' title='Мой кабинет' data-param-type='auth' data-param-backurl='/' data-name='auth' href='cabinet/index.html')
+											i.svg.inline.big.svg-inline-cabinet(aria-hidden='true' title='Мой кабинет')
+												svg(xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21')
+													defs
+														style.
+															.cls-1 {
+															fill: #222;
+															fill-rule: evenodd;
+															}
+													path.cls-1(d='M18.263,21A9.678,9.678,0,0,0,10.5,17a9.678,9.678,0,0,0-7.763,4H0.451A11.64,11.64,0,0,1,10.5,15a11.64,11.64,0,0,1,10.049,6H18.263ZM10.5,13A6.5,6.5,0,1,1,17,6.5,6.5,6.5,0,0,1,10.5,13Zm0-11A4.5,4.5,0,1,1,6,6.5,4.5,4.5,0,0,1,10.5,2Z')
+										// /noindex
+										// 'end_frame_cache_cabinet-link1'
+								.lines
+						.logo_and_menu-row
+							.logo-row.top-fill
+								.maxwidth-theme
+									.col-md-12
+										.main-head-block
+											.block-search
+												.search-block.inner-table-block
+													.search-wrapper
+														#title-search_fixed
+															form.search(action='http://promspecstal.ru/search/')
+																.search-input-div
+																	input#title-search-input_fixed.search-input(type='text' name='q' value='' placeholder='Найти' size='40' maxlength='50' autocomplete='off')
+																.search-button-div
+																	button.btn.btn-search(type='submit' name='s' value='Найти')
+																		i.svg.inline.svg-inline-search(aria-hidden='true')
+																			svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+																				defs
+																					style.
+																						.stcls-1 {
+																						fill: #222;
+																						fill-rule: evenodd;
+																						}
+																				path.stcls-1(d='M15.644,15.644a1.164,1.164,0,0,1-1.646,0l-2.95-2.95a7.036,7.036,0,1,1,1.645-1.645L15.644,14A1.164,1.164,0,0,1,15.644,15.644ZM7,2a5,5,0,1,0,5,5A5,5,0,0,0,7,2Z')
+																	span.close-block.inline-search-hide
+																		span.svg.svg-close.close-icons
+													script.
+														var jsControl = new JCTitleSearch2({
+														//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+														'AJAX_PAGE': '/',
+														'CONTAINER_ID': 'title-search_fixed',
+														'INPUT_ID': 'title-search-input_fixed',
+														'INPUT_ID_TMP': 'title-search-input_fixed',
+														'MIN_QUERY_LEN': 2
+														});
+											.contacts-on-main
+												.block-email-alt
+													.inner-table-block
+														.callback-wrapper
+															span.callback-block.animate-load.callback-link.new_callback-link.new_callback-phone
+																| По
+																| всем вопросам
+														.inner-table-block_email
+															// 'start_frame_cache_email-block2'
+															.email.blocks
+																i.svg.inline.svg-inline-email(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
+																		defs
+																			style.
+																				.ecls-1 {
+																				fill: #222;
+																				fill-rule: evenodd;
+																				}
+																		path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
+																div
+																	a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
+															// 'end_frame_cache_email-block2'
+												.block-phone-alt
+													.inner-table-block
+														.callback-wrapper.new_callback-wrapper
+															.schedule
+																| Ежедневно с 09:00 до 18:00
+														.phone.big.alt-phone
+															span(style='display: none;')
+															a(href='tel:')
+												.block-phone-region
+													.inner-table-block
+														.callback-wrapper.new_callback-wrapper
+															span.callback-block.animate-load.callback-link.new_callback-link
+																| Звонок бесплатный по
+																| РФ
+														.phone.big.alt-phone
+															a(href='tel:+73510000000') +7 (351) 000-00-00
+				#mobileheader.visible-xs.visible-sm
+					.mobileheader-v1
+						.burger.pull-left
+							i.svg.inline.svg-inline-burger.dark(aria-hidden='true')
+								svg(xmlns='http://www.w3.org/2000/svg' width='18' height='16' viewBox='0 0 18 16')
+									defs
+										style.
+											.cls-1 {
+											fill: #fff;
+											fill-rule: evenodd;
+											}
+									path.cls-1(data-name='Rounded Rectangle 81 copy 2' d='M330,114h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,114Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,121Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,128Z' transform='translate(-329 -114)')
+							i.svg.inline.svg-inline-close.dark(aria-hidden='true')
+								svg(id='Close.svg' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+									defs
+										style.
+											.cls-1 {
+											fill: #222;
+											fill-rule: evenodd;
+											}
+									path#Rounded_Rectangle_114_copy_3.cls-1(data-name='Rounded Rectangle 114 copy 3' d='M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z' transform='translate(-325 -130)')
+						.logo-block.pull-left
+							.logo
+								a(href='index.html')
+									img(src='upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png' alt='Cайт производства' title='Cайт производства')
+						.right-icons.pull-right
+							.pull-right
+								.wrap_icon.wrap_basket
+									// 'start_frame_cache_basket-link2'
+									// noindex
+									a.basket-link.HEADER.big(rel='nofollow' title='Корзина пуста' href='cart/index.html')
+										span.js-basket-block
+											i.svg.inline.big.svg-inline-basket(aria-hidden='true')
+												svg(xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21')
+													defs
+														style.
+															.cls-1 {
+															fill: #222;
+															fill-rule: evenodd;
+															}
+													path.cls-1(data-name='Ellipse 2 copy 6' d='M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z' transform='translate(-1486 -111)')
+											span.count 0
+									// /noindex
+									// 'end_frame_cache_basket-link2'
+							.pull-right
+								.wrap_icon
+									button.inline-search-show.twosmallfont(title='Поиск')
+										i.svg.inline.svg-inline-search(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21')
 												defs
 													style.
 														.cls-1 {
 														fill: #222;
 														fill-rule: evenodd;
 														}
-												path.cls-1(data-name='Ellipse 2 copy 6' d='M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z' transform='translate(-1486 -111)')
-										span.count 0
-								// /noindex
-								// 'end_frame_cache_basket-link1'
-							.wrap_icon.inner-table-block
-								// 'start_frame_cache_cabinet-link1'
+												path.cls-1(data-name='Rounded Rectangle 106' d='M1590.71,131.709a1,1,0,0,1-1.42,0l-4.68-4.677a9.069,9.069,0,1,1,1.42-1.427l4.68,4.678A1,1,0,0,1,1590.71,131.709ZM1579,113a7,7,0,1,0,7,7A7,7,0,0,0,1579,113Z' transform='translate(-1570 -111)')
+							.pull-right
+								.wrap_icon.wrap_phones
+									a(href='tel:+73510000000')
+										i.svg.inline.svg-inline-phone(aria-hidden='true')
+											svg(width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg')
+												path(fill-rule='evenodd' clip-rule='evenodd' d='M18.9562 15.97L18.9893 16.3282C19.0225 16.688 18.9784 17.0504 18.8603 17.3911C18.6223 18.086 18.2725 18.7374 17.8248 19.3198L17.7228 19.4524L17.6003 19.5662C16.8841 20.2314 15.9875 20.6686 15.0247 20.8243C14.0374 21.0619 13.0068 21.0586 12.0201 20.814L11.9327 20.7924L11.8476 20.763C10.712 20.3703 9.65189 19.7871 8.71296 19.0385C8.03805 18.582 7.41051 18.0593 6.83973 17.4779L6.81497 17.4527L6.79112 17.4267C4.93379 15.3963 3.51439 13.0063 2.62127 10.4052L2.6087 10.3686L2.59756 10.3315C2.36555 9.5598 2.21268 8.76667 2.14121 7.9643C1.94289 6.79241 1.95348 5.59444 2.17289 4.42568L2.19092 4.32964L2.21822 4.23581C2.50215 3.26018 3.0258 2.37193 3.7404 1.65124C4.37452 0.908181 5.21642 0.370416 6.15867 0.107283L6.31009 0.0649959L6.46626 0.0468886C7.19658 -0.0377903 7.93564 -0.00763772 8.65659 0.136237C9.00082 0.203673 9.32799 0.34095 9.61768 0.540011L9.90227 0.735566L10.1048 1.01522C10.4774 1.52971 10.7173 2.12711 10.8045 2.75455C10.8555 2.95106 10.9033 3.13929 10.9499 3.32228C11.0504 3.71718 11.1446 4.08764 11.2499 4.46408C11.5034 5.03517 11.6255 5.65688 11.6059 6.28327L11.5984 6.52137L11.5353 6.75107C11.3812 7.31112 11.0546 7.68722 10.8349 7.8966C10.6059 8.11479 10.3642 8.2737 10.18 8.38262C9.89673 8.55014 9.57964 8.69619 9.32537 8.8079C9.74253 10.2012 10.5059 11.4681 11.5455 12.4901C11.7801 12.3252 12.0949 12.1097 12.412 11.941C12.6018 11.8401 12.8614 11.7177 13.1641 11.6357C13.4565 11.5565 13.9301 11.4761 14.4706 11.6169L14.6882 11.6736L14.8878 11.7772C15.4419 12.0649 15.9251 12.4708 16.3035 12.9654C16.5807 13.236 16.856 13.4937 17.1476 13.7666C17.2974 13.9068 17.4515 14.0511 17.6124 14.2032C18.118 14.5805 18.5261 15.0751 18.8003 15.6458L18.9562 15.97ZM16.3372 15.7502C16.6216 15.9408 16.8496 16.2039 16.9977 16.5121C17.0048 16.5888 16.9952 16.6661 16.9697 16.7388C16.8021 17.2295 16.5553 17.6895 16.2391 18.1009C15.795 18.5134 15.234 18.7788 14.6329 18.8608C13.9345 19.0423 13.2016 19.0464 12.5012 18.8728C11.5558 18.5459 10.675 18.0561 9.8991 17.4258C9.30961 17.0338 8.76259 16.5817 8.26682 16.0767C6.59456 14.2487 5.31682 12.0971 4.51287 9.75567C4.31227 9.08842 4.18279 8.40192 4.12658 7.70756C3.95389 6.74387 3.95792 5.75691 4.13855 4.79468C4.33628 4.11526 4.70731 3.49868 5.21539 3.00521C5.59617 2.53588 6.11383 2.19633 6.69661 2.03358C7.22119 1.97276 7.75206 1.99466 8.26981 2.09849C8.34699 2.11328 8.42029 2.14388 8.48501 2.18836C8.68416 2.46334 8.80487 2.78705 8.83429 3.12504C8.89113 3.34235 8.94665 3.56048 9.00218 3.77864C9.12067 4.24418 9.2392 4.70987 9.37072 5.16815C9.5371 5.49352 9.61831 5.85557 9.60687 6.22066C9.51714 6.54689 8.89276 6.81665 8.28746 7.07816C7.71809 7.32415 7.16561 7.56284 7.0909 7.83438C7.07157 8.17578 7.12971 8.51712 7.26102 8.83297C7.76313 10.9079 8.87896 12.7843 10.4636 14.2184C10.6814 14.4902 10.9569 14.7105 11.2702 14.8634C11.5497 14.9366 12.0388 14.5907 12.5428 14.2342C13.0783 13.8555 13.6307 13.4648 13.9663 13.5523C14.295 13.7229 14.5762 13.9719 14.785 14.2773C15.1184 14.6066 15.4631 14.9294 15.808 15.2523C15.9849 15.418 16.1618 15.5836 16.3372 15.7502Z' fill='#222222')
+					#mobilemenu.leftside
+						.mobilemenu-v1.scroller.compact_menu
+							.wrap
+								// 'start_frame_cache_mobile-region-block1'
 								// noindex
-								a.personal-link.dark-color.animate-load(data-event='jqm' title='Мой кабинет' data-param-type='auth' data-param-backurl='/' data-name='auth' href='cabinet/index.html')
-									i.svg.inline.big.svg-inline-cabinet(aria-hidden='true' title='Мой кабинет')
-										svg(xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21')
-											defs
-												style.
-													.cls-1 {
-													fill: #222;
-													fill-rule: evenodd;
-													}
-											path.cls-1(d='M18.263,21A9.678,9.678,0,0,0,10.5,17a9.678,9.678,0,0,0-7.763,4H0.451A11.64,11.64,0,0,1,10.5,15a11.64,11.64,0,0,1,10.049,6H18.263ZM10.5,13A6.5,6.5,0,1,1,17,6.5,6.5,6.5,0,0,1,10.5,13Zm0-11A4.5,4.5,0,1,1,6,6.5,4.5,4.5,0,0,1,10.5,2Z')
+								.menu.middle.mobile_regions
+									ul
+										li
+											a.dark-color.parent(rel='nofollow' href='#')
+												i.svg.inline.svg-inline-region
+													i.svg.inline.svg-inline-(aria-hidden='true')
+														svg(xmlns='http://www.w3.org/2000/svg' width='10' height='12.031' viewBox='0 0 10 12.031')
+															defs
+																style.
+																	.regcls-1 {
+																	fill: #333;
+																	fill-rule: evenodd;
+																	}
+															path.regcls-1(d='M547,200h-0.976l-0.61.61L544,202.024l-1.414-1.414-0.61-.61H541a2,2,0,0,1-2-2v-8h10v8A2,2,0,0,1,547,200Zm0-3v-5h-6v6h1.8L544,199.2,545.2,198H547v-1Z' transform='translate(-539 -190)')
+												span Челябинск
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														|  Назад
+												li.menu_title
+													span.title Города
+												li
+													a.dark-color.city_item(rel='nofollow' href='index.html' data-id='34') Челябинск
+												li
+													a.dark-color.city_item(rel='nofollow' href='index.html' data-id='35') Екатеринбург
 								// /noindex
-								// 'end_frame_cache_cabinet-link1'
-						.lines
-				.logo_and_menu-row
-					.logo-row.top-fill
-						.maxwidth-theme
-							.col-md-12
-								.main-head-block
-									.block-search
-										.search-block.inner-table-block
-											.search-wrapper
-												#title-search_fixed
-													form.search(action='http://promspecstal.ru/search/')
-														.search-input-div
-															input#title-search-input_fixed.search-input(type='text' name='q' value='' placeholder='Найти' size='40' maxlength='50' autocomplete='off')
-														.search-button-div
-															button.btn.btn-search(type='submit' name='s' value='Найти')
-																i.svg.inline.svg-inline-search(aria-hidden='true')
-																	svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+								// 'end_frame_cache_mobile-region-block1'
+								.menu.middle
+									ul
+										li
+											a.dark-color(href='cabinet/index.html')
+												i.svg.inline.svg-inline-cabinet(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+														defs
+															style.
+																.cls-1 {
+																fill: #222;
+																fill-rule: evenodd;
+																}
+														path.cls-1(d='M13.88,16A5.616,5.616,0,0,0,3.128,16h-2.1a7.66,7.66,0,0,1,14.954,0h-2.1ZM8.5,0A4.5,4.5,0,1,1,4,4.5,4.5,4.5,0,0,1,8.5,0Zm0,2A2.5,2.5,0,1,1,6,4.5,2.5,2.5,0,0,1,8.5,2Z')
+												span Мой кабинет
+								.menu.top.expanded-menu
+									ul.top
+										li.menu_title
+											a.dark-color.expanded-title(href='#')
+												| Благонадежность
+										li.menu_title
+											a.dark-color.expanded-title(href='#')
+												| Доставка
+								.menu.top
+									ul.top
+										li
+											a.dark-color.parent(href='company/index.html' title='О Компании')
+												span О Компании
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li.menu_title
+													a(href='company/index.html') О Компании
+												li
+													a.dark-color(href='company/index-2.html' title='О компании')
+														span О компании
+												li
+													a.dark-color(href='company/value/index.html' title='Ценности компании')
+														span Ценности компании
+												li
+													a.dark-color(href='company/geo/index.html' title='География присутствия')
+														span География присутствия
+												li
+													a.dark-color(href='company/licenses/index.html' title='Сертификаты')
+														span Сертификаты
+												li
+													a.dark-color(href='company/partners/index.html' title='Сотрудничество')
+														span Сотрудничество
+												li
+													a.dark-color(href='company/requisites/index.html' title='Реквизиты')
+														span Реквизиты
+										li
+											a.dark-color.parent(href='company/index.html' title='Продукция')
+												span Продукция
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li
+													a.dark-color.parent(href='company/index.html' title="Цветной прокат") 
+														span Цветной прокат
+														span.arrow
+															i.svg.svg_triangle_right
+													ul.dropdown
+														li.menu_back
+															a.dark-color(href='#' rel='nofollow')
+																i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
 																		defs
 																			style.
-																				.stcls-1 {
-																				fill: #222;
+																				.rcls-1 {
+																				fill: #fff;
 																				fill-rule: evenodd;
 																				}
-																		path.stcls-1(d='M15.644,15.644a1.164,1.164,0,0,1-1.646,0l-2.95-2.95a7.036,7.036,0,1,1,1.645-1.645L15.644,14A1.164,1.164,0,0,1,15.644,15.644ZM7,2a5,5,0,1,0,5,5A5,5,0,0,0,7,2Z')
-															span.close-block.inline-search-hide
-																span.svg.svg-close.close-icons
-											script.
-												var jsControl = new JCTitleSearch2({
-												//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
-												'AJAX_PAGE': '/',
-												'CONTAINER_ID': 'title-search_fixed',
-												'INPUT_ID': 'title-search-input_fixed',
-												'INPUT_ID_TMP': 'title-search-input_fixed',
-												'MIN_QUERY_LEN': 2
-												});
-									.contacts-on-main
-										.block-email-alt
-											.inner-table-block
-												.callback-wrapper
-													span.callback-block.animate-load.callback-link.new_callback-link.new_callback-phone
-														| По
-														| всем вопросам
-												.inner-table-block_email
-													// 'start_frame_cache_email-block2'
+																		path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+																| Назад
+														li
+															a.third-level.dark-color(href='company/index.html' title='Алюминиевый прокат') 
+																span Алюминиевый прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Бронзовый прокат')
+																span Бронзовый прокат
+														li
+															a.third-level.dark-color(href='company/index.html' title='Дюралюминиевый прокат') 
+																span Дюралюминиевый прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Латунный прокат')
+																span Латунный прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Медный прокат')
+																span Медный прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Титановый прокат')
+																span Титановый прокат
+
+
+
+
+												li
+													a.dark-color.parent(href='company/index.html' title="Нержавеющая сталь") 
+														span Нержавеющая сталь
+														span.arrow
+															i.svg.svg_triangle_right
+													ul.dropdown
+														li.menu_back
+															a.dark-color(href='#' rel='nofollow')
+																i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																		defs
+																			style.
+																				.rcls-1 {
+																				fill: #fff;
+																				fill-rule: evenodd;
+																				}
+																		path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+																| Назад
+														li
+															a.third-level.dark-color(href='company/index.html' title='Лист нержавеющий рифленый') 
+																span Лист нержавеющий рифленый
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая дробь')
+																span Нержавеющая дробь
+														li
+															a.third-level.dark-color(href='company/index.html' title='Нержавеющая капиллярная трубка') 
+																span  Нержавеющая капиллярная трубка
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая лента')
+																span Нержавеющая лента
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая плита')
+																span Нержавеющая плита
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая поковка')
+																span Нержавеющая поковка
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая полоса')
+																span Нержавеющая полоса
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая проволока')
+																span Нержавеющая проволока
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая просечно-вытяжная сетка')
+																span Нержавеющая просечно-вытяжная сетка
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сварочная лента')
+																span Нержавеющая сварочная лента
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сварочная проволока')
+																span Нержавеющая сварочная проволока
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сетка')
+																span Нержавеющая сетка
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая трубопроводная арматура')
+																span Нержавеющая трубопроводная арматура
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющие трапы')
+																span Нержавеющие трапы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющие трубы')
+																span Нержавеющие трубы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий квадрат')
+																span Нержавеющий квадрат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий круг')
+																span Нержавеющий круг
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий перфорированный лист')
+																span Нержавеющий перфорированный лист
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий пруток')
+																span Нержавеющий пруток
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий рулон')
+																span Нержавеющий рулон
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий трос')
+																span Нержавеющий трос
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий уголок')
+																span Нержавеющий уголок
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий швеллер')
+																span Нержавеющий швеллер
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий шестигранник')
+																span Нержавеющий шестигранник
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Рифленая нержавеющая сетка')
+																span Рифленая нержавеющая сетка
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Сварочный нержавеющий пруток')
+																span Сварочный нержавеющий пруток
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Трубы теплодеформированные из коррозионностойкой стали')
+																span Трубы теплодеформированные из коррозионностойкой стали
+
+
+
+
+
+
+
+
+
+												li
+													a.dark-color.parent(href='company/index.html' title="Специальные стали и сплавы") 
+														span Специальные стали и сплавы
+														span.arrow
+															i.svg.svg_triangle_right
+													ul.dropdown
+														li.menu_back
+															a.dark-color(href='#' rel='nofollow')
+																i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																		defs
+																			style.
+																				.rcls-1 {
+																				fill: #fff;
+																				fill-rule: evenodd;
+																				}
+																		path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+																| Назад
+														li
+															a.third-level.dark-color(href='company/index.html' title='Никелевые сплавы') 
+																span Никелевые сплавы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Прецизионные сплавы')
+																span Прецизионные сплавы
+														li
+															a.third-level.dark-color(href='company/index.html' title='Быстрорежущая сталь') 
+																span Быстрорежущая сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Инструментальная сталь')
+																span Инструментальная сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Жаропрочные стали')
+																span Жаропрочные стали
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Электротехническая сталь')
+																span Электротехническая сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Пищевая сталь')
+																span Пищевая сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Подшипниковая сталь')
+																span Подшипниковая сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Рессорно-пружинные стали')
+																span Рессорно-пружинные стали
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Конструкционная сталь')
+																span Конструкционная сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Штамповая сталь')
+																span Штамповая сталь
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Автоматная сталь')
+																span Автоматная сталь
+												li
+													a.dark-color.parent(href='company/index.html' title="Черный металлопрокат") 
+														span Черный металлопрокат
+														span.arrow
+															i.svg.svg_triangle_right
+													ul.dropdown
+														li.menu_back
+															a.dark-color(href='#' rel='nofollow')
+																i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																		defs
+																			style.
+																				.rcls-1 {
+																				fill: #fff;
+																				fill-rule: evenodd;
+																				}
+																		path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+																| Назад
+														li
+															a.third-level.dark-color(href='company/index.html' title='Трубный прокат') 
+																span Трубный прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Фасонный прокат')
+																span Фасонный прокат
+														li
+															a.third-level.dark-color(href='company/index.html' title='Сортовой прокат') 
+																span Сортовой прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Листовой прокат')
+																span Листовой прокат
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Сетка металлическая')
+																span Сетка металлическая
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Проволока')
+																span Проволока
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Стальной канат, трос')
+																span Стальной канат, трос
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Цепи металлические')
+																span Цепи металлические
+												li
+													a.dark-color.parent(href='company/index.html' title="Метизная продукция") 
+														span Метизная продукция
+														span.arrow
+															i.svg.svg_triangle_right
+													ul.dropdown
+														li.menu_back
+															a.dark-color(href='#' rel='nofollow')
+																i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																		defs
+																			style.
+																				.rcls-1 {
+																				fill: #fff;
+																				fill-rule: evenodd;
+																				}
+																		path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+																| Назад
+														li
+															a.third-level.dark-color(href='company/index.html' title='Крепеж высокопрочный') 
+																span Крепеж высокопрочный
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Стальные гайки')
+																span Стальные гайки
+														li
+															a.third-level.dark-color(href='company/index.html' title='Стальные оцинкованные шпильки') 
+																span Стальные оцинкованные шпильки
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Фундаментные болты')
+																span Фундаментные болты
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Анкерные плиты')
+																span Анкерные плиты
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Анкерные тяги')
+																span Анкерные тяги
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Анкерный фундаментный блок')
+																span Анкерный фундаментный блок
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Футеровочные болты (бронеболты)')
+																span Футеровочные болты (бронеболты)
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Водоотводная решетка')
+																span Водоотводная решетка
+												li
+													a.dark-color.parent(href='company/index.html' title="Трубопроводная арматура") 
+														span Трубопроводная арматура
+														span.arrow
+															i.svg.svg_triangle_right
+													ul.dropdown
+														li.menu_back
+															a.dark-color(href='#' rel='nofollow')
+																i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+																	svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																		defs
+																			style.
+																				.rcls-1 {
+																				fill: #fff;
+																				fill-rule: evenodd;
+																				}
+																		path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+																| Назад
+														li
+															a.third-level.dark-color(href='company/index.html' title='Отводы') 
+																span Отводы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Тройники')
+																span Тройники
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Переходы')
+																span Переходы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Обечайка')
+																span Обечайка
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Задвижки')
+																span Задвижки
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Фланцы')
+																span Фланцы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Затворы')
+																span Затворы
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Клапаны')
+																span Клапаны
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Вентили')
+																span Вентили
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Краны')
+																span Краны
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Заглушки')
+																span Заглушки
+														li
+															a.third-level.dark-color(href='company/index-2.html' title='Компенсаторы')
+																span Компенсаторы
+
+
+
+
+
+
+
+
+
+										li
+											a.dark-color.parent(href='company/index.html' title='Услуги')
+												span Услуги
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li.menu_title
+													a(href='company/index.html') Резка газом
+												li
+													a.dark-color(href='company/index-2.html' title='Резка газом')
+														span Резка газом
+												li
+													a.dark-color(href='company/value/index.html' title='Резка маятниковой пилой')
+														span Резка маятниковой пилой
+												li
+													a.dark-color(href='company/geo/index.html' title='Резка гильотиной')
+														span Резка гильотиной
+												li
+													a.dark-color(href='company/geo/index.html' title='Доставка')
+														span Доставка
+												li
+													a.dark-color(href='company/geo/index.html' title='Оцинкование')
+														span Оцинкование
+												li
+													a.dark-color(href='company/geo/index.html' title='Металлобработка')
+														span Металлобработка
+										li
+											a.dark-color.parent(href='company/index.html' title='Производство')
+												span Производство
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li.menu_title
+													a(href='company/index.html') Производство тканой сетки
+												li
+													a.dark-color(href='company/index-2.html' title='Производство тканой сетки')
+														span Производство тканой сетки
+												li
+													a.dark-color(href='company/value/index.html' title='Производство сетки')
+														span Производство сетки
+												li
+													a.dark-color(href='company/geo/index.html' title='Производство крепежных изделий')
+														span Производство крепежных изделий
+												li
+													a.dark-color(href='company/geo/index.html' title='Производство цепей')
+														span Производство цепей
+												li
+													a.dark-color(href='company/geo/index.html' title='Производство перфорированных листов')
+														span Производство перфорированных листов
+												li
+													a.dark-color(href='company/geo/index.html' title='Изготовление пружин')
+														span Изготовление пружин
+												li
+													a.dark-color(href='company/geo/index.html' title='Изготовление отливок')
+														span Изготовление отливок
+										li
+											a.dark-color.parent(href='info/index.html' title='Информация')
+												span Информация
+												span.arrow
+													i.svg.svg_triangle_right
+											ul.dropdown
+												li.menu_back
+													a.dark-color(href='#' rel='nofollow')
+														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
+																defs
+																	style.
+																		.rcls-1 {
+																		fill: #fff;
+																		fill-rule: evenodd;
+																		}
+																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
+														| Назад
+												li.menu_title
+													a(href='info/index.html') Информация
+												li
+													a.dark-color(href='info/sales/index.html' title='Акции')
+														span Акции
+												li
+													a.dark-color(href='info/news/index.html' title='Новости')
+														span Новости
+										li
+											a.dark-color(href='company/licenses/index.html' title='Сертификаты')
+												span Сертификаты
+										li
+											a.dark-color(href='contacts/index.html' title='Контакты')
+												span Контакты
+								.menu.middle
+									ul
+										li.counters
+											a.dark-color.ready(href='cart/index.html')
+												i.svg.inline.svg-inline-basket(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16')
+														defs
+															style.
+																.cls-1 {
+																fill: #222;
+																fill-rule: evenodd;
+																}
+														path.cls-1(data-name='Ellipse 2 copy' d='M1500,66.344l-0.63.656h-10.62l-0.75-.781L1486.85,59H1485a1,1,0,1,1,0-2h2c0.26,0,.52.006,0.52,0.006a1.048,1.048,0,0,1,1.15.763L1489.16,60h11.34l0.5,0.5V62ZM1489.37,62l0.41,3h8.5l0.72-3h-9.63Zm1.13,6a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,1490.5,68Zm-0.5,3h1V70h-1v1Zm7.5-3a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,1497.5,68Zm-0.5,3h1V70h-1v1Z' transform='translate(-1484 -57)')
+												span
+													| Корзина
+													span.count.empted 0
+								// 'start_frame_cache_mobil-contacts-allphones-block1'
+								.menu.middle.phones
+									ul
+										li
+											a.dark-color(href='tel:+73510000000')
+												i.svg.inline.svg-inline-phone(aria-hidden='true')
+													svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
+														defs
+															style.
+																.pcls-1 {
+																fill: #222;
+																fill-rule: evenodd;
+																}
+														path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
+												span +7 (351) 000-00-00
+								// 'end_frame_cache_mobil-contacts-allphones-block1'
+								.contacts
+									.title
+									// 'start_frame_cache_address-block2'
+									.address
+										i.svg.inline.svg-inline-address(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
+												defs
+													style.
+														.cls-1 {
+														fill-rule: evenodd;
+														}
+												path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
+										div
+											| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
+									// 'end_frame_cache_address-block2'
+									// 'start_frame_cache_email-block3'
+									.email
+										i.svg.inline.svg-inline-email(aria-hidden='true')
+											svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
+												defs
+													style.
+														.ecls-1 {
+														fill: #222;
+														fill-rule: evenodd;
+														}
+												path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
+										div
+											a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
+									// 'end_frame_cache_email-block3'
+								.social-icons
+									// noindex
+									ul
+									// /noindex
+				.body.index.hover_blink
+					.body_media
+					.main.banner-auto(role='main')
+						.container
+							div
+								block pagecontent
+			+sSubscribe
+			footer#footer
+				// 'start_frame_cache_footer-subscribe'
+				// 'end_frame_cache_footer-subscribe'
+				.container
+					.row.bottom-middle
+						.maxwidth-theme
+							.col-md-8
+								.row
+									.col-md-3.col-sm-3
+										.bottom-menu
+											.items
+												.item-link.accordion-close.item-link(data-parent='#bottom1' data-target='#bottom1')
+													.item
+														.title
+															a(href='company/index.html') Компания
+													span
+														i.fa.fa-angle-down
+												#bottom1.wrap.panel-collapse.wrap_compact_mobile
+													.item-link.item-link
+														.item
+															.title
+																a(href='company/index-2.html') О компании
+													.item-link.item-link
+														.item
+															.title
+																a(href='company/value/index.html') Ценности компании
+													.item-link.item-link
+														.item
+															.title
+																a(href='company/geo/index.html') География присутствия
+													.item-link.item-link
+														.item
+															.title
+																a(href='company/licenses/index.html') Сертификаты
+													.item-link.item-link
+														.item
+															.title
+																a(href='company/partners/index.html') Сотрудничество
+													.item-link.item-link
+														.item
+															.title
+																a(href='company/requisites/index.html') Реквизиты
+												#bottom1.wrap.panel-collapse.wrap_compact_mobile
+													.item-link.accordion-close.item-link(data-parent='#bottom1' data-target='#bottom1')
+														.item
+															.title
+																a(href='calculator/index.html') Калькулятор металла
+									.col-md-3.col-sm-3
+										.bottom-menu
+											.items
+												.item-link.accordion-close.item-link(data-parent='#bottom2' data-target='#bottom2')
+													.item
+														.title
+															a(href='product/index.html') Каталог
+													span
+														i.fa.fa-angle-down
+												#bottom2.wrap.panel-collapse.wrap_compact_mobile
+													.item-link.item-link
+														.item
+															.title
+																a(href='product/tsvetnoy-prokat/index.html') Цветной прокат
+													.item-link.item-link
+														.item
+															.title
+																a(href='product/nerzhaveyushchaya-stal/index.html') Нержавеющая сталь
+													.item-link.item-link
+														.item
+															.title
+																a(href='product/spetsialnye-stali-i-splavy/index.html') Специальные стали и сплавы
+													.item-link.item-link
+														.item
+															.title
+																a(href='product/chernyy-metalloprokat/index.html') Черный металлопрокат
+													.item-link.item-link
+														.item
+															.title
+																a(href='product/metiznaya-produktsiya/index.html') Метизная продукция
+													.item-link.item-link
+														.item
+															.title
+																a(href='product/truboprovodnaya-armatura/index.html') Трубопроводная арматура
+									.col-md-3.col-sm-3
+										.bottom-menu
+											.items
+												.item-link.accordion-close.item-link(data-parent='#bottom3' data-target='#bottom3')
+													.item
+														.title
+															a(href='services/index.html') Услуги
+													span
+														i.fa.fa-angle-down
+												#bottom3.wrap.panel-collapse.wrap_compact_mobile
+													.item-link.item-link
+														.item
+															.title
+																a(href='services/rezka-gazom/index.html') Резка газом
+													.item-link.item-link
+														.item
+															.title
+																a(href='services/rezka-mayatnikovoy-piloy/index.html') Резка маятниковой пилой
+													.item-link.item-link
+														.item
+															.title
+																a(href='services/rezka-gilotinoy/index.html') Резка гильотиной
+													.item-link.item-link
+														.item
+															.title
+																a(href='services/dostavka/index.html') Доставка
+													.item-link.item-link
+														.item
+															.title
+																a(href='services/otsinkovanie/index.html') Оцинкование
+													.item-link.item-link
+														.item
+															.title
+																a(href='services/metallobrabotka/index.html') Металлобработка
+									.col-md-3.col-sm-3
+							.col-md-4.contact-block
+								.row
+									.col-md-9.col-md-offset-2
+										span.white_middle_text
+											| Наши контакты
+											br
+											br
+										.info
+											.row
+												.col-md-12.col-sm-4
+													.blocks.phones
+														.phone
+															i.svg.inline.svg-inline-phone.colored(aria-hidden='true')
+																svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
+																	defs
+																		style.
+																			.pcls-1 {
+																			fill: #222;
+																			fill-rule: evenodd;
+																			}
+																	path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
+															a(href='tel:+73510000000') +7 (351) 000-00-00
+														.schedule
+															| Ежедневно с 09:00 до 18:00
+												.col-md-12.col-sm-4
+													// 'start_frame_cache_address-block3'
+													.address.blocks
+														i.svg.inline.svg-inline-address(aria-hidden='true')
+															svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
+																defs
+																	style.
+																		.cls-1 {
+																		fill-rule: evenodd;
+																		}
+																path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
+														div
+															| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
+													// 'end_frame_cache_address-block3'
+												.col-md-12.col-sm-4
+													// 'start_frame_cache_email-block4'
 													.email.blocks
 														i.svg.inline.svg-inline-email(aria-hidden='true')
 															svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
@@ -378,980 +1286,75 @@ html(xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru')
 																path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
 														div
 															a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
-													// 'end_frame_cache_email-block2'
-										.block-phone-alt
-											.inner-table-block
-												.callback-wrapper.new_callback-wrapper
-													.schedule
-														| Ежедневно с 09:00 до 18:00
-												.phone.big.alt-phone
-													span(style='display: none;')
-													a(href='tel:')
-										.block-phone-region
-											.inner-table-block
-												.callback-wrapper.new_callback-wrapper
-													span.callback-block.animate-load.callback-link.new_callback-link
-														| Звонок бесплатный по
-														| РФ
-												.phone.big.alt-phone
-													a(href='tel:+73510000000') +7 (351) 000-00-00
-		#mobileheader.visible-xs.visible-sm
-			.mobileheader-v1
-				.burger.pull-left
-					i.svg.inline.svg-inline-burger.dark(aria-hidden='true')
-						svg(xmlns='http://www.w3.org/2000/svg' width='18' height='16' viewBox='0 0 18 16')
-							defs
-								style.
-									.cls-1 {
-									fill: #fff;
-									fill-rule: evenodd;
-									}
-							path.cls-1(data-name='Rounded Rectangle 81 copy 2' d='M330,114h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,114Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,121Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,128Z' transform='translate(-329 -114)')
-					i.svg.inline.svg-inline-close.dark(aria-hidden='true')
-						svg(id='Close.svg' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
-							defs
-								style.
-									.cls-1 {
-									fill: #222;
-									fill-rule: evenodd;
-									}
-							path#Rounded_Rectangle_114_copy_3.cls-1(data-name='Rounded Rectangle 114 copy 3' d='M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z' transform='translate(-325 -130)')
-				.logo-block.pull-left
-					.logo
-						a(href='index.html')
-							img(src='upload/CAllcorp2/4fa/4fadfb9e16773ff28336b0978a76ae5f.png' alt='Cайт производства' title='Cайт производства')
-				.right-icons.pull-right
-					.pull-right
-						.wrap_icon.wrap_basket
-							// 'start_frame_cache_basket-link2'
-							// noindex
-							a.basket-link.HEADER.big(rel='nofollow' title='Корзина пуста' href='cart/index.html')
-								span.js-basket-block
-									i.svg.inline.big.svg-inline-basket(aria-hidden='true')
-										svg(xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21')
-											defs
-												style.
-													.cls-1 {
-													fill: #222;
-													fill-rule: evenodd;
-													}
-											path.cls-1(data-name='Ellipse 2 copy 6' d='M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z' transform='translate(-1486 -111)')
-									span.count 0
-							// /noindex
-							// 'end_frame_cache_basket-link2'
-					.pull-right
-						.wrap_icon
-							button.inline-search-show.twosmallfont(title='Поиск')
-								i.svg.inline.svg-inline-search(aria-hidden='true')
-									svg(xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21')
-										defs
-											style.
-												.cls-1 {
-												fill: #222;
-												fill-rule: evenodd;
-												}
-										path.cls-1(data-name='Rounded Rectangle 106' d='M1590.71,131.709a1,1,0,0,1-1.42,0l-4.68-4.677a9.069,9.069,0,1,1,1.42-1.427l4.68,4.678A1,1,0,0,1,1590.71,131.709ZM1579,113a7,7,0,1,0,7,7A7,7,0,0,0,1579,113Z' transform='translate(-1570 -111)')
-					.pull-right
-						.wrap_icon.wrap_phones
-							a(href='tel:+73510000000')
-								i.svg.inline.svg-inline-phone(aria-hidden='true')
-									svg(width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg')
-										path(fill-rule='evenodd' clip-rule='evenodd' d='M18.9562 15.97L18.9893 16.3282C19.0225 16.688 18.9784 17.0504 18.8603 17.3911C18.6223 18.086 18.2725 18.7374 17.8248 19.3198L17.7228 19.4524L17.6003 19.5662C16.8841 20.2314 15.9875 20.6686 15.0247 20.8243C14.0374 21.0619 13.0068 21.0586 12.0201 20.814L11.9327 20.7924L11.8476 20.763C10.712 20.3703 9.65189 19.7871 8.71296 19.0385C8.03805 18.582 7.41051 18.0593 6.83973 17.4779L6.81497 17.4527L6.79112 17.4267C4.93379 15.3963 3.51439 13.0063 2.62127 10.4052L2.6087 10.3686L2.59756 10.3315C2.36555 9.5598 2.21268 8.76667 2.14121 7.9643C1.94289 6.79241 1.95348 5.59444 2.17289 4.42568L2.19092 4.32964L2.21822 4.23581C2.50215 3.26018 3.0258 2.37193 3.7404 1.65124C4.37452 0.908181 5.21642 0.370416 6.15867 0.107283L6.31009 0.0649959L6.46626 0.0468886C7.19658 -0.0377903 7.93564 -0.00763772 8.65659 0.136237C9.00082 0.203673 9.32799 0.34095 9.61768 0.540011L9.90227 0.735566L10.1048 1.01522C10.4774 1.52971 10.7173 2.12711 10.8045 2.75455C10.8555 2.95106 10.9033 3.13929 10.9499 3.32228C11.0504 3.71718 11.1446 4.08764 11.2499 4.46408C11.5034 5.03517 11.6255 5.65688 11.6059 6.28327L11.5984 6.52137L11.5353 6.75107C11.3812 7.31112 11.0546 7.68722 10.8349 7.8966C10.6059 8.11479 10.3642 8.2737 10.18 8.38262C9.89673 8.55014 9.57964 8.69619 9.32537 8.8079C9.74253 10.2012 10.5059 11.4681 11.5455 12.4901C11.7801 12.3252 12.0949 12.1097 12.412 11.941C12.6018 11.8401 12.8614 11.7177 13.1641 11.6357C13.4565 11.5565 13.9301 11.4761 14.4706 11.6169L14.6882 11.6736L14.8878 11.7772C15.4419 12.0649 15.9251 12.4708 16.3035 12.9654C16.5807 13.236 16.856 13.4937 17.1476 13.7666C17.2974 13.9068 17.4515 14.0511 17.6124 14.2032C18.118 14.5805 18.5261 15.0751 18.8003 15.6458L18.9562 15.97ZM16.3372 15.7502C16.6216 15.9408 16.8496 16.2039 16.9977 16.5121C17.0048 16.5888 16.9952 16.6661 16.9697 16.7388C16.8021 17.2295 16.5553 17.6895 16.2391 18.1009C15.795 18.5134 15.234 18.7788 14.6329 18.8608C13.9345 19.0423 13.2016 19.0464 12.5012 18.8728C11.5558 18.5459 10.675 18.0561 9.8991 17.4258C9.30961 17.0338 8.76259 16.5817 8.26682 16.0767C6.59456 14.2487 5.31682 12.0971 4.51287 9.75567C4.31227 9.08842 4.18279 8.40192 4.12658 7.70756C3.95389 6.74387 3.95792 5.75691 4.13855 4.79468C4.33628 4.11526 4.70731 3.49868 5.21539 3.00521C5.59617 2.53588 6.11383 2.19633 6.69661 2.03358C7.22119 1.97276 7.75206 1.99466 8.26981 2.09849C8.34699 2.11328 8.42029 2.14388 8.48501 2.18836C8.68416 2.46334 8.80487 2.78705 8.83429 3.12504C8.89113 3.34235 8.94665 3.56048 9.00218 3.77864C9.12067 4.24418 9.2392 4.70987 9.37072 5.16815C9.5371 5.49352 9.61831 5.85557 9.60687 6.22066C9.51714 6.54689 8.89276 6.81665 8.28746 7.07816C7.71809 7.32415 7.16561 7.56284 7.0909 7.83438C7.07157 8.17578 7.12971 8.51712 7.26102 8.83297C7.76313 10.9079 8.87896 12.7843 10.4636 14.2184C10.6814 14.4902 10.9569 14.7105 11.2702 14.8634C11.5497 14.9366 12.0388 14.5907 12.5428 14.2342C13.0783 13.8555 13.6307 13.4648 13.9663 13.5523C14.295 13.7229 14.5762 13.9719 14.785 14.2773C15.1184 14.6066 15.4631 14.9294 15.808 15.2523C15.9849 15.418 16.1618 15.5836 16.3372 15.7502Z' fill='#222222')
-			#mobilemenu.leftside
-				.mobilemenu-v1.scroller.compact_menu
-					.wrap
-						// 'start_frame_cache_mobile-region-block1'
-						// noindex
-						.menu.middle.mobile_regions
-							ul
-								li
-									a.dark-color.parent(rel='nofollow' href='#')
-										i.svg.inline.svg-inline-region
-											i.svg.inline.svg-inline-(aria-hidden='true')
-												svg(xmlns='http://www.w3.org/2000/svg' width='10' height='12.031' viewBox='0 0 10 12.031')
-													defs
-														style.
-															.regcls-1 {
-															fill: #333;
-															fill-rule: evenodd;
-															}
-													path.regcls-1(d='M547,200h-0.976l-0.61.61L544,202.024l-1.414-1.414-0.61-.61H541a2,2,0,0,1-2-2v-8h10v8A2,2,0,0,1,547,200Zm0-3v-5h-6v6h1.8L544,199.2,545.2,198H547v-1Z' transform='translate(-539 -190)')
-										span Челябинск
-										span.arrow
-											i.svg.svg_triangle_right
-									ul.dropdown
-										li.menu_back
-											a.dark-color(href='#' rel='nofollow')
-												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-														defs
-															style.
-																.rcls-1 {
-																fill: #fff;
-																fill-rule: evenodd;
-																}
-														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-												|  Назад
-										li.menu_title
-											span.title Города
-										li
-											a.dark-color.city_item(rel='nofollow' href='index.html' data-id='34') Челябинск
-										li
-											a.dark-color.city_item(rel='nofollow' href='index.html' data-id='35') Екатеринбург
-						// /noindex
-						// 'end_frame_cache_mobile-region-block1'
-						.menu.middle
-							ul
-								li
-									a.dark-color(href='cabinet/index.html')
-										i.svg.inline.svg-inline-cabinet(aria-hidden='true')
-											svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
-												defs
-													style.
-														.cls-1 {
-														fill: #222;
-														fill-rule: evenodd;
-														}
-												path.cls-1(d='M13.88,16A5.616,5.616,0,0,0,3.128,16h-2.1a7.66,7.66,0,0,1,14.954,0h-2.1ZM8.5,0A4.5,4.5,0,1,1,4,4.5,4.5,4.5,0,0,1,8.5,0Zm0,2A2.5,2.5,0,1,1,6,4.5,2.5,2.5,0,0,1,8.5,2Z')
-										span Мой кабинет
-						.menu.top.expanded-menu
-							ul.top
-								li.menu_title
-									a.dark-color.expanded-title(href='#')
-										| Благонадежность
-								li.menu_title
-									a.dark-color.expanded-title(href='#')
-										| Доставка
-						.menu.top
-							ul.top
-								li
-									a.dark-color.parent(href='company/index.html' title='О Компании')
-										span О Компании
-										span.arrow
-											i.svg.svg_triangle_right
-									ul.dropdown
-										li.menu_back
-											a.dark-color(href='#' rel='nofollow')
-												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-														defs
-															style.
-																.rcls-1 {
-																fill: #fff;
-																fill-rule: evenodd;
-																}
-														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-												| Назад
-										li.menu_title
-											a(href='company/index.html') О Компании
-										li
-											a.dark-color(href='company/index-2.html' title='О компании')
-												span О компании
-										li
-											a.dark-color(href='company/value/index.html' title='Ценности компании')
-												span Ценности компании
-										li
-											a.dark-color(href='company/geo/index.html' title='География присутствия')
-												span География присутствия
-										li
-											a.dark-color(href='company/licenses/index.html' title='Сертификаты')
-												span Сертификаты
-										li
-											a.dark-color(href='company/partners/index.html' title='Сотрудничество')
-												span Сотрудничество
-										li
-											a.dark-color(href='company/requisites/index.html' title='Реквизиты')
-												span Реквизиты
-								li
-									a.dark-color.parent(href='company/index.html' title='Продукция')
-										span Продукция
-										span.arrow
-											i.svg.svg_triangle_right
-									ul.dropdown
-										li.menu_back
-											a.dark-color(href='#' rel='nofollow')
-												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-														defs
-															style.
-																.rcls-1 {
-																fill: #fff;
-																fill-rule: evenodd;
-																}
-														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-												| Назад
-										li
-											a.dark-color.parent(href='company/index.html' title="Цветной прокат") 
-												span Цветной прокат
-												span.arrow
-													i.svg.svg_triangle_right
-											ul.dropdown
-												li.menu_back
-													a.dark-color(href='#' rel='nofollow')
-														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-																defs
-																	style.
-																		.rcls-1 {
-																		fill: #fff;
-																		fill-rule: evenodd;
-																		}
-																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-														| Назад
-												li
-													a.third-level.dark-color(href='company/index.html' title='Алюминиевый прокат') 
-														span Алюминиевый прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Бронзовый прокат')
-														span Бронзовый прокат
-												li
-													a.third-level.dark-color(href='company/index.html' title='Дюралюминиевый прокат') 
-														span Дюралюминиевый прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Латунный прокат')
-														span Латунный прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Медный прокат')
-														span Медный прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Титановый прокат')
-														span Титановый прокат
-
-
-
-
-										li
-											a.dark-color.parent(href='company/index.html' title="Нержавеющая сталь") 
-												span Нержавеющая сталь
-												span.arrow
-													i.svg.svg_triangle_right
-											ul.dropdown
-												li.menu_back
-													a.dark-color(href='#' rel='nofollow')
-														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-																defs
-																	style.
-																		.rcls-1 {
-																		fill: #fff;
-																		fill-rule: evenodd;
-																		}
-																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-														| Назад
-												li
-													a.third-level.dark-color(href='company/index.html' title='Лист нержавеющий рифленый') 
-														span Лист нержавеющий рифленый
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая дробь')
-														span Нержавеющая дробь
-												li
-													a.third-level.dark-color(href='company/index.html' title='Нержавеющая капиллярная трубка') 
-														span  Нержавеющая капиллярная трубка
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая лента')
-														span Нержавеющая лента
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая плита')
-														span Нержавеющая плита
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая поковка')
-														span Нержавеющая поковка
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая полоса')
-														span Нержавеющая полоса
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая проволока')
-														span Нержавеющая проволока
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая просечно-вытяжная сетка')
-														span Нержавеющая просечно-вытяжная сетка
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сварочная лента')
-														span Нержавеющая сварочная лента
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сварочная проволока')
-														span Нержавеющая сварочная проволока
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая сетка')
-														span Нержавеющая сетка
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющая трубопроводная арматура')
-														span Нержавеющая трубопроводная арматура
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющие трапы')
-														span Нержавеющие трапы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющие трубы')
-														span Нержавеющие трубы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий квадрат')
-														span Нержавеющий квадрат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий круг')
-														span Нержавеющий круг
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий перфорированный лист')
-														span Нержавеющий перфорированный лист
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий пруток')
-														span Нержавеющий пруток
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий рулон')
-														span Нержавеющий рулон
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий трос')
-														span Нержавеющий трос
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий уголок')
-														span Нержавеющий уголок
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий швеллер')
-														span Нержавеющий швеллер
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Нержавеющий шестигранник')
-														span Нержавеющий шестигранник
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Рифленая нержавеющая сетка')
-														span Рифленая нержавеющая сетка
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Сварочный нержавеющий пруток')
-														span Сварочный нержавеющий пруток
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Трубы теплодеформированные из коррозионностойкой стали')
-														span Трубы теплодеформированные из коррозионностойкой стали
-
-
-
-
-
-
-
-
-
-										li
-											a.dark-color.parent(href='company/index.html' title="Специальные стали и сплавы") 
-												span Специальные стали и сплавы
-												span.arrow
-													i.svg.svg_triangle_right
-											ul.dropdown
-												li.menu_back
-													a.dark-color(href='#' rel='nofollow')
-														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-																defs
-																	style.
-																		.rcls-1 {
-																		fill: #fff;
-																		fill-rule: evenodd;
-																		}
-																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-														| Назад
-												li
-													a.third-level.dark-color(href='company/index.html' title='Никелевые сплавы') 
-														span Никелевые сплавы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Прецизионные сплавы')
-														span Прецизионные сплавы
-												li
-													a.third-level.dark-color(href='company/index.html' title='Быстрорежущая сталь') 
-														span Быстрорежущая сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Инструментальная сталь')
-														span Инструментальная сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Жаропрочные стали')
-														span Жаропрочные стали
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Электротехническая сталь')
-														span Электротехническая сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Пищевая сталь')
-														span Пищевая сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Подшипниковая сталь')
-														span Подшипниковая сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Рессорно-пружинные стали')
-														span Рессорно-пружинные стали
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Конструкционная сталь')
-														span Конструкционная сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Штамповая сталь')
-														span Штамповая сталь
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Автоматная сталь')
-														span Автоматная сталь
-										li
-											a.dark-color.parent(href='company/index.html' title="Черный металлопрокат") 
-												span Черный металлопрокат
-												span.arrow
-													i.svg.svg_triangle_right
-											ul.dropdown
-												li.menu_back
-													a.dark-color(href='#' rel='nofollow')
-														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-																defs
-																	style.
-																		.rcls-1 {
-																		fill: #fff;
-																		fill-rule: evenodd;
-																		}
-																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-														| Назад
-												li
-													a.third-level.dark-color(href='company/index.html' title='Трубный прокат') 
-														span Трубный прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Фасонный прокат')
-														span Фасонный прокат
-												li
-													a.third-level.dark-color(href='company/index.html' title='Сортовой прокат') 
-														span Сортовой прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Листовой прокат')
-														span Листовой прокат
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Сетка металлическая')
-														span Сетка металлическая
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Проволока')
-														span Проволока
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Стальной канат, трос')
-														span Стальной канат, трос
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Цепи металлические')
-														span Цепи металлические
-										li
-											a.dark-color.parent(href='company/index.html' title="Метизная продукция") 
-												span Метизная продукция
-												span.arrow
-													i.svg.svg_triangle_right
-											ul.dropdown
-												li.menu_back
-													a.dark-color(href='#' rel='nofollow')
-														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-																defs
-																	style.
-																		.rcls-1 {
-																		fill: #fff;
-																		fill-rule: evenodd;
-																		}
-																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-														| Назад
-												li
-													a.third-level.dark-color(href='company/index.html' title='Крепеж высокопрочный') 
-														span Крепеж высокопрочный
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Стальные гайки')
-														span Стальные гайки
-												li
-													a.third-level.dark-color(href='company/index.html' title='Стальные оцинкованные шпильки') 
-														span Стальные оцинкованные шпильки
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Фундаментные болты')
-														span Фундаментные болты
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Анкерные плиты')
-														span Анкерные плиты
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Анкерные тяги')
-														span Анкерные тяги
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Анкерный фундаментный блок')
-														span Анкерный фундаментный блок
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Футеровочные болты (бронеболты)')
-														span Футеровочные болты (бронеболты)
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Водоотводная решетка')
-														span Водоотводная решетка
-										li
-											a.dark-color.parent(href='company/index.html' title="Трубопроводная арматура") 
-												span Трубопроводная арматура
-												span.arrow
-													i.svg.svg_triangle_right
-											ul.dropdown
-												li.menu_back
-													a.dark-color(href='#' rel='nofollow')
-														i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-																defs
-																	style.
-																		.rcls-1 {
-																		fill: #fff;
-																		fill-rule: evenodd;
-																		}
-																path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-														| Назад
-												li
-													a.third-level.dark-color(href='company/index.html' title='Отводы') 
-														span Отводы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Тройники')
-														span Тройники
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Переходы')
-														span Переходы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Обечайка')
-														span Обечайка
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Задвижки')
-														span Задвижки
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Фланцы')
-														span Фланцы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Затворы')
-														span Затворы
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Клапаны')
-														span Клапаны
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Вентили')
-														span Вентили
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Краны')
-														span Краны
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Заглушки')
-														span Заглушки
-												li
-													a.third-level.dark-color(href='company/index-2.html' title='Компенсаторы')
-														span Компенсаторы
-
-
-
-
-
-
-
-
-
-								li
-									a.dark-color.parent(href='company/index.html' title='Услуги')
-										span Услуги
-										span.arrow
-											i.svg.svg_triangle_right
-									ul.dropdown
-										li.menu_back
-											a.dark-color(href='#' rel='nofollow')
-												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-														defs
-															style.
-																.rcls-1 {
-																fill: #fff;
-																fill-rule: evenodd;
-																}
-														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-												| Назад
-										li.menu_title
-											a(href='company/index.html') Резка газом
-										li
-											a.dark-color(href='company/index-2.html' title='Резка газом')
-												span Резка газом
-										li
-											a.dark-color(href='company/value/index.html' title='Резка маятниковой пилой')
-												span Резка маятниковой пилой
-										li
-											a.dark-color(href='company/geo/index.html' title='Резка гильотиной')
-												span Резка гильотиной
-										li
-											a.dark-color(href='company/geo/index.html' title='Доставка')
-												span Доставка
-										li
-											a.dark-color(href='company/geo/index.html' title='Оцинкование')
-												span Оцинкование
-										li
-											a.dark-color(href='company/geo/index.html' title='Металлобработка')
-												span Металлобработка
-								li
-									a.dark-color.parent(href='company/index.html' title='Производство')
-										span Производство
-										span.arrow
-											i.svg.svg_triangle_right
-									ul.dropdown
-										li.menu_back
-											a.dark-color(href='#' rel='nofollow')
-												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-														defs
-															style.
-																.rcls-1 {
-																fill: #fff;
-																fill-rule: evenodd;
-																}
-														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-												| Назад
-										li.menu_title
-											a(href='company/index.html') Производство тканой сетки
-										li
-											a.dark-color(href='company/index-2.html' title='Производство тканой сетки')
-												span Производство тканой сетки
-										li
-											a.dark-color(href='company/value/index.html' title='Производство сетки')
-												span Производство сетки
-										li
-											a.dark-color(href='company/geo/index.html' title='Производство крепежных изделий')
-												span Производство крепежных изделий
-										li
-											a.dark-color(href='company/geo/index.html' title='Производство цепей')
-												span Производство цепей
-										li
-											a.dark-color(href='company/geo/index.html' title='Производство перфорированных листов')
-												span Производство перфорированных листов
-										li
-											a.dark-color(href='company/geo/index.html' title='Изготовление пружин')
-												span Изготовление пружин
-										li
-											a.dark-color(href='company/geo/index.html' title='Изготовление отливок')
-												span Изготовление отливок
-								li
-									a.dark-color.parent(href='info/index.html' title='Информация')
-										span Информация
-										span.arrow
-											i.svg.svg_triangle_right
-									ul.dropdown
-										li.menu_back
-											a.dark-color(href='#' rel='nofollow')
-												i.svg.inline.svg-inline-arrow-back(aria-hidden='true')
-													svg(xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12')
-														defs
-															style.
-																.rcls-1 {
-																fill: #fff;
-																fill-rule: evenodd;
-																}
-														path.rcls-1(data-name='Rounded Rectangle 3 copy' d='M253.052,4840.24a0.747,0.747,0,0,0,.026.13c0,0.01.014,0.02,0.019,0.03a0.967,0.967,0,0,0,.2.3l4.992,5a1,1,0,0,0,1.414-1.42l-3.287-3.29H269a1.005,1.005,0,0,0,0-2.01H256.416l3.287-3.29a1.006,1.006,0,0,0,0-1.42,0.983,0.983,0,0,0-1.414,0l-4.992,4.99a1.01,1.01,0,0,0-.2.31c0,0.01-.014.01-0.019,0.02a1.147,1.147,0,0,0-.026.14A0.651,0.651,0,0,0,253.052,4840.24Z' transform='translate(-253 -4834)')
-												| Назад
-										li.menu_title
-											a(href='info/index.html') Информация
-										li
-											a.dark-color(href='info/sales/index.html' title='Акции')
-												span Акции
-										li
-											a.dark-color(href='info/news/index.html' title='Новости')
-												span Новости
-								li
-									a.dark-color(href='company/licenses/index.html' title='Сертификаты')
-										span Сертификаты
-								li
-									a.dark-color(href='contacts/index.html' title='Контакты')
-										span Контакты
-						.menu.middle
-							ul
-								li.counters
-									a.dark-color.ready(href='cart/index.html')
-										i.svg.inline.svg-inline-basket(aria-hidden='true')
-											svg(xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16')
-												defs
-													style.
-														.cls-1 {
-														fill: #222;
-														fill-rule: evenodd;
-														}
-												path.cls-1(data-name='Ellipse 2 copy' d='M1500,66.344l-0.63.656h-10.62l-0.75-.781L1486.85,59H1485a1,1,0,1,1,0-2h2c0.26,0,.52.006,0.52,0.006a1.048,1.048,0,0,1,1.15.763L1489.16,60h11.34l0.5,0.5V62ZM1489.37,62l0.41,3h8.5l0.72-3h-9.63Zm1.13,6a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,1490.5,68Zm-0.5,3h1V70h-1v1Zm7.5-3a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,1497.5,68Zm-0.5,3h1V70h-1v1Z' transform='translate(-1484 -57)')
-										span
-											| Корзина
-											span.count.empted 0
-						// 'start_frame_cache_mobil-contacts-allphones-block1'
-						.menu.middle.phones
-							ul
-								li
-									a.dark-color(href='tel:+73510000000')
-										i.svg.inline.svg-inline-phone(aria-hidden='true')
-											svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
-												defs
-													style.
-														.pcls-1 {
-														fill: #222;
-														fill-rule: evenodd;
-														}
-												path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
-										span +7 (351) 000-00-00
-						// 'end_frame_cache_mobil-contacts-allphones-block1'
-						.contacts
-							.title
-							// 'start_frame_cache_address-block2'
-							.address
-								i.svg.inline.svg-inline-address(aria-hidden='true')
-									svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
-										defs
-											style.
-												.cls-1 {
-												fill-rule: evenodd;
-												}
-										path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
-								div
-									| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
-							// 'end_frame_cache_address-block2'
-							// 'start_frame_cache_email-block3'
-							.email
-								i.svg.inline.svg-inline-email(aria-hidden='true')
-									svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
-										defs
-											style.
-												.ecls-1 {
-												fill: #222;
-												fill-rule: evenodd;
-												}
-										path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
-								div
-									a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
-							// 'end_frame_cache_email-block3'
-						.social-icons
-							// noindex
-							ul
-							// /noindex
-		.body.index.hover_blink
-			.body_media
-			.main.banner-auto(role='main')
-				.container
-					div
-						block pagecontent
-		+sSubscribe
-		footer#footer
-			// 'start_frame_cache_footer-subscribe'
-			// 'end_frame_cache_footer-subscribe'
-			.container
-				.row.bottom-middle
-					.maxwidth-theme
-						.col-md-8
-							.row
-								.col-md-3.col-sm-3
-									.bottom-menu
-										.items
-											.item-link.accordion-close.item-link(data-parent='#bottom1' data-target='#bottom1')
-												.item
-													.title
-														a(href='company/index.html') Компания
-												span
-													i.fa.fa-angle-down
-											#bottom1.wrap.panel-collapse.wrap_compact_mobile
-												.item-link.item-link
-													.item
-														.title
-															a(href='company/index-2.html') О компании
-												.item-link.item-link
-													.item
-														.title
-															a(href='company/value/index.html') Ценности компании
-												.item-link.item-link
-													.item
-														.title
-															a(href='company/geo/index.html') География присутствия
-												.item-link.item-link
-													.item
-														.title
-															a(href='company/licenses/index.html') Сертификаты
-												.item-link.item-link
-													.item
-														.title
-															a(href='company/partners/index.html') Сотрудничество
-												.item-link.item-link
-													.item
-														.title
-															a(href='company/requisites/index.html') Реквизиты
-											#bottom1.wrap.panel-collapse.wrap_compact_mobile
-												.item-link.accordion-close.item-link(data-parent='#bottom1' data-target='#bottom1')
-													.item
-														.title
-															a(href='calculator/index.html') Калькулятор металла
-								.col-md-3.col-sm-3
-									.bottom-menu
-										.items
-											.item-link.accordion-close.item-link(data-parent='#bottom2' data-target='#bottom2')
-												.item
-													.title
-														a(href='product/index.html') Каталог
-												span
-													i.fa.fa-angle-down
-											#bottom2.wrap.panel-collapse.wrap_compact_mobile
-												.item-link.item-link
-													.item
-														.title
-															a(href='product/tsvetnoy-prokat/index.html') Цветной прокат
-												.item-link.item-link
-													.item
-														.title
-															a(href='product/nerzhaveyushchaya-stal/index.html') Нержавеющая сталь
-												.item-link.item-link
-													.item
-														.title
-															a(href='product/spetsialnye-stali-i-splavy/index.html') Специальные стали и сплавы
-												.item-link.item-link
-													.item
-														.title
-															a(href='product/chernyy-metalloprokat/index.html') Черный металлопрокат
-												.item-link.item-link
-													.item
-														.title
-															a(href='product/metiznaya-produktsiya/index.html') Метизная продукция
-												.item-link.item-link
-													.item
-														.title
-															a(href='product/truboprovodnaya-armatura/index.html') Трубопроводная арматура
-								.col-md-3.col-sm-3
-									.bottom-menu
-										.items
-											.item-link.accordion-close.item-link(data-parent='#bottom3' data-target='#bottom3')
-												.item
-													.title
-														a(href='services/index.html') Услуги
-												span
-													i.fa.fa-angle-down
-											#bottom3.wrap.panel-collapse.wrap_compact_mobile
-												.item-link.item-link
-													.item
-														.title
-															a(href='services/rezka-gazom/index.html') Резка газом
-												.item-link.item-link
-													.item
-														.title
-															a(href='services/rezka-mayatnikovoy-piloy/index.html') Резка маятниковой пилой
-												.item-link.item-link
-													.item
-														.title
-															a(href='services/rezka-gilotinoy/index.html') Резка гильотиной
-												.item-link.item-link
-													.item
-														.title
-															a(href='services/dostavka/index.html') Доставка
-												.item-link.item-link
-													.item
-														.title
-															a(href='services/otsinkovanie/index.html') Оцинкование
-												.item-link.item-link
-													.item
-														.title
-															a(href='services/metallobrabotka/index.html') Металлобработка
-								.col-md-3.col-sm-3
-						.col-md-4.contact-block
-							.row
-								.col-md-9.col-md-offset-2
-									span.white_middle_text
-										| Наши контакты
-										br
-										br
-									.info
-										.row
-											.col-md-12.col-sm-4
-												.blocks.phones
-													.phone
-														i.svg.inline.svg-inline-phone.colored(aria-hidden='true')
-															svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14')
-																defs
-																	style.
-																		.pcls-1 {
-																		fill: #222;
-																		fill-rule: evenodd;
-																		}
-																path.pcls-1(d='M14,11.052a0.5,0.5,0,0,0-.03-0.209,1.758,1.758,0,0,0-.756-0.527C12.65,10,12.073,9.69,11.515,9.363a2.047,2.047,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.138,2.138,0,0,1-.856-0.388A9.894,9.894,0,0,1,3.672,6.253,2.134,2.134,0,0,1,3.283,5.4c0-.536,1.8-1.421,1.8-2.027a2.045,2.045,0,0,0-.458-0.885C4.3,1.932,3.99,1.355,3.672.789A1.755,1.755,0,0,0,3.144.034,0.5,0.5,0,0,0,2.935,0,4.427,4.427,0,0,0,1.551.312,2.62,2.62,0,0,0,.5,1.524,3.789,3.789,0,0,0-.011,3.372a7.644,7.644,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,7.714a16.783,16.783,0,0,0,4.778,4.769,9.283,9.283,0,0,0,1.742.825,7.673,7.673,0,0,0,2.608.686,3.805,3.805,0,0,0,1.851-.507,2.62,2.62,0,0,0,1.214-1.052A4.418,4.418,0,0,0,14,11.052Z')
-														a(href='tel:+73510000000') +7 (351) 000-00-00
-													.schedule
-														| Ежедневно с 09:00 до 18:00
-											.col-md-12.col-sm-4
-												// 'start_frame_cache_address-block3'
-												.address.blocks
-													i.svg.inline.svg-inline-address(aria-hidden='true')
-														svg(xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16')
-															defs
-																style.
-																	.cls-1 {
-																	fill-rule: evenodd;
-																	}
-															path.cls-1(data-name='Ellipse 74 copy' d='M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z' transform='translate(-752 -33)')
-													div
-														| Челябинская область, г. Коркино, ул. Пролетарская 5, 1 этаж, оф. 5
-												// 'end_frame_cache_address-block3'
-											.col-md-12.col-sm-4
-												// 'start_frame_cache_email-block4'
-												.email.blocks
-													i.svg.inline.svg-inline-email(aria-hidden='true')
-														svg(xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13')
-															defs
-																style.
-																	.ecls-1 {
-																	fill: #222;
-																	fill-rule: evenodd;
-																	}
-															path.ecls-1(d='M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z')
-													div
-														a(href='mailto:74@promspecstal.ru') 74@promspecstal.ru
-												// 'end_frame_cache_email-block4'
-				.row.bottom-under
-					.maxwidth-theme
-						.col-md-12.outer-wrapper
-							.inner-wrapper
-								.copy-block
-									.copy
-										| © 2021 Все права защищены.
-									.print-block
-									#bx-composite-banner
-								.social-block
-									+soc(class="white-icon")
+													// 'end_frame_cache_email-block4'
+					.row.bottom-under
+						.maxwidth-theme
+							.col-md-12.outer-wrapper
+								.inner-wrapper
+									.copy-block
+										.copy
+											| © 2021 Все права защищены.
+										.print-block
+										#bx-composite-banner
+									.social-block
+										+soc(class="white-icon")
+									.clearfix
 								.clearfix
-							.clearfix
-		.bx_areas
-		.inline-search-block.fixed.with-close.big
-			.maxwidth-theme
-				.col-md-12
-					.search-wrapper
-						#title-search
-							form.search(action='http://promspecstal.ru/search/')
-								.search-input-div
-									input#title-search-input.search-input(type='text' name='q' value='' placeholder='Найти' size='40' maxlength='50' autocomplete='off')
-								.search-button-div
-									button.btn.btn-search.btn-default.bold.btn-lg(type='submit' name='s' value='Найти') Найти
-									span.close-block.inline-search-hide
-										span.svg.svg-close.close-icons
-		script.
-			var jsControl = new JCTitleSearch2({
-			//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
-			'AJAX_PAGE': '/',
-			'CONTAINER_ID': 'title-search',
-			'INPUT_ID': 'title-search-input',
-			'INPUT_ID_TMP': 'title-search-input',
-			'MIN_QUERY_LEN': 2
-			});
-		// noindex
-		.ajax_basket
-			// 'start_frame_cache_PpQW5T'
-			.basket_top.sep.empted_cart
-				.b_wrap
-					a.icon(href='cart/index.html' title='Корзина пуста' data-summ='')
-						span.count.empted 0
-			// 'end_frame_cache_PpQW5T'
-			//- .fixed_wrapper
-				.right_dok
-					span.link(title='Заказать звонок')
-						span.animate-load(data-event='jqm' data-param-id='27' data-name='callback')
-							i.svg.inline.svg-inline-call(aria-hidden='true')
-								svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
-									defs
-										style.
-											.bccls-1 {
-											fill: #969ba4;
-											fill-rule: evenodd;
-											}
-									path.bccls-1(d='M14,9A7,7,0,0,0,7,2V0a9,9,0,0,1,9,9H14ZM12,9H10A3,3,0,0,0,7,6V4A5,5,0,0,1,12,9Zm2,4.053a0.507,0.507,0,0,0-.03-0.209,1.761,1.761,0,0,0-.756-0.526c-0.567-.318-1.145-0.626-1.7-0.954a2.049,2.049,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.139,2.139,0,0,1-.856-0.388A9.9,9.9,0,0,1,3.672,8.254,2.134,2.134,0,0,1,3.284,7.4c0-.537,1.8-1.421,1.8-2.026a2.045,2.045,0,0,0-.458-0.885C4.3,3.932,3.99,3.356,3.672,2.789a1.753,1.753,0,0,0-.528-0.755A0.5,0.5,0,0,0,2.935,2a4.427,4.427,0,0,0-1.384.308A2.617,2.617,0,0,0,.5,3.525,3.789,3.789,0,0,0-.011,5.373a7.646,7.646,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,9.714,16.788,16.788,0,0,0,6.28,14.483a9.3,9.3,0,0,0,1.742.825,7.672,7.672,0,0,0,2.608.685,3.8,3.8,0,0,0,1.851-.507A2.618,2.618,0,0,0,13.7,14.434,4.416,4.416,0,0,0,14,13.053Z')
-					span.link(title='Задать вопрос')
-						span.animate-load(data-event='jqm' data-param-id='26' data-name='question')
-							i.svg.inline.svg-inline-ask(aria-hidden='true')
-								svg(xmlns='http://www.w3.org/2000/svg' width='18' height='14' viewBox='0 0 18 14')
-									defs
-										style.
-											.cls-1 {
-											fill: #222;
-											fill-rule: evenodd;
-											}
-									path.cls-1(data-name='ask' d='M1898,414h-14a2,2,0,0,1-2-2V402a2,2,0,0,1,1.95-2,1.025,1.025,0,0,1,.22,0h13.69a1,1,0,0,1,.25.011A2,2,0,0,1,1900,402v10A2,2,0,0,1,1898,414Zm-11.47-12,4.49,4.482L1895.5,402h-8.97Zm11.47,0.5-6.17,6.173a1.26,1.26,0,0,1-1.63,0l-6.2-6.2V412h14v-9.5Z' transform='translate(-1882 -400)')
-		// /noindex
+			.bx_areas
+			.inline-search-block.fixed.with-close.big
+				.maxwidth-theme
+					.col-md-12
+						.search-wrapper
+							#title-search
+								form.search(action='http://promspecstal.ru/search/')
+									.search-input-div
+										input#title-search-input.search-input(type='text' name='q' value='' placeholder='Найти' size='40' maxlength='50' autocomplete='off')
+									.search-button-div
+										button.btn.btn-search.btn-default.bold.btn-lg(type='submit' name='s' value='Найти') Найти
+										span.close-block.inline-search-hide
+											span.svg.svg-close.close-icons
+			script.
+				var jsControl = new JCTitleSearch2({
+				//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+				'AJAX_PAGE': '/',
+				'CONTAINER_ID': 'title-search',
+				'INPUT_ID': 'title-search-input',
+				'INPUT_ID_TMP': 'title-search-input',
+				'MIN_QUERY_LEN': 2
+				});
+			// noindex
+			.ajax_basket
+				// 'start_frame_cache_PpQW5T'
+				.basket_top.sep.empted_cart
+					.b_wrap
+						a.icon(href='cart/index.html' title='Корзина пуста' data-summ='')
+							span.count.empted 0
+				// 'end_frame_cache_PpQW5T'
+				//- .fixed_wrapper
+					.right_dok
+						span.link(title='Заказать звонок')
+							span.animate-load(data-event='jqm' data-param-id='27' data-name='callback')
+								i.svg.inline.svg-inline-call(aria-hidden='true')
+									svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16')
+										defs
+											style.
+												.bccls-1 {
+												fill: #969ba4;
+												fill-rule: evenodd;
+												}
+										path.bccls-1(d='M14,9A7,7,0,0,0,7,2V0a9,9,0,0,1,9,9H14ZM12,9H10A3,3,0,0,0,7,6V4A5,5,0,0,1,12,9Zm2,4.053a0.507,0.507,0,0,0-.03-0.209,1.761,1.761,0,0,0-.756-0.526c-0.567-.318-1.145-0.626-1.7-0.954a2.049,2.049,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.139,2.139,0,0,1-.856-0.388A9.9,9.9,0,0,1,3.672,8.254,2.134,2.134,0,0,1,3.284,7.4c0-.537,1.8-1.421,1.8-2.026a2.045,2.045,0,0,0-.458-0.885C4.3,3.932,3.99,3.356,3.672,2.789a1.753,1.753,0,0,0-.528-0.755A0.5,0.5,0,0,0,2.935,2a4.427,4.427,0,0,0-1.384.308A2.617,2.617,0,0,0,.5,3.525,3.789,3.789,0,0,0-.011,5.373a7.646,7.646,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,9.714,16.788,16.788,0,0,0,6.28,14.483a9.3,9.3,0,0,0,1.742.825,7.672,7.672,0,0,0,2.608.685,3.8,3.8,0,0,0,1.851-.507A2.618,2.618,0,0,0,13.7,14.434,4.416,4.416,0,0,0,14,13.053Z')
+						span.link(title='Задать вопрос')
+							span.animate-load(data-event='jqm' data-param-id='26' data-name='question')
+								i.svg.inline.svg-inline-ask(aria-hidden='true')
+									svg(xmlns='http://www.w3.org/2000/svg' width='18' height='14' viewBox='0 0 18 14')
+										defs
+											style.
+												.cls-1 {
+												fill: #222;
+												fill-rule: evenodd;
+												}
+										path.cls-1(data-name='ask' d='M1898,414h-14a2,2,0,0,1-2-2V402a2,2,0,0,1,1.95-2,1.025,1.025,0,0,1,.22,0h13.69a1,1,0,0,1,.25.011A2,2,0,0,1,1900,402v10A2,2,0,0,1,1898,414Zm-11.47-12,4.49,4.482L1895.5,402h-8.97Zm11.47,0.5-6.17,6.173a1.26,1.26,0,0,1-1.63,0l-6.2-6.2V412h14v-9.5Z' transform='translate(-1882 -400)')
+			// /noindex
 
 		+modal()
 		+allcjs()
