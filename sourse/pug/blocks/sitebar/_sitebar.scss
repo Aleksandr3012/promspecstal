@@ -1,14 +1,14 @@
 // start .sitebar
 .sidebar-fixed {
+	position: sticky !important;
 	z-index: 20;
 	// max-height: 100%;
 	background-color: #fff;
-		@include media-breakpoint-down(lg) {
-				display: none;
-		}
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
 }
 .sitebar {
-	
 	// --sPT: ;
 	// --sPB: ;
 	// --sTPB: ;
@@ -28,6 +28,21 @@
 	}
 } // end.sitebar
 
+body .maxwidth-theme {
+	// margin-left: 0;
+	@include media-breakpoint-up(lg) {
+		padding-left: 15px !important;
+	}
+}
+
+.container--clear {
+	@include media-breakpoint-down(lg) {
+		padding: 0 !important;
+		max-width: none !important;
+		margin: 0 !important;
+		width: auto !important;
+	}
+}
 .menu-sidebar {
 	&__wrap {
 		padding-top: 20px;
