@@ -612,10 +612,6 @@ a.third-level {
 	// display: flex;
 }
 
-.sidebar-fixed {
-	// position: sticky;
-}
-
 .sidebar {
 	margin-bottom: 0;
 }
@@ -731,6 +727,35 @@ body {
 	}
 }
 
+.container {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 .social-block {
 	padding: 0 10px;
+}
+
+main {
+	display: flex;
+}
+
+.sidebar-fixed {
+	// position: absolute;
+	// position: relative;
+	top: 0;
+	position: relative;
+	// height: auto;
+	.content-left {
+		top: 0;
+		// position: s;
+		position: sticky;
+	}
+}
+@media (min-width: 992px) {
+	body .maxwidth-theme {
+		padding-left: 15px !important;
+	}
 }

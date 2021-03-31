@@ -29,8 +29,8 @@
 } // end.sitebar
 
 body .maxwidth-theme {
-	// margin-left: 0;
 	@include media-breakpoint-up(lg) {
+		// margin-left: 0 !important;
 		padding-left: 15px !important;
 	}
 }
