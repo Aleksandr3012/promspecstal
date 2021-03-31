@@ -752,4 +752,7 @@ main{
 	body .maxwidth-theme {
 		padding-left: 15px !important;
 	}
+	body main.maxwidth-theme {
+		padding: 0 !important;
+	}
 }
