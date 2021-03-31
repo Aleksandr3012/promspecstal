@@ -94,12 +94,12 @@ function eventHandler() {
 
 	// console.log('.content-left');
 
-	var Sticky = new hcSticky('.sidebar-fixed', {
-		// stickTo: 'main'
-		stickTo: $('main')[0],
-		// innerTop: 50,
-		bottomEnd: 500
-	});
+	// var Sticky = new hcSticky('.sidebar-fixed', {
+	// 	// stickTo: 'main'
+	// 	stickTo: $('main')[0],
+	// 	// innerTop: 50,
+	// 	bottomEnd: 500
+	// });
 
 
 };
